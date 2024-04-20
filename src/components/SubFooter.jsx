@@ -1,7 +1,7 @@
 const SubFooter = ({ img, title, titleSpan }) => {
   return (
     <section
-      className="bg-cover bg-center py-20"
+      className="bg-cover bg-top bg-no-repeat py-24"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(${img})`,
       }}

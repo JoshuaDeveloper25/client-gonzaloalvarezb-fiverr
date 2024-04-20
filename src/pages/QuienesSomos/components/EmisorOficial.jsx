@@ -41,6 +41,7 @@ const EmisorOficial = () => {
           centerPadding: "0",
           speed: 500,
           dots: false,
+          centerMode: false,
         },
       },
     ],
@@ -58,7 +59,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -67,7 +68,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -76,7 +77,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -85,7 +86,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -94,7 +95,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -103,7 +104,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg my-2 mx-0"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />

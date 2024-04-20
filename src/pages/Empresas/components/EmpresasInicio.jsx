@@ -9,7 +9,7 @@ const EmpresasInicio = () => {
           <img className="w-72" src={logoAtlantida} alt="Logo Grupo Sur Atlántida" />
         </article>
 
-        <article className="max-w-lg">
+        <article className="max-w-xl">
           <img
             decoding="async"
             loading="lazy"
