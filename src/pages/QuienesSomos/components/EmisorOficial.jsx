@@ -4,7 +4,6 @@ const EmisorOficial = () => {
   const settings = {
     className: "center",
     centerMode: true,
-    infinite: true,
     centerPadding: "100px",
     slidesToShow: 1,
     speed: 500,
@@ -15,7 +14,6 @@ const EmisorOficial = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          infinite: true,
           centerPadding: "65px",
           speed: 500,
           dots: false,
@@ -28,8 +26,7 @@ const EmisorOficial = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          infinite: true,
-          centerPadding: "100px",
+          centerPadding: "60px",
           speed: 500,
           dots: false,
         },
@@ -43,13 +40,13 @@ const EmisorOficial = () => {
         className="carousel-emisor sm:grid gap-10"
         style={{ gridTemplateColumns: "50% 40%" }}
       >
-        <article className="min-h-0 min-w-0 p-1">
+        <article className="min-h-0 min-w-0 p-2">
           <Slider {...settings}>
             <div>
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -58,7 +55,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -67,7 +64,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -76,7 +73,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -85,7 +82,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
@@ -94,7 +91,7 @@ const EmisorOficial = () => {
               <img
                 decoding="async"
                 loading="lazy"
-                className="emisorOficialImg m-2"
+                className="emisorOficialImg my-2 mx-0"
                 src={`https://dummyimage.com/500x200/000/fff`}
                 alt="Dinero"
               />
