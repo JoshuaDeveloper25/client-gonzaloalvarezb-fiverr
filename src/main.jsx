@@ -10,6 +10,7 @@ import "./index.css";
 import Root from "./pages/Root";
 import Inicio from "./pages/Inicio/Inicio";
 import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
+import PresenciaRegional from "./pages/PresenciaRegional/PresenciaRegional";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         element: <QuienesSomos />,
         path: `/quienes-somos`,
+      },
+
+      {
+        element: <PresenciaRegional />,
+        path: `/presencia-regional`,
       },
     ],
   },

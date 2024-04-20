@@ -24,6 +24,7 @@ const Navbar = () => {
 
         <div className="hidden lg:flex gap-6">
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -35,6 +36,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -46,6 +48,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -57,6 +60,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -68,6 +72,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -79,6 +84,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
                 ? "text-primary-color font-extrabold hover:text-primary-color"
@@ -164,6 +170,7 @@ const Navbar = () => {
 
           <div className="flex flex-col mt-10 gap-6">
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
@@ -175,6 +182,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold"
@@ -186,6 +194,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold"
@@ -197,6 +206,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold"
@@ -208,6 +218,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold"
@@ -219,6 +230,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-primary-color font-extrabold"
