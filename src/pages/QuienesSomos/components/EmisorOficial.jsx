@@ -38,7 +38,7 @@ const EmisorOficial = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          centerPadding: "30px",
+          centerPadding: "0",
           speed: 500,
           dots: false,
         },
