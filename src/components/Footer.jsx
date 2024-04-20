@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary-color text-white">
-      <div className="container-page px-2 py-4">
+      <div className="container-page px-2 py-8">
         <div className="hidden md:flex gap-16 row-gap-4">
           <article>
             <h3 className="font-bold mb-5">Contacto</h3>
@@ -376,6 +376,14 @@ const Footer = () => {
             </div>
           </TECollapse>
         </div>
+      </div>
+
+      {/* Todos los derechos */}
+      <div className="py-5'">
+        <p className="text-center">
+          2024 Grupo Sur Atlántida | Todos los derechos reservados | Política de
+          privacidad
+        </p>
       </div>
     </footer>
   );

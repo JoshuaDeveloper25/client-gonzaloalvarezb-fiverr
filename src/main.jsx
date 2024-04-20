@@ -8,12 +8,18 @@ import "./index.css";
 
 // Pages
 import Root from "./pages/Root";
+import Inicio from "./pages/Inicio/Inicio";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: [{}],
+    children: [
+      {
+        index: true,
+        element: <Inicio />,
+      },
+    ],
   },
 ]);
 

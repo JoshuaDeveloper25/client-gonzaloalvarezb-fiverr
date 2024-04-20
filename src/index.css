@@ -27,6 +27,13 @@
 }
 
 @font-face {
+  font-family: "Nunito Sans SemiBold";
+  src: url("./fonts/NunitoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Peso Black */
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Nunito Sans Light";
   src: url("./fonts/NunitoSans-Light.ttf") format("truetype");
   font-weight: 300; /* Peso Light */
@@ -52,4 +59,80 @@ body {
   .animation-fade {
     @apply duration-200 transition-all ease-in-out;
   }
+
+  .button-red-primary {
+    @apply text-white font-light rounded-full text-center bg-[#E21E31] py-1 px-10 inline-block animation-fade hover:bg-[#E21E31]/60;
+  }
+}
+
+/* Carousel Nuestras Empresas - Inicio */
+.nuestrasEmpresas > .slick-slider > .slick-prev:before,
+.nuestrasEmpresas > .slick-slider > .slick-next:before {
+  color: #e21e31 !important;
+}
+
+.nuestrasEmpresas > .slick-slider > .slick-prev {
+  left: 1rem;
+  z-index: 9999;
+}
+
+.nuestrasEmpresas > .slick-slider > .slick-next {
+  right: 1rem;
+}
+
+/* 500px */
+@media (min-width: 31.25em) {
+  .nuestrasEmpresas > .slick-slider > .slick-prev {
+    left: -0.5rem;
+    z-index: 9999;
+  }
+
+  .nuestrasEmpresas > .slick-slider > .slick-next {
+    right: -0.5rem;
+  }
+}
+
+/* Carousel Empresial Estilos - Componente Global */
+.carouselEmpresarial
+  > .slick-slider
+  > .slick-list
+  > .slick-track
+  > .slick-slide
+  > div {
+  margin: 0 auto !important;
+  max-width: 15rem !important;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-prev {
+  left: 0.3rem;
+  z-index: 9999;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-next {
+  right: 0.3rem;
+}
+
+/* 1200px */
+@media (min-width: 75em) {
+  .carouselEmpresarial > .slick-slider > .slick-prev {
+    left: -0.7rem;
+    z-index: 9999;
+  }
+
+  .carouselEmpresarial > .slick-slider > .slick-next {
+    right: -0.7rem;
+  }
+}
+
+.carouselEmpresarial
+  > .slick-slider
+  > .slick-list
+  > .slick-track
+  > .slick-slide {
+  padding: 0 1rem;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-prev:before,
+.carouselEmpresarial > .slick-slider > .slick-next:before {
+  color: white !important;
 }

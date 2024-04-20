@@ -13,6 +13,8 @@ const Navbar = () => {
         <div>
           <Link to={`/`}>
             <img
+              decoding="async"
+              loading="lazy"
               className="w-44"
               src={logoAtlantida}
               alt={`Logo Banco Atlantida`}
@@ -117,7 +119,7 @@ const Navbar = () => {
 
         <div
           id="drawer-example"
-          className={`lg:hidden fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform duration-500 bg-white w-80 ${
+          className={`lg:hidden w-full fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform duration-500 bg-white sm:w-80 ${
             !navbarOpen ? "-translate-x-full" : null
           }`}
           tabIndex="-1"
@@ -126,6 +128,8 @@ const Navbar = () => {
           <div>
             <Link className="inline" to={`/`}>
               <img
+                decoding="async"
+                loading="lazy"
                 className="inline w-28"
                 src={logoAtlantida}
                 alt={`Logo Banco Atlantida`}
