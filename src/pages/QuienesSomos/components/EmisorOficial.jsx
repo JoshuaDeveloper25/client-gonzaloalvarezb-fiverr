@@ -16,7 +16,20 @@ const EmisorOficial = () => {
           slidesToScroll: 1,
           initialSlide: 1,
           infinite: true,
-          centerPadding: "60px",
+          centerPadding: "65px",
+          speed: 500,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+          centerPadding: "100px",
           speed: 500,
           dots: false,
         },

@@ -11,6 +11,7 @@ import Root from "./pages/Root";
 import Inicio from "./pages/Inicio/Inicio";
 import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
 import PresenciaRegional from "./pages/PresenciaRegional/PresenciaRegional";
+import Empresas from "./pages/Empresas/Empresas";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         element: <PresenciaRegional />,
         path: `/presencia-regional`,
+      },
+
+      {
+        element: <Empresas />,
+        path: `/empresas`
       },
     ],
   },
