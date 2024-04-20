@@ -185,7 +185,7 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
               to={`/quienes-somos`}
@@ -197,7 +197,7 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
               to={`/gobierno-corporativo`}
@@ -209,7 +209,7 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
               to={`/presencia-regional`}
@@ -221,7 +221,7 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
               to={`/empresas`}
@@ -233,7 +233,7 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
               to={`/reconocimientos`}
