@@ -1,4 +1,4 @@
-const SubFooter = ({ img, title }) => {
+const SubFooter = ({ img, title, titleSpan }) => {
   return (
     <section
       className="bg-cover bg-center py-20"
@@ -14,6 +14,7 @@ const SubFooter = ({ img, title }) => {
               style={{ fontFamily: "Nunito Sans SemiBold" }}
             >
               {title}
+              <span className="block">{titleSpan}</span>
             </h2>
           </div>
         </div>

@@ -136,3 +136,27 @@ body {
 .carouselEmpresarial > .slick-slider > .slick-next:before {
   color: white !important;
 }
+
+/* Carousel de Quienes Somos - Emisor oficial de la moneda de Honduras */
+.carousel-emisor > article > .slick-slider > .slick-prev:before,
+.carousel-emisor > article > .slick-slider > .slick-next:before {
+  color: black !important;
+  font-size: 1.4rem;
+}
+
+.center .slick-center .emisorOficialImg {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: all 400ms ease-in-out;
+  outline: none;
+}
+
+.carousel-emisor > article > .slick-slider > .slick-prev {
+  left: 1rem;
+  z-index: 9999;
+}
+
+.carousel-emisor > article > .slick-slider > .slick-next {
+  right: 1rem;
+  z-index: 9999;
+}

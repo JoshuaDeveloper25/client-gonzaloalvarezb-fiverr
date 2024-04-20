@@ -5,7 +5,7 @@ import carouselEmpresarial4 from "../images/carouselempresarial4.png";
 
 import Slider from "react-slick";
 
-const CarouselEmprearial = () => {
+const CarouselEmprearial = ({ exclusiveContentOne, exclusiveContentTwo }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -89,7 +89,7 @@ const CarouselEmprearial = () => {
               />
 
               <h3 className="text-white leading-4">
-                Fideicomisos
+                {exclusiveContentOne || `Fideicomisos`}
               </h3>
             </div>
           </div>
@@ -104,7 +104,11 @@ const CarouselEmprearial = () => {
               />
 
               <h3 className="text-white leading-4">
-                Fondos de <span className="block">inversión</span>
+                {exclusiveContentTwo || (
+                  <>
+                    Fondos de <span className="block">inversión</span>
+                  </>
+                )}
               </h3>
             </div>
           </div>
@@ -149,7 +153,7 @@ const CarouselEmprearial = () => {
               />
 
               <h3 className="text-white leading-4">
-                Fideicomisos
+                {exclusiveContentOne || `Fideicomisos`}
               </h3>
             </div>
           </div>
@@ -164,7 +168,11 @@ const CarouselEmprearial = () => {
               />
 
               <h3 className="text-white leading-4">
-                Fondos de <span className="block">inversión</span>
+                {exclusiveContentTwo || (
+                  <>
+                    Fondos de <span className="block">inversión</span>
+                  </>
+                )}
               </h3>
             </div>
           </div>

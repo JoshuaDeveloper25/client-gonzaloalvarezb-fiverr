@@ -9,6 +9,7 @@ import "./index.css";
 // Pages
 import Root from "./pages/Root";
 import Inicio from "./pages/Inicio/Inicio";
+import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Inicio />,
+      },
+
+      {
+        element: <QuienesSomos />,
+        path: `/quienes-somos`,
       },
     ],
   },
