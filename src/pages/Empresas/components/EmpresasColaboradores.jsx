@@ -1,6 +1,6 @@
 const EmpresasColaboradores = () => {
   return (
-    <section className="container-page px-2 my-9">
+    <section className="container-page px-2 md:my-14 my-5">
       <div className="flex flex-col md:flex-row justify-center items-center gap-2">
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="md:text-5xl text-4xl text-secondary-color">
@@ -11,7 +11,7 @@ const EmpresasColaboradores = () => {
           </h2>
         </article>
 
-        <article className="flex-1 space-y-5">
+        <article className="flex-1 space-y-5 md:px-5 px-0">
           <p className="text-secondary-color text-justify">
             El Grupo Sur Atlántida S.L. es un Holding con domicilio en Madrid –
             España.

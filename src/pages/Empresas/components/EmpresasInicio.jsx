@@ -1,12 +1,18 @@
 import grupoHeader from "../../../images/empresas-inicio.png";
-import logoAtlantida from "../../../images/logo-atlantida.png"
+import logoAtlantida from "../../../images/logo-atlantida.png";
 
 const EmpresasInicio = () => {
   return (
     <section className="bg-tertiary-color px-2">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
-          <img className="w-72" src={logoAtlantida} alt="Logo Grupo Sur Atlántida" />
+          <img
+            loading="lazy"
+            decoding="async"
+            className="w-72"
+            src={logoAtlantida}
+            alt="Logo Grupo Sur Atlántida"
+          />
         </article>
 
         <article className="max-w-xl">

@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 
 const EmpresasLogos = () => {
   return (
-    <section className="container-page px-2 my-16">
-      <article className="grid sm:grid-cols-4 grid-cols-2 gap-10 mt-10">
+    <section className="container-page px-2 md:my-20 my-5">
+      <article className="grid sm:grid-cols-4 grid-cols-2 gap-10">
         <div className="text-center">
-          <Link to={`/inversiones-financieras-atlantida`}>
+          <Link to={`/empresas/inversiones-financieras-atlantida`} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -25,7 +25,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -37,7 +37,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -49,7 +49,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -61,7 +61,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -73,7 +73,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -85,7 +85,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -97,7 +97,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``}>
+          <Link to={``} target="_blank">
             <img
               decoding="async"
               loading="lazy"

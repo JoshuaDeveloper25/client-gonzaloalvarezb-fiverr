@@ -1,17 +1,20 @@
-// Default imports from react and more
+// --> Default imports from react and more
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Styles
+// --> Styles
 import "./index.css";
 
-// Pages
+// --> Pages
 import Root from "./pages/Root";
 import Inicio from "./pages/Inicio/Inicio";
 import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
 import PresenciaRegional from "./pages/PresenciaRegional/PresenciaRegional";
-import Empresas from "./pages/Empresas/Empresas";
+
+// --> Empresas Pages
+import EmpresasRoot from "./pages/Empresas/Empresas";
+import InversionesFinancierasAtlantida from "./pages/Empresas/pages/InversionesFinancierasAtlantida/InversionesFinancierasAtlantida";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +37,14 @@ const router = createBrowserRouter([
       },
 
       {
-        element: <Empresas />,
-        path: `/empresas`
+        path: `/empresas`,
+        element: <EmpresasRoot />,
+      },
+
+      // --> Pages from Empresas
+      {
+        element: <InversionesFinancierasAtlantida />,
+        path: "/empresas/inversiones-financieras-atlantida",
       },
     ],
   },
