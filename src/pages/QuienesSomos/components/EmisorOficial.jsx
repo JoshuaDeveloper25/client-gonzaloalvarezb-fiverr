@@ -31,6 +31,18 @@ const EmisorOficial = () => {
           dots: false,
         },
       },
+
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          centerPadding: "30px",
+          speed: 500,
+          dots: false,
+        },
+      },
     ],
   };
 
