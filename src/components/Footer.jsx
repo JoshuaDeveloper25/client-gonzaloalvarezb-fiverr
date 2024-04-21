@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary-color text-white">
-      <div className="container-page px-2 py-8">
+      <div className="container-page py-8">
         <div className="hidden md:flex gap-16 row-gap-4">
           <article>
             <h3 className="font-bold mb-5">Contacto</h3>
@@ -55,14 +55,14 @@ const Footer = () => {
             <div className="flex flex-col gap-1">
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/inversiones-financieras-atlantida`}
               >
                 IFA
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/banco-d-miro`}
               >
                 Banco D-Miro
               </Link>
@@ -253,14 +253,14 @@ const Footer = () => {
             <div className="flex flex-col gap-1">
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/inversiones-financieras-atlantida`}
               >
                 IFA
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/banco-d-miro`}
               >
                 Banco D-Miro
               </Link>

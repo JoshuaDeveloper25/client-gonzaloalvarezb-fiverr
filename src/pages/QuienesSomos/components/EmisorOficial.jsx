@@ -48,7 +48,7 @@ const EmisorOficial = () => {
   };
 
   return (
-    <section className="container-page px-2 my-8">
+    <section className="container-page my-8">
       <div
         className="carousel-emisor sm:grid gap-10"
         style={{ gridTemplateColumns: "50% 40%" }}

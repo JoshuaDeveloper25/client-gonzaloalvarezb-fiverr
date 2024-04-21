@@ -13,8 +13,9 @@ import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
 import PresenciaRegional from "./pages/PresenciaRegional/PresenciaRegional";
 
 // --> Empresas Pages
-import EmpresasRoot from "./pages/Empresas/Empresas";
+import Empresas from "./pages/Empresas/Empresas";
 import InversionesFinancierasAtlantida from "./pages/Empresas/pages/InversionesFinancierasAtlantida/InversionesFinancierasAtlantida";
+import BancoDMiro from "./pages/Empresas/pages/BancoDMiro/BancoDMiro";
 
 const router = createBrowserRouter([
   {
@@ -38,13 +39,18 @@ const router = createBrowserRouter([
 
       {
         path: `/empresas`,
-        element: <EmpresasRoot />,
+        element: <Empresas />,
       },
 
       // --> Pages from Empresas
       {
         element: <InversionesFinancierasAtlantida />,
         path: "/empresas/inversiones-financieras-atlantida",
+      },
+
+      {
+        element: <BancoDMiro />,
+        path: "/empresas/banco-d-miro",
       },
     ],
   },

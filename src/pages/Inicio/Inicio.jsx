@@ -21,8 +21,8 @@ const Inicio = () => {
       {/* Carousel Empresarial */}
       <CarouselEmprearial />
 
-      {/* Subfooter */}
-      <SubFooter img={subfooter} title={`Juntos lo hacemos posible`} />
+      {/* Subfooter 1 */}
+      <SubFooter img={subfooter} title={`Juntos lo hacemos posible`} addClassName={`bg-center`} />
     </>
   );
 };

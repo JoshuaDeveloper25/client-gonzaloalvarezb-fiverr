@@ -24,7 +24,11 @@ const Empresas = () => {
       <EmpresasLogos />
 
       {/* Subfooter 4 */}
-      <SubFooter img={subfooter} title={`Juntos lo hacemos posible`} />
+      <SubFooter
+        img={subfooter}
+        title={`Juntos lo hacemos posible`}
+        addClassName={`bg-top`}
+      />
     </section>
   );
 };

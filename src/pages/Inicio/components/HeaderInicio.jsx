@@ -2,7 +2,7 @@ import hombreHeader from "../../../images/hombre-header-inicio.png";
 
 const HeaderInicio = () => {
   return (
-    <section className="bg-tertiary-color px-2">
+    <section className="bg-tertiary-color">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="max-w-md text-4xl leading-10 mb-8">

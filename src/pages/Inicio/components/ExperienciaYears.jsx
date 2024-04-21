@@ -2,7 +2,7 @@ import logoAtlantida from "../../../images/logo-atlantida.png";
 
 const ExperienciaYears = () => {
   return (
-    <section className="container-page px-2 pt-4 pb-9">
+    <section className="container-page pt-4 pb-9">
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 row-gap-3">
         <article className="flex-1">
           <h2

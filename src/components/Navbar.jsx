@@ -8,7 +8,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="container-page px-2 py-2">
+    <nav className="container-page py-2">
       <div className="flex lg:justify-start justify-between items-center gap-8">
         <div>
           <Link to={`/`}>

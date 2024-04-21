@@ -3,7 +3,7 @@ import CentroAmericaVideo from "./components/CentroAmericaVideo";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
-import subfooter3 from '../../images/subfooter3.jpg';
+import subfooter3 from "../../images/subfooter3.jpg";
 
 const PresenciaRegional = () => {
   return (
@@ -20,7 +20,11 @@ const PresenciaRegional = () => {
       <CentroAmericaVideo />
 
       {/* Subfooter 3 */}
-      <SubFooter img={subfooter3} title={`Cruzamos fronteras para brindar soluciones`} />
+      <SubFooter
+        img={subfooter3}
+        title={`Cruzamos fronteras para brindar soluciones`}
+        addClassName={`bg-center`}
+      />
     </>
   );
 };

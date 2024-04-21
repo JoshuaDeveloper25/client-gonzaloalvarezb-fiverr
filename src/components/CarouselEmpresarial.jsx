@@ -47,7 +47,7 @@ const CarouselEmprearial = ({ exclusiveContentOne, exclusiveContentTwo }) => {
 
   return (
     <section className="bg-primary-color">
-      <div className="carouselEmpresarial container-page px-2 py-10">
+      <div className="carouselEmpresarial container-page py-10">
         <Slider {...settings}>
           <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
             <div className="flex items-center">

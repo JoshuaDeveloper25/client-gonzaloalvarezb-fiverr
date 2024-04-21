@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const EmpresasLogos = () => {
   return (
-    <section className="container-page px-2 my-16">
+    <section className="container-page my-16">
       <article className="md:mb-6 mb-0">
         <div className="text-center">
           <img

@@ -1,6 +1,6 @@
 const EmpresasColaboradores = () => {
   return (
-    <section className="container-page px-2 md:my-14 my-5">
+    <section className="container-page md:my-14 my-5">
       <div className="flex flex-col md:flex-row justify-center items-center gap-2">
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="md:text-5xl text-4xl text-secondary-color">

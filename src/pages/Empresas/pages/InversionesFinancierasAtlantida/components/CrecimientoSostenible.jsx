@@ -1,6 +1,6 @@
 const CrecimientoSostenible = () => {
   return (
-    <section className="container-page px-2 my-14">
+    <section className="container-page my-14">
       <div className="flex flex-col md:flex-row justify-center items-center gap-5">
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="max-w-sm mx-auto text-4xl text-secondary-color">

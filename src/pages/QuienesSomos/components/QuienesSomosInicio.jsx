@@ -2,7 +2,7 @@ import hombreHeader from "../../../images/quienes-somos-header.png";
 
 const QuienesSomosInicio = () => {
   return (
-    <section className="bg-tertiary-color px-2 py-3">
+    <section className="bg-tertiary-color py-3">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="max-w-sm text-4xl leading-10 md:mb-8 mb-0">

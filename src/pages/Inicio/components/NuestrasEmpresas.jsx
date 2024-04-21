@@ -46,7 +46,7 @@ const NuestrasEmpresas = () => {
   };
 
   return (
-    <section className="container-page px-2 py-10">
+    <section className="container-page py-10">
       <div className="grid md:grid-cols-4 grid-cols-1">
         <article className="md:text-start text-center md:mb-0 mb-5">
           <h2

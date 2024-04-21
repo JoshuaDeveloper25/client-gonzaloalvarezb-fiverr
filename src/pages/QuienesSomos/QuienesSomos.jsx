@@ -32,11 +32,12 @@ const QuienesSomos = () => {
       {/* Principales Indicadores Financieros */}
       <IndicadoresFinancieros />
 
-      {/* Subfooter */}
+      {/* Subfooter 2 */}
       <SubFooter
         img={subfooter}
         title={`Nuestro mayor activo, es la confianza de`}
         titleSpan={`nuestros clientes`}
+        addClassName={`bg-center`}
       />
     </>
   );

@@ -8,7 +8,7 @@ import indicador7 from "../../../images/indicador7.png";
 
 const IndicadoresFinancieros = () => {
   return (
-    <section className="container-page px-2 mb-8">
+    <section className="container-page mb-8">
       <div className="text-center">
         <h2
           className="text-primary-color text-2xl"

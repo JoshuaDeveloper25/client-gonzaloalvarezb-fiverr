@@ -1,6 +1,6 @@
 const NuestraHistoria = () => {
   return (
-    <section className="container-page px-2 py-3 my-8">
+    <section className="container-page py-3 my-8">
       <div className="flex flex-col md:flex-row lg:items-center items-start gap-7">
         <article className="flex-1">
           <div className="flex flex-col gap-5">

@@ -1,7 +1,7 @@
-import inversionesFinancieras from "../../../../../images/inversiones-financieras-inicio.png";
-import logoInversionesFinancieras from "../../../../../images/nuestraempresa1.png";
+import inversionesFinancieras from "../../../../../images/banco-d-miro-inicio.png";
+import logoBancoDMiro from "../../../../../images/nuestraempresa2.png";
 
-const InversionesFinancierasInicio = () => {
+const BancoDMiroInicio = () => {
   return (
     <section className="bg-tertiary-color">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center md:gap-3">
@@ -10,17 +10,13 @@ const InversionesFinancierasInicio = () => {
             loading="lazy"
             decoding="async"
             className="w-92 mb-6"
-            src={logoInversionesFinancieras}
+            src={logoBancoDMiro}
             alt="Logo Grupo Sur Atlántida"
           />
-          <p className="text-secondary-color text-justify leading-6">
-            Inversiones Financieras Atlántida Ecuador IFA EC S.A., es una
-            holding ecuatoriana, que fue constituida para liderar el Grupo
-            Financiero Atlántida en Ecuador.
-          </p>
+          <button className="button-red-primary" type="button">Conoce más</button>
         </article>
 
-        <article className="max-w-md mx-auto mt-5">
+        <article className="max-w-lg mx-auto mt-5">
           <img
             decoding="async"
             loading="lazy"
@@ -34,4 +30,4 @@ const InversionesFinancierasInicio = () => {
   );
 };
 
-export default InversionesFinancierasInicio;
+export default BancoDMiroInicio;
