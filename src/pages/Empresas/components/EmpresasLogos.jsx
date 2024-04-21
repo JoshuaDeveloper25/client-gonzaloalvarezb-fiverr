@@ -37,7 +37,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``} target="_blank">
+          <Link to={`/empresas/fiduciaria-atlantida`} target="_blank">
             <img
               decoding="async"
               loading="lazy"

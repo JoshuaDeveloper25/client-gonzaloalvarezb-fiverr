@@ -69,7 +69,7 @@ const Footer = () => {
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>
@@ -267,7 +267,7 @@ const Footer = () => {
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>

@@ -16,6 +16,7 @@ import PresenciaRegional from "./pages/PresenciaRegional/PresenciaRegional";
 import Empresas from "./pages/Empresas/Empresas";
 import InversionesFinancierasAtlantida from "./pages/Empresas/pages/InversionesFinancierasAtlantida/InversionesFinancierasAtlantida";
 import BancoDMiro from "./pages/Empresas/pages/BancoDMiro/BancoDMiro";
+import FiduciariaAtlantida from "./pages/Empresas/pages/FiduciariaAtlantida/FiduciariaAtlantida";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
       {
         element: <BancoDMiro />,
         path: "/empresas/banco-d-miro",
+      },
+
+      {
+        element: <FiduciariaAtlantida />,
+        path: "/empresas/fiduciaria-atlantida",
       },
     ],
   },
