@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="container-page py-2">
-      <div className="flex lg:justify-start justify-between items-center gap-8">
+      <div className="flex justify-between items-center gap-8">
         <div>
           <Link to={`/`}>
             <img
