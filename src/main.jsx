@@ -19,6 +19,8 @@ import BancoDMiro from "./pages/Empresas/pages/BancoDMiro/BancoDMiro";
 import FiduciariaAtlantida from "./pages/Empresas/pages/FiduciariaAtlantida/FiduciariaAtlantida";
 import CrediPrime from "./pages/Empresas/pages/CrediPrime/CrediPrime";
 import AtlantidaCasaValores from "./pages/Empresas/pages/AtlantidaCasaValores/AtlantidaCasaValores";
+import Reditum from "./pages/Empresas/pages/Reditum/Reditum";
+import AtlantidaInsurance from "./pages/Empresas/pages/AtlantidaInsurance/AtlantidaInsurance";
 
 const router = createBrowserRouter([
   {
@@ -65,10 +67,20 @@ const router = createBrowserRouter([
         element: <AtlantidaCasaValores />,
         path: "/empresas/atlantida-casa-valores",
       },
-      
+
       {
         element: <CrediPrime />,
         path: "/empresas/crediprime",
+      },
+
+      {
+        element: <Reditum />,
+        path: "/empresas/reditum",
+      },
+
+      {
+        element: <AtlantidaInsurance />,
+        path: "/empresas/atlantida-insurance",
       },
     ],
   },

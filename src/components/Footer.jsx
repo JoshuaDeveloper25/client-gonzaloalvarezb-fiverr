@@ -76,35 +76,35 @@ const Footer = () => {
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/atlantida-casa-valores`}
               >
                 Atlántida Casa de Valores
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/atlantida-insurance`}
               >
                 Atlántida Insurance
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/reditum`}
               >
                 Reditum
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/crediprime`}
               >
                 CrediPrime
               </Link>
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`#`}
+                to={`/empresas/capitalprime`}
               >
                 CapitalPrime
               </Link>

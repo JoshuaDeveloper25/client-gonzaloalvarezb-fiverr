@@ -13,7 +13,10 @@ const EmpresasLogos = () => {
     <section className="container-page md:my-20 my-5">
       <article className="grid sm:grid-cols-4 grid-cols-2 gap-10">
         <div className="text-center">
-          <Link to={`/empresas/inversiones-financieras-atlantida`} target="_blank">
+          <Link
+            to={`/empresas/inversiones-financieras-atlantida`}
+            target="_blank"
+          >
             <img
               decoding="async"
               loading="lazy"
@@ -73,7 +76,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``} target="_blank">
+          <Link to={`/empresas/reditum`} target="_blank">
             <img
               decoding="async"
               loading="lazy"
