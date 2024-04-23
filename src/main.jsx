@@ -22,6 +22,7 @@ import AtlantidaCasaValores from "./pages/Empresas/pages/AtlantidaCasaValores/At
 import Reditum from "./pages/Empresas/pages/Reditum/Reditum";
 import AtlantidaInsurance from "./pages/Empresas/pages/AtlantidaInsurance/AtlantidaInsurance";
 import CapitalPrime from "./pages/Empresas/pages/CapitalPrime/CapitalPrime";
+import Reconocimientos from "./pages/Reconocimientos/Reconocimientos";
 
 const router = createBrowserRouter([
   {
@@ -87,6 +88,12 @@ const router = createBrowserRouter([
       {
         element: <CapitalPrime />,
         path: "/empresas/capitalprime",
+      },
+
+      // --> Global Pages
+      {
+        element: <Reconocimientos />,
+        path: "/reconocimientos",
       },
     ],
   },
