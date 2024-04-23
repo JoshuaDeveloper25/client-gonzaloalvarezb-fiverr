@@ -64,7 +64,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/crediprime`} target="_blank">
+          <Link to={`/empresas/capitalprime`} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -88,7 +88,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``} target="_blank">
+          <Link to={`/empresas/atlantida-insurance`} target="_blank">
             <img
               decoding="async"
               loading="lazy"
@@ -100,7 +100,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={``} target="_blank">
+          <Link to={`/empresas/crediprime`} target="_blank">
             <img
               decoding="async"
               loading="lazy"

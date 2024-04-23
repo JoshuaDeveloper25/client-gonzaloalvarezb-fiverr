@@ -21,6 +21,7 @@ import CrediPrime from "./pages/Empresas/pages/CrediPrime/CrediPrime";
 import AtlantidaCasaValores from "./pages/Empresas/pages/AtlantidaCasaValores/AtlantidaCasaValores";
 import Reditum from "./pages/Empresas/pages/Reditum/Reditum";
 import AtlantidaInsurance from "./pages/Empresas/pages/AtlantidaInsurance/AtlantidaInsurance";
+import CapitalPrime from "./pages/Empresas/pages/CapitalPrime/CapitalPrime";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,11 @@ const router = createBrowserRouter([
       {
         element: <AtlantidaInsurance />,
         path: "/empresas/atlantida-insurance",
+      },
+
+      {
+        element: <CapitalPrime />,
+        path: "/empresas/capitalprime",
       },
     ],
   },
