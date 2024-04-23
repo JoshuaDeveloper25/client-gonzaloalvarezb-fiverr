@@ -9,8 +9,10 @@ const CapitalPrimeExperiencia = () => {
           <article className="sm:col-span-3 md:col-span-1 col-span-3">
             <h2 className="md:text-2xl text-center text-xl text-secondary-color">
               Nuestra experiencia garantiza:{" "}
-              <span className="sm:block inline">gestión efectiva y transparente</span> en
-              la recuperación de su cartera
+              <span className="sm:block inline">
+                gestión efectiva y transparente
+              </span>{" "}
+              en la recuperación de su cartera
             </h2>
             <div className="text-center">
               <button type="button" className="mt-5 button-red-primary">
@@ -21,6 +23,8 @@ const CapitalPrimeExperiencia = () => {
 
           <article className="sm:col-span-1 col-span-3 md:my-0 my-9">
             <img
+              loading="lazy"
+              decoding="async"
               src={dolarIcono}
               className="w-16 h-16 object-contain mx-auto"
             />
@@ -37,6 +41,8 @@ const CapitalPrimeExperiencia = () => {
 
           <article className="sm:col-span-1 col-span-3 space-y-3">
             <img
+              loading="lazy"
+              decoding="async"
               src={paginaListoIcono}
               className="w-16 h-16 object-contain mx-auto"
             />

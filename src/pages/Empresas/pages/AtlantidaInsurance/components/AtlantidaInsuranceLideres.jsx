@@ -25,6 +25,8 @@ const AtlantidaInsuranceLideres = () => {
 
           <article className="sm:col-span-1 col-span-3 md:my-0 my-9">
             <img
+              loading="lazy"
+              decoding="async"
               src={manoDolarIcono}
               className="w-16 h-16 object-contain mx-auto"
             />
@@ -46,6 +48,8 @@ const AtlantidaInsuranceLideres = () => {
 
           <article className="sm:col-span-1 col-span-3 space-y-3">
             <img
+              loading="lazy"
+              decoding="async"
               src={paginaListoIcono}
               className="w-16 h-16 object-contain mx-auto"
             />

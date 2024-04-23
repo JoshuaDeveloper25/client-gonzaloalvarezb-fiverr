@@ -7,7 +7,7 @@ const CapitalPrimeFeatures = () => {
       <div className="container-page space-y-8 my-16">
         {/* 1 */}
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center md:gap-3 gap-0">
-          <article className="text-secondary-color md:py-8 py-2 lg:ms-0 ms-4">
+          <article className="text-secondary-color md:py-5 py-2">
             <h2
               className=" text-3xl text-primary-color mb-2"
               style={{ fontFamily: "Nunito Sans Black" }}
@@ -17,11 +17,11 @@ const CapitalPrimeFeatures = () => {
 
             <p className="text-2xl leading-7">
               Servicio al cliente y ventas{" "}
-              <span className="block">omnicanal</span>
+              <span className="sm:block inline">omnicanal</span>
             </p>
           </article>
 
-          <article className="max-w-xl">
+          <article className="lg:max-w-xl max-w-md sm:mt-0 mt-2">
             <img
               decoding="async"
               loading="lazy"
@@ -33,8 +33,8 @@ const CapitalPrimeFeatures = () => {
         </div>
 
         {/* 2 */}
-        <div className="flex flex-col lg:flex-row items-center md:gap-3 gap-0">
-          <article className="max-w-xl">
+        <div className="flex flex-col lg:flex-row items-center md:gap-5 gap-0">
+          <article className="lg:max-w-xl max-w-md sm:mb-0 mb-2">
             <img
               decoding="async"
               loading="lazy"
@@ -44,19 +44,19 @@ const CapitalPrimeFeatures = () => {
             />
           </article>
 
-          <article className="text-secondary-color md:py-8 py-2 md:ms-5 ms-4">
+          <article className="text-secondary-color md:py-5 py-2">
             <h2
-              className=" text-3xl text-primary-color mb-2"
+              className="max-w-[30rem] sm:mx-0 mx-auto text-3xl text-primary-color mb-2"
               style={{ fontFamily: "Nunito Sans Black" }}
             >
               Gestión y administración de{" "}
-              <span className="block">cartera, ventas y atención al</span>{" "}
+              <span className="">cartera, ventas y atención al</span>{" "}
               cliente
             </h2>
 
-            <p className="text-2xl  leading-8">
+            <p className="text-2xl max-w-[30rem] sm:mx-0 mx-auto  leading-8">
               Contamos con la capacidad para{" "}
-              <span className="block">brindar soluciones de forma</span> rápida
+              <span className="sm:block inline">brindar soluciones de forma</span> rápida
               y eficiente.{" "}
             </p>
           </article>

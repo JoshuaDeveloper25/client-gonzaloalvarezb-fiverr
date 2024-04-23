@@ -4,6 +4,7 @@ import GobiernoCorporativoInicio from "./components/GobiernoCorporativoInicio";
 import subfooter15 from "../../images/subfooter15.jpg";
 import SubFooter from "../../components/SubFooter";
 import GobiernoCorporativoDirectorios from "./components/GobiernoCorporativoDirectorios";
+import GobiernoCorporativoAdministradores from "./components/GobiernoCorporativoAdministradores";
 
 const GobiernoCorporativo = () => {
   return (
@@ -19,6 +20,9 @@ const GobiernoCorporativo = () => {
 
       {/* Banner Rojo */}
       <RedBanner bannerTitle={`Administradores`} />
+
+      {/* Administradores */}
+      <GobiernoCorporativoAdministradores />
 
       {/* Subfooter 15 */}
       <SubFooter
