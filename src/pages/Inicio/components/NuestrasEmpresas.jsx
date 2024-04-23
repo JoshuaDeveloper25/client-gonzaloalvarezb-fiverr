@@ -3,6 +3,12 @@ import nuestraEmpresa2 from "../../../images/nuestraempresa2.png";
 import nuestraEmpresa3 from "../../../images/nuestraempresa3.png";
 import nuestraEmpresa4 from "../../../images/nuestraempresa4.png";
 
+import nuestraEmpresa5 from "../../../images/nuestraempresa5.png";
+import nuestraEmpresa6 from "../../../images/nuestraempresa6.png";
+import nuestraEmpresa7 from "../../../images/nuestraempresa7.png";
+import nuestraEmpresa8 from "../../../images/nuestraempresa8.png";
+
+
 import Slider from "react-slick";
 
 const NuestrasEmpresas = () => {
@@ -99,7 +105,7 @@ const NuestrasEmpresas = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src={nuestraEmpresa1}
+                src={nuestraEmpresa5}
                 className="w-40 h-12 object-contain m-auto flex justify-center items-center"
               />
             </div>
@@ -108,7 +114,7 @@ const NuestrasEmpresas = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src={nuestraEmpresa2}
+                src={nuestraEmpresa6}
                 className="w-32 m-auto flex justify-center items-center"
               />
             </div>
@@ -117,7 +123,7 @@ const NuestrasEmpresas = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src={nuestraEmpresa3}
+                src={nuestraEmpresa7}
                 className="w-32 m-auto flex justify-center items-center"
               />
             </div>
@@ -126,7 +132,7 @@ const NuestrasEmpresas = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                src={nuestraEmpresa4}
+                src={nuestraEmpresa8}
                 className="w-40 h-12 object-contain m-auto flex justify-center items-center"
               />
             </div>
