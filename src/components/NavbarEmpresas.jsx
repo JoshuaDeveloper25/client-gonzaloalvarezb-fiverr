@@ -1,4 +1,4 @@
-import logoAtlantida from "../images/logo-atlantida.png";
+import logoReditum from "../images/nuestraempresa6.png";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
@@ -11,18 +11,18 @@ const NavbarEmpresas = () => {
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-8">
         <div>
-          <Link to={`/`}>
+          <Link to={`/pagina-empresas`}>
             <img
               decoding="async"
               loading="lazy"
               className="w-44"
-              src={logoAtlantida}
-              alt={`Logo Banco Atlantida`}
+              src={logoReditum}
+              alt={`Logo Reditum`}
             />
           </Link>
         </div>
 
-        <div className="hidden lg:flex gap-6">
+        <div className="hidden lg:flex gap-16">
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
@@ -30,7 +30,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/`}
+            to={`/pagina-empresas`}
           >
             Inicio
           </NavLink>
@@ -42,9 +42,9 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/quienes-somos`}
+            to={`/pagina-empresas/solicitar-demo`}
           >
-            ¿Quiénes somos?
+            Solicitar demo
           </NavLink>
 
           <NavLink
@@ -54,9 +54,9 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/gobierno-corporativo`}
+            to={`/pagina-empresas/noticias`}
           >
-            Gobierno Corporativo
+            Noticias
           </NavLink>
 
           <NavLink
@@ -66,33 +66,9 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/presencia-regional`}
+            to={`/pagina-empresas/contacto`}
           >
-            Presencia Regional
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
-            }
-            to={`/empresas`}
-          >
-            Empresas
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
-            }
-            to={`/reconocimientos`}
-          >
-            Reconocimientos
+            Contacto
           </NavLink>
         </div>
 
@@ -137,8 +113,8 @@ const NavbarEmpresas = () => {
                 decoding="async"
                 loading="lazy"
                 className="inline w-28"
-                src={logoAtlantida}
-                alt={`Logo Banco Atlantida`}
+                src={logoReditum}
+                alt={`Logo Reditum`}
               />
             </Link>
           </div>
@@ -176,7 +152,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/`}
+              to={`/pagina-empresas`}
             >
               Inicio
             </NavLink>
@@ -188,9 +164,9 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/quienes-somos`}
+              to={`/pagina-empresas/solicitar-demo`}
             >
-              ¿Quiénes somos?
+              Solicitar demo
             </NavLink>
 
             <NavLink
@@ -200,9 +176,9 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/gobierno-corporativo`}
+              to={`/pagina-empresas/noticias`}
             >
-              Gobierno Corporativo
+              Noticias
             </NavLink>
 
             <NavLink
@@ -212,33 +188,9 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/presencia-regional`}
+              to={`/pagina-empresas/contacto`}
             >
-              Presencia Regional
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
-              }
-              to={`/empresas`}
-            >
-              Empresas
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
-              }
-              to={`/reconocimientos`}
-            >
-              Reconocimientos
+              Contacto
             </NavLink>
           </div>
         </div>

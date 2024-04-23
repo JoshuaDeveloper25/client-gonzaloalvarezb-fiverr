@@ -109,7 +109,7 @@ const router = createBrowserRouter([
     element: <LayoutEmpresas />,
     children: [
       {
-        path: "/reditum-page",
+        path: "/pagina-empresas",
         element: <ReditumPage />,
         index: true,
       },
