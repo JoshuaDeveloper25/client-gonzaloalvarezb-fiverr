@@ -24,10 +24,11 @@ import AtlantidaInsurance from "./pages/Empresas/pages/AtlantidaInsurance/Atlant
 import CapitalPrime from "./pages/Empresas/pages/CapitalPrime/CapitalPrime";
 import Reconocimientos from "./pages/Reconocimientos/Reconocimientos";
 import GobiernoCorporativo from "./pages/GobiernoCorporativo/GobiernoCorporativo";
+import LayoutEmpresas from "./pages/LayoutEmpresas";
+import ReditumPage from "./pages/LayoutEmpresas/Reditum/ReditumPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <Root />,
     children: [
       {
@@ -100,6 +101,17 @@ const router = createBrowserRouter([
       {
         element: <Reconocimientos />,
         path: "/reconocimientos",
+      },
+    ],
+  },
+
+  {
+    element: <LayoutEmpresas />,
+    children: [
+      {
+        path: "/reditum-page",
+        element: <ReditumPage />,
+        index: true,
       },
     ],
   },
