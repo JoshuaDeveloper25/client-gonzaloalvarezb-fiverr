@@ -9,7 +9,7 @@ const NavbarReditum = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="container-page py-2">
+    <nav className="container-page py-2 family-nunito-black">
       <div className="flex justify-between items-center gap-8">
         <div>
           <Link to={`/reditum-inicio`}>

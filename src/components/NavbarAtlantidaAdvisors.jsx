@@ -28,8 +28,8 @@ const NavbarAtlantidaAdvisors = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
             to={`/advisors-inicio`}
           >
@@ -40,8 +40,8 @@ const NavbarAtlantidaAdvisors = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
             to={`/advisors-asesoria-empresas`}
           >
@@ -52,8 +52,8 @@ const NavbarAtlantidaAdvisors = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
             to={`/advisors-asesoria-inversionistas`}
           >
@@ -64,8 +64,8 @@ const NavbarAtlantidaAdvisors = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
             to={`/advisors-publicaciones`}
           >
@@ -76,8 +76,8 @@ const NavbarAtlantidaAdvisors = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
             to={`/advisors-contacto`}
           >
@@ -162,8 +162,8 @@ const NavbarAtlantidaAdvisors = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
               to={`/advisors-inicio`}
             >
@@ -174,8 +174,8 @@ const NavbarAtlantidaAdvisors = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
               to={`/advisors-asesoria-empresas`}
             >
@@ -186,8 +186,8 @@ const NavbarAtlantidaAdvisors = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
               to={`/advisors-asesoria-inversionistas`}
             >
@@ -198,8 +198,8 @@ const NavbarAtlantidaAdvisors = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold hover:text-primary-color"
-                  : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
               to={`/advisors-publicaciones`}
             >
@@ -210,8 +210,8 @@ const NavbarAtlantidaAdvisors = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
               to={`/advisors-contacto`}
             >

@@ -10,7 +10,7 @@ const AtlantidaAdvisorsAsesoriaInversionistas = () => {
       {/* Navbar Atlantida Advisors */}
       <NavbarAtlantidaAdvisors />
 
-      {/* Atlantida Advisors - Asesoria Inversionistas */}
+      {/* Atlantida Advisors - Asesoria Inversionistas Header */}
       <AtlantidaAdvisorsAsesoriaInversionistasHeader />
 
       {/* Atlantida Advisors - Features  */}
