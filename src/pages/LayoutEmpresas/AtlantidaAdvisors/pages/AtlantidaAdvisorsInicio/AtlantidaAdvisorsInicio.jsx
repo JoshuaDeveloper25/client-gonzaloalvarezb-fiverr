@@ -1,8 +1,8 @@
 import AtlantidaAdvisorsHeader from "./components/AtlantidaAdvisorsHeader";
-import SubFooter from "../../../components/SubFooter";
+import SubFooter from "../../../../../components/SubFooter";
 import AtlantidaAdvisorsFeatures from "./components/AtlantidaAdvisorsFeatures";
 
-const AtlantidaAdvisors = () => {
+const AtlantidaAdvisorsInicio = () => {
   return (
     <>
       {/* Atlantida Advisors Header */}
@@ -12,7 +12,7 @@ const AtlantidaAdvisors = () => {
       <AtlantidaAdvisorsFeatures />
 
       {/* Subfooter 17 */}
-      <SubFooter
+      <SubFooter 
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Tu socio en asesoría financiera confiable`}
@@ -21,4 +21,4 @@ const AtlantidaAdvisors = () => {
   );
 };
 
-export default AtlantidaAdvisors;
+export default AtlantidaAdvisorsInicio;
