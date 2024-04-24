@@ -25,7 +25,8 @@ import CapitalPrime from "./pages/Empresas/pages/CapitalPrime/CapitalPrime";
 import Reconocimientos from "./pages/Reconocimientos/Reconocimientos";
 import GobiernoCorporativo from "./pages/GobiernoCorporativo/GobiernoCorporativo";
 import LayoutEmpresas from "./pages/LayoutEmpresas";
-import ReditumPage from "./pages/LayoutEmpresas/Reditum/ReditumPage";
+import ReditumInicio from "./pages/LayoutEmpresas/Reditum/pages/ReditumInicio/ReditumInicio";
+import ReditumContacto from "./pages/LayoutEmpresas/Reditum/pages/ReditumContacto/ReditumContacto";
 
 const router = createBrowserRouter([
   {
@@ -109,9 +110,14 @@ const router = createBrowserRouter([
     element: <LayoutEmpresas />,
     children: [
       {
-        path: "/pagina-empresas",
-        element: <ReditumPage />,
+        path: "/reditum",
+        element: <ReditumInicio />,
         index: true,
+      },
+
+      {
+        path: "/contacto",
+        element: <ReditumContacto />,
       },
     ],
   },

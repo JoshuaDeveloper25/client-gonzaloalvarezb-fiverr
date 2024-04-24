@@ -11,7 +11,7 @@ const NavbarEmpresas = () => {
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-8">
         <div>
-          <Link to={`/pagina-empresas`}>
+          <Link to={`/reditum`}>
             <img
               decoding="async"
               loading="lazy"
@@ -30,7 +30,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/pagina-empresas`}
+            to={`/reditum`}
           >
             Inicio
           </NavLink>
@@ -42,7 +42,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/pagina-empresas/solicitar-demo`}
+            to={`/solicitar-demo`}
           >
             Solicitar demo
           </NavLink>
@@ -54,7 +54,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/pagina-empresas/noticias`}
+            to={`/noticias`}
           >
             Noticias
           </NavLink>
@@ -66,7 +66,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/pagina-empresas/contacto`}
+            to={`/contacto`}
           >
             Contacto
           </NavLink>
@@ -108,7 +108,7 @@ const NavbarEmpresas = () => {
           aria-labelledby="drawer-label"
         >
           <div>
-            <Link className="inline" to={`/`}>
+            <Link className="inline" to={`/reditum`}>
               <img
                 decoding="async"
                 loading="lazy"
@@ -152,7 +152,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/pagina-empresas`}
+              to={`/reditum`}
             >
               Inicio
             </NavLink>
@@ -164,7 +164,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/pagina-empresas/solicitar-demo`}
+              to={`/solicitar-demo`}
             >
               Solicitar demo
             </NavLink>
@@ -176,7 +176,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/pagina-empresas/noticias`}
+              to={`/noticias`}
             >
               Noticias
             </NavLink>
@@ -188,7 +188,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/pagina-empresas/contacto`}
+              to={`/contacto`}
             >
               Contacto
             </NavLink>

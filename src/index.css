@@ -63,6 +63,10 @@ body {
   .button-red-primary {
     @apply text-white font-light rounded-full text-center bg-[#E21E31] py-1 px-10 inline-block animation-fade hover:bg-[#E21E31]/60;
   }
+
+  .button-red-primary-outline {
+    @apply text-[#E21E31] font-light rounded-full text-center border-[#E21E31] border py-1 px-10 inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
+  }
 }
 
 /* Carousel Nuestras Empresas - Inicio */

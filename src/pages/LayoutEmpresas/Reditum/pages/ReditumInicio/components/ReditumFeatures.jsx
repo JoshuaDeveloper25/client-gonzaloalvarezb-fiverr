@@ -1,4 +1,4 @@
-import inversionImagen from "../../../../images/reditum-metricas.png";
+import inversionImagen from "../../../../../../images/reditum-metricas.png";
 
 const ReditumFeatures = () => {
   return (

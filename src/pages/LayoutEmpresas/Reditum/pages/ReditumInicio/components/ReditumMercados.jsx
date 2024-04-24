@@ -1,7 +1,7 @@
-import sistemaFinancieroIcono from "../../../../images/mercadoDisponible1.png";
-import mercadoValoresIcono from "../../../../images/indicador9.png";
-import segurosIcono from "../../../../images/mercadoDisponible3.png";
-import economiaLocal from "../../../../images/mercadoDisponible4.png";
+import sistemaFinancieroIcono from "../../../../../../images/mercadoDisponible1.png";
+import mercadoValoresIcono from "../../../../../../images/indicador9.png";
+import segurosIcono from "../../../../../../images/mercadoDisponible3.png";
+import economiaLocal from "../../../../../../images/mercadoDisponible4.png";
 
 const ReditumMercados = () => {
   return (

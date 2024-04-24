@@ -1,4 +1,4 @@
-import SubFooter from "../../../components/SubFooter";
+import SubFooter from "../../../../../components/SubFooter";
 import ReditumAplicacionMovil from "./components/ReditumAplicacionMovil";
 import ReditumFeatures from "./components/ReditumFeatures";
 import ReditumInicio from "./components/ReditumInicio";

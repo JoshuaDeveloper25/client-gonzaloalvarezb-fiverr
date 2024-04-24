@@ -1,4 +1,4 @@
-import checkIcon from "../../../../images/indicador14.png";
+import checkIcon from "../../../../../../images/indicador14.png";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
