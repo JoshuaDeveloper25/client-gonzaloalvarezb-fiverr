@@ -55,7 +55,7 @@ const NavbarAtlantidaAdvisors = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/advisors-noticias`}
+            to={`/advisors-asesoria-inversionistas`}
           >
             Asesoría para inversionistas
           </NavLink>
@@ -189,7 +189,7 @@ const NavbarAtlantidaAdvisors = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/advisors-noticias`}
+              to={`/advisors-asesoria-inversionistas`}
             >
               Asesoría para inversionistas
             </NavLink>

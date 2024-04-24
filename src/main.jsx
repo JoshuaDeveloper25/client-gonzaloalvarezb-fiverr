@@ -29,6 +29,7 @@ import ReditumInicio from "./pages/LayoutEmpresas/Reditum/pages/ReditumInicio/Re
 import ReditumContacto from "./pages/LayoutEmpresas/Reditum/pages/ReditumContacto/ReditumContacto";
 import AtlantidaAdvisorsAsesoriaEmpresas from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsAsesoriaEmpresas/AtlantidaAdvisorsAsesoriaEmpresas";
 import AtlantidaAdvisorsInicio from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsInicio/AtlantidaAdvisorsInicio";
+import AtlantidaAdvisorsAsesoriaInversionistas from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsAsesoriaInversionistas/AtlantidaAdvisorsAsesoriaInversionistas";
 
 const router = createBrowserRouter([
   {
@@ -132,6 +133,11 @@ const router = createBrowserRouter([
       {
         path: "/advisors-asesoria-empresas",
         element: <AtlantidaAdvisorsAsesoriaEmpresas />,
+      },
+
+      {
+        path: "/advisors-asesoria-inversionistas",
+        element: <AtlantidaAdvisorsAsesoriaInversionistas />,
       },
     ],
   },
