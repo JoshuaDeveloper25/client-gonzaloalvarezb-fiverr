@@ -15,7 +15,7 @@ const ReditumFeatures = () => {
             src={computadoraListoIcono}
             alt="Computadora Listo Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3  className="family-nunito-black text-lg">
             Acceso a <span className="block">Mercados</span>
           </h3>
           <div className="h-2 w-10 mx-auto bg-primary-color my-6"></div>
@@ -30,7 +30,7 @@ const ReditumFeatures = () => {
             src={tiempoIcono}
             alt="Tiempo Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3  className="family-nunito-black text-lg">
             Información <span className="block">Actualizada</span>
             en Vivo
           </h3>
@@ -49,10 +49,7 @@ const ReditumFeatures = () => {
             src={tiempoMetricasIcono}
             alt="Tiempo Metricas Icono"
           />
-          <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-lg"
-          >
+          <h3 className="family-nunito-black text-lg">
             Herramientas <span className="block">Dinámicas</span> para Análisis
           </h3>
           <div className="h-2 w-10 mx-auto bg-primary-color my-6"></div>
@@ -71,8 +68,7 @@ const ReditumFeatures = () => {
             alt="Lupa Icono"
           />
           <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-lg mt-7"
+            className="text-lg mt-7 family-nunito-black"
           >
             Servicio de
             <span className="block">Investigación</span>

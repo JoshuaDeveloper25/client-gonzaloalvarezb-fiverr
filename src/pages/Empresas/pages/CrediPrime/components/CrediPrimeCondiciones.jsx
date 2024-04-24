@@ -5,8 +5,7 @@ const CrediPrimeCondiciones = () => {
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="md:text-4xl text-3xl max-w-sm md:text-start text-center text-secondary-color">
             <span
-              className="lg:block inline"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className="lg:block inline family-nunito-black"
             >
               Las mejores condiciones
             </span>{" "}

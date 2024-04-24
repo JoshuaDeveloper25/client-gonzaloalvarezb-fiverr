@@ -14,8 +14,8 @@ const ReditumInicio = () => {
             alt="Logo Grupo Sur Atlántida"
           />
           <h2
-            className="text-primary-color text-2xl"
-            style={{ fontFamily: "Nunito Sans Black" }}
+            className="text-primary-color text-2xl family-nunito-black"
+            
           >
              
             Reditum Market Data

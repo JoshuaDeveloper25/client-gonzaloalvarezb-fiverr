@@ -14,10 +14,7 @@ const CrediPrimeFeatures = () => {
             src={manoDolarIcono}
             alt="Icono Mano Dolar"
           />
-          <h4
-            className="text-primary-color"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h4 className="family-nunito-black text-primary-color">
             + 5000 Autos
           </h4>
           <p className="text-secondary-color">Financiados</p>
@@ -31,10 +28,7 @@ const CrediPrimeFeatures = () => {
             src={carroIcono}
             alt="Icono de Carro"
           />
-          <h4
-            className="text-primary-color"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h4 className="family-nunito-black text-primary-color">
             +$ 80 Millones
           </h4>
           <p className="text-secondary-color">
@@ -50,10 +44,7 @@ const CrediPrimeFeatures = () => {
             src={carroHombreIcono}
             alt="Icono de Hombre con Carro"
           />
-          <h4
-            className="text-primary-color"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h4 className="family-nunito-black text-primary-color">
             +$ 250 Consesionarios
           </h4>
           <p className="text-secondary-color">Trabajan con nosotros</p>

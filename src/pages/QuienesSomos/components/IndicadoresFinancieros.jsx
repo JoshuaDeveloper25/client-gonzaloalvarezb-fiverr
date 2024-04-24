@@ -10,10 +10,7 @@ const IndicadoresFinancieros = () => {
   return (
     <section className="container-page mb-8">
       <div className="text-center">
-        <h2
-          className="text-primary-color text-2xl"
-          style={{ fontFamily: "Nunito Sans Black" }}
-        >
+        <h2 className="family-nunito-black text-primary-color text-2xl">
           Principales Indicadores Financieros
         </h2>
         <h3 className="text-secondary-color text-xl">
@@ -31,10 +28,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 1"
           />
           <h3 className="text-secondary-color my-2">Activos</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             US $ 8.1 <span className="block">Billones</span>
           </h3>
         </div>
@@ -48,10 +42,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 2"
           />
           <h3 className="text-secondary-color my-2">Capital</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             US $ 664.7 <span className="block">Millones</span>
           </h3>
         </div>
@@ -65,10 +56,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 3"
           />
           <h3 className="text-secondary-color my-2">Utilidades</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             US $ 40.8 <span className="block">Millones</span>
           </h3>
         </div>
@@ -82,10 +70,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 4"
           />
           <h3 className="text-secondary-color my-2">Activos</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             US $ 19.5 <span className="block">Billones</span>
           </h3>
         </div>
@@ -99,10 +84,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 5"
           />
           <h3 className="text-secondary-color my-2">Agencias</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             +268
           </h3>
         </div>
@@ -116,10 +98,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 6"
           />
           <h3 className="text-secondary-color my-2">Clientes</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             +4.2 <span className="block">Millones</span>
           </h3>
         </div>
@@ -133,10 +112,7 @@ const IndicadoresFinancieros = () => {
             alt="Indicador 7"
           />
           <h3 className="text-secondary-color my-2">Empleados</h3>
-          <h3
-            className="text-secondary-color leading-5"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color leading-5">
             5.974
           </h3>
         </div>

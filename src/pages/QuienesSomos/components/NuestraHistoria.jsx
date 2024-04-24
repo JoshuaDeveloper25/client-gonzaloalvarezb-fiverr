@@ -5,8 +5,8 @@ const NuestraHistoria = () => {
         <article className="flex-1">
           <div className="flex flex-col gap-5">
             <h2
-              className="md:text-start text-center text-primary-color text-3xl leading-7"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className="md:text-start text-center text-primary-color text-3xl leading-7 family-nunito-black"
+              
             >
               Nuestra <span className="block">Historia</span>
             </h2>

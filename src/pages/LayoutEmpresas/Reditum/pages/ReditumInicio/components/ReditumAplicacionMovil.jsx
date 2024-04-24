@@ -7,10 +7,7 @@ const ReditumAplicacionMovil = () => {
     <section className="md:py-14 py-2">
       <div className="container-page flex flex-col-reverse md:flex-row justify-between md:items-start items-center gap-3">
         <article className="text-secondary-color md:py-8 py-2">
-          <h2
-            className="max-w-md text-3xl"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h2 className="max-w-md text-3xl family-nunito-black">
             Aplicación Móvil
           </h2>
 
@@ -20,10 +17,7 @@ const ReditumAplicacionMovil = () => {
             Android.
           </p>
 
-          <p
-            className="text-secondary-color font-bold"
-            style={{ fontFamily: "Nunito Sans Regular" }}
-          >
+          <p className="text-secondary-color font-bold family-nunito-regular">
             La aplicación cuenta con:
           </p>
 
@@ -81,10 +75,7 @@ const ReditumAplicacionMovil = () => {
           </div>
 
           <div className="flex md:gap-8 gap-4">
-            <button
-              style={{ lineHeight: "1" }}
-              className="hover:opacity-55 animation-fade flex items-center gap-3 bg-[#E8E8E8] md:px-6 px-2 py-2 rounded-md"
-            >
+            <button className="leading-[1] hover:opacity-55 animation-fade flex items-center gap-3 bg-[#E8E8E8] md:px-6 px-2 py-2 rounded-md">
               <div>
                 <FaGooglePlay className="text-black text-xl" />
               </div>
@@ -94,10 +85,7 @@ const ReditumAplicacionMovil = () => {
               </div>
             </button>
 
-            <button
-              style={{ lineHeight: "1" }}
-              className="hover:opacity-55 animation-fade flex items-center gap-3 bg-[#E8E8E8] md:px-6 px-2 py-2 rounded-md"
-            >
+            <button className="leading-[1] hover:opacity-55 animation-fade flex items-center gap-3 bg-[#E8E8E8] md:px-6 px-2 py-2 rounded-md">
               <div>
                 <FaApple className="text-black text-2xl" />
               </div>

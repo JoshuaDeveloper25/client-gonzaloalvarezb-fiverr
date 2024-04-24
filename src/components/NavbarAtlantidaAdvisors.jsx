@@ -1,36 +1,37 @@
-import logoAtlantida from "../images/logo-atlantida.png";
+import logoAtlantidaAdvisors from "../images/nuestraempresa9.png";
+
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
-const Navbar = () => {
+const NavbarAtlantidaAdvisors = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-8">
         <div>
-          <Link to={`/`}>
+          <Link to={`/advisors-inicio`}>
             <img
               decoding="async"
               loading="lazy"
               className="w-44"
-              src={logoAtlantida}
-              alt={`Logo Banco Atlantida`}
+              src={logoAtlantidaAdvisors}
+              alt={`Logo Atlantida Advisors`}
             />
           </Link>
         </div>
 
-        <div className="hidden lg:flex gap-6">
+        <div className="hidden lg:flex gap-8">
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                ? "text-primary-color font-extrabold hover:text-primary-color"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/`}
+            to={`/advisors-inicio`}
           >
             Inicio
           </NavLink>
@@ -39,60 +40,48 @@ const Navbar = () => {
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                ? "text-primary-color font-extrabold hover:text-primary-color"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/quienes-somos`}
+            to={`/advisors-asesoria-empresas`}
           >
-            ¿Quiénes somos?
+            Asesoría de empresas
           </NavLink>
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                ? "text-primary-color font-extrabold hover:text-primary-color"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/gobierno-corporativo`}
+            to={`/advisors-noticias`}
           >
-            Gobierno Corporativo
+            Asesoría para inversionistas
           </NavLink>
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                ? "text-primary-color font-extrabold hover:text-primary-color"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/presencia-regional`}
+            to={`/advisors-publicaciones`}
           >
-            Presencia Regional
+            Publicaciones
           </NavLink>
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                ? "text-primary-color font-extrabold hover:text-primary-color"
+                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/empresas`}
+            to={`/advisors-contacto`}
           >
-            Empresas
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/reconocimientos`}
-          >
-            Reconocimientos
+            Contacto
           </NavLink>
         </div>
 
@@ -132,13 +121,13 @@ const Navbar = () => {
           aria-labelledby="drawer-label"
         >
           <div>
-            <Link className="inline" to={`/`}>
+            <Link className="inline" to={`/advisors-inicio`}>
               <img
                 decoding="async"
                 loading="lazy"
                 className="inline w-28"
-                src={logoAtlantida}
-                alt={`Logo Banco Atlantida`}
+                src={logoAtlantidaAdvisors}
+                alt={`Logo Atlantida Advisors`}
               />
             </Link>
           </div>
@@ -173,10 +162,10 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/`}
+              to={`/advisors-inicio`}
             >
               Inicio
             </NavLink>
@@ -185,64 +174,48 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/quienes-somos`}
+              to={`/advisors-asesoria-empresas`}
             >
-              ¿Quiénes somos?
+              Asesoría de empresas
             </NavLink>
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-
-              to={`/gobierno-corporativo`}
+              to={`/advisors-noticias`}
             >
-              Gobierno Corporativo
+              Asesoría para inversionistas
             </NavLink>
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  ? "text-primary-color font-extrabold hover:text-primary-color"
+                  : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
               }
-
-              to={`/presencia-regional`}
+              to={`/advisors-publicaciones`}
             >
-              Presencia Regional
+              Publicaciones
             </NavLink>
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
+                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-
-              to={`/empresas`}
+              to={`/advisors-contacto`}
             >
-              Empresas
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-
-              to={`/reconocimientos`}
-            >
-              Reconocimientos
+              Contacto
             </NavLink>
           </div>
         </div>
@@ -251,4 +224,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarAtlantidaAdvisors;

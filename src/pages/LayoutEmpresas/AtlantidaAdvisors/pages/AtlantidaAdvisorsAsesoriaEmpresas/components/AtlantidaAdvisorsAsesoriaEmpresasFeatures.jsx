@@ -7,8 +7,7 @@ const AtlantidaAdvisorsAsesoriaEmpresasFeatures = () => {
   return (
     <section className="container-page my-10">
       <h2
-        className="text-primary-color text-2xl md:mb-16 mb-4 text-center"
-        style={{ fontFamily: "Nunito Sans Black" }}
+        className="text-primary-color family-nunito-black text-2xl md:mb-16 mb-4 text-center"
       >
         Características
       </h2>
@@ -23,8 +22,8 @@ const AtlantidaAdvisorsAsesoriaEmpresasFeatures = () => {
             alt="Edificio Icono"
           />
           <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-xl border-b-2 py-1 border-primary-color"
+            
+            className="family-nunito-black text-xl border-b-2 py-1 border-primary-color"
           >
             M&A
           </h3>
@@ -44,8 +43,8 @@ const AtlantidaAdvisorsAsesoriaEmpresasFeatures = () => {
             alt="Inversión Directa Icono"
           />
           <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-xl border-b-2 py-1 border-primary-color"
+            
+            className="family-nunito-black text-xl border-b-2 py-1 border-primary-color"
           >
             Inversión Directa
           </h3>
@@ -64,8 +63,8 @@ const AtlantidaAdvisorsAsesoriaEmpresasFeatures = () => {
             alt="Gobierno Corporativo Icono"
           />
           <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-xl border-b-2 py-1 leading-6 border-primary-color"
+            
+            className="family-nunito-black text-xl border-b-2 py-1 leading-6 border-primary-color"
           >
             Buen Gobierno <span className="block">Corporativo</span>
           </h3>
@@ -85,8 +84,8 @@ const AtlantidaAdvisorsAsesoriaEmpresasFeatures = () => {
             alt="Análisis de Proyectos Icono"
           />
           <h3
-            style={{ fontFamily: "Nunito Sans Black" }}
-            className="text-xl border-b-2 py-1 border-primary-color"
+            
+            className="family-nunito-black text-xl border-b-2 py-1 border-primary-color"
           >
             Análisis de Proyectos
           </h3>

@@ -14,7 +14,7 @@ const AtlantidaCasaValoresFeatures = () => {
             src={computadoraAtlantidaIcono}
             alt="Computadora Atlantida Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="family-nunito-black text-lg">
             Administración de <span className="block">Portafolios</span>
           </h3>
           <div className="h-2 w-10 mx-auto bg-primary-color my-6"></div>
@@ -34,7 +34,7 @@ const AtlantidaCasaValoresFeatures = () => {
             src={metricasPersonasIcono}
             alt="Metricas Personas Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="text-lg family-nunito-black">
             Intermediación <span className="block">Bursátil</span>
           </h3>
           <div className="h-2 w-10 mx-auto bg-primary-color my-6"></div>
@@ -52,7 +52,7 @@ const AtlantidaCasaValoresFeatures = () => {
             src={manoDineroIcono}
             alt="Mano Dinero Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg mt-7">
+          <h3 className="family-nunito-black text-lg mt-7">
             Financiamiento
           </h3>
           <div className="h-2 w-10 mx-auto bg-primary-color my-6"></div>

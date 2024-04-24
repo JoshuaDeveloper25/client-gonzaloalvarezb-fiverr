@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const FooterEmpresas = () => {
+const FooterAtlantidaAdvisors = () => {
   const [activeElement, setActiveElement] = useState("");
 
   const handleClick = (value) => {
@@ -457,4 +457,4 @@ const FooterEmpresas = () => {
   );
 };
 
-export default FooterEmpresas;
+export default FooterAtlantidaAdvisors;

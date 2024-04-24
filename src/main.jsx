@@ -113,24 +113,24 @@ const router = createBrowserRouter([
     children: [
       // --> Reditum Pages
       {
-        path: "/reditum",
+        path: "/reditum-inicio",
         element: <ReditumInicio />,
         index: true,
       },
 
       {
-        path: "/contacto",
+        path: "/reditum-contacto",
         element: <ReditumContacto />,
       },
 
       // --> Atlantida Advisors Pages
       {
-        path: "/inicio",
+        path: "/advisors-inicio",
         element: <AtlantidaAdvisorsInicio />,
       },
 
       {
-        path: "/asesoria-empresas",
+        path: "/advisors-asesoria-empresas",
         element: <AtlantidaAdvisorsAsesoriaEmpresas />,
       },
     ],

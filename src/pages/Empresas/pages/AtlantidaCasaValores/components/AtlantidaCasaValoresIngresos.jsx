@@ -11,8 +11,7 @@ const AtlantidaCasaValoresIngresos = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center md:gap-3 gap-0">
           <article className="text-secondary-color md:py-8 py-2 lg:ms-0 ms-4">
             <h2
-              className=" text-3xl text-primary-color"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className=" text-3xl text-primary-color family-nunito-black"
             >
               Más de USD $6.2 Billones
             </h2>
@@ -45,8 +44,7 @@ const AtlantidaCasaValoresIngresos = () => {
 
           <article className="text-secondary-color md:py-8 py-2 md:ms-5 ms-4">
             <h2
-              className=" text-3xl text-primary-color"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className=" text-3xl text-primary-color family-nunito-black"
             >
               Más de USD $500 Millones
             </h2>
@@ -62,8 +60,7 @@ const AtlantidaCasaValoresIngresos = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center md:gap-3 gap-0">
           <article className="text-secondary-color md:py-8 py-2 lg:ms-0 ms-4">
             <h2
-              className=" text-3xl text-primary-color"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className=" text-3xl text-primary-color family-nunito-black"
             >
               Más de USD $210 Millones
             </h2>
@@ -99,8 +96,7 @@ const AtlantidaCasaValoresIngresos = () => {
 
           <article className="text-secondary-color md:py-8 py-2 md:ms-5 ms-4">
             <h2
-              className=" text-3xl text-primary-color"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className=" text-3xl text-primary-color family-nunito-black"
             >
               Administración de Portafolios
             </h2>

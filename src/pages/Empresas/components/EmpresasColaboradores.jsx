@@ -5,7 +5,7 @@ const EmpresasColaboradores = () => {
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="md:text-5xl text-4xl text-secondary-color">
             Contamos con más de{" "}
-            <span className="lg:block inline" style={{ fontFamily: "Nunito Sans Black" }}>
+            <span className="lg:block inline family-nunito-black">
               500 colaboradores
             </span>
           </h2>

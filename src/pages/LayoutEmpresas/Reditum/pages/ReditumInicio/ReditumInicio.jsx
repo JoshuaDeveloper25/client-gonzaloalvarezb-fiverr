@@ -1,3 +1,5 @@
+import FooterReditum from "../../../../../components/FooterReditum";
+import NavbarReditum from "../../../../../components/NavbarReditum";
 import SubFooter from "../../../../../components/SubFooter";
 import ReditumAplicacionMovil from "./components/ReditumAplicacionMovil";
 import ReditumFeatures from "./components/ReditumFeatures";
@@ -10,6 +12,9 @@ import ReditumServicios from "./components/ReditumServicios";
 const ReditumPage = () => {
   return (
     <>
+      {/* Navbar Reditum */}
+      <NavbarReditum />
+
       {/* Reditum Inicio - Header */}
       <ReditumInicio />
 
@@ -31,6 +36,9 @@ const ReditumPage = () => {
         addClassName={`bg-center`}
         title={`Reditum, tu ventaja inteligente en la bolsa`}
       />
+
+      {/* Footer Reditum */}
+      <FooterReditum />
     </>
   );
 };

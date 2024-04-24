@@ -6,8 +6,7 @@ const ExperienciaYears = () => {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 row-gap-3">
         <article className="flex-1">
           <h2
-            className="text-4xl text-secondary-color"
-            style={{ fontFamily: "Nunito Sans Black" }}
+            className="text-4xl text-secondary-color family-nunito-black"
           >
             111 años de <span className="mb:inline block">trayectoria y</span>{" "}
             experiencia

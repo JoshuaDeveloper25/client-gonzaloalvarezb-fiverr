@@ -1,17 +1,18 @@
 import logoReditum from "../images/nuestraempresa6.png";
+
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
-const NavbarEmpresas = () => {
+const NavbarReditum = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-8">
         <div>
-          <Link to={`/reditum`}>
+          <Link to={`/reditum-inicio`}>
             <img
               decoding="async"
               loading="lazy"
@@ -30,7 +31,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/reditum`}
+            to={`/reditum-inicio`}
           >
             Inicio
           </NavLink>
@@ -42,7 +43,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/solicitar-demo`}
+            to={`/reditum-solicitar-demo`}
           >
             Solicitar demo
           </NavLink>
@@ -54,7 +55,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/noticias`}
+            to={`/reditum-noticias`}
           >
             Noticias
           </NavLink>
@@ -66,7 +67,7 @@ const NavbarEmpresas = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/contacto`}
+            to={`/reditum-contacto`}
           >
             Contacto
           </NavLink>
@@ -108,7 +109,7 @@ const NavbarEmpresas = () => {
           aria-labelledby="drawer-label"
         >
           <div>
-            <Link className="inline" to={`/reditum`}>
+            <Link className="inline" to={`/reditum-inicio`}>
               <img
                 decoding="async"
                 loading="lazy"
@@ -152,7 +153,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/reditum`}
+              to={`/reditum-inicio`}
             >
               Inicio
             </NavLink>
@@ -164,7 +165,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/solicitar-demo`}
+              to={`/reditum-solicitar-demo`}
             >
               Solicitar demo
             </NavLink>
@@ -176,7 +177,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/noticias`}
+              to={`/reditum-noticias`}
             >
               Noticias
             </NavLink>
@@ -188,7 +189,7 @@ const NavbarEmpresas = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/contacto`}
+              to={`/reditum-contacto`}
             >
               Contacto
             </NavLink>
@@ -199,4 +200,4 @@ const NavbarEmpresas = () => {
   );
 };
 
-export default NavbarEmpresas;
+export default NavbarReditum;

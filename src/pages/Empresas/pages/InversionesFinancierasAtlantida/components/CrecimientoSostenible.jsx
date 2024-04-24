@@ -5,7 +5,7 @@ const CrecimientoSostenible = () => {
         <article className="flex-1 md:mb-0 mb-4">
           <h2 className="max-w-sm mx-auto text-4xl text-secondary-color">
             Confía en nosotros para un
-            <span style={{ fontFamily: "Nunito Sans Black" }}>
+            <span className="family-nunito-black">
               {" "}
               crecimiento sostenible
             </span>{" "}

@@ -21,10 +21,7 @@ const GobiernoCorporativoDirectorios = () => {
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
           <div className="border-b-2 border-primary-color py-8">
-            <h3
-              className="text-center text-xl text-primary-color leading-5"
-              style={{ fontFamily: "Nunito Sans Black" }}
-            >
+            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-5">
               Grupo Sur Atlántida
             </h3>
           </div>
@@ -270,10 +267,7 @@ const GobiernoCorporativoDirectorios = () => {
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
           <div className="border-b-2 border-primary-color py-5">
-            <h3
-              className="text-center text-xl text-primary-color leading-6"
-              style={{ fontFamily: "Nunito Sans Black" }}
-            >
+            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
               Inversiones Financieras <span className="block">Atlántida</span>
             </h3>
             <h2 className="text-xl text-primary-color">
@@ -593,10 +587,7 @@ const GobiernoCorporativoDirectorios = () => {
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
           <div className="border-b-2 border-primary-color py-5">
-            <h3
-              className="text-center text-xl text-primary-color leading-6"
-              style={{ fontFamily: "Nunito Sans Black" }}
-            >
+            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
               Inversiones Financieras <span className="block">Atlántida</span>
             </h3>
             <h2 className="text-xl text-primary-color">Directores Suplentes</h2>
@@ -941,10 +932,7 @@ const GobiernoCorporativoDirectorios = () => {
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
           <div className="border-b-2 border-primary-color py-5">
-            <h3
-              className="text-center text-xl text-primary-color leading-6"
-              style={{ fontFamily: "Nunito Sans Black" }}
-            >
+            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
               Banco D-Miro
             </h3>
             <h2 className="text-xl text-primary-color">
@@ -1264,10 +1252,7 @@ const GobiernoCorporativoDirectorios = () => {
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
           <div className="border-b-2 border-primary-color py-5">
-            <h3
-              className="text-center text-xl text-primary-color leading-6"
-              style={{ fontFamily: "Nunito Sans Black" }}
-            >
+            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
               Banco D-Miro
             </h3>
             <h2 className="text-xl text-primary-color">

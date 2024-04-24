@@ -13,7 +13,7 @@ const AtlantidaAdvisorsFeatures = () => {
         </article>
 
         <article className="max-w-x text-secondary-color">
-          <h2 className="text-3xl" style={{ fontFamily: "Nunito Sans Black" }}>
+          <h2 className="text-3xl family-nunito-black">
             Asesoría para <span className="block">Empresas</span>
           </h2>
 
@@ -42,7 +42,7 @@ const AtlantidaAdvisorsFeatures = () => {
         </article>
 
         <article className="max-w-x text-secondary-color">
-          <h2 className="text-3xl" style={{ fontFamily: "Nunito Sans Black" }}>
+          <h2 className="text-3xl family-nunito-black">
             Asesoría para <span className="block">Inversionistas</span>
           </h2>
 

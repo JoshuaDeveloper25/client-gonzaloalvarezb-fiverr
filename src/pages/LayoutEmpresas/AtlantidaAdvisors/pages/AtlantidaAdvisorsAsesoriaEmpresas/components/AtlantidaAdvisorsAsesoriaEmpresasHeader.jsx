@@ -3,10 +3,7 @@ const AtlantidaAdvisorsAsesoriaEmpresasHeader = () => {
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between  items-center md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
         <article className="flex-[30%] lg:w-full w-auto text-secondary-color lg:py-8 py-3">
-          <h1
-            className="text-secondary-color text-[2.6rem] leading-[1.1] font-bold"
-            style={{ fontFamily: "Nunito Sans Semibold" }}
-          >
+          <h1 className="text-secondary-color text-[2.6rem] leading-[1.3] font-bold family-nunito-semibold">
             Atlántida Advisors asiste a sus{" "}
             <span className="md:block inline">
               clientes en la toma de decisiones
@@ -24,10 +21,7 @@ const AtlantidaAdvisorsAsesoriaEmpresasHeader = () => {
         </article>
 
         <article className="flex-1 text-center my-8">
-          <h2
-            className="text-primary-color font-bold text-5xl mb-2"
-            style={{ fontFamily: "Nunito Sans Regular" }}
-          >
+          <h2 className="text-primary-color font-bold text-5xl mb-2 family-nunito-regular">
             + 40 <span className="block">Industrias</span>
           </h2>
           <h3 className="text-secondary-color text-3xl">

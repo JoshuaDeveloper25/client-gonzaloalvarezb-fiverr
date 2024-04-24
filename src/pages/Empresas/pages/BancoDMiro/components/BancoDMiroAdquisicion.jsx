@@ -15,7 +15,7 @@ const BancoDMiroAdquisicion = () => {
         </article>
 
         <article className="text-secondary-color md:py-8 py-2">
-          <h2 className="max-w-md text-3xl" style={{fontFamily: 'Nunito Sans Black'}}>
+          <h2 className="max-w-md text-3xl family-nunito-black">
             Adquisición de Banco D-Miro (ECUADOR) por parte del Grupo Financiero
             Atlántida
           </h2>

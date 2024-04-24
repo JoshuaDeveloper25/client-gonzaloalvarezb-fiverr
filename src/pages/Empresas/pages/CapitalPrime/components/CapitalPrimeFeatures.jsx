@@ -9,8 +9,7 @@ const CapitalPrimeFeatures = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center md:gap-3 gap-0">
           <article className="text-secondary-color md:py-5 py-2">
             <h2
-              className=" text-3xl text-primary-color mb-2"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className="family-nunito-black text-3xl text-primary-color mb-2"
             >
               Inbound y Outbound
             </h2>
@@ -46,8 +45,7 @@ const CapitalPrimeFeatures = () => {
 
           <article className="text-secondary-color md:py-5 py-2">
             <h2
-              className="max-w-[30rem] sm:mx-0 mx-auto text-3xl text-primary-color mb-2"
-              style={{ fontFamily: "Nunito Sans Black" }}
+              className="family-nunito-black max-w-[30rem] sm:mx-0 mx-auto text-3xl text-primary-color mb-2"
             >
               Gestión y administración de{" "}
               <span className="">cartera, ventas y atención al</span>{" "}

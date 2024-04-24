@@ -7,7 +7,7 @@ const PresenciaRegionalHeader = () => {
         <article className="text-secondary-color lg:py-0 py-4">
           <h1 className="max-w-sm text-4xl leading-10 md:mb-8 mb-0">
             Somos un Grupo Financiero, con{" "}
-            <span style={{ fontFamily: "Nunito Sans Black" }}>
+            <span className="family-nunito-black">
               presencia multinacional
             </span>
           </h1>

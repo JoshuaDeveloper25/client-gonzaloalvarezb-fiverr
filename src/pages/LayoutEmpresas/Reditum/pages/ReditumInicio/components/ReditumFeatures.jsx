@@ -29,10 +29,7 @@ const ReditumFeatures = () => {
       <div className="flex flex-col md:flex-row items-center sm:gap-8 gap-3">
         {/* Feature 2 */}
         <article className="flex-1">
-          <h2
-            className="text-secondary-color/90 text-3xl mb-1"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h2 className="family-nunito-black text-secondary-color/90 text-3xl mb-1">
             PMG
           </h2>
           <h3 className="text-secondary-color text-lg mb-3">
@@ -70,10 +67,7 @@ const ReditumFeatures = () => {
         </article>
 
         <article className="flex-1">
-          <h3
-            className="text-secondary-color/90 text-3xl mb-1"
-            style={{ fontFamily: "Nunito Sans Black" }}
-          >
+          <h3 className="family-nunito-black text-secondary-color/90 text-3xl mb-1">
             Crediapp
           </h3>
           <p className="text-secondary-color text-lg">

@@ -18,8 +18,8 @@ const BancoDMiroLineaDeTiempo = () => {
       <article className="flex flex-col md:flex-row gap-8 mt-9">
         <div className="flex-1">
           <h3
-            className="text-secondary-color md:text-start text-center  text-4xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
+            className="family-nunito-semibold text-secondary-color md:text-start text-center  text-4xl"
+            
           >
             1997
           </h3>
@@ -32,8 +32,8 @@ const BancoDMiroLineaDeTiempo = () => {
 
         <div className="flex-1">
           <h3
-            className="text-secondary-color md:text-start text-center  text-4xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
+            className="family-nunito-semibold text-secondary-color md:text-start text-center  text-4xl"
+            
           >
             2006
           </h3>
@@ -47,8 +47,8 @@ const BancoDMiroLineaDeTiempo = () => {
 
         <div className="flex-1">
           <h3
-            className="text-secondary-color md:text-start text-center  text-4xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
+            className="family-nunito-semibold text-secondary-color md:text-start text-center  text-4xl"
+            
           >
             2010 - 2011
           </h3>
@@ -75,8 +75,8 @@ const BancoDMiroLineaDeTiempo = () => {
       <article className="md:grid grid-cols-3 gap-10 mt-9">
         <div className="md:mb-0 mb-8">
           <h3
-            className="text-secondary-color md:text-start text-center  text-4xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
+            className="family-nunito-semibold text-secondary-color md:text-start text-center  text-4xl"
+            
           >
             2011
           </h3>
@@ -91,8 +91,8 @@ const BancoDMiroLineaDeTiempo = () => {
 
         <div>
           <h3
-            className="text-secondary-color md:text-start text-center  text-4xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
+            className="family-nunito-semibold text-secondary-color md:text-start text-center  text-4xl"
+            
           >
             2024
           </h3>

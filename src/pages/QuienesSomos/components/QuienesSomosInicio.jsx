@@ -7,7 +7,7 @@ const QuienesSomosInicio = () => {
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="max-w-sm text-4xl leading-10 md:mb-8 mb-0">
             Somos un grupo regional, con{" "}
-            <span style={{ fontFamily: "Nunito Sans Black" }}>
+            <span className="family-nunito-black">
               más de 111 años de trayectoria y experiencia
             </span>
           </h1>

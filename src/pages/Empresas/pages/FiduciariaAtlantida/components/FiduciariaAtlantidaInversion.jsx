@@ -23,8 +23,8 @@ const FiduciariaAtlantidaInversion = () => {
           src={metricas}
         />
         <h2
-          className="text-3xl text-secondary-color"
-          style={{ fontFamily: "Nunito Sans Black" }}
+          className="text-3xl text-secondary-color family-nunito-black"
+          
         >
           Fondos de Inversión
         </h2>

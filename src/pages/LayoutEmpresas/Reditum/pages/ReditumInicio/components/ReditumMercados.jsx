@@ -7,8 +7,7 @@ const ReditumMercados = () => {
   return (
     <section className="container-page my-10">
       <h2
-        className="text-primary-color text-2xl md:mb-16 mb-4 text-center"
-        style={{ fontFamily: "Nunito Sans Black" }}
+        className="text-primary-color text-2xl md:mb-16 mb-4 text-center family-nunito-black"
       >
         Mercados Disponibles
       </h2>
@@ -22,7 +21,7 @@ const ReditumMercados = () => {
             src={sistemaFinancieroIcono}
             alt="Sistema Financiero Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="family-nunito-black text-lg">
             Sistema <span className="block">Financiero</span>
           </h3>
         </article>
@@ -35,7 +34,7 @@ const ReditumMercados = () => {
             src={mercadoValoresIcono}
             alt="Mercado de Valores Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="family-nunito-black text-lg">
             Mercado de <span className="block">Valores</span>
           </h3>
         </article>
@@ -48,7 +47,7 @@ const ReditumMercados = () => {
             src={segurosIcono}
             alt="Mano Listo Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="family-nunito-black text-lg">
             Seguros
           </h3>
         </article>
@@ -61,7 +60,7 @@ const ReditumMercados = () => {
             src={economiaLocal}
             alt="Lupa Icono"
           />
-          <h3 style={{ fontFamily: "Nunito Sans Black" }} className="text-lg">
+          <h3 className="family-nunito-black text-lg">
             Economía
             <span className="block">Local</span>
           </h3>

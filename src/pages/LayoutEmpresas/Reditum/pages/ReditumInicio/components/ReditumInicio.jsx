@@ -4,7 +4,7 @@ const ReditumInicio = () => {
       <div className="container-page flex flex-col lg:flex-row justify-between items-center lg:gap-8">
         <article className="lg:w-full w-auto text-secondary-color lg:py-8 py-3">
           <h1 className="text-secondary-color text-4xl">
-            <span style={{ fontFamily: "Nunito Sans Black" }}>
+            <span className="family-nunito-black">
               Reditum Market Data
             </span>
             <span className="sm:block inline my-2">

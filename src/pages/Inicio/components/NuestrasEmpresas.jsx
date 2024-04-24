@@ -56,8 +56,7 @@ const NuestrasEmpresas = () => {
       <div className="grid md:grid-cols-4 grid-cols-1">
         <article className="md:text-start text-center md:mb-0 mb-5">
           <h2
-            className="font-extrabold text-2xl leading-6 text-secondary-color"
-            style={{ fontFamily: "Nunito Sans Black" }}
+            className="font-extrabold text-2xl leading-6 text-secondary-color family-nunito-black"
           >
             Nuestras <span className="md:block inline">Empresas</span>
           </h2>

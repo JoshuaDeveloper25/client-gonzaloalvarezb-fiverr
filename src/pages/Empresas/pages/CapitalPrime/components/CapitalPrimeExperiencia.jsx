@@ -29,10 +29,7 @@ const CapitalPrimeExperiencia = () => {
               className="w-16 h-16 object-contain mx-auto"
             />
             <h3 className="text-center text-xl text-primary-color my-3">
-              <span
-                className="block"
-                style={{ fontFamily: "Nunito Sans Black" }}
-              >
+              <span className="block family-nunito-black">
                 + US $ 60 Millones
               </span>{" "}
             </h3>
@@ -47,12 +44,7 @@ const CapitalPrimeExperiencia = () => {
               className="w-16 h-16 object-contain mx-auto"
             />
             <h3 className="text-center text-xl text-primary-color my-3">
-              <span
-                className="block"
-                style={{ fontFamily: "Nunito Sans Black" }}
-              >
-                + 20 IFIS
-              </span>{" "}
+              <span className="block family-nunito-black">+ 20 IFIS</span>{" "}
             </h3>
             <p className="text-secondary-color text-center leading-5">
               Administra y Gestiona <span className="block">Cobranza</span>

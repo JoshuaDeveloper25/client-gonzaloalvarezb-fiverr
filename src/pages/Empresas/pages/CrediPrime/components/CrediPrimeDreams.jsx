@@ -39,10 +39,7 @@ const CrediPrimeDreams = () => {
               </div>
 
               <div>
-                <h3
-                  className="text-secondary-color text-xl"
-                  style={{ fontFamily: "Nunito Sans Black" }}
-                >
+                <h3 className="text-secondary-color family-nunito-black text-xl">
                   CrediFinance
                 </h3>
               </div>
@@ -60,10 +57,7 @@ const CrediPrimeDreams = () => {
               </div>
 
               <div>
-                <h3
-                  className="text-secondary-color text-xl"
-                  style={{ fontFamily: "Nunito Sans Black" }}
-                >
+                <h3 className="text-secondary-color family-nunito-black text-xl">
                   Crediprime <span className="block">Express</span>
                 </h3>
               </div>
@@ -81,10 +75,7 @@ const CrediPrimeDreams = () => {
               </div>
 
               <div>
-                <h3
-                  className="text-secondary-color text-xl"
-                  style={{ fontFamily: "Nunito Sans Black" }}
-                >
+                <h3 className="text-secondary-color family-nunito-black text-xl">
                   MicroPrime
                 </h3>
               </div>
@@ -102,10 +93,7 @@ const CrediPrimeDreams = () => {
               </div>
 
               <div>
-                <h3
-                  className="text-secondary-color text-xl"
-                  style={{ fontFamily: "Nunito Sans Black" }}
-                >
+                <h3 className="text-secondary-color family-nunito-black text-xl">
                   FinancePrime
                 </h3>
               </div>
@@ -123,10 +111,7 @@ const CrediPrimeDreams = () => {
               </div>
 
               <div>
-                <h3
-                  className="text-secondary-color text-xl"
-                  style={{ fontFamily: "Nunito Sans Black" }}
-                >
+                <h3 className="text-secondary-color family-nunito-black text-xl">
                   Seminuevos
                 </h3>
               </div>

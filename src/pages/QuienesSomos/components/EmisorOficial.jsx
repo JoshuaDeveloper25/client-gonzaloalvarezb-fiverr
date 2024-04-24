@@ -113,10 +113,7 @@ const EmisorOficial = () => {
         </article>
 
         <article className="md:text-start text-center flex md:justify-start justify-center items-center">
-          <h2
-            className="text-secondary-color text-3xl"
-            style={{ fontFamily: "Nunito Sans SemiBold" }}
-          >
+          <h2 className="text-secondary-color text-3xl family-nunito-semibold">
             Emisor oficial de la{" "}
             <span className="block">moneda de Honduras</span> durante 37 años
           </h2>

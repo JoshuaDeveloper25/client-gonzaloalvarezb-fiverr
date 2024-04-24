@@ -10,12 +10,9 @@ const AtlantidaInsuranceLideres = () => {
             <h2 className="md:text-4xl text-3xl  md:px-5 px-0  text-secondary-color">
               Respaldados{" "}
               <span className="lg:block inline">
-                por{" "}
-                <span style={{ fontFamily: "Nunito Sans Black" }}>líderes</span>
+                por <span className="family-nunito-black">líderes</span>
               </span>{" "}
-              <span style={{ fontFamily: "Nunito Sans Black" }}>
-                del sector
-              </span>
+              <span className="family-nunito-black">del sector</span>
             </h2>
             <p className="text-secondary-color text-justify mt-4  md:px-5 px-0">
               Cuenta con la confianza de las principales aseguradoras a nivel
@@ -32,12 +29,7 @@ const AtlantidaInsuranceLideres = () => {
             />
             <h3 className="text-center text-primary-color my-3">
               Más de{" "}
-              <span
-                className="block"
-                style={{ fontFamily: "Nunito Sans Black" }}
-              >
-                US $ 2 Millones
-              </span>{" "}
+              <span className="block family-nunito-black">US $ 2 Millones</span>{" "}
               en Primas de Negocios <span className="block">Tradicionales</span>
             </h3>
             <p className="text-secondary-color text-center">
@@ -55,12 +47,7 @@ const AtlantidaInsuranceLideres = () => {
             />
             <h3 className="text-center text-primary-color my-3">
               Más de{" "}
-              <span
-                className="block"
-                style={{ fontFamily: "Nunito Sans Black" }}
-              >
-                US $ 3 Millones
-              </span>{" "}
+              <span className="block family-nunito-black">US $ 3 Millones</span>{" "}
               en Seguros Masivos y <span className="block">Financieros</span>
             </h3>
             <p className="text-secondary-color text-center">

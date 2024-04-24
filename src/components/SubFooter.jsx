@@ -10,8 +10,7 @@ const SubFooter = ({ img, title, titleSpan, addClassName }) => {
         <div className="grid grid-cols-1 grid-rows-[30vh] items-center">
           <div>
             <h2
-              className="text-center text-4xl text-white"
-              style={{ fontFamily: "Nunito Sans SemiBold" }}
+              className="text-center text-4xl text-white family-nunito-semibold"
             >
               {title}
               <span className="block">{titleSpan}</span>

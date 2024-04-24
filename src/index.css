@@ -164,3 +164,15 @@ body {
   right: 1rem;
   z-index: 9999;
 }
+
+.family-nunito-black {
+  font-family: "Nunito Sans Black";
+}
+
+.family-nunito-semibold {
+  font-family: "Nunito Sans SemiBold";
+}
+
+.family-nunito-regular {
+  font-family: "Nunito Sans Regular";
+}

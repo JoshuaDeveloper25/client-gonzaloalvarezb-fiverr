@@ -11,10 +11,7 @@ const FiduciariaAtlantidaNegocios = () => {
           decoding="async"
           src={iconoDineroMano}
         />
-        <h2
-          className="text-3xl text-secondary-color"
-          style={{ fontFamily: "Nunito Sans Black" }}
-        >
+        <h2 className="text-3xl text-secondary-color family-nunito-black">
           Negocios Fiduciarios
         </h2>
         <p className="text-secondary-color">
