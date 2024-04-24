@@ -80,7 +80,7 @@ const FooterEmpresas = () => {
           <article className="flex-[60%]">
             <h3 className="font-bold mb-5">Dirección</h3>
 
-            <div className="flex gap-8 items-start">
+            <div className="flex gap-16 items-start">
               <div>
                 <p>
                   <IoLocation className="inline align-sub" /> Quito
@@ -111,16 +111,9 @@ const FooterEmpresas = () => {
             <div className="flex flex-col gap-1">
               <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/inversiones-financieras-atlantida`}
+                to={`/empresas/atlantida-casa-valores`}
               >
-                IFA
-              </Link>
-
-              <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/banco-d-miro`}
-              >
-                Banco D-Miro
+                Atlántida Casa de Valores
               </Link>
 
               <Link
@@ -132,9 +125,9 @@ const FooterEmpresas = () => {
 
               <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/atlantida-casa-valores`}
+                to={`/pagina-empresas/atlantida-advisors`}
               >
-                Atlántida Casa de Valores
+                Atlántida Advisors
               </Link>
 
               <Link
@@ -153,6 +146,13 @@ const FooterEmpresas = () => {
 
               <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                to={`/empresas/goprime`}
+              >
+                GoPrime
+              </Link>
+
+              <Link
+                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
@@ -162,7 +162,14 @@ const FooterEmpresas = () => {
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/capitalprime`}
               >
-                CapitalPrime
+                Capital Prime
+              </Link>
+
+              <Link
+                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                to={`/empresas/rentingprime`}
+              >
+                Renting Prime
               </Link>
             </div>
           </article>
@@ -372,18 +379,11 @@ const FooterEmpresas = () => {
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
           >
             <div className="flex flex-col gap-1">
-              <Link
+            <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/inversiones-financieras-atlantida`}
+                to={`/empresas/atlantida-casa-valores`}
               >
-                IFA
-              </Link>
-
-              <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/banco-d-miro`}
-              >
-                Banco D-Miro
+                Atlántida Casa de Valores
               </Link>
 
               <Link
@@ -395,9 +395,9 @@ const FooterEmpresas = () => {
 
               <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
-                to={`/empresas/atlantida-casa-valores`}
+                to={`/pagina-empresas/atlantida-advisors`}
               >
-                Atlántida Casa de Valores
+                Atlántida Advisors
               </Link>
 
               <Link
@@ -416,6 +416,13 @@ const FooterEmpresas = () => {
 
               <Link
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                to={`/empresas/goprime`}
+              >
+                GoPrime
+              </Link>
+
+              <Link
+                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
@@ -425,7 +432,14 @@ const FooterEmpresas = () => {
                 className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/capitalprime`}
               >
-                CapitalPrime
+                Capital Prime
+              </Link>
+
+              <Link
+                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                to={`/empresas/rentingprime`}
+              >
+                Renting Prime
               </Link>
             </div>
           </TECollapse>

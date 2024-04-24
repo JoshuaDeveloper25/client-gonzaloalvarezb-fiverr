@@ -104,9 +104,9 @@ const Footer = () => {
 
               <Link
                 className="text-sm font-light hover:text-primary-color animation-fade"
-                to={`/empresas/capitalprime`}
+                to={`/empresas/ `}
               >
-                CapitalPrime
+                Capital Prime
               </Link>
             </div>
           </article>
@@ -304,7 +304,7 @@ const Footer = () => {
                 className="text-sm font-light hover:text-primary-color animation-fade"
                 to={`/empresas/capitalprime`}
               >
-                CapitalPrime
+                Capital Prime
               </Link>
             </div>
           </TECollapse>
