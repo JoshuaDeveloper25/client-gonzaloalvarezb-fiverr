@@ -5,12 +5,12 @@ const AtlantidaAdvisorsAsesoriaInversionistasHeader = () => {
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between items-center md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
         <article className="flex-[30%] lg:w-full w-auto text-secondary-color lg:py-8 py-3">
-          <h1 className="text-secondary-color sm:text-[2.6rem] text-[2rem] leading-[1.3] font-bold family-nunito-semibold">
+          <h1 className="text-secondary-color sm:text-[2.6rem] text-[1.8rem] leading-[1.3] font-bold family-nunito-semibold">
             Atlántida Advisors ofrece gestión{" "}
             <span className="md:block inline">
               patrimonial integral y diversas
             </span>{" "}
-            alternativas financieras a sus
+            alternativas financieras a sus{' '}
             <span className="md:block inline">clientes</span>
           </h1>
           <div className="h-1 w-full bg-primary-color my-5"></div>

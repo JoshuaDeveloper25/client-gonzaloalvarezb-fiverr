@@ -5,10 +5,10 @@ const AtlantidaCasaValoresInicioHeader = () => {
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between items-center md:max-w-none max-w-lg md:gap-6 gap-0  mx-auto">
         <article className="flex-[25%] lg:w-full w-auto text-secondary-color lg:py-8 py-3">
-          <h1 className="text-secondary-color sm:text-[2.6rem] text-[2rem] leading-[1.3] font-bold family-nunito-semibold">
+          <h1 className="text-secondary-color sm:text-[2.6rem] text-[1.8rem] leading-[1.3] font-bold family-nunito-semibold">
             Atlántida Casa de Valores, líder{" "}
             <span className="md:block inline">en las bolsas de valores de</span>{" "}
-            Ecuador con más de 15 años de
+            Ecuador con más de 15 años de{' '}
             <span className="md:block inline">experiencia</span>
           </h1>
           <div className="h-1 w-full bg-primary-color my-5"></div>
