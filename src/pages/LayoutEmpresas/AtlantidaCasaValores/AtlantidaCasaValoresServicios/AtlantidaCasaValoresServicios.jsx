@@ -20,7 +20,7 @@ const AtlantidaCasaValoresServicios = () => {
       {/* Casa de Valores - Banner */}
       <AtlantidaCasaValoresServiciosBanner />
 
-      {/* Subfooter 22 */}
+      {/* Subfooter 23 */}
       <SubFooter
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
