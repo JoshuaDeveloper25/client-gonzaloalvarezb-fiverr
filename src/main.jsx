@@ -37,6 +37,7 @@ import AtlantidaCasaValoresServicios from "./pages/LayoutEmpresas/AtlantidaCasaV
 import AtlantidaCasaValoresFinanciamiento from "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresFinanciamiento/AtlantidaCasaValoresFinanciamiento";
 import AtlantidaCasaValoresBursatiles from "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresBursatiles/AtlantidaCasaValoresBursatiles";
 import AtlantidaCasaValoresIntermediacion from "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresIntermediacion/AtlantidaCasaValoresIntermediacion";
+import AtlantidaCasaValoresContacto from "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresContacto/AtlantidaCasaValoresContacto";
 
 const router = createBrowserRouter([
   {
@@ -181,6 +182,11 @@ const router = createBrowserRouter([
       {
         path: "/casa-valores-intermediacion",
         element: <AtlantidaCasaValoresIntermediacion />,
+      },
+
+      {
+        path: "/casa-valores-contacto",
+        element: <AtlantidaCasaValoresContacto />,
       },
     ],
   },
