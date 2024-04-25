@@ -32,6 +32,7 @@ import AtlantidaAdvisorsInicio from "./pages/LayoutEmpresas/AtlantidaAdvisors/pa
 import AtlantidaAdvisorsAsesoriaInversionistas from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsAsesoriaInversionistas/AtlantidaAdvisorsAsesoriaInversionistas";
 import AtlantidaAdvisorsAsesoriaPublicaciones from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsPublicaciones/AtlantidaAdvisorsPublicaciones";
 import AtlantidaAdvisorsContacto from "./pages/LayoutEmpresas/AtlantidaAdvisors/pages/AtlantidaAdvisorsContancto/AtlantidaAdvisorsContancto";
+import AtlantidaCasaValoresInicio from "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresInicio/AtlantidaCasaValoresInicio";
 
 const router = createBrowserRouter([
   {
@@ -151,6 +152,16 @@ const router = createBrowserRouter([
         path: "/advisors-contacto",
         element: <AtlantidaAdvisorsContacto />,
       },
+
+      // --> Atlantida Casa de Valores
+      {
+        path: "/casa-valores-inicio",
+        element: <AtlantidaCasaValoresInicio />,
+      },      
+
+      {
+        path: "/casa-valores-servicios",
+      }
     ],
   },
 ]);
