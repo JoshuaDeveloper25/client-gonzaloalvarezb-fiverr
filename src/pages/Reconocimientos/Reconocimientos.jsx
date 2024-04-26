@@ -21,6 +21,7 @@ const Reconocimientos = () => {
 
       {/* Subfooter 13 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter13}
         title={`Cruzamos fronteras para brindar soluciones`}
         addClassName={`bg-center`}

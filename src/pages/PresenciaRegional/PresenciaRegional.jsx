@@ -21,6 +21,7 @@ const PresenciaRegional = () => {
 
       {/* Subfooter 3 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter3}
         title={`Cruzamos fronteras para brindar soluciones`}
         addClassName={`bg-center`}

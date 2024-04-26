@@ -7,7 +7,6 @@ import CrediPrimeInicio from "./components/CrediPrimeInicio";
 
 import subfooter8 from "../../../../images/subfooter8.jpg";
 
-
 const CrediPrime = () => {
   return (
     <>
@@ -28,6 +27,7 @@ const CrediPrime = () => {
 
       {/* Subfooter 8 */}
       <SubFooter
+        bgColor={"black"}
         title={`Es momento de estrenar el auto de tus sueños`}
         img={subfooter8}
         addClassName={`bg-center`}

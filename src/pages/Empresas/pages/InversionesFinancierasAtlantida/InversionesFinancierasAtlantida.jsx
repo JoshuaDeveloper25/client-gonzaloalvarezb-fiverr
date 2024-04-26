@@ -25,10 +25,10 @@ const InversionesFinancierasAtlantida = () => {
 
       {/* Subfooter 5 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter5}
         title={`Alcanzamos sueños y metas compartidas`}
         addClassName={`bg-center`}
-
       />
     </>
   );

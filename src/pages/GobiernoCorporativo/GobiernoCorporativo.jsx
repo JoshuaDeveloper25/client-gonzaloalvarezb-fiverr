@@ -26,6 +26,7 @@ const GobiernoCorporativo = () => {
 
       {/* Subfooter 15 */}
       <SubFooter
+        bgColor={`black`}
         img={subfooter15}
         title={`Juntos lo hacemos posible`}
         addClassName={`bg-center`}

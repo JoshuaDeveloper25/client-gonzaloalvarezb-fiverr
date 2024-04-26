@@ -22,6 +22,7 @@ const AtlantidaCasaValoresFinanciamiento = () => {
 
       {/* Subfooter 24 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         title={`Tu financiamiento, nuestra gestión`}
         addClassName={`bg-center`}

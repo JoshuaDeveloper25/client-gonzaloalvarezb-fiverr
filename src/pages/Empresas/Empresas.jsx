@@ -25,6 +25,7 @@ const Empresas = () => {
 
       {/* Subfooter 4 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter}
         title={`Juntos lo hacemos posible`}
         addClassName={`bg-top`}

@@ -23,6 +23,7 @@ const Reditum = () => {
 
       {/* Subfooter 10 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter10}
         title={`Reditum, tu ventaja inteligente para decisiones ágiles`}
       />

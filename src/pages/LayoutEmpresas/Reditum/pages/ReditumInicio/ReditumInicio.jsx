@@ -32,6 +32,7 @@ const ReditumPage = () => {
 
       {/* Subfooter 14 */}
       <SubFooter
+        bgColor={"red"}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Reditum, tu ventaja inteligente en la bolsa`}

@@ -23,6 +23,7 @@ const BancoDMiro = () => {
 
       {/* Subfooter 6 */}
       <SubFooter
+        bgColor={"black"}
         title={`Cambiando Vidas`}
         img={subfooter6}
         addClassName={`bg-center`}

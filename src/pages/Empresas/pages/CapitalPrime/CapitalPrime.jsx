@@ -23,6 +23,7 @@ const CapitalPrime = () => {
 
       {/* Subfooter 12 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter12}
         addClassName={`bg-center`}
         title={`Recuperamos tu tranquilidad`}

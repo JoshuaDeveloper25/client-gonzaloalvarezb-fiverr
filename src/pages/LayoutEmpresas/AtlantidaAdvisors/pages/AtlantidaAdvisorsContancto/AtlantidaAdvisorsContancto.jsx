@@ -14,6 +14,7 @@ const AtlantidaAdvisorsContacto = () => {
 
       {/* Subfooter 21 */}
       <SubFooter
+        bgColor={`red`}
         addClassName={`bg-center`}
         img={"https://dummyimage.com/600x400/000/fff"}
         title={`Potencia tu inversión, maximiza tu retorno`}

@@ -18,6 +18,7 @@ const AtlantidaCasaValoresIntermediacion = () => {
 
       {/* Subfooter 26 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         title={`Potencia tus inversiones`}
         addClassName={`bg-center`}

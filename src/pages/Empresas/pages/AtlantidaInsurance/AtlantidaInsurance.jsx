@@ -19,6 +19,7 @@ const AtlantidaInsurance = () => {
 
       {/* Subfooter */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter11}
         addClassName={`bg-center`}
         title={`Seguridad en cada paso de tu vida`}

@@ -18,6 +18,7 @@ const AtlantidaAdvisorsAsesoriaPublicaciones = () => {
 
       {/* Subfooter 20 */}
       <SubFooter
+        bgColor={`red`}
         title={`Tu guía financiera para el éxito.`}
         addClassName={"bg-center"}
         img={`https://dummyimage.com/600x400/000/fff`}

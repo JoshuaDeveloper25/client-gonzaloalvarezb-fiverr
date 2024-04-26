@@ -26,6 +26,7 @@ const FiduciariaAtlantida = () => {
 
       {/* Subfooter 7 */}
       <SubFooter
+        bgColor={"black"}
         title={`Seguridad y crecimiento en cada paso`}
         img={subfooter7}
         addClassName={`bg-center`}

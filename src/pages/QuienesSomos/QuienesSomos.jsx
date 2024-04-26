@@ -34,6 +34,7 @@ const QuienesSomos = () => {
 
       {/* Subfooter 2 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter}
         title={`Nuestro mayor activo, es la confianza de`}
         titleSpan={`nuestros clientes`}

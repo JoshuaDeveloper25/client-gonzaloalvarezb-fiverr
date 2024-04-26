@@ -17,7 +17,7 @@ const AtlantidaCasaValoresPosts = () => {
 
   return (
     <section className="container-page my-12">
-      <div className="grid sm:grid-cols-2 grid-cols-1 md:gap-16 gap-8">
+      <div className="grid items-start sm:grid-cols-2 grid-cols-1 md:gap-16 gap-8">
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
           <img
             loading="lazy"

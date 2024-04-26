@@ -14,6 +14,7 @@ const AtlantidaCasaValoresContacto = () => {
 
       {/* Subfooter 28 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Potencia tu inversión, maximiza tu retorno`}

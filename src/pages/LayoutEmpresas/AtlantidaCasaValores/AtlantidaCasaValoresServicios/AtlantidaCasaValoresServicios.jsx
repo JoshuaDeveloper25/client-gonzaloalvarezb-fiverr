@@ -22,6 +22,7 @@ const AtlantidaCasaValoresServicios = () => {
 
       {/* Subfooter 23 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Maximiza tus inversiones con nuestra gestión experta`}

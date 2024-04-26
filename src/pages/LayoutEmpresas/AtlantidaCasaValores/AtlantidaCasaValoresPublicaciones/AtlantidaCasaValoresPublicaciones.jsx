@@ -18,6 +18,7 @@ const AtlantidaCasaValoresPublicaciones = () => {
 
       {/* Subfooter 27 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         title={`Juntos hacia el éxito`}
         addClassName={`bg-center`}

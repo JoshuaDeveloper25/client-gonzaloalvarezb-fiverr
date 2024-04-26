@@ -22,7 +22,7 @@ const Inicio = () => {
       <CarouselEmprearial />
 
       {/* Subfooter 1 */}
-      <SubFooter img={subfooter} title={`Juntos lo hacemos posible`} addClassName={`bg-center`} />
+      <SubFooter bgColor={'black'} img={subfooter} title={`Juntos lo hacemos posible`} addClassName={`bg-center`} />
     </>
   );
 };

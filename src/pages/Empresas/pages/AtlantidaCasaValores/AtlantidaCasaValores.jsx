@@ -28,6 +28,7 @@ const AtlantidaCasaValores = () => {
 
       {/* Subfooter 9 */}
       <SubFooter
+        bgColor={"black"}
         img={subfooter9}
         addClassName={`bg-center`}
         title={`Tu aliado en transacciones bursátiles`}

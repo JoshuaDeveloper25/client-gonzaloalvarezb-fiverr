@@ -18,6 +18,7 @@ const AtlantidaCasaValoresInicio = () => {
 
       {/* Subfooter 22 */}
       <SubFooter
+        bgColor={`red`}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Inversiones seguras, oportunidades infinitas`}
