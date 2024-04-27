@@ -8,6 +8,10 @@ import juanDiegoPaz from "../../../images/juan-diego-paz.jpg";
 import edwinCoellar from "../../../images/edwin-coellar.jpg";
 import andresPerez from "../../../images/andres-perez.jpg";
 import juanFranciscoAndrade from "../../../images/juan-francisco-andrade.jpg";
+import manfredHohenleitner  from "../../../images/manfred-hohenleitner.jpg"
+import estebanGuerrero  from "../../../images/esteban-guerrero.jpg"
+import joseCardenas  from "../../../images/jose-cardenas.jpg"
+
 import administradores from "../../../images/administradores.jpg";
 
 const GobiernoCorporativoAdministradores = () => {
@@ -82,7 +86,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={carlosArturo}
@@ -155,10 +159,10 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={manfredHohenleitner}
               />
             </div>
 
@@ -214,10 +218,10 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={estebanGuerrero}
               />
             </div>
 
@@ -614,10 +618,10 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={joseCardenas}
               />
             </div>
 

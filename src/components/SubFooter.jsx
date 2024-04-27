@@ -10,6 +10,7 @@ const SubFooter = ({ img, title, titleSpan, addClassName, bgColor }) => {
             ? "rgba(255, 0, 0, 0.30), rgba(255, 0, 0, 0.30)"
             : null
         }), url(${img})`,
+        backgroundAttachment: "fixed",
       }}
     >
       <div className="container-page">

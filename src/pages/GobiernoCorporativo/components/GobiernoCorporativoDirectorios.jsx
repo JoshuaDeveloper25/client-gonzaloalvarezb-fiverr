@@ -1,6 +1,11 @@
 import { TECollapse } from "tw-elements-react";
 import { useState } from "react";
 
+import manfredHohenleitner from "../../../images/manfred-hohenleitner.jpg";
+import lourdesArevalo from "../../../images/lourdes-arevalo.jpg";
+import mariaElina from "../../../images/maria-elina.jpg";
+import carlosArturo from "../../../images/carlos-arturo.jpg";
+
 import directorios from "../../../images/directorios.jpg";
 
 const GobiernoCorporativoDirectorios = () => {
@@ -247,10 +252,10 @@ const GobiernoCorporativoDirectorios = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={manfredHohenleitner}
               />
             </div>
 
@@ -570,7 +575,7 @@ const GobiernoCorporativoDirectorios = () => {
                 className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={lourdesArevalo}
               />
             </div>
 
@@ -774,10 +779,10 @@ const GobiernoCorporativoDirectorios = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={mariaElina}
               />
             </div>
 
@@ -902,10 +907,10 @@ const GobiernoCorporativoDirectorios = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={manfredHohenleitner}
               />
             </div>
 
@@ -1431,10 +1436,10 @@ const GobiernoCorporativoDirectorios = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
                 loading="lazy"
                 decoding="async"
-                src={`https://dummyimage.com/600x400/000/fff`}
+                src={carlosArturo}
               />
             </div>
 
