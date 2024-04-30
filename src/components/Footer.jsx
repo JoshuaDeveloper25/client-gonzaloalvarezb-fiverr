@@ -25,7 +25,7 @@ const Footer = () => {
             <h3 className="font-bold mb-5">Contacto</h3>
 
             <Link
-              className="flex items-center hover:text-primary-color animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <MdEmail />
@@ -33,7 +33,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#1877F2] animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <IoLogoFacebook />
@@ -41,7 +41,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#55addd] animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <FaLinkedin />
@@ -54,56 +54,56 @@ const Footer = () => {
 
             <div className="flex flex-col gap-1">
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/inversiones-financieras-atlantida`}
               >
                 IFA
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/banco-d-miro`}
               >
                 Banco D-Miro
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/atlantida-casa-valores`}
               >
                 Atlántida Casa de Valores
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/atlantida-insurance`}
               >
                 Atlántida Insurance
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/reditum`}
               >
                 Reditum
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/ `}
               >
                 Capital Prime
@@ -182,7 +182,7 @@ const Footer = () => {
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
           >
             <Link
-              className="flex items-center hover:text-primary-color animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <MdEmail />
@@ -190,7 +190,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#1877F2] animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <IoLogoFacebook />
@@ -198,7 +198,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#55addd] animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <FaLinkedin />
@@ -252,56 +252,56 @@ const Footer = () => {
           >
             <div className="flex flex-col gap-1">
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/inversiones-financieras-atlantida`}
               >
                 IFA
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/banco-d-miro`}
               >
                 Banco D-Miro
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/atlantida-casa-valores`}
               >
                 Atlántida Casa de Valores
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/atlantida-insurance`}
               >
                 Atlántida Insurance
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/reditum`}
               >
                 Reditum
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-primary-color animation-fade"
+                className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/capitalprime`}
               >
                 Capital Prime
