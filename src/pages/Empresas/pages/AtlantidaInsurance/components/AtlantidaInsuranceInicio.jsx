@@ -20,7 +20,10 @@ const AtlantidaInsuranceInicio = () => {
             mejores condiciones agregando valor tecnológico y operativo a
             nuestros asegurados.
           </p>
-          <button className="button-red-primary" type="button">
+          <button
+            className="button-red-primary"
+            type="button"
+          >
             Conoce más
           </button>
         </article>

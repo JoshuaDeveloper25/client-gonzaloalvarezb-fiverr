@@ -1,16 +1,29 @@
+import lineaDeTiempo from "../../../videos/linea-de-tiempo.mp4";
+
 const LineaDeTiempoVideo = () => {
+  const handleVideoEnded = (event) => {
+    event.target.play(); // Reinicia la reproducción del video cuando llega al final
+  };
+
   return (
-    <section className="my-10">
-      <iframe
+    <section>
+      <video
         width="100%"
         className="md:h-[40rem] h-[20rem]"
-        src="https://www.youtube.com/embed/2zaeSeCm3EQ?si=NNd1BoiOWIJILYjJ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        autoPlay
+        muted // Agrega el atributo muted
+        onEnded={handleVideoEnded} // Maneja el evento onEnded
+        onCanPlay={() => {
+          // Este evento se dispara cuando el navegador ha cargado suficiente video para comenzar a reproducirlo
+          const video = document.querySelector("video");
+          if (video) {
+            video.play();
+          }
+        }}
+      >
+        <source src={lineaDeTiempo} type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
     </section>
   );
 };

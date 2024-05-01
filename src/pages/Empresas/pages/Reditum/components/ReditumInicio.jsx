@@ -1,7 +1,10 @@
 import casaValoresHeader from "../../../../../images/reditum-header.png";
 import logoReditum from "../../../../../images/nuestraempresa6.png";
+import { useNavigate } from "react-router-dom";
 
 const ReditumInicio = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-tertiary-color">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center md:gap-3">
@@ -13,11 +16,7 @@ const ReditumInicio = () => {
             src={logoReditum}
             alt="Logo Grupo Sur Atlántida"
           />
-          <h2
-            className="text-primary-color text-2xl family-nunito-black"
-            
-          >
-             
+          <h2 className="text-primary-color text-2xl family-nunito-black">
             Reditum Market Data
           </h2>
           <p className="text-secondary-color text-justify mt-2 mb-4">
@@ -26,7 +25,11 @@ const ReditumInicio = () => {
             económicos y bursátiles de Ecuador y Centroamérica, potenciando así
             una ventaja estratégica con información en tiempo real.
           </p>
-          <button className="button-red-primary" type="button">
+          <button
+            onClick={() => navigate("/reditum-inicio")}
+            className="button-red-primary"
+            type="button"
+          >
             Conoce más
           </button>
         </article>

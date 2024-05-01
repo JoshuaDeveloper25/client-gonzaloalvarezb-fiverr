@@ -1,16 +1,29 @@
+import paises from "../../../videos/paises.mp4";
+
 const CentroAmericaVideo = () => {
+  const handleVideoEnded = (event) => {
+    event.target.play(); // Reinicia la reproducción del video cuando llega al final
+  };
+
   return (
     <section>
-      <iframe
+      <video
         width="100%"
         className="md:h-[40rem] h-[20rem]"
-        src="https://www.youtube.com/embed/h0pVNDL-2Ak?si=RlREpxPGfDgPxiqi"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+        autoPlay
+        muted // Agrega el atributo muted
+        onEnded={handleVideoEnded} // Maneja el evento onEnded
+        onCanPlay={() => {
+          // Este evento se dispara cuando el navegador ha cargado suficiente video para comenzar a reproducirlo
+          const video = document.querySelector("video");
+          if (video) {
+            video.play();
+          }
+        }}
+      >
+        <source src={paises} type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
     </section>
   );
 };

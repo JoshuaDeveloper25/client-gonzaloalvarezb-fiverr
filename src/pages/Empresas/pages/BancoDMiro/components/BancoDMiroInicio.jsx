@@ -13,7 +13,9 @@ const BancoDMiroInicio = () => {
             src={logoBancoDMiro}
             alt="Logo Grupo Sur Atlántida"
           />
-          <button className="button-red-primary" type="button">Conoce más</button>
+          <button className="button-red-primary" type="button">
+            Conoce más
+          </button>
         </article>
 
         <article className="max-w-lg mx-auto mt-5">
