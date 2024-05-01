@@ -29,7 +29,7 @@ const FooterCasaValores = () => {
             <h3 className="font-bold mb-5 px-1">Contacto</h3>
 
             <Link
-              className="flex items-center hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <MdEmail />
@@ -37,7 +37,7 @@ const FooterCasaValores = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <BsFillTelephoneFill />
@@ -45,7 +45,7 @@ const FooterCasaValores = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <FaWhatsapp />
@@ -53,7 +53,7 @@ const FooterCasaValores = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <FaInstagram />
@@ -61,7 +61,7 @@ const FooterCasaValores = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#1877F2] hover:shadow-md hover:shadow-white/30 py-1 px-1 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 py-1 px-1 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <IoLogoFacebook />
@@ -69,7 +69,7 @@ const FooterCasaValores = () => {
             </Link>
 
             <Link
-              className="flex items-center hover:text-[#55addd] px-1 py-1 hover:shadow-md hover:shadow-white/30 animation-fade gap-2 text-sm font-light"
+              className="flex items-center hover:text-gray-400 px-1 py-1 hover:shadow-md hover:shadow-white/30 animation-fade gap-2 text-sm font-light"
               to={`#`}
             >
               <FaLinkedin />
@@ -110,63 +110,63 @@ const FooterCasaValores = () => {
 
             <div className="flex flex-col gap-1">
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/atlantida-casa-valores`}
               >
                 Atlántida Casa de Valores
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/pagina-empresas/atlantida-advisors`}
               >
                 Atlántida Advisors
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/atlantida-insurance`}
               >
                 Atlántida Insurance
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/reditum`}
               >
                 Reditum
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/goprime`}
               >
                 GoPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/capitalprime`}
               >
                 Capital Prime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/rentingprime`}
               >
                 Renting Prime
@@ -379,64 +379,64 @@ const FooterCasaValores = () => {
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
           >
             <div className="flex flex-col gap-1">
-            <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+              <Link
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/atlantida-casa-valores`}
               >
                 Atlántida Casa de Valores
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/fiduciaria-atlantida`}
               >
                 Fiduciaria Atlántida
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/pagina-empresas/atlantida-advisors`}
               >
                 Atlántida Advisors
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/atlantida-insurance`}
               >
                 Atlántida Insurance
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/reditum`}
               >
                 Reditum
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/goprime`}
               >
                 GoPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/crediprime`}
               >
                 CrediPrime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/capitalprime`}
               >
                 Capital Prime
               </Link>
 
               <Link
-                className="text-sm font-light hover:text-white hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
+                className="text-sm font-light hover:text-gray-400 hover:shadow-md hover:shadow-white/30 px-1 py-1 animation-fade"
                 to={`/empresas/rentingprime`}
               >
                 Renting Prime
