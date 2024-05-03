@@ -43,7 +43,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador1" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador1")}
@@ -120,7 +120,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador2" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador2")}
@@ -155,7 +155,8 @@ const GobiernoCorporativoAdministradores = () => {
 
           <TECollapse
             show={activeElement === "administrador2"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -179,7 +180,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador3" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador3")}
@@ -251,7 +252,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador4" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador4")}
@@ -286,7 +287,8 @@ const GobiernoCorporativoAdministradores = () => {
 
           <TECollapse
             show={activeElement === "administrador4"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -310,7 +312,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador5" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador5")}
@@ -379,7 +381,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador6" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador6")}
@@ -451,7 +453,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador7" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador7")}
@@ -486,7 +488,8 @@ const GobiernoCorporativoAdministradores = () => {
 
           <TECollapse
             show={activeElement === "administrador7"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -510,7 +513,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador8" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador8")}
@@ -579,7 +582,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador9" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador9")}
@@ -648,7 +651,7 @@ const GobiernoCorporativoAdministradores = () => {
             <button
               className={`${
                 activeElement === "administrador10" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("administrador10")}

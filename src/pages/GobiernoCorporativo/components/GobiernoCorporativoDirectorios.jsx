@@ -36,7 +36,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio1" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio1")}
@@ -95,7 +95,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio2" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio2")}
@@ -154,7 +154,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio3" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio3")}
@@ -189,7 +189,8 @@ const GobiernoCorporativoDirectorios = () => {
 
           <TECollapse
             show={activeElement === "directorio3"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -213,7 +214,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio4" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio4")}
@@ -285,7 +286,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio5" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio5")}
@@ -347,7 +348,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio6" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio6")}
@@ -411,7 +412,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio7" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio7")}
@@ -470,7 +471,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio8" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio8")}
@@ -509,7 +510,8 @@ const GobiernoCorporativoDirectorios = () => {
 
           <TECollapse
             show={activeElement === "directorio8"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -533,7 +535,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio9" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio9")}
@@ -606,7 +608,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio10" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio10")}
@@ -671,7 +673,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio11" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio11")}
@@ -736,7 +738,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio12" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio12")}
@@ -802,7 +804,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio13" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio13")}
@@ -841,7 +843,8 @@ const GobiernoCorporativoDirectorios = () => {
 
           <TECollapse
             show={activeElement === "directorio13"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -865,7 +868,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio14" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio14")}
@@ -953,7 +956,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio15" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio15")}
@@ -1015,7 +1018,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio16" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio16")}
@@ -1077,7 +1080,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio17" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio17")}
@@ -1139,7 +1142,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio18" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio18")}
@@ -1174,7 +1177,8 @@ const GobiernoCorporativoDirectorios = () => {
 
           <TECollapse
             show={activeElement === "directorio18"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -1198,7 +1202,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio19" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio19")}
@@ -1273,7 +1277,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio20" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio20")}
@@ -1335,7 +1339,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio21" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio21")}
@@ -1397,7 +1401,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio22" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio22")}
@@ -1459,7 +1463,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio23" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio23")}
@@ -1494,7 +1498,8 @@ const GobiernoCorporativoDirectorios = () => {
 
           <TECollapse
             show={activeElement === "directorio23"}
-            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
+            style={{height: 'auto'}}
           >
             <div>
               <img
@@ -1518,7 +1523,7 @@ const GobiernoCorporativoDirectorios = () => {
             <button
               className={`${
                 activeElement === "directorio24" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+                ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
               onClick={() => handleClick("directorio24")}

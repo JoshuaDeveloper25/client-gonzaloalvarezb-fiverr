@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoAtlantida from "../../../images/logo-atlantida.png";
 
 const ExperienciaYears = () => {
@@ -5,9 +6,7 @@ const ExperienciaYears = () => {
     <section className="container-page pt-4 pb-9">
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 row-gap-3">
         <article className="flex-1">
-          <h2
-            className="text-4xl text-secondary-color family-nunito-black"
-          >
+          <h2 className="text-4xl text-secondary-color family-nunito-black">
             111 años de <span className="mb:inline block">trayectoria y</span>{" "}
             experiencia
           </h2>
@@ -25,9 +24,9 @@ const ExperienciaYears = () => {
           </div>
 
           <div className="text-center mt-6">
-            <button type="button" className="button-red-primary">
+            <Link to={"/empresas"} type="button" className="button-red-primary">
               Conoce más
-            </button>
+            </Link>
           </div>
         </article>
       </div>
