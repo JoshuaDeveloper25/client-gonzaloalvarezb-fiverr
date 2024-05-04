@@ -106,7 +106,7 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
