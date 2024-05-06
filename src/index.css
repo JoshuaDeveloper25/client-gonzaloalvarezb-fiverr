@@ -190,3 +190,55 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+/* Carousel Atlantida Insurance Inicio */
+.clientesAsegurados > .slick-slider > .slick-prev:before,
+.clientesAsegurados > .slick-slider > .slick-next:before {
+  color: #e21e31 !important;
+}
+
+.clientesAsegurados > .slick-slider > .slick-prev {
+  left: 6rem;
+  top: 3rem;
+  z-index: 9999;
+}
+
+.clientesAsegurados > .slick-slider > .slick-next {
+  right: 6rem;
+  top: 3rem;
+  z-index: 9999;
+}
+
+
+/* 950px */
+@media (max-width: 1080px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    left: .5rem;
+    z-index: 9999;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    right: .5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    left: -.6rem;
+    z-index: 9999;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    right: -.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    top: 6rem;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    top: 6rem;
+  }
+}
