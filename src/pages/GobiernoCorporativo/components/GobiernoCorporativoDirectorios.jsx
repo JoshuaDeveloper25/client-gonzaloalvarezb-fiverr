@@ -781,7 +781,7 @@ const GobiernoCorporativoDirectorios = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full object-view-box2"
                 loading="lazy"
                 decoding="async"
                 src={mariaElina}

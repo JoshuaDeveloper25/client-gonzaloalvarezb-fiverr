@@ -266,3 +266,15 @@ body {
     padding: .5rem 1rem;
   }
 }
+
+.object-view-box {
+  object-view-box: inset(0% 15% 52% 3%)
+}
+
+/* .object-view-box2 {
+  object-view-box: inset(0% 5% 48% 3%)
+}
+
+.object-view-box3 {
+  object-view-box: inset(0% 5% 60% 3%)
+} */

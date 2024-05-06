@@ -86,7 +86,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full object-view-box"
                 loading="lazy"
                 decoding="async"
                 src={carlosArturo}
@@ -690,7 +690,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 object-contain mx-auto mb-5 rounded-full"
+                className="w-28 h-28 object-cover object-view-box mx-auto mb-5 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={mauricioDavila}
