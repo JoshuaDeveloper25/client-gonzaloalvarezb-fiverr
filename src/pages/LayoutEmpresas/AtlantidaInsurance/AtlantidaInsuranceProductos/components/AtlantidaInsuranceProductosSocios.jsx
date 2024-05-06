@@ -47,7 +47,7 @@ const AtlantidaInsuranceProductosSocios = () => {
   };
 
   return (
-    <section className="container-page py-10">
+    <section className="container-page my-7 py-10">
       <div className="grid md:grid-cols-4 grid-cols-1">
         <article className="md:text-start text-center md:mb-0 mb-5">
           <h2 className="font-extrabold text-2xl leading-6 text-secondary-color family-nunito-black">

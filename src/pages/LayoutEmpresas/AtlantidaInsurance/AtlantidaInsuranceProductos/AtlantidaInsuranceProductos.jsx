@@ -28,7 +28,7 @@ const AtlantidaInsuranceProductos = () => {
       <AtlantidaInsuranceProductosFeatures />
 
       {/* Asistencia */}
-      <AsistenciaInsurance />
+      <AsistenciaInsurance title={"Solicita Asistencia Personalizada"} />
 
       {/* Socios */}
       <AtlantidaInsuranceProductosSocios />

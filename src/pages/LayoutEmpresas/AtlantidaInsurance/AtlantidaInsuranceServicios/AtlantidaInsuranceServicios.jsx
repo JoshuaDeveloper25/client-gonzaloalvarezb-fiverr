@@ -21,14 +21,14 @@ const AtlantidaInsuranceServicios0 = () => {
       {/* Banner Rojo */}
       <RedBanner bannerTitle={`Seguros para empresas y PYMES`} />
 
-      {/* Seguro de Vida */}
+      {/* Seguro Corporativo */}
       <AtlantidaInsuranceServiciosSeguro />
 
       {/* Features Tabs */}
       <AtlantidaInsuranceServiciosFeatures />
 
       {/* Asistencia */}
-      <AsistenciaInsurance />
+      <AsistenciaInsurance title={"Solicita Asistencia Personalizada"} />
 
       {/* Socios */}
       <AtlantidaInsuranceServiciosSocios />
