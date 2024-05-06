@@ -70,7 +70,6 @@ body {
 
   .button-red-primary-outline2 {
     @apply text-white font-light rounded-full text-center border-white border py-1 px-10 inline-block animation-fade hover:bg-white hover:text-black;
-
   }
 }
 
@@ -209,27 +208,26 @@ body {
   z-index: 9999;
 }
 
-
 /* 950px */
 @media (max-width: 1080px) {
   .clientesAsegurados > .slick-slider > .slick-prev {
-    left: .5rem;
+    left: 0.5rem;
     z-index: 9999;
   }
 
   .clientesAsegurados > .slick-slider > .slick-next {
-    right: .5rem;
+    right: 0.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .clientesAsegurados > .slick-slider > .slick-prev {
-    left: -.6rem;
+    left: -0.6rem;
     z-index: 9999;
   }
 
   .clientesAsegurados > .slick-slider > .slick-next {
-    right: -.6rem;
+    right: -0.6rem;
   }
 }
 
@@ -240,5 +238,31 @@ body {
 
   .clientesAsegurados > .slick-slider > .slick-next {
     top: 6rem;
+  }
+}
+
+/* Estilos a las pestañas de la página de Insurance */
+.tag-link {
+  font-size: 1rem;
+  border-bottom: 1px solid black !important;
+  text-align: start;
+}
+
+@media (max-width: 450px) {
+  .tabs > div {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+  }
+
+  .tabs > div > ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tag-link {
+    padding: .5rem 1rem;
   }
 }
