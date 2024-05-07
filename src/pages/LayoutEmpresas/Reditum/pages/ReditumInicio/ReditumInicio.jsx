@@ -1,5 +1,6 @@
-import FooterReditum from "../../../../../components/FooterReditum";
+import Footer from "../../../../../components/Footer";
 import NavbarReditum from "../../../../../components/NavbarReditum";
+import RedBanner from "../../../../../components/RedBanner";
 import SubFooter from "../../../../../components/SubFooter";
 import ReditumAplicacionMovil from "./components/ReditumAplicacionMovil";
 import ReditumFeatures from "./components/ReditumFeatures";
@@ -18,6 +19,9 @@ const ReditumPage = () => {
       {/* Reditum Inicio - Header */}
       <ReditumInicio />
 
+      {/* Banner Rojo */}
+      <RedBanner bannerTitle={"Inteligencia de mercado y bursátil"} />
+
       {/* Reditum Especificaciones o Features */}
       <ReditumFeatures />
 
@@ -32,14 +36,14 @@ const ReditumPage = () => {
 
       {/* Subfooter 14 */}
       <SubFooter
-        bgColor={"red"}
+        bgColor={"black"}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
-        title={`Reditum, tu ventaja inteligente en la bolsa`}
+        title={`Tu ventaja inteligente en la bolsa`}
       />
 
       {/* Footer Reditum */}
-      <FooterReditum />
+      <Footer />
     </>
   );
 };

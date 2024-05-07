@@ -1,7 +1,9 @@
-import FooterReditum from "../../../../../components/FooterReditum";
+import ReditumContactoHeader from "./components/ReditumContactoHeader";
 import NavbarReditum from "../../../../../components/NavbarReditum";
 import SubFooter from "../../../../../components/SubFooter";
-import ReditumContactoHeader from "./components/ReditumContactoHeader";
+import Footer from "../../../../../components/Footer";
+import RedBanner from "../../../../../components/RedBanner";
+import ReditumContactoHeading from "./components/ReditumContactoHeading";
 
 const ReditumContacto = () => {
   return (
@@ -9,19 +11,25 @@ const ReditumContacto = () => {
       {/* Navbar Reditum */}
       <NavbarReditum />
 
+      {/* Header */}
+      <ReditumContactoHeading />
+
+      {/* Banner Rojo */}
+      <RedBanner bannerTitle={`Inteligencia de mercado y bursátil`} />
+
       {/* Reditum Contacto Inicio */}
       <ReditumContactoHeader />
 
       {/* Subfooter 16 */}
       <SubFooter
-        bgColor={`red`}
+        bgColor={`black`}
         addClassName={`bg-center`}
         img={"https://dummyimage.com/600x400/000/fff"}
-        title={`Reditum, tu socio en inteligencia bursátil`}
+        title={`Tu socio en inteligencia bursátil`}
       />
 
       {/* Footer Reditum */}
-      <FooterReditum />
+      <Footer />
     </>
   );
 };

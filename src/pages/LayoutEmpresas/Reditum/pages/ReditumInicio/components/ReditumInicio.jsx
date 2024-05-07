@@ -1,19 +1,18 @@
+import reditumHeader from "../../../../../../images/reditum-inicio-header.png";
+
 const ReditumInicio = () => {
   return (
-    <section className="my-6">
-      <div className="container-page flex flex-col lg:flex-row justify-between items-center lg:gap-8">
-        <article className="lg:w-full w-auto text-secondary-color lg:py-8 py-3">
+    <section className="pt-6 bg-tertiary-color relative">
+      <div className=" container-page flex flex-col md:flex-row items-center">
+        <article className="flex-1 lg:w-full w-auto text-secondary-color z-30 lg:py-8 py-3">
           <h1 className="text-secondary-color text-4xl">
-            <span className="family-nunito-black">
-              Reditum Market Data
-            </span>
+            <span className="family-nunito-black">Reditum Market Data</span>
             <span className="sm:block inline my-2">
               {" "}
-              Software de inteligencia {' '}
+              Software de inteligencia{" "}
             </span>
             financiera y bursátil
           </h1>
-          <div className="h-1 w-full bg-primary-color my-5"></div>
           <p className="max-w-lg text-secondary-color my-4">
             Actualmente Reditum, procesa toda la información financiera,
             económica y bursátil de Ecuador y Centroamérica en su software de
@@ -21,14 +20,16 @@ const ReditumInicio = () => {
           </p>
         </article>
 
-        <article className="max-w-md mx-auto mt-5">
-          <img
-            decoding="async"
-            loading="lazy"
-            className="w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
-            alt={"Imagen del Header"}
-          />
+        <article className="flex-1">
+          <div className="max-w-2xl">
+            <img
+              decoding="async"
+              loading="lazy"
+              className="w-full"
+              src={reditumHeader}
+              alt={"Imagen del Header"}
+            />
+          </div>
         </article>
       </div>
     </section>
