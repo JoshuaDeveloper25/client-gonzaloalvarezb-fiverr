@@ -1,38 +1,38 @@
-import AtlantidaInsuranceRecursosHeader from "./components/AtlantidaInsuranceRecursosHeader";
+import AtlantidaInsuranceContactoHeading from "./components/AtlantidaInsuranceContactoHeading";
+import AtlantidaInsuranceContactoHeader from "./components/AtlantidaInsuranceContactoHeader";
 import FooterAtlantidaInsurance from "../../../../components/FooterAtlantidaInsurance";
 import NavbarAtlantidaInsurance from "../../../../components/NavbarAtlantidaInsurance";
 import AsistenciaInsurance from "../../../../components/AsistenciaInsurance";
-import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
-import AtlantidaInsuranceRecursosFAQ from "./components/AtlantidaInsuranceRecursosFAQ";
+import RedBanner from "../../../../components/RedBanner";
 
-const AtlantidaInsuranceRecursos = () => {
+const AtlantidaInsuranceContacto = () => {
   return (
     <>
       {/* Navbar */}
       <NavbarAtlantidaInsurance />
 
-      {/* Inicio */}
-      <AtlantidaInsuranceRecursosHeader />
+      {/* Header */}
+      <AtlantidaInsuranceContactoHeading />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Encuentra respuestas rápidas y precisas`} />
+      <RedBanner bannerTitle={`Seguros para empresas y PYMES`} />
 
-      {/* FAQ */}
-      <AtlantidaInsuranceRecursosFAQ />
+      {/* Formulario */}
+      <AtlantidaInsuranceContactoHeader />
 
       {/* Asistencia */}
       <AsistenciaInsurance
-        title={"¿Aún tienes preguntas?"}
-        titleSpan={"Contacta un asesor"}
+        title={"Solicita Asistencia Personalizada"}
         addClassName={"border-y-0 bg-tertiary-color"}
       />
 
-      {/* Subfooter 33 */}
+      {/* Subfooter 28 */}
       <SubFooter
         bgColor={`black`}
-        title={`Tu respaldo en todo momento`}
         img={`https://dummyimage.com/600x400/000/fff`}
+        addClassName={`bg-center`}
+        title={`Asegura tu futuro con nosotros`}
       />
 
       {/* Footer */}
@@ -41,4 +41,4 @@ const AtlantidaInsuranceRecursos = () => {
   );
 };
 
-export default AtlantidaInsuranceRecursos;
+export default AtlantidaInsuranceContacto;

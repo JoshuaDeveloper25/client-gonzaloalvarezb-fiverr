@@ -44,6 +44,7 @@ import AtlantidaInsuranceProductos from "./pages/LayoutEmpresas/AtlantidaInsuran
 import AtlantidaInsuranceAbout from "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout";
 import AtlantidaInsuranceServicios from "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios";
 import AtlantidaInsuranceRecursos from "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos";
+import AtlantidaInsuranceContacto from "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto";
 
 const router = createBrowserRouter([
   {
@@ -224,6 +225,11 @@ const router = createBrowserRouter([
       {
         path: "/insurance-recursos",
         element: <AtlantidaInsuranceRecursos />,
+      },
+
+      {
+        path: "/insurance-contacto",
+        element: <AtlantidaInsuranceContacto />,
       },
     ],
   },

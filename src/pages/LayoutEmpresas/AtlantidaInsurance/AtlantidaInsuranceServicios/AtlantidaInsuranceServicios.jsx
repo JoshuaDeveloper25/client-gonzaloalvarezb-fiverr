@@ -36,7 +36,7 @@ const AtlantidaInsuranceServicios0 = () => {
       {/* Más información */}
       <MasInformacion />
 
-      {/* Subfooter 30 */}
+      {/* Subfooter 32 */}
       <SubFooter
         bgColor={`black`}
         title={`Protección sólida para un futuro seguro`}
