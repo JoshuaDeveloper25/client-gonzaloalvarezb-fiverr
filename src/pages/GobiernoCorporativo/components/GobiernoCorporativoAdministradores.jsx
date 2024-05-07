@@ -86,7 +86,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-cover rounded-full object-view-box"
+                className="w-28 h-28 mx-auto mb-5 object-view-box2 rounded-full object-cover"
                 loading="lazy"
                 decoding="async"
                 src={carlosArturo}
@@ -219,7 +219,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover object-view-box3 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={estebanGuerrero}
@@ -292,7 +292,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover object-view-box4 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={juanFranciscoAndrade}
@@ -351,7 +351,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover object-view-box5 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={andresPerez}
@@ -420,7 +420,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 object-contain mx-auto mb-5  rounded-full"
+                className="w-28 h-28 object-cover object-view-box6 mx-auto mb-5  rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={nicolasSantos}
@@ -493,7 +493,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover object-view-box7 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={edwinCoellar}
@@ -552,7 +552,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 object-contain mx-auto rounded-full mb-5"
+                className="w-28 h-28 object-cover object-view-box9 mx-auto rounded-full mb-5"
                 loading="lazy"
                 decoding="async"
                 src={juanDiegoPaz}
@@ -621,7 +621,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 mx-auto mb-5 object-contain rounded-full"
+                className="w-28 h-28 mx-auto mb-5 object-cover object-view-box8 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={joseCardenas}
@@ -690,7 +690,7 @@ const GobiernoCorporativoAdministradores = () => {
           >
             <div>
               <img
-                className="w-28 h-28 object-cover object-view-box mx-auto mb-5 rounded-full"
+                className="w-28 h-28 object-cover object-view-box10 mx-auto mb-5 rounded-full"
                 loading="lazy"
                 decoding="async"
                 src={mauricioDavila}

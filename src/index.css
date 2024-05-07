@@ -267,14 +267,42 @@ body {
   }
 }
 
-.object-view-box {
-  object-view-box: inset(0% 15% 52% 3%)
+.object-view-box1 {
+  object-view-box: inset(0% 15% 60% 20%);
 }
 
-/* .object-view-box2 {
-  object-view-box: inset(0% 5% 48% 3%)
+.object-view-box2 {
+  object-view-box: inset(0% 30% 40% 20%);
 }
 
 .object-view-box3 {
-  object-view-box: inset(0% 5% 60% 3%)
-} */
+  object-view-box: inset(0% 21% 54% 15%);
+}
+
+.object-view-box4 {
+  object-view-box: inset(0% 15% 54% 15%);
+}
+
+.object-view-box5 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box6 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box7 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box8 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
+
+.object-view-box9 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
+
+.object-view-box10 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
