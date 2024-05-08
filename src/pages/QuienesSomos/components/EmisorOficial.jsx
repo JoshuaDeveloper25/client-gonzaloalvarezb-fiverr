@@ -1,3 +1,13 @@
+import moneda1 from "../../../images/grupo-sur-atlantida-moneda-1.jpg";
+import moneda2 from "../../../images/grupo-sur-atlantida-moneda-2.jpg";
+import moneda3 from "../../../images/grupo-sur-atlantida-moneda-3.jpg";
+import moneda4 from "../../../images/grupo-sur-atlantida-moneda-4.jpg";
+import moneda6 from "../../../images/grupo-sur-atlantida-moneda-6.jpg";
+import moneda7 from "../../../images/grupo-sur-atlantida-moneda-7.jpg";
+import moneda8 from "../../../images/grupo-sur-atlantida-moneda-8.jpg";
+import moneda9 from "../../../images/grupo-sur-atlantida-moneda-9.jpg";
+import moneda10 from "../../../images/grupo-sur-atlantida-moneda-10.jpg";
+
 import Slider from "react-slick";
 
 const EmisorOficial = () => {
@@ -60,52 +70,87 @@ const EmisorOficial = () => {
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda1}
                 alt="Dinero"
               />
             </div>
+
             <div>
               <img
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda2}
                 alt="Dinero"
               />
             </div>
+
             <div>
               <img
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda3}
                 alt="Dinero"
               />
             </div>
+
             <div>
               <img
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda4}
                 alt="Dinero"
               />
             </div>
+            
             <div>
               <img
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda6}
                 alt="Dinero"
               />
             </div>
+
             <div>
               <img
                 decoding="async"
                 loading="lazy"
                 className="emisorOficialImg md:my-2 my-0 mx-0"
-                src={`https://dummyimage.com/500x200/000/fff`}
+                src={moneda7}
+                alt="Dinero"
+              />
+            </div>
+
+            <div>
+              <img
+                decoding="async"
+                loading="lazy"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
+                src={moneda8}
+                alt="Dinero"
+              />
+            </div>
+
+            <div>
+              <img
+                decoding="async"
+                loading="lazy"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
+                src={moneda9}
+                alt="Dinero"
+              />
+            </div>
+
+            <div>
+              <img
+                decoding="async"
+                loading="lazy"
+                className="emisorOficialImg md:my-2 my-0 mx-0"
+                src={moneda10}
                 alt="Dinero"
               />
             </div>

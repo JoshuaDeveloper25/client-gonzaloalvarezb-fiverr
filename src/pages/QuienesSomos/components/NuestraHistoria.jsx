@@ -1,13 +1,12 @@
+import bancoAtlantida from "../../../images/banco-atlantida.png";
+
 const NuestraHistoria = () => {
   return (
     <section className="container-page py-3 my-8">
       <div className="flex flex-col md:flex-row lg:items-center items-start gap-7">
         <article className="flex-1">
           <div className="flex flex-col gap-5">
-            <h2
-              className="md:text-start text-center text-primary-color text-3xl leading-7 family-nunito-black"
-              
-            >
+            <h2 className="md:text-start text-center text-primary-color text-3xl leading-7 family-nunito-black">
               Nuestra <span className="block">Historia</span>
             </h2>
 
@@ -38,7 +37,7 @@ const NuestraHistoria = () => {
             decoding="async"
             loading="lazy"
             className="w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={bancoAtlantida}
             alt="Imagen de Nuestra Historia"
           />
         </article>
