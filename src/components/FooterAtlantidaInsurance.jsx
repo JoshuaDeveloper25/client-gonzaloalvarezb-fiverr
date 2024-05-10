@@ -23,7 +23,12 @@ const FooterAtlantidaInsurance = () => {
       <div className="container-page py-8">
         <div className="hidden md:flex gap-16 row-gap-4">
           <article className="self-center">
-            <img className="w-52" src={logoBlancoInsurance} />
+            <img
+              decoding="async"
+              loading="lazy"
+              className="w-52"
+              src={logoBlancoInsurance}
+            />
           </article>
 
           <article>
@@ -91,7 +96,12 @@ const FooterAtlantidaInsurance = () => {
 
         {/* Contacto */}
         <div className="md:hidden rounded-none border border-l-0 border-r-0 border-t-0">
-        <img className="w-52 mx-auto" src={logoBlancoInsurance} />
+          <img
+            decoding="async"
+            loading="lazy"
+            className="w-52 mx-auto"
+            src={logoBlancoInsurance}
+          />
         </div>
 
         {/* Contacto */}

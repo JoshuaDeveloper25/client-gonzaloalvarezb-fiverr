@@ -18,7 +18,12 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
     <section className="container-page my-8">
       <div className="grid grid-cols-1 md:gap-10 gap-8">
         <article className="bg-[#F3F3F3] md:px-10 px-2 md:py-12 py-5 rounded-2xl text-secondary-color/95 col-span-1">
-          <img className="w-20" src={dineroIcono} />
+          <img
+            decoding="async"
+            loading="lazy"
+            className="w-20"
+            src={dineroIcono}
+          />
           <h3 className=" family-nunito-black text-xl border-b-2 py-3 border-primary-color">
             Listado
           </h3>

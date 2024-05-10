@@ -4,7 +4,12 @@ const AtlantidaInsuranceProductosSeguro = () => {
   return (
     <section className="container-page my-4 py-6">
       <div className="flex flex-col md:flex-row sm:text-start text-center items-center gap-8">
-        <img className="w-24 h-24 object-cover rounded-full" src={manosIcono} />
+        <img
+          decoding="async"
+          loading="lazy"
+          className="w-24 h-24 object-cover rounded-full"
+          src={manosIcono}
+        />
 
         <div className="flex-1">
           <h4 className="md:text-5xl text-4xl family-nunito-black text-gray-600">

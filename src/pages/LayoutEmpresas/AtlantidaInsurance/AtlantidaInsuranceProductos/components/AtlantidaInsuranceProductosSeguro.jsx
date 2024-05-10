@@ -5,7 +5,12 @@ const AtlantidaInsuranceProductosSeguro = () => {
     <section className="container-page my-10">
       <div className="grid grid-cols-2 md:grid-cols-8 place-items-center gap-4">
         <article className="md:col-span-1 col-span-full">
-          <img className="w-24" src={corazonIcono} />
+          <img
+            className="w-24"
+            decoding="async"
+            loading="lazy"
+            src={corazonIcono}
+          />
         </article>
 
         <article className="md:col-span-2 col-span-full">

@@ -11,6 +11,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
           <img
             className="h-full w-full rounded-3xl"
             src={`https://dummyimage.com/600x400/000/fff`}
+            decoding="async"
+            loading="lazy"
           />
         </div>
 
@@ -30,6 +32,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
                 <img
                   className="w-24 h-20 object-cover"
                   src={portafoliosIcono}
+                  decoding="async"
+                  loading="lazy"
                 />
               </div>
 
@@ -62,7 +66,12 @@ const AtlantidaCasaValoresInicioFeatures = () => {
         <div className="min-[810px]:hidden flex">
           <div className="bg-primary-color text-white border-b max-w-md mx-auto text-center rounded-3xl w-full py-10 px-6">
             <div>
-              <img className="mx-auto w-16" src={portafoliosIcono} />
+              <img
+                decoding="async"
+                loading="lazy"
+                className="mx-auto w-16"
+                src={portafoliosIcono}
+              />
             </div>
 
             <div>
@@ -90,6 +99,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
       <div className="flex flex-col min-[810px]:flex-row gap-4 gap-y-3">
         <div className="flex-1 min-[810px]:max-w-full max-w-md mx-auto">
           <img
+            decoding="async"
+            loading="lazy"
             className="h-full w-full rounded-3xl"
             src={`https://dummyimage.com/600x400/000/fff`}
           />
@@ -109,6 +120,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             >
               <div>
                 <img
+                  decoding="async"
+                  loading="lazy"
                   className="w-24 h-20 object-cover"
                   src={financiamientoIcono}
                 />
@@ -142,7 +155,12 @@ const AtlantidaCasaValoresInicioFeatures = () => {
         <div className="min-[810px]:hidden flex">
           <div className="bg-primary-color text-white border-b max-w-md mx-auto text-center rounded-3xl w-full py-10 px-6">
             <div>
-              <img className="mx-auto w-16" src={portafoliosIcono} />
+              <img
+                decoding="async"
+                loading="lazy"
+                className="mx-auto w-16"
+                src={portafoliosIcono}
+              />
             </div>
 
             <div>
@@ -170,6 +188,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
       <div className="flex flex-col min-[810px]:flex-row gap-4 gap-y-3">
         <div className="flex-1 min-[810px]:max-w-full max-w-md mx-auto">
           <img
+            decoding="async"
+            loading="lazy"
             className="h-full w-full rounded-3xl"
             src={`https://dummyimage.com/600x400/000/fff`}
           />
@@ -189,6 +209,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             >
               <div>
                 <img
+                  decoding="async"
+                  loading="lazy"
                   className="w-24 h-20 object-cover"
                   src={intermediacionIcono}
                 />
@@ -222,7 +244,12 @@ const AtlantidaCasaValoresInicioFeatures = () => {
         <div className="min-[810px]:hidden flex">
           <div className="bg-primary-color text-white border-b max-w-md mx-auto text-center rounded-3xl w-full py-10 px-6">
             <div>
-              <img className="mx-auto w-16" src={portafoliosIcono} />
+              <img
+                decoding="async"
+                loading="lazy"
+                className="mx-auto w-16"
+                src={portafoliosIcono}
+              />
             </div>
 
             <div>
