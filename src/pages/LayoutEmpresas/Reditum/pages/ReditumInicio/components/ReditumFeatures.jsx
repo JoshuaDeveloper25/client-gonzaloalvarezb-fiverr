@@ -1,4 +1,6 @@
 import inversionImagen from "../../../../../../images/reditum-metricas.png";
+import pmg from "../../../../../../images/reditum-pmg.jpeg";
+import crediApp from "../../../../../../images/reditum-crediapp.png";
 
 const ReditumFeatures = () => {
   return (
@@ -50,7 +52,7 @@ const ReditumFeatures = () => {
             className={`w-full mx-auto lg:h-[20rem] object-cover rounded-3xl`}
             loading="lazy"
             decoding="async"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={pmg}
           />
         </article>
       </div>
@@ -62,7 +64,7 @@ const ReditumFeatures = () => {
             className={`w-full mx-auto lg:h-[25rem] object-cover rounded-3xl`}
             loading="lazy"
             decoding="async"
-            src={"https://dummyimage.com/600x400/000/fff"}
+            src={crediApp}
           />
         </article>
 

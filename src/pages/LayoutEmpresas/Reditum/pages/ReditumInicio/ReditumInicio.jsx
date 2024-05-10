@@ -8,7 +8,7 @@ import ReditumInicio from "./components/ReditumInicio";
 import ReditumMercados from "./components/ReditumMercados";
 import ReditumServicios from "./components/ReditumServicios";
 
-// import subfooter14 from "../../../images/sub";
+import subfooter14 from "../../../../../images/subfooter14.jpeg";
 
 const ReditumPage = () => {
   return (
@@ -37,7 +37,7 @@ const ReditumPage = () => {
       {/* Subfooter 14 */}
       <SubFooter
         bgColor={"black"}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter14}
         addClassName={`bg-center`}
         title={`Tu ventaja inteligente en la bolsa`}
       />

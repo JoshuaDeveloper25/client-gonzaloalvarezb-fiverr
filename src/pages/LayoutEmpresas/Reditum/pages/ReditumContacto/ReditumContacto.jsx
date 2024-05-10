@@ -5,6 +5,8 @@ import Footer from "../../../../../components/Footer";
 import RedBanner from "../../../../../components/RedBanner";
 import ReditumContactoHeading from "./components/ReditumContactoHeading";
 
+import subfooter16 from "../../../../../images/subfooter16.jpeg";
+
 const ReditumContacto = () => {
   return (
     <>
@@ -24,7 +26,7 @@ const ReditumContacto = () => {
       <SubFooter
         bgColor={`black`}
         addClassName={`bg-center`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter16}
         title={`Tu socio en inteligencia bursátil`}
       />
 

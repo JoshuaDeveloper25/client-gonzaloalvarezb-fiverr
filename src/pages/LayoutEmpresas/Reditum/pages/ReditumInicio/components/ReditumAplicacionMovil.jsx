@@ -2,6 +2,8 @@ import checkIcon from "../../../../../../images/indicador14.png";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
+import appMovil from "../../../../../../images/reditum-appMovil.png";
+
 const ReditumAplicacionMovil = () => {
   return (
     <section className="md:py-14 py-2">
@@ -97,12 +99,12 @@ const ReditumAplicacionMovil = () => {
           </div>
         </article>
 
-        <article className="max-w-xl">
+        <article className="max-w-md mx-auto">
           <img
             decoding="async"
             loading="lazy"
             className="w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={appMovil}
             alt={"Imagen del Header"}
           />
         </article>

@@ -3,6 +3,7 @@ import tiempoIcono from "../../../../../images/indicador18.png";
 import tiempoMetricasIcono from "../../../../../images/indicador19.png";
 import lupaIcono from "../../../../../images/indicador20.png";
 
+
 const ReditumFeatures = () => {
   return (
     <section className="container-page my-20">
