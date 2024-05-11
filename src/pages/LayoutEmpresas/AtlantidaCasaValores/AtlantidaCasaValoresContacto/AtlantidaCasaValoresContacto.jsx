@@ -1,7 +1,10 @@
 import AtlantidaCasaValoresContactoHeader from "./components/AtlantidaCasaValoresContactoHeader";
-import FooterCasaValores from "../../../../components/FooterCasaValores";
+// import FooterCasaValores from "../../../../components/FooterCasaValores";
 import NavbarCasaValores from "../../../../components/NavbarCasaValores";
+import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
+import Footer from "../../../../components/Footer";
+import AtlantidaCasaValoresContactoSubheader from "./components/AtlantidaCasaValoresContactoSubheader";
 
 const AtlantidaCasaValoresContacto = () => {
   return (
@@ -9,19 +12,26 @@ const AtlantidaCasaValoresContacto = () => {
       {/* Navbar Casa de Valores */}
       <NavbarCasaValores />
 
-      {/* Atlantida Advisors Contacto Inicio */}
+      {/* Casa de Valores Subheader */}
+      <AtlantidaCasaValoresContactoSubheader/>
+
+      {/* Casa de Valores Banner Rojo */}
+      <RedBanner />
+
+      {/* Casa de Valores Contacto Inicio */}
       <AtlantidaCasaValoresContactoHeader />
 
       {/* Subfooter 28 */}
       <SubFooter
-        bgColor={`red`}
+        bgColor={`black`}
         img={`https://dummyimage.com/600x400/000/fff`}
         addClassName={`bg-center`}
         title={`Potencia tu inversión, maximiza tu retorno`}
       />
 
       {/* Footer Casa de Valores */}
-      <FooterCasaValores />
+      {/* <FooterCasaValores /> */}
+      <Footer />
     </>
   );
 };
