@@ -1,9 +1,11 @@
+import AtlantidaCasaValoresFinanciamientoSubheader from "./components/AtlantidaCasaValoresFinanciamientoSubheader";
+import AtlantidaCasaValoresFinanciamientoVentajas from "./components/AtlantidaCasaValoresFinanciamientoVentajas";
 import AtlantidaCasaValoresFinanciamientoTarjetas from "./components/AtlantidaCasaValoresFinanciamientoTarjetas";
 import AtlantidaCasaValoresFinanciamientoHeader from "./components/AtlantidaCasaValoresFinanciamientoHeader";
-import AtlantidaCasaValoresFinanciamientoVentajas from "./components/AtlantidaCasaValoresFinanciamientoVentajas";
 import FooterCasaValores from "../../../../components/FooterCasaValores";
 import NavbarCasaValores from "../../../../components/NavbarCasaValores";
 import SubFooter from "../../../../components/SubFooter";
+import RedBanner from "../../../../components/RedBanner";
 
 const AtlantidaCasaValoresFinanciamiento = () => {
   return (
@@ -11,11 +13,14 @@ const AtlantidaCasaValoresFinanciamiento = () => {
       {/* Navbar Casa de Valores */}
       <NavbarCasaValores />
 
+      {/* Casa de Valores - Subheader */}
+      <AtlantidaCasaValoresFinanciamientoSubheader />
+
+      {/* Casa de Valores - Banner rojo */}
+      <RedBanner />
+
       {/* Casa de Valores - Header */}
       <AtlantidaCasaValoresFinanciamientoHeader />
-
-      {/* Casa de Valores - Ventajas */}
-      <AtlantidaCasaValoresFinanciamientoVentajas />
 
       {/* Casa de Valores - Tarjetas */}
       <AtlantidaCasaValoresFinanciamientoTarjetas />
