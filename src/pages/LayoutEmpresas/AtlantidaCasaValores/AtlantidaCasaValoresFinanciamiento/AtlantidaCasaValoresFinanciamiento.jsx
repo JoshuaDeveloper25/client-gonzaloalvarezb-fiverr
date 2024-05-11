@@ -2,10 +2,11 @@ import AtlantidaCasaValoresFinanciamientoSubheader from "./components/AtlantidaC
 import AtlantidaCasaValoresFinanciamientoVentajas from "./components/AtlantidaCasaValoresFinanciamientoVentajas";
 import AtlantidaCasaValoresFinanciamientoTarjetas from "./components/AtlantidaCasaValoresFinanciamientoTarjetas";
 import AtlantidaCasaValoresFinanciamientoHeader from "./components/AtlantidaCasaValoresFinanciamientoHeader";
-import FooterCasaValores from "../../../../components/FooterCasaValores";
+// import FooterCasaValores from "../../../../components/FooterCasaValores";
 import NavbarCasaValores from "../../../../components/NavbarCasaValores";
 import SubFooter from "../../../../components/SubFooter";
 import RedBanner from "../../../../components/RedBanner";
+import Footer from "../../../../components/Footer";
 
 const AtlantidaCasaValoresFinanciamiento = () => {
   return (
@@ -27,14 +28,15 @@ const AtlantidaCasaValoresFinanciamiento = () => {
 
       {/* Subfooter 24 */}
       <SubFooter
-        bgColor={`red`}
+        bgColor={`black`}
         img={`https://dummyimage.com/600x400/000/fff`}
         title={`Tu financiamiento, nuestra gestión`}
         addClassName={`bg-center`}
       />
 
       {/* Footer Casa de Valores  */}
-      <FooterCasaValores />
+      {/* <FooterCasaValores /> */}
+      <Footer/>
     </>
   );
 };
