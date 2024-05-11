@@ -4,12 +4,16 @@ import NavbarCasaValores from "../../../../components/NavbarCasaValores";
 import SubFooter from "../../../../components/SubFooter";
 import AtlantidaCasaValoresServiciosOtros from "./components/AtlantidaCasaValoresServiciosOtros";
 import AtlantidaCasaValoresServiciosBanner from "./components/AtlantidaCasaValoresServiciosBanner";
+import AtlantidaCasaValoresServiciosSubheader from "./components/AtlantidaCasaValoresServiciosSubheader";
 
 const AtlantidaCasaValoresServicios = () => {
   return (
     <>
       {/* Navbar Casa de Valores */}
       <NavbarCasaValores />
+
+      {/* Atlantida CasaValores Servicios - Subheader */}
+      <AtlantidaCasaValoresServiciosSubheader />
 
       {/* Casa de Valores - Header */}
       <AtlantidaCasaValoresServiciosHeader />

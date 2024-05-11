@@ -96,16 +96,7 @@ const AtlantidaCasaValoresInicioFeatures = () => {
         </div>
       </div>
 
-      <div className="flex flex-col min-[810px]:flex-row gap-4 gap-y-3">
-        <div className="flex-1 min-[810px]:max-w-full max-w-md mx-auto">
-          <img
-            decoding="async"
-            loading="lazy"
-            className="h-full w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
-          />
-        </div>
-
+      <div className="flex flex-col-reverse min-[810px]:flex-row gap-4 gap-y-3">
         <div className="min-[810px]:flex hidden flex-1 flip-card">
           <div
             style={{
@@ -182,6 +173,14 @@ const AtlantidaCasaValoresInicioFeatures = () => {
               to={`#`}
             >{`Ver más >`}</Link>
           </div>
+        </div>
+        <div className="flex-1 min-[810px]:max-w-full max-w-md mx-auto">
+          <img
+            decoding="async"
+            loading="lazy"
+            className="h-full w-full rounded-3xl"
+            src={`https://dummyimage.com/600x400/000/fff`}
+          />
         </div>
       </div>
 
