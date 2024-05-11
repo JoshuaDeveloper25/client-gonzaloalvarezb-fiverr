@@ -24,7 +24,7 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
             className="w-20"
             src={dineroIcono}
           />
-          <h3 className=" family-nunito-black text-xl border-b-2 py-3 border-primary-color">
+          <h3 className=" family-nunito-black text-primary-color text-3xl border-b-2 py-3 border-primary-color">
             Listado
           </h3>
 
@@ -41,7 +41,7 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
               aria-controls="collapseOne"
             >
               <div>
-                <p className="text-sm">Descripción</p>
+                <p className="text-sm">Intermediación de valores</p>
               </div>
 
               <div>
@@ -168,13 +168,31 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
           <TECollapse
             show={activeElement === "listadoFinanciera"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+            style={{ height: "auto" }}
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              deleniti possimus fugit unde nihil nemo dicta! Enim ratione ad
-              excepturi ut reiciendis amet. Accusantium dolores accusamus, odit
-              inventore distinctio minus!
-            </p>
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="family-nunito-black sm:text-start text-center text-primary-color">
+                  Estructuración Financiera
+                </h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="family-nunito-black sm:text-start text-center text-primary-color">
+                  Honorarios
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="sm:text-start text-center">Estructuración Financiera</h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="sm:text-start text-center">Honorarios desde USD 200.00</h2>
+              </div>
+            </div>
           </TECollapse>
 
           {/* Accordion 4 */}
