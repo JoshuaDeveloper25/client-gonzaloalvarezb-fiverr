@@ -12,7 +12,7 @@ const AtlantidaCasaValoresServicios = () => {
       {/* Navbar Casa de Valores */}
       <NavbarCasaValores />
 
-      {/* Atlantida CasaValores Servicios - Subheader */}
+      {/* Atlantida Casa Valores Servicios - Subheader */}
       <AtlantidaCasaValoresServiciosSubheader />
 
       {/* Casa de Valores - Header */}

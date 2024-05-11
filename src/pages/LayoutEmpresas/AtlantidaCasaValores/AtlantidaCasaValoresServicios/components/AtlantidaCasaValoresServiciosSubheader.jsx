@@ -1,4 +1,4 @@
-import headerCasaValores from "../../../../../images/casa-valores-header.png";
+import headerCasaValores from "../../../../../images/casa-valores-servicios-header.png";
 
 const AtlantidaCasaValoresServiciosSubheader = () => {
   return (
