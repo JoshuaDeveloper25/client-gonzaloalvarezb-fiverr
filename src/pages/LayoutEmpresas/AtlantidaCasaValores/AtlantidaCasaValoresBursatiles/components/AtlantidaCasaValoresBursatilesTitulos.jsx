@@ -7,7 +7,7 @@ const AtlantidaCasaValoresBursatilesTitulos = () => {
         Negociación de Títulos
       </h2>
 
-      <div className="grid min-[610px]:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-10 my-6">
+      <div className="grid min-[610px]:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6 my-6">
         <div className="col-span-1 flex gap-3 items-center">
           <div className="flex-1">
             <img
