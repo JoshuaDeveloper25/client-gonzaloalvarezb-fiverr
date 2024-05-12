@@ -1,24 +1,24 @@
-import logoAtlantidaInsurance from "../images/nuestraempresa7.png";
+import logoFiduciariaAtlantida from "../images/nuestraempresa3.png";
 
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
-const NavbarAtlantidaInsurance = () => {
+const NavbarFiduciariaAtlantida = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-8">
         <div>
-          <Link to={`/insurance-inicio`}>
+          <Link to={`/fiduciaria-inicio`}>
             <img
               decoding="async"
               loading="lazy"
               className="w-44"
-              src={logoAtlantidaInsurance}
-              alt={`Logo Atlantida Insurance`}
+              src={logoFiduciariaAtlantida}
+              alt={`Logo Atlantida Fiduciaria`}
             />
           </Link>
         </div>
@@ -31,7 +31,7 @@ const NavbarAtlantidaInsurance = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
-            to={`/insurance-inicio`}
+            to={`/fiduciaria-inicio`}
           >
             Inicio
           </NavLink>
@@ -43,9 +43,9 @@ const NavbarAtlantidaInsurance = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
-            to={`/insurance-productos`}
+            to={`/fiduciaria-negocios`}
           >
-            Productos
+            Negocios Fiduciarios
           </NavLink>
 
           <NavLink
@@ -55,9 +55,9 @@ const NavbarAtlantidaInsurance = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
-            to={`/insurance-quienes-somos`}
+            to={`/fiduciaria-fondos`}
           >
-            ¿Quiénes somos?
+            Fondos de Inversión
           </NavLink>
 
           <NavLink
@@ -67,9 +67,9 @@ const NavbarAtlantidaInsurance = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
-            to={`/insurance-servicios`}
+            to={`/fiduciaria-transparencia`}
           >
-            Servicios
+            Transparencia
           </NavLink>
 
           <NavLink
@@ -79,31 +79,7 @@ const NavbarAtlantidaInsurance = () => {
                 ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
                 : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
             }
-            to={`/insurance-recursos`}
-          >
-            Recursos
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/insurance-softseguros`}
-          >
-            Softseguros
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/insurance-contacto`}
+            to={`/fiduciaria-contacto`}
           >
             Contacto
           </NavLink>
@@ -145,13 +121,13 @@ const NavbarAtlantidaInsurance = () => {
           aria-labelledby="drawer-label"
         >
           <div>
-            <Link className="inline" to={`/insurance-inicio`}>
+            <Link className="inline" to={`/fiduciaria-inicio`}>
               <img
                 decoding="async"
                 loading="lazy"
                 className="inline w-28"
-                src={logoAtlantidaInsurance}
-                alt={`Logo Atlantida Insurance`}
+                src={logoFiduciariaAtlantida}
+                alt={`Logo Fiduciaria Atlantida`}
               />
             </Link>
           </div>
@@ -189,7 +165,7 @@ const NavbarAtlantidaInsurance = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
-              to={`/insurance-inicio`}
+              to={`/fiduciaria-inicio`}
             >
               Inicio
             </NavLink>
@@ -201,9 +177,9 @@ const NavbarAtlantidaInsurance = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
-              to={`/insurance-productos`}
+              to={`/fiduciaria-negocios`}
             >
-              Productos
+              Negocios Fiduciarios
             </NavLink>
 
             <NavLink
@@ -213,9 +189,9 @@ const NavbarAtlantidaInsurance = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
-              to={`/insurance-quienes-somos`}
+              to={`/fiduciaria-fondos`}
             >
-              ¿Quiénes somos?
+              Fondos de Inversión
             </NavLink>
 
             <NavLink
@@ -225,9 +201,9 @@ const NavbarAtlantidaInsurance = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
-              to={`/insurance-servicios`}
+              to={`/fiduciaria-transparencia`}
             >
-              Servicios
+              Transparencia
             </NavLink>
 
             <NavLink
@@ -237,31 +213,7 @@ const NavbarAtlantidaInsurance = () => {
                   ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
                   : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
               }
-              to={`/insurance-recursos`}
-            >
-              Recursos
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/insurance-softseguros`}
-            >
-              Softseguros
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/insurance-contacto`}
+              to={`/fiduciaria-contacto`}
             >
               Contacto
             </NavLink>
@@ -272,4 +224,4 @@ const NavbarAtlantidaInsurance = () => {
   );
 };
 
-export default NavbarAtlantidaInsurance;
+export default NavbarFiduciariaAtlantida;
