@@ -1,5 +1,8 @@
+import FiduciariaAtlantidaInicioFeatures from "./components/FiduciariaAtlantidaInicioFeatures";
+import FiduciariaAtlantidaInicioHeader from "./components/FiduciariaAtlantidaInicioHeader";
 import FooterFiduciariaAtlantida from "../../../../components/FooterFiduciariaAtlantida";
 import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAtlantida";
+import FiduciariaAtlantidaInicioWorth from "./components/FiduciariaAtlantidaInicioWorth";
 import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 
@@ -9,8 +12,17 @@ const FiduciariaAtlantidaInicio = () => {
       {/* Navbar */}
       <NavbarFiduciariaAtlantida />
 
+      {/* Fiduciaria Header */}
+      <FiduciariaAtlantidaInicioHeader />
+
       {/* Banner Rojo */}
       <RedBanner />
+
+      {/* Fiduciaria Patrimonio */}
+      <FiduciariaAtlantidaInicioWorth />
+
+      {/* Fiduciaria Features */}
+      <FiduciariaAtlantidaInicioFeatures />
 
       {/* Subfooter 34 */}
       <SubFooter
@@ -20,7 +32,7 @@ const FiduciariaAtlantidaInicio = () => {
       />
 
       {/* Footer */}
-      <FooterFiduciariaAtlantida/>
+      <FooterFiduciariaAtlantida />
     </>
   );
 };

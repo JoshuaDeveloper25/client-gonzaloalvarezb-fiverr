@@ -243,7 +243,16 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <> 
+  <>
     <RouterProvider router={router} />
   </>
 );
+
+// --> Answers from table 1 to 10
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+
+//   for (let o = 1; o <= 10; o++) {
+//     console.log(i * o);
+//   }
+// }
