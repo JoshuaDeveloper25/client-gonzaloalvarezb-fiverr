@@ -274,7 +274,7 @@ const FooterFiduciariaAtlantida = () => {
       </div>
 
       {/* Todos los derechos */}
-      <div className="py-5'">
+      <div className="py-5 border-t">
         <p className="text-center">
           2024 Grupo Sur Atlántida | Todos los derechos reservados | Política de
           privacidad
