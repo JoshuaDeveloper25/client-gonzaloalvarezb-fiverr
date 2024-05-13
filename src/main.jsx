@@ -49,6 +49,7 @@ import FiduciariaAtlantidaInicio from "./pages/LayoutEmpresas/FiduciariaAtlantid
 import FiduciariaAtlantidaNegocios from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaNegocios/FiduciariaAtlantidaNegocios";
 import FiduciariaAtlantidaFondos from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondos/FiduciariaAtlantidaFondos";
 import FiduciariaAtlantidaFondoFit from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondoFit/FiduciariaAtlantidaFondoFit";
+import FiduciariaAtlantidaFondoElite from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondoElite/FiduciariaAtlantidaFondoElite";
 
 const router = createBrowserRouter([
   {
@@ -255,6 +256,11 @@ const router = createBrowserRouter([
       {
         path: "/fiduciaria-fondos/fondofit",
         element: <FiduciariaAtlantidaFondoFit />,
+      },
+
+      {
+        path: "/fiduciaria-fondos/fondoelite",
+        element: <FiduciariaAtlantidaFondoElite />,
       },
     ],
   },
