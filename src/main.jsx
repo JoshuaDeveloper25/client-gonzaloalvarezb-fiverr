@@ -52,6 +52,7 @@ import FiduciariaAtlantidaFondoFit from "./pages/LayoutEmpresas/FiduciariaAtlant
 import FiduciariaAtlantidaFondoElite from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondoElite/FiduciariaAtlantidaFondoElite";
 import FiduciariaAtlantidaPublicaciones from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaPublicaciones/FiduciariaAtlantidaPublicaciones";
 import FiduciariaAtlantidaMarco from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaMarco/FiduciariaAtlantidaMarco";
+import FiduciariaAtlantidaContacto from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaContacto/FiduciariaAtlantidaContacto";
 
 const router = createBrowserRouter([
   {
@@ -269,9 +270,15 @@ const router = createBrowserRouter([
         path: "/fiduciaria-transparencia",
         element: <FiduciariaAtlantidaPublicaciones />,
       },
+
       {
         path: "/fiduciaria-marco",
         element: <FiduciariaAtlantidaMarco />,
+      },
+
+      {
+        path: "/fiduciaria-contacto",
+        element: <FiduciariaAtlantidaContacto />,
       },
     ],
   },
@@ -282,12 +289,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </>
 );
-
-// --> Answers from table 1 to 10
-// for (let i = 1; i <= 10; i++) {
-//   console.log(i);
-
-//   for (let o = 1; o <= 10; o++) {
-//     console.log(i * o);
-//   }
-// }
