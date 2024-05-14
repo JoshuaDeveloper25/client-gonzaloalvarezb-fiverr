@@ -74,40 +74,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>
@@ -169,40 +197,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>
@@ -264,40 +320,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>
@@ -359,40 +443,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>
@@ -454,40 +566,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>
@@ -549,40 +689,68 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           >
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 1</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 1
+                </p>
               </div>
             </div>
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 2</p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
-              </div>
-
-              <div>
-                <p className="text-md">Aviso de privacidad de datos personales 3</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 2
+                </p>
               </div>
             </div>
 
             <div className="flex gap-3 space-y-2 items-center">
               <div>
-                <img className="w-9" loading="lazy" decoding="async" src={descargar2Icono} />
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
               </div>
 
               <div>
-                <p className="text-md">Aviso de privacidad de datos personales 4</p>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 3
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 space-y-2 items-center">
+              <div>
+                <img
+                  className="w-9"
+                  loading="lazy"
+                  decoding="async"
+                  src={descargar2Icono}
+                />
+              </div>
+
+              <div>
+                <p className="text-md">
+                  Aviso de privacidad de datos personales 4
+                </p>
               </div>
             </div>
           </TECollapse>

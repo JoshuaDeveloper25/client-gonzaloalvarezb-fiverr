@@ -8,7 +8,7 @@ const BoxImageText = ({ bgSec, titleSec, bgImg, textSec, boxImg, boxText }) => {
 
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <article className={boxImg}>
-            <img src={bgImg} />
+            <img decoding="async" loading="lazy" src={bgImg} />
           </article>
 
           <article className={boxText}>

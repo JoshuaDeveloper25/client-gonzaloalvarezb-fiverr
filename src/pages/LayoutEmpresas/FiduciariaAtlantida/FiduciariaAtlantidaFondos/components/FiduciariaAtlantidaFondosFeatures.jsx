@@ -9,10 +9,17 @@ const FiduciariaAtlantidaFondosFeatures = () => {
         <article className="col-span-1">
           <div>
             <img
+              decoding="async"
+              loading="lazy"
               className="sm:flex hidden w-92 mx-auto h-80 object-cover"
               src={fondoFit}
             />
-            <img className="flex sm:hidden w-60 mx-auto" src={fondoFit} />
+            <img
+              decoding="async"
+              loading="lazy"
+              className="flex sm:hidden w-60 mx-auto"
+              src={fondoFit}
+            />
           </div>
           <div className="text-center mt-3">
             <Link to={"/fiduciaria-fondos/fondofit"}>
@@ -24,10 +31,17 @@ const FiduciariaAtlantidaFondosFeatures = () => {
         <article className="col-span-1">
           <div>
             <img
+              decoding="async"
+              loading="lazy"
               className="sm:flex hidden w-92 mx-auto h-80 object-cover"
               src={fondoElite}
             />
-            <img className="flex sm:hidden w-60 mx-auto" src={fondoElite} />
+            <img
+              decoding="async"
+              loading="lazy"
+              className="flex sm:hidden w-60 mx-auto"
+              src={fondoElite}
+            />
           </div>
           <div className="text-center mt-3">
             <Link to={"/fiduciaria-fondos/fondoelite"}>

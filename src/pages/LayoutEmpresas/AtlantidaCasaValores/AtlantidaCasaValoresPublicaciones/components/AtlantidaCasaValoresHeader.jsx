@@ -15,7 +15,12 @@ const AtlantidaCasaValoresHeader = () => {
 
           <article className="flex-1 text-center">
             <div className="max-w-5xl mx-auto">
-              <img className="w-full" src={headerCasaValores} />
+              <img
+                decoding="async"
+                loading="lazy"
+                className="w-full"
+                src={headerCasaValores}
+              />
             </div>
           </article>
         </div>

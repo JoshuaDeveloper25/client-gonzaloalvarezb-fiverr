@@ -12,7 +12,12 @@ const FiduciariaAtlantidaInicioVentajas = () => {
         </h2>
 
         <div className="max-w-2xl mx-auto">
-          <img className="w-full" src={fiduciariaGestion} />
+          <img
+            decoding="async"
+            loading="lazy"
+            className="w-full"
+            src={fiduciariaGestion}
+          />
         </div>
       </article>
 

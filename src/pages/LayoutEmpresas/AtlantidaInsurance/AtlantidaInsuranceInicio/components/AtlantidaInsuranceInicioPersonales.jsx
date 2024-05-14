@@ -6,7 +6,7 @@ const AtlantidaInsuranceInicioPersonales = () => {
       <div className="container-page my-6">
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center md:gap-3 gap-0">
           <article className="text-secondary-color md:py-10 py-2">
-            <img src={logoPersonas} />
+            <img decoding="async" loading="lazy" src={logoPersonas} />
             <h2 className="family-nunito-black leading-[1.2] font-bold lg:text-5xl text-3xl mb-2">
               Seguros <span className="block">Personales</span>
             </h2>
