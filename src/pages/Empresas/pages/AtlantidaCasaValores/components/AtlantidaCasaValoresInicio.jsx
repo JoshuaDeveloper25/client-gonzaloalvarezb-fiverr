@@ -1,10 +1,9 @@
-import { useNavigate } from "react-router-dom";
 import casaValoresHeader from "../../../../../images/atlantida-casa-valores-header.png";
 import logoAtlantidaCasaValores from "../../../../../images/nuestraempresa4.png";
+import { Link } from "react-router-dom";
+Link;
 
 const AtlantidaCasaValoresInicio = () => {
-  const navigate = useNavigate();
-
   return (
     <section className="bg-tertiary-color">
       <div className="container-page flex flex-col lg:flex-row justify-between items-center md:gap-3">
@@ -21,13 +20,11 @@ const AtlantidaCasaValoresInicio = () => {
             mercado de valores ecuatoriano, se ha consolidado como una empresa
             líder en las bolsas del país.
           </p>
-          <button
-            onClick={() => navigate("/casa-valores-inicio")}
-            className="button-red-primary"
-            type="button"
-          >
-            Conoce más
-          </button>
+          <Link to={"/casa-valores-inicio"}>
+            <button className="button-red-primary" type="button">
+              Conoce más
+            </button>
+          </Link>
         </article>
 
         <article className="max-w-sm mx-auto  mt-5">

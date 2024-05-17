@@ -39,7 +39,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio1")}
+              // onClick={() => handleClick("directorio1")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -48,7 +48,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Presidente de la Junta Directiva</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio1"
@@ -98,7 +98,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio2")}
+              // onClick={() => handleClick("directorio2")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -107,7 +107,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Miembro de la Junta Directiva</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio2"
@@ -157,7 +157,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio3")}
+              // onClick={() => handleClick("directorio3")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -166,7 +166,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Miembro de la Junta Directiva</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio3"
@@ -289,7 +289,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio5")}
+              // onClick={() => handleClick("directorio5")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -301,7 +301,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio5"
@@ -351,7 +351,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio6")}
+              // onClick={() => handleClick("directorio6")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -365,7 +365,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio6"
@@ -415,7 +415,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio7")}
+              // onClick={() => handleClick("directorio7")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -424,7 +424,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Presidente del Pacific Bank Panamá</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio7"
@@ -474,7 +474,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio8")}
+              // onClick={() => handleClick("directorio8")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -487,7 +487,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio8"
@@ -611,7 +611,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio10")}
+              // onClick={() => handleClick("directorio10")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -623,7 +623,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio10"
@@ -676,7 +676,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio11")}
+              // onClick={() => handleClick("directorio11")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -688,7 +688,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio11"
@@ -807,7 +807,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio13")}
+              // onClick={() => handleClick("directorio13")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -820,7 +820,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio13"
@@ -959,7 +959,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio15")}
+              // onClick={() => handleClick("directorio15")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -968,7 +968,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm leading-4">Presidente del Directorio</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio15"
@@ -1021,7 +1021,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio16")}
+              // onClick={() => handleClick("directorio16")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1030,7 +1030,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Vicepresidente del Directorio</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio16"
@@ -1083,7 +1083,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio17")}
+              // onClick={() => handleClick("directorio17")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1092,7 +1092,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Principal</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio17"
@@ -1145,7 +1145,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio18")}
+              // onClick={() => handleClick("directorio18")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1154,7 +1154,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Principal</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio18"
@@ -1205,7 +1205,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio19")}
+              // onClick={() => handleClick("directorio19")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1214,7 +1214,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Principal</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio19"
@@ -1280,7 +1280,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio20")}
+              // onClick={() => handleClick("directorio20")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1289,7 +1289,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm leading-4">Director Secundario</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio20"
@@ -1342,7 +1342,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio21")}
+              // onClick={() => handleClick("directorio21")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1351,7 +1351,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Secundario</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio21"
@@ -1466,7 +1466,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio23")}
+              // onClick={() => handleClick("directorio23")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1475,7 +1475,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Secundario</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio23"
@@ -1526,7 +1526,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio24")}
+              // onClick={() => handleClick("directorio24")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1535,7 +1535,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Secundario</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio24"

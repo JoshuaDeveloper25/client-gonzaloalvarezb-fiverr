@@ -38,24 +38,20 @@ const NavbarReditum = () => {
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+            className={
+              "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/reditum-solicitar-demo`}
+            to={`#`}
           >
             Solicitar demo
           </NavLink>
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
+            className={
+              "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300"
             }
-            to={`/reditum-noticias`}
+            to={"#"}
           >
             Noticias
           </NavLink>
@@ -160,24 +156,19 @@ const NavbarReditum = () => {
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+              className={
+                "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/reditum-solicitar-demo`}
+              to={`#`}
             >
               Solicitar demo
             </NavLink>
 
             <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
+              className={
+                "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold"
               }
-              to={`/reditum-noticias`}
+              to={"#"}
             >
               Noticias
             </NavLink>

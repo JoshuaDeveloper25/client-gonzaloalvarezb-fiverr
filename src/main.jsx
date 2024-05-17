@@ -195,7 +195,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/casa-valores-intermediacion",
+        path: "/casa-valores-transparencia",
         element: <AtlantidaCasaValoresIntermediacion />,
       },
 

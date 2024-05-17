@@ -1,5 +1,6 @@
 import fiduciariaHeader from "../../../../../images/fiduciaria-atlantida-header.png";
 import logoFiduciariaAtlantida from "../../../../../images/nuestraempresa3.png";
+import { Link } from "react-router-dom";
 
 const FiduciariaAtlantidaInicio = () => {
   return (
@@ -19,9 +20,11 @@ const FiduciariaAtlantidaInicio = () => {
             fiduciaria, financiera y legal. Regulada y controlada por la
             Superintendencia de Compañías Valores y Seguros.
           </p>
-          <button className="button-red-primary" type="button">
-            Conoce más
-          </button>
+          <Link to={`/fiduciaria-inicio`}>
+            <button className="button-red-primary" type="button">
+              Conoce más
+            </button>
+          </Link>
         </article>
 
         <article className="max-w-lg  mt-5">
