@@ -10,10 +10,12 @@ const AtlantidaCasaValoresContacto = () => {
   return (
     <>
       {/* Navbar Casa de Valores */}
-      <NavbarCasaValores />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <NavbarCasaValores />
+      </div>
 
       {/* Casa de Valores Subheader */}
-      <AtlantidaCasaValoresContactoSubheader/>
+      <AtlantidaCasaValoresContactoSubheader />
 
       {/* Casa de Valores Banner Rojo */}
       <RedBanner />

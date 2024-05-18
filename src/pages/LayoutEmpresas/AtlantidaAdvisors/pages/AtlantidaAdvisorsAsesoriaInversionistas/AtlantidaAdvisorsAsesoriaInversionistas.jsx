@@ -8,7 +8,9 @@ const AtlantidaAdvisorsAsesoriaInversionistas = () => {
   return (
     <>
       {/* Navbar Atlantida Advisors */}
-      <NavbarAtlantidaAdvisors />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <NavbarAtlantidaAdvisors />
+      </div>
 
       {/* Atlantida Advisors - Asesoria Inversionistas Header */}
       <AtlantidaAdvisorsAsesoriaInversionistasHeader />

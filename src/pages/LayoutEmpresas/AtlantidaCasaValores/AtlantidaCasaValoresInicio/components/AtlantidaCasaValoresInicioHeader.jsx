@@ -1,6 +1,6 @@
 import checkIcono from "../../../../../images/indicador14.png";
 
-const AtlantidaCasaValoresInicioHeader = () => {
+const  AtlantidaCasaValoresInicioHeader = () => {
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between items-center md:max-w-none max-w-lg md:gap-6 gap-0  mx-auto">
@@ -68,7 +68,7 @@ const AtlantidaCasaValoresInicioHeader = () => {
 
         <article className="flex-1 text-center md:my-8 my-3">
           <h2 className="text-primary-color font-bold text-5xl mb-2 family-nunito-regular">
-            4.2 <span className="block">Billones</span>
+            6.2 <span className="block">Billones</span>
           </h2>
           <h3 className="text-secondary-color text-3xl">
             Volumen <span className="block">transaccional</span> histórico

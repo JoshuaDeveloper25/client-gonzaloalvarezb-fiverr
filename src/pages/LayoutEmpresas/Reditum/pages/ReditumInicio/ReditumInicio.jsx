@@ -14,7 +14,9 @@ const ReditumPage = () => {
   return (
     <>
       {/* Navbar Reditum */}
-      <NavbarReditum />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <NavbarReditum />
+      </div>
 
       {/* Reditum Inicio - Header */}
       <ReditumInicio />

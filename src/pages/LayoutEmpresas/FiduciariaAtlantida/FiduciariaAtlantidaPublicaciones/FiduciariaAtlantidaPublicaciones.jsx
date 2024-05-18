@@ -9,7 +9,9 @@ const FiduciariaAtlantidaPublicaciones = () => {
   return (
     <>
       {/* Navbar */}
-      <NavbarFiduciariaAtlantida />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <NavbarFiduciariaAtlantida />
+      </div>
 
       {/* Header */}
       <FiduciariaAtlantidaPublicacionesHeader />

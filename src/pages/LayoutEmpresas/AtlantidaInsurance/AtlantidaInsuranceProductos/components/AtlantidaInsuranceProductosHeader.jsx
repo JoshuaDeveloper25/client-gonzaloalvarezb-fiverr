@@ -10,7 +10,7 @@ const AtlantidaInsuranceProductosHeader = () => {
             <span className="sm:block inline">proteger a tu familia y  </span>
             <span>tu patrimonio</span>
           </h1>
-          <button className="button-red-primary" type="button">Cotiza ahora</button>
+          <button className="button-red-primary mt-3" type="button">Cotiza ahora</button>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-4xl">

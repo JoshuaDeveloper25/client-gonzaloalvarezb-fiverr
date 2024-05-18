@@ -81,7 +81,7 @@ body {
 
 .nuestrasEmpresas > .slick-slider > .slick-prev {
   left: 1rem;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .nuestrasEmpresas > .slick-slider > .slick-next {

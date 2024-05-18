@@ -14,7 +14,9 @@ const AtlantidaInsuranceInicio = () => {
   return (
     <>
       {/* Navbar */}
-      <NavbarAtlantidaInsurance />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <NavbarAtlantidaInsurance />
+      </div>
 
       {/* Inicio */}
       <AtlantidaInsuranceInicioHeader />

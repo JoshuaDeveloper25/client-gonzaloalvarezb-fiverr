@@ -6,7 +6,9 @@ import Footer from "../components/Footer";
 const Root = () => {
   return (
     <div>
-      <Navbar />
+      <div className="sticky top-0 w-full z-[99999] bg-white">
+        <Navbar />
+      </div>
 
       <main>
         <Outlet />

@@ -239,7 +239,7 @@ const Navbar = () => {
 
         <div
           id="drawer-example"
-          className={`lg:hidden w-full fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform duration-500 bg-white sm:w-80 ${
+          className={`lg:hidden w-full fixed top-0 left-0 z-[99999] h-screen p-4 overflow-y-auto transition-transform duration-500 bg-white sm:w-80 ${
             !navbarOpen ? "-translate-x-full" : null
           }`}
           tabIndex="-1"
@@ -282,7 +282,7 @@ const Navbar = () => {
             <span className="sr-only">Close menu</span>
           </button>
 
-          <div className="flex flex-col mt-10 gap-6">
+          <div className="flex flex-col relative z-[20000] mt-10 gap-6">
             <NavLink
               onClick={() => setNavbarOpen(false)}
               className={({ isActive }) =>
