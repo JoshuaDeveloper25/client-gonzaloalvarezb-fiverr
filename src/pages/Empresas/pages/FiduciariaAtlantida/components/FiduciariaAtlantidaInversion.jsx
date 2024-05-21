@@ -1,10 +1,10 @@
 import metricas from "../../../../../images/indicador9.png";
 import inversionImagen from "../../../../../images/fiduciaria-negocios2.jpg";
+import { Link } from "react-router-dom";
 
 const FiduciariaAtlantidaInversion = () => {
   return (
     <section className="sm:grid grid-cols-4 gap-8 container-page my-10">
-
       <article className="md:col-span-3 col-span-2 md:mb-0 mb-8">
         <img
           className={`md:w-[80%] w-full mx-auto md:h-[25rem] object-cover rounded-3xl`}
@@ -22,10 +22,7 @@ const FiduciariaAtlantidaInversion = () => {
           decoding="async"
           src={metricas}
         />
-        <h2
-          className="text-3xl text-secondary-color family-nunito-black"
-          
-        >
+        <h2 className="text-3xl text-secondary-color family-nunito-black">
           Fondos de Inversión
         </h2>
         <p className="text-secondary-color">
@@ -34,9 +31,9 @@ const FiduciariaAtlantidaInversion = () => {
           diversificación con los mejores títulos valores.
         </p>
 
-        <button className="button-red-primary" type="button">
+        <Link to={"/fiduciaria-fondos"} className="button-red-primary">
           Conoce más
-        </button>
+        </Link>
       </article>
     </section>
   );

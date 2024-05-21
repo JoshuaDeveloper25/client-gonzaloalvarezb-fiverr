@@ -1,12 +1,13 @@
 import logoCasaValores from "../images/nuestraempresa4.png";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
 const NavbarCasaValores = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="container-page py-5">
@@ -48,17 +49,67 @@ const NavbarCasaValores = () => {
             Servicios
           </NavLink>
 
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/casa-valores-transparencia`}
-          >
-            Transparencia
-          </NavLink>
+          <div className="group relative cursor-pointer">
+            <div className="hover:text-primary-color flex items-center justify-between gap-4">
+              <NavLink
+                onClick={() => setNavbarOpen(false)}
+                // to={`/casa-valores-transparencia`}
+                className={` font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black ${
+                  location?.pathname === "/casa-valores-transparencia" ||
+                  location?.pathname === "/casa-valores-publicaciones"
+                    ? "text-primary-color"
+                    : "text-secondary-color"
+                }`}
+              >
+                Transparencia
+              </NavLink>
+              <span className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className={`h-6 w-6 ${
+                    location?.pathname === "/casa-valores-transparencia" ||
+                    location?.pathname === "/casa-valores-publicaciones"
+                      ? "text-primary-color"
+                      : "text-secondary-color"
+                  }`}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                }
+                to={"/casa-valores-transparencia"}
+              >
+                Tarifario
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                }
+                to={"/casa-valores-publicaciones"}
+              >
+                Publicaciones
+              </NavLink>
+            </div>
+          </div>
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
@@ -170,17 +221,59 @@ const NavbarCasaValores = () => {
               Servicios
             </NavLink>
 
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/casa-valores-transparencia`}
-            >
-              Transparencia
-            </NavLink>
+            <div className="group relative cursor-pointer">
+              <div className="hover:text-primary-color flex items-center justify-between gap-4">
+                <NavLink
+                  onClick={() => setNavbarOpen(false)}
+                  className={
+                    "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                  }
+                  // to={`/casa-valores-transparencia`}
+                >
+                  Transparencia
+                </NavLink>
+                <span className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className={`h-6 w-6`}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <div className="invisible absolute z-58 flex w-48 left-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/casa-valores-transparencia"}
+                >
+                  Tarifario
+                </NavLink>
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/casa-valores-publicaciones"}
+                >
+                  Publicaciones
+                </NavLink>
+              </div>
+            </div>
 
             <NavLink
               onClick={() => setNavbarOpen(false)}

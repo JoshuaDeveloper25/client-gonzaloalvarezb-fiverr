@@ -7,6 +7,8 @@ import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAt
 import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 
+import subfooter from "../../../../images/subfooter38.jpg";
+
 const FiduciariaAtlantidaFondoElite = () => {
   return (
     <>
@@ -34,7 +36,7 @@ const FiduciariaAtlantidaFondoElite = () => {
       <SubFooter
         bgColor={`black`}
         title={`Construyendo un mañana próspero y seguro`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

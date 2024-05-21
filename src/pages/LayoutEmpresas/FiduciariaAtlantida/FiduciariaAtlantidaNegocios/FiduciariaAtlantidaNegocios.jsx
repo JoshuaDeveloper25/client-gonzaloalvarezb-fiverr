@@ -14,6 +14,8 @@ import fideicomisoInversion from "../../../../images/fideicomiso-inversion.png";
 import fideicomisoTitularizacion from "../../../../images/fideicomiso-titularizacion.png";
 import FiduciariaAtlantidaNegociosDiferencias from "./components/FiduciariaAtlantidaNegociosDiferencias";
 
+import subfooter from "../../../../images/subfooter35.jpg";
+
 const FiduciariaAtlantidaNegocios = () => {
   return (
     <>
@@ -128,7 +130,7 @@ const FiduciariaAtlantidaNegocios = () => {
       <SubFooter
         bgColor={`black`}
         title={`Desbloquea el potencial de tus activos`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

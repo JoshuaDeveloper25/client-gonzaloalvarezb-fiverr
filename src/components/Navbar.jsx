@@ -126,7 +126,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/banco-d-miro"}
               >
-                D-MIRO
+                Banco D-MIRO
               </NavLink>
 
               <NavLink
@@ -137,7 +137,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/fiduciaria-atlantida"}
               >
-                Fiduciaria
+                Fiduciaria Atlántida
               </NavLink>
 
               <NavLink
@@ -148,7 +148,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/atlantida-casa-valores"}
               >
-                Casa de Valores
+                Casa de Valores Atlántida
               </NavLink>
 
               <NavLink
@@ -388,7 +388,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/banco-d-miro"}
                 >
-                  D-MIRO
+                  Banco D-MIRO
                 </NavLink>
 
                 <NavLink
@@ -400,7 +400,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/fiduciaria-atlantida"}
                 >
-                  Fiduciaria
+                  Fiduciaria Atlántida
                 </NavLink>
 
                 <NavLink
@@ -412,7 +412,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/atlantida-casa-valores"}
                 >
-                  Casa de Valores
+                  Casa de Valores Atlántida
                 </NavLink>
 
                 <NavLink

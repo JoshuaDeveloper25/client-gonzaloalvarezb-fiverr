@@ -7,6 +7,8 @@ import NavbarCasaValores from "../../../../components/NavbarCasaValores";
 import SubFooter from "../../../../components/SubFooter";
 import Footer from "../../../../components/Footer";
 
+import subfooter from "../../../../images/subfooter23.jpg"
+
 const AtlantidaCasaValoresServicios = () => {
   return (
     <>
@@ -30,7 +32,7 @@ const AtlantidaCasaValoresServicios = () => {
       {/* Subfooter 23 */}
       <SubFooter
         bgColor={`black`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
         addClassName={`bg-center`}
         title={`Maximiza tus inversiones con nuestra gestión experta`}
       />

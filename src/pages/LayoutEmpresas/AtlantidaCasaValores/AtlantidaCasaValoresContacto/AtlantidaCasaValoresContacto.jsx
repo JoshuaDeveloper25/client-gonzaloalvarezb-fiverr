@@ -6,6 +6,8 @@ import SubFooter from "../../../../components/SubFooter";
 import Footer from "../../../../components/Footer";
 import AtlantidaCasaValoresContactoSubheader from "./components/AtlantidaCasaValoresContactoSubheader";
 
+import subfooter from "../../../../images/subfooter26.jpg";
+
 const AtlantidaCasaValoresContacto = () => {
   return (
     <>
@@ -26,7 +28,7 @@ const AtlantidaCasaValoresContacto = () => {
       {/* Subfooter 28 */}
       <SubFooter
         bgColor={`black`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
         addClassName={`bg-center`}
         title={`Potencia tu inversión, maximiza tu retorno`}
       />

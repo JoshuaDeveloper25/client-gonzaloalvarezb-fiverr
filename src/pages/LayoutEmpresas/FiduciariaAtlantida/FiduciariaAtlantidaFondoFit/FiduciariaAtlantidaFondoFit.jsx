@@ -7,6 +7,8 @@ import SubFooter from "../../../../components/SubFooter";
 import FiduciariaAtlantidaFondoFitFeatures from "./components/FiduciariaAtlantidaFondoFitFeatures";
 import FiduciariaAtlantidaFondoFitVentajas from "./components/FiduciariaAtlantidaFondoFitVentajas";
 
+import subfooter from "../../../../images/subfooter37.jpg";
+
 const FiduciariaAtlantidaFondoFit = () => {
   return (
     <>
@@ -34,7 +36,7 @@ const FiduciariaAtlantidaFondoFit = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu camino hacia un futuro financiero próspero`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

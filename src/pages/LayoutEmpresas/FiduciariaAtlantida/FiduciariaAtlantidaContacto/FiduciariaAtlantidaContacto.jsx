@@ -5,6 +5,8 @@ import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAt
 import SubFooter from "../../../../components/SubFooter";
 import RedBanner from "../../../../components/RedBanner";
 
+import subfooter from "../../../../images/subfooter41.jpg";
+
 const FiduciariaAtlantidaContacto = () => {
   return (
     <>
@@ -25,7 +27,7 @@ const FiduciariaAtlantidaContacto = () => {
       {/* Subfooter 41 */}
       <SubFooter
         bgColor={`black`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
         addClassName={`bg-center`}
         title={`Descubre el poder de invertir con nosotros`}
       />

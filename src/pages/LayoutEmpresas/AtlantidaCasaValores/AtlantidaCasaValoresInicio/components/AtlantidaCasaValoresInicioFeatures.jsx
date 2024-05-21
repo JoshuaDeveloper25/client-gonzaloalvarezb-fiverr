@@ -3,14 +3,18 @@ import financiamientoIcono from "../../../../../images/dinero-blanco.png";
 import intermediacionIcono from "../../../../../images/inter-icono.png";
 import { Link } from "react-router-dom";
 
+import administracionPortfolio from "../../../../../images/administracion-portfolio.jpeg";
+import intermediacionBursatil from "../../../../../images/intermediacion-bursatil.jpeg"
+import financiamiento from "../../../../../images/financiamiento.jpg";
+
 const AtlantidaCasaValoresInicioFeatures = () => {
   return (
     <section className="container-page space-y-8 my-6">
       <div className="flex flex-col min-[810px]:flex-row gap-4 gap-y-3">
         <div className="flex-1 min-[810px]:max-w-full max-w-md mx-auto">
           <img
-            className="h-full w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            className="w-full rounded-3xl"
+            src={administracionPortfolio}
             decoding="async"
             loading="lazy"
           />
@@ -179,7 +183,7 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             decoding="async"
             loading="lazy"
             className="h-full w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={financiamiento}
           />
         </div>
       </div>
@@ -190,7 +194,7 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             decoding="async"
             loading="lazy"
             className="h-full w-full rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={intermediacionBursatil}
           />
         </div>
 

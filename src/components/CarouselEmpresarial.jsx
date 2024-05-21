@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import carouselEmpresarial1 from "../images/carouselempresarial1.png";
 import carouselEmpresarial2 from "../images/carouselempresarial2.png";
 import carouselEmpresarial3 from "../images/carouselempresarial3.png";
@@ -5,7 +6,7 @@ import carouselEmpresarial4 from "../images/carouselempresarial4.png";
 
 import Slider from "react-slick";
 
-const CarouselEmprearial = ({ exclusiveContentOne, exclusiveContentTwo }) => {
+const CarouselEmprearial = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -49,133 +50,90 @@ const CarouselEmprearial = ({ exclusiveContentOne, exclusiveContentTwo }) => {
     <section className="bg-primary-color">
       <div className="carouselEmpresarial container-page py-10">
         <Slider {...settings}>
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial1}
-                className="w-20 h-12 object-contain"
-              />
+          <Link to={"/casa-valores-inicio"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial1}
+                  className="w-20 h-12 object-contain"
+                />
 
-              <h3 className="text-white leading-4">
-                Mercado <span className="block">de Valores</span>
-              </h3>
+                <h3 className="text-white leading-4">
+                  Mercado <span className="block">de Valores</span>
+                </h3>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial2}
-                className="w-20 h-12 object-contain"
-              />
+          <Link to={`/insurance-inicio`}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial2}
+                  className="w-20 h-12 object-contain"
+                />
 
-              <h3 className="text-white leading-4">
-                Asesoría <span className="block">Producción de</span> seguros
-              </h3>
+                <h3 className="text-white leading-4">
+                  Asesoría <span className="block">Producción de</span> seguros
+                </h3>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial3}
-                className="w-20 h-12 object-contain"
-              />
+          <Link
+            to={"https://suratlantida.com/fiduciaria/negocios-fiduciarios/ "}
+          >
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial3}
+                  className="w-20 h-12 object-contain"
+                />
 
-              <h3 className="text-white leading-4">
-                {exclusiveContentOne || `Fideicomisos`}
-              </h3>
+                <h3 className="text-white leading-4">{`Fideicomisos`}</h3>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial4}
-                className="w-20 h-12 object-contain"
-              />
+          <Link to={"https://suratlantida.com/fiduciaria/fondos/"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
 
-              <h3 className="text-white leading-4">
-                {exclusiveContentTwo || (
-                  <>
-                    Fondos de <span className="block">inversión</span>
-                  </>
-                )}
-              </h3>
+                <h3 className="text-white leading-4">
+                  Fondos de <span className="block">inversión</span>
+                </h3>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial1}
-                className="w-20 h-12 object-contain"
-              />
+          <Link to={"/reditum-inicio"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
 
-              <h3 className="text-white leading-4">
-                Mercado <span className="block">de Valores</span>
-              </h3>
+                <h3 className="text-white leading-4">
+                  Inteligencia de <span className="block">mercados</span>
+                </h3>
+              </div>
             </div>
-          </div>
-
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial2}
-                className="w-20 h-12 object-contain"
-              />
-
-              <h3 className="text-white leading-4">
-                Asesoría <span className="block">Producción de</span> seguros
-              </h3>
-            </div>
-          </div>
-
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial3}
-                className="w-20 h-12 object-contain"
-              />
-
-              <h3 className="text-white leading-4">
-                {exclusiveContentOne || `Fideicomisos`}
-              </h3>
-            </div>
-          </div>
-
-          <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-            <div className="flex items-center">
-              <img
-                loading="lazy"
-                decoding="async"
-                src={carouselEmpresarial4}
-                className="w-20 h-12 object-contain"
-              />
-
-              <h3 className="text-white leading-4">
-                {exclusiveContentTwo || (
-                  <>
-                    Fondos de <span className="block">inversión</span>
-                  </>
-                )}
-              </h3>
-            </div>
-          </div>
+          </Link>
         </Slider>
       </div>
     </section>

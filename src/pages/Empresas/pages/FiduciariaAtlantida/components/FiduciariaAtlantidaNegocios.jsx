@@ -1,5 +1,6 @@
 import iconoDineroMano from "../../../../../images/indicador8.png";
 import negociosFiduciariosImagen from "../../../../../images/fiduciaria-negocios.jpg";
+import { Link } from "react-router-dom";
 
 const FiduciariaAtlantidaNegocios = () => {
   return (
@@ -19,9 +20,9 @@ const FiduciariaAtlantidaNegocios = () => {
           un mandante por medio de un tercero.
         </p>
 
-        <button className="button-red-primary" type="button">
+        <Link className="button-red-primary" to={"/fiduciaria-negocios"}>
           Conoce más
-        </button>
+        </Link>
       </article>
 
       <article className="md:col-span-3 col-span-2 md:mt-0 mt-8">

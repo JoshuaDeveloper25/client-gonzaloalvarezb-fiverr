@@ -5,6 +5,8 @@ import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAt
 import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 
+import subfooter from "../../../../images/subfooter36.jpg";
+
 const FiduciariaAtlantidaFondos = () => {
   return (
     <>
@@ -26,7 +28,7 @@ const FiduciariaAtlantidaFondos = () => {
       <SubFooter
         bgColor={`black`}
         title={`Descubre el poder de hacer crecer tu dinero`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

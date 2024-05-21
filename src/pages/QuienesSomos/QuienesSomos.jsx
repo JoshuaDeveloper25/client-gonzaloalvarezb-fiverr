@@ -15,10 +15,7 @@ const QuienesSomos = () => {
       <QuienesSomosInicio />
 
       {/* Carousel Empresarial */}
-      <CarouselEmprearial
-        exclusiveContentOne={"Fondos de Inversión y Fideicomisos"}
-        exclusiveContentTwo={`Inteligencia de Mercados`}
-      />
+      <CarouselEmprearial />
 
       {/* Nuestra Historia */}
       <NuestraHistoria />

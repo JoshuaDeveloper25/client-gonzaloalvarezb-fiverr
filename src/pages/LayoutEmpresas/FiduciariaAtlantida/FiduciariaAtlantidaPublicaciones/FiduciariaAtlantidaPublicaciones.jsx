@@ -5,6 +5,8 @@ import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAt
 import SubFooter from "../../../../components/SubFooter";
 import RedBanner from "../../../../components/RedBanner";
 
+import subfooter from "../../../../images/subfooter39.jpg";
+
 const FiduciariaAtlantidaPublicaciones = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const FiduciariaAtlantidaPublicaciones = () => {
         bgColor={`black`}
         title={`Tu socio de confianza en el mundo financiero`}
         addClassName={"bg-center"}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

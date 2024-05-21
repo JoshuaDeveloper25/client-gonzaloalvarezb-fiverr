@@ -217,7 +217,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio4")}
+              // onClick={() => handleClick("directorio4")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -226,7 +226,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Miembro de la Junta Directiva</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio4"
@@ -538,7 +538,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio9")}
+              // onClick={() => handleClick("directorio9")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -547,7 +547,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Presidente AFP Confía en El Salvador</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio9"
@@ -741,7 +741,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio12")}
+              // onClick={() => handleClick("directorio12")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -754,7 +754,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio12"
@@ -871,7 +871,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio14")}
+              // onClick={() => handleClick("directorio14")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -883,7 +883,7 @@ const GobiernoCorporativoDirectorios = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio14"
@@ -1404,7 +1404,7 @@ const GobiernoCorporativoDirectorios = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("directorio22")}
+              // onClick={() => handleClick("directorio22")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -1413,7 +1413,7 @@ const GobiernoCorporativoDirectorios = () => {
                 <p className="text-sm">Director Secundario</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "directorio22"

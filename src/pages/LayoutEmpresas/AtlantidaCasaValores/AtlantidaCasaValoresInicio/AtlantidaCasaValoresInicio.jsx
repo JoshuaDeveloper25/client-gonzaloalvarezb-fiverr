@@ -7,6 +7,8 @@ import SubFooter from "../../../../components/SubFooter";
 import RedBanner from "../../../../components/RedBanner";
 import Footer from "../../../../components/Footer";
 
+import subfooter from "../../../../images/subfooter22.jpg";
+
 const AtlantidaCasaValoresInicio = () => {
   return (
     <>
@@ -30,7 +32,7 @@ const AtlantidaCasaValoresInicio = () => {
       {/* Subfooter 22 */}
       <SubFooter
         bgColor={`black`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
         addClassName={`bg-center`}
         title={`Inversiones seguras, oportunidades infinitas`}
       />

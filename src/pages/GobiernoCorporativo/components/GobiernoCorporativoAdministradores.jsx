@@ -46,7 +46,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador1")}
+              // onClick={() => handleClick("administrador1")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -59,7 +59,7 @@ const GobiernoCorporativoAdministradores = () => {
                 </p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador1"
@@ -123,7 +123,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador2")}
+              // onClick={() => handleClick("administrador2")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -132,7 +132,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Presidente Ejecutivo</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador2"
@@ -183,7 +183,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador3")}
+              // onClick={() => handleClick("administrador3")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -192,7 +192,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador3"
@@ -255,7 +255,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador4")}
+              // onClick={() => handleClick("administrador4")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -264,7 +264,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador4"
@@ -315,7 +315,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador5")}
+              // onClick={() => handleClick("administrador5")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -324,7 +324,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm">Director Corporativo</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador5"
@@ -384,7 +384,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador6")}
+              // onClick={() => handleClick("administrador6")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -393,7 +393,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador6"
@@ -456,7 +456,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador7")}
+              // onClick={() => handleClick("administrador7")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -465,7 +465,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Presidente</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador7"
@@ -516,7 +516,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador8")}
+              // onClick={() => handleClick("administrador8")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -525,7 +525,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador8"
@@ -585,7 +585,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador9")}
+              // onClick={() => handleClick("administrador9")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -594,7 +594,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador9"
@@ -654,7 +654,7 @@ const GobiernoCorporativoAdministradores = () => {
                 ` font-bold [box-shadow:inset_0_-3px_0_rgba(255,0,0)]`
               } group relative flex w-full justify-between items-start rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("administrador10")}
+              // onClick={() => handleClick("administrador10")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
@@ -663,7 +663,7 @@ const GobiernoCorporativoAdministradores = () => {
                 <p className="text-sm leading-4">Gerente General</p>
               </div>
 
-              <div className="pt-3">
+              <div className="pt-3 hidden">
                 <span
                   className={`${
                     activeElement === "administrador10"

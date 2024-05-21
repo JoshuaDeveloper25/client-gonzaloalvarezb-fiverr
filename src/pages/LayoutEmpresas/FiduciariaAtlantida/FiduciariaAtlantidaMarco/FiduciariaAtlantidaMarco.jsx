@@ -5,6 +5,8 @@ import NavbarFiduciariaAtlantida from "../../../../components/NavbarFiduciariaAt
 import SubFooter from "../../../../components/SubFooter";
 import RedBanner from "../../../../components/RedBanner";
 
+import subfooter from "../../../../images/subfooter40.jpg";
+
 const FiduciariaAtlantidaMarco = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const FiduciariaAtlantidaMarco = () => {
         bgColor={`black`}
         title={`Seguridad y crecimiento con nuestra empresa`}
         addClassName={"bg-center"}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}
