@@ -31,7 +31,8 @@ const FiduciariaAtlantidaInicio = () => {
             </p>
             <Link
               className="button-red-primary"
-              to={`https://suratlantida.com/fiduciaria/`}
+              // to={`https://suratlantida.com/fiduciaria/`}
+              to={`/fiduciaria-inicio`}
             >
               Conoce más
             </Link>

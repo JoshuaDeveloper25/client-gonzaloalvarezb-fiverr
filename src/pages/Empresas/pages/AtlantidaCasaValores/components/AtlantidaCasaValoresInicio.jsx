@@ -11,7 +11,7 @@ const AtlantidaCasaValoresInicio = () => {
             {"< Regresar al sitio Suratlántida"}
           </Link>
         </div> */}
-        
+
         <div className="flex flex-col lg:flex-row justify-between items-center md:gap-3">
           <article className="max-w-md text-secondary-color lg:py-0 py-4">
             <Link to={`/casa-valores-inicio`}>
@@ -30,7 +30,8 @@ const AtlantidaCasaValoresInicio = () => {
             </p>
             <Link
               className="button-red-primary"
-              to={"https://suratlantida.com/casa-de-valores/ "}
+              // to={"https://suratlantida.com/casa-de-valores/ "}
+              to={"/casa-valores-inicio"}
             >
               Conoce más
             </Link>

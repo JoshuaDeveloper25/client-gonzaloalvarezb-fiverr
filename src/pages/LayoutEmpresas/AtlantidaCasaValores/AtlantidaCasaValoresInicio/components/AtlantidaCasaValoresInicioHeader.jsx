@@ -21,7 +21,7 @@ const  AtlantidaCasaValoresInicioHeader = () => {
                   Atlántida Casa de Valores, con más de 15 años de trayectoria,
                   se ha consolidado como una empresa líder en las bolsas de
                   valores de Ecuador, con un volumen transaccional histórico que
-                  supera los US $4.2 billones.
+                  supera los US $6.2 billones.
                 </p>
               </div>
             </div>
