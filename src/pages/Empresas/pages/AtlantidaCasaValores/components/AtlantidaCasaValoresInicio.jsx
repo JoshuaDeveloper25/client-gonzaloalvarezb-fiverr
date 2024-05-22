@@ -6,11 +6,11 @@ const AtlantidaCasaValoresInicio = () => {
   return (
     <section className="bg-tertiary-color">
       <div className="container-page">
-        <div className="pt-3">
+        {/* <div className="pt-3">
           <Link className="text-primary-color font-bold" to={"/empresas"}>
             {"< Regresar al sitio Suratlántida"}
           </Link>
-        </div>
+        </div> */}
         
         <div className="flex flex-col lg:flex-row justify-between items-center md:gap-3">
           <article className="max-w-md text-secondary-color lg:py-0 py-4">

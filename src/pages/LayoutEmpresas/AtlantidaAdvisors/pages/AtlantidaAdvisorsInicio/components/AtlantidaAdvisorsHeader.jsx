@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom";
+
 const AtlantidaAdvisorsHeader = () => {
   return (
     <section className="container-page my-6">
+      <div className="pt-3">
+        <Link className="text-primary-color font-bold" to={"/empresas"}>
+          {"< Regresar al sitio Suratlántida"}
+        </Link>
+      </div>
+
       <div className="flex flex-col md:flex-row justify-between  items-center md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
         <article className="flex-[30%] lg:w-full w-auto text-secondary-color lg:py-8 py-3">
           <h1 className="text-secondary-color text-[2.6rem] leading-[1.3] font-bold family-nunito-semibold">
