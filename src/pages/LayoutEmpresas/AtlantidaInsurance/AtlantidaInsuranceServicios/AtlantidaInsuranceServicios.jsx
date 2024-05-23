@@ -9,7 +9,9 @@ import AtlantidaInsuranceServiciosSeguro from "./components/AtlantidaInsuranceSe
 import AsistenciaInsurance from "../../../../components/AsistenciaInsurance";
 import AtlantidaInsuranceServiciosFeatures from "./components/AtlantidaInsuranceServiciosFeatures";
 
-const AtlantidaInsuranceServicios0 = () => {
+import subfooter from "../../../../images/subfooter32.jpg"
+
+const AtlantidaInsuranceServicios = () => {
   return (
     <>
       {/* Navbar */}
@@ -42,7 +44,7 @@ const AtlantidaInsuranceServicios0 = () => {
       <SubFooter
         bgColor={`black`}
         title={`Protección sólida para un futuro seguro`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}
@@ -51,4 +53,4 @@ const AtlantidaInsuranceServicios0 = () => {
   );
 };
 
-export default AtlantidaInsuranceServicios0;
+export default AtlantidaInsuranceServicios;

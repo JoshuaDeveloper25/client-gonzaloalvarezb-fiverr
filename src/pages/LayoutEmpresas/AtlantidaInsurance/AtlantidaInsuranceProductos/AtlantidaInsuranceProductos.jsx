@@ -9,6 +9,8 @@ import AtlantidaInsuranceProductosSeguro from "./components/AtlantidaInsurancePr
 import AsistenciaInsurance from "../../../../components/AsistenciaInsurance";
 import AtlantidaInsuranceProductosFeatures from "./components/AtlantidaInsuranceProductosFeatures";
 
+import subfooter from "../../../../images/subfooter30.jpg";
+
 const AtlantidaInsuranceProductos = () => {
   return (
     <>
@@ -42,7 +44,7 @@ const AtlantidaInsuranceProductos = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu mejor elección en seguros`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

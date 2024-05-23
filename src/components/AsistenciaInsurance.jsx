@@ -1,4 +1,4 @@
-// import corazonIcono from "../images/corazon-icono.png";
+import mujerAsistencia from "../images/asistencia-mujer.jpg";
 
 const AsistenciaInsurance = ({ addClassName, title, titleSpan }) => {
   return (
@@ -7,8 +7,8 @@ const AsistenciaInsurance = ({ addClassName, title, titleSpan }) => {
         <img
           decoding="async"
           loading="lazy"
-          className="w-32 h-32 object-cover rounded-full"
-          src={"https://dummyimage.com/600x400/000/fff"}
+          className="w-32 h-32 object-cover rounded-full object-view-box11"
+          src={mujerAsistencia}
         />
 
         <div className="flex-[30%]">

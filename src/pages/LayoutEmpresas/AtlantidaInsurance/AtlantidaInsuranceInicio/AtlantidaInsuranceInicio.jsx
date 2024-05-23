@@ -10,6 +10,8 @@ import MasInformacion from "../../../../components/MasInformacion";
 import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 
+import subfooter from "../../../../images/subfooter29.webp";
+
 const AtlantidaInsuranceInicio = () => {
   return (
     <>
@@ -46,7 +48,7 @@ const AtlantidaInsuranceInicio = () => {
       <SubFooter
         bgColor={`black`}
         title={`Juntos lo hacemos posible`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

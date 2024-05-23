@@ -1,4 +1,5 @@
 import logoPersonas from "../../../../../images/seguros-personales-icono.png";
+import segurosPersonales from "../../../../../images/seguros-personales.jpg";
 
 const AtlantidaInsuranceInicioPersonales = () => {
   return (
@@ -17,7 +18,7 @@ const AtlantidaInsuranceInicioPersonales = () => {
               decoding="async"
               loading="lazy"
               className="w-full rounded-3xl "
-              src={`https://dummyimage.com/600x400/000/fff`}
+              src={segurosPersonales}
             />
           </article>
         </div>

@@ -8,6 +8,8 @@ import AtlantidaInsuranceAboutValores from "./components/AtlantidaInsuranceAbout
 import AtlantidaInsuranceAboutBroker from "./components/AtlantidaInsuranceAboutBroker";
 import AtlantidaInsuranceAboutMision from "./components/AtlantidaInsuranceAboutMision";
 
+import subfooter from "../../../../images/subfooter31.jpeg";
+
 const AtlantidaInsuranceAbout = () => {
   return (
     <>
@@ -38,7 +40,7 @@ const AtlantidaInsuranceAbout = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu seguro en manos expertas`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

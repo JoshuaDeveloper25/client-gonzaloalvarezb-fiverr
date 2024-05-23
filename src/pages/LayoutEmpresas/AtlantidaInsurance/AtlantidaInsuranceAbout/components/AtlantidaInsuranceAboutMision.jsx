@@ -1,8 +1,10 @@
+import mision from "../../../../../images/mision.jpeg";
+
 const AtlantidaInsuranceAboutMision = () => {
   return (
     <section className="container-page mt-10">
       <div className="flex flex-col-reverse sm:flex-row gap-5">
-        <article className="self-center flex-1">
+        <article className="self-center flex-1 sm:px-4">
           <h2 className="text-3xl text-primary-color family-nunito-black mb-4">
             Misión
           </h2>
@@ -13,12 +15,12 @@ const AtlantidaInsuranceAboutMision = () => {
           </p>
         </article>
 
-        <article>
+        <article className="flex-1">
           <img
             decoding="async"
             loading="lazy"
             className="rounded-3xl"
-            src={`https://dummyimage.com/600x400/000/fff`}
+            src={mision}
           />
         </article>
       </div>

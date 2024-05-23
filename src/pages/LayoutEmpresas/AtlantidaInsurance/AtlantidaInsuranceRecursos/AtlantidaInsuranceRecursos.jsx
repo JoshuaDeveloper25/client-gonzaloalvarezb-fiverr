@@ -6,6 +6,8 @@ import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 import AtlantidaInsuranceRecursosFAQ from "./components/AtlantidaInsuranceRecursosFAQ";
 
+import subfooter from "../../../../images/subfooter33.jpg"
+
 const AtlantidaInsuranceRecursos = () => {
   return (
     <>
@@ -34,7 +36,7 @@ const AtlantidaInsuranceRecursos = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu respaldo en todo momento`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}

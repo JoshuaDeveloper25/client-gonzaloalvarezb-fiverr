@@ -1,4 +1,5 @@
 import logoPersona from "../../../../../images/seguros-corporativo-icono.png";
+import segurosCorporativos from "../../../../../images/seguros-corporativos.jpg";
 
 const AtlantidaInsuranceInicioCorporativo = () => {
   return (
@@ -10,7 +11,7 @@ const AtlantidaInsuranceInicioCorporativo = () => {
               decoding="async"
               loading="lazy"
               className="w-full rounded-3xl "
-              src={`https://dummyimage.com/600x400/000/fff`}
+              src={segurosCorporativos}
             />
           </article>
 

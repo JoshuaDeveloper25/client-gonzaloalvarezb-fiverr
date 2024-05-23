@@ -306,3 +306,7 @@ body {
 .object-view-box10 {
   object-view-box: inset(0% 15% 55% 10%);
 }
+
+.object-view-box11 {
+  object-view-box: inset(0% 40% 15% 5%);
+}
