@@ -6,6 +6,8 @@ import FiduciariaAtlantidaInicioWorth from "./components/FiduciariaAtlantidaInic
 import RedBanner from "../../../../components/RedBanner";
 import SubFooter from "../../../../components/SubFooter";
 
+import subfooter from "../../../../images/subfooter34.jpg"
+
 const FiduciariaAtlantidaInicio = () => {
   return (
     <>
@@ -30,7 +32,7 @@ const FiduciariaAtlantidaInicio = () => {
       <SubFooter
         bgColor={`black`}
         title={`Juntos lo hacemos posible`}
-        img={`https://dummyimage.com/600x400/000/fff`}
+        img={subfooter}
       />
 
       {/* Footer */}
