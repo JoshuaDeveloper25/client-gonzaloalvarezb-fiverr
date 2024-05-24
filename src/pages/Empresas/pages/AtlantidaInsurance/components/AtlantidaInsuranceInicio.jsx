@@ -30,13 +30,13 @@ const AtlantidaInsuranceInicio = () => {
               las mejores condiciones agregando valor tecnológico y operativo a
               nuestros asegurados.
             </p>
-            <Link
+            {/* <Link
               className="button-red-primary"
               // to={"https://insuratlan.com/ "}
               to={"/insurance-inicio"}
             >
               Conoce más
-            </Link>
+            </Link> */}
           </article>
 
           <article className="max-w-2xl mx-auto  mt-5">

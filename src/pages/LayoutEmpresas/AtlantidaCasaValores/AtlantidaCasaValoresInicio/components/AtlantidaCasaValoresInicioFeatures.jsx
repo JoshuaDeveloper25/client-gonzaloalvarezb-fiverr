@@ -4,7 +4,7 @@ import intermediacionIcono from "../../../../../images/inter-icono.png";
 import { Link } from "react-router-dom";
 
 import administracionPortfolio from "../../../../../images/administracion-portfolio.jpeg";
-import intermediacionBursatil from "../../../../../images/intermediacion-bursatil.jpeg"
+import intermediacionBursatil from "../../../../../images/intermediacion-bursatil.jpeg";
 import financiamiento from "../../../../../images/financiamiento.jpg";
 
 const AtlantidaCasaValoresInicioFeatures = () => {
@@ -134,10 +134,9 @@ const AtlantidaCasaValoresInicioFeatures = () => {
               className="bg-primary-color text-white absolute flex flex-col justify-center w-full h-full rounded-3xl px-16 flip-card-back"
             >
               <p>
-                Atlántida Casa de Valores ofrece de forma exclusiva a sus
-                clientes la plataforma tecnológica más avanzada del mercado, que
-                permite administrar de manera más eficiente su portafolio de
-                inversiones, con información siempre disponible y actualizada.
+                Atlántida Casa de Valores ofrece de a sus clientes acceso a
+                nuevas fuentes de financiamiento a través del mercado de
+                valores.
               </p>
               <Link
                 className="family-nunito-black mt-5"
@@ -167,10 +166,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             <div className="h-1 w-40 bg-white mx-auto my-3"></div>
 
             <p className="my-3">
-              Atlántida Casa de Valores ofrece de forma exclusiva a sus clientes
-              la plataforma tecnológica más avanzada del mercado, que permite
-              administrar de manera más eficiente su portafolio de inversiones,
-              con información siempre disponible y actualizada.
+              Atlántida Casa de Valores ofrece de a sus clientes acceso a nuevas
+              fuentes de financiamiento a través del mercado de valores.
             </p>
             <Link
               className="family-nunito-black mt-5"
@@ -231,10 +228,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
               className="bg-primary-color text-white absolute flex flex-col justify-center w-full h-full rounded-3xl px-16 flip-card-back"
             >
               <p>
-                Atlántida Casa de Valores ofrece de forma exclusiva a sus
-                clientes la plataforma tecnológica más avanzada del mercado, que
-                permite administrar de manera más eficiente su portafolio de
-                inversiones, con información siempre disponible y actualizada.
+                Atlántida Casa de Valores pone en contracto la oferta y demanda
+                de títulos valores registrados en las bolsas del país.
               </p>
               <Link
                 className="family-nunito-black mt-5"
@@ -264,10 +259,8 @@ const AtlantidaCasaValoresInicioFeatures = () => {
             <div className="h-1 w-40 bg-white mx-auto my-3"></div>
 
             <p className="my-3">
-              Atlántida Casa de Valores ofrece de forma exclusiva a sus clientes
-              la plataforma tecnológica más avanzada del mercado, que permite
-              administrar de manera más eficiente su portafolio de inversiones,
-              con información siempre disponible y actualizada.
+              Atlántida Casa de Valores pone en contracto la oferta y demanda de
+              títulos valores registrados en las bolsas del país.
             </p>
             <Link
               className="family-nunito-black mt-5"

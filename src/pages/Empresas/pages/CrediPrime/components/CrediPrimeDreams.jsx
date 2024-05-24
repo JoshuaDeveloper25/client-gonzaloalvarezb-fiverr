@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hombrePaginaIcono from "../../../../../images/indicador13.png";
 import listoCirculoIcono from "../../../../../images/indicador14.png";
 
@@ -12,7 +13,12 @@ const CrediPrimeDreams = () => {
             </h2>
 
             <div className="text-center">
-              <button className="button-red-primary mt-8">Conoce más</button>
+              <Link
+                to={`https://www.crediprime.com/home`}
+                className="button-red-primary mt-8"
+              >
+                Conoce más
+              </Link>
             </div>
           </article>
 

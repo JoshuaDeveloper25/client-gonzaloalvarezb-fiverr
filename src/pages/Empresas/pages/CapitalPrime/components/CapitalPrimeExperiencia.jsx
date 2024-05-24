@@ -1,5 +1,6 @@
 import dolarIcono from "../../../../../images/indicador22.png";
 import paginaListoIcono from "../../../../../images/indicador21.png";
+import { Link } from "react-router-dom";
 
 const CapitalPrimeExperiencia = () => {
   return (
@@ -15,9 +16,12 @@ const CapitalPrimeExperiencia = () => {
               en la recuperación de su cartera
             </h2>
             <div className="text-center">
-              <button type="button" className="mt-5 button-red-primary">
+              <Link
+                to={"https://capitalprimeec.com/home"}
+                className="mt-5 button-red-primary"
+              >
                 Conoce más
-              </button>
+              </Link>
             </div>
           </article>
 
