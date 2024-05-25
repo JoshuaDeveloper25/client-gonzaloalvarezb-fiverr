@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // --> Styles
 import "./index.css";
 
-// --> Pages
+// --> Normal Pages
 import Root from "./pages/Root";
 import Inicio from "./pages/Inicio/Inicio";
 import QuienesSomos from "./pages/QuienesSomos/QuienesSomos";
