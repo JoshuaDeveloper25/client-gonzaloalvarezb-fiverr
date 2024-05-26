@@ -1,4 +1,4 @@
-// --> Default imports from react and more
+// --> Default imports from react and more...
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -55,6 +55,7 @@ import FiduciariaAtlantidaMarco from "./pages/LayoutEmpresas/FiduciariaAtlantida
 import FiduciariaAtlantidaContacto from "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaContacto/FiduciariaAtlantidaContacto";
 
 const router = createBrowserRouter([
+  // --> Normal Pages
   {
     element: <Root />,
     children: [
