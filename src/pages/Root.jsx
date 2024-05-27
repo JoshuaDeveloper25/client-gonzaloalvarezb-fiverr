@@ -15,6 +15,8 @@ const Root = () => {
       </main>
 
       <Footer />
+
+      {/* For a smooth transition */}
       <ScrollRestoration />
     </div>
   );
