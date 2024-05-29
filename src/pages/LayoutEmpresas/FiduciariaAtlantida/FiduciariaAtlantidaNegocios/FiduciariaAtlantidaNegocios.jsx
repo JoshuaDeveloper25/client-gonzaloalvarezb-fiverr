@@ -35,6 +35,7 @@ const FiduciariaAtlantidaNegocios = () => {
 
       {/* Fideicomiso de Administración */}
       <BoxImageText
+        idSection={"fideicomisoAdmin"}
         textSec={`Es el tipo de contrato que maneja y gestiona el
         patrimonio de un tercero conforme sus
         instrucciones. Por ejemplo: arrendamiento, venta de
@@ -51,6 +52,7 @@ const FiduciariaAtlantidaNegocios = () => {
 
       {/* Fideicomiso de Inmobiliario */}
       <BoxImageText
+        idSection={"fideicomisoInmobiliario"}
         textSec={`Es el tipo de contrato que tiene
         como objetivo el desarrollo de un
         proyecto de construcción,
@@ -67,6 +69,7 @@ const FiduciariaAtlantidaNegocios = () => {
 
       {/* Fideicomiso de Inversión */}
       <BoxImageText
+        idSection={"fideicomisoInversion"}
         textSec={`Es el tipo de contrato que tiene como objetivo
         realizar inversiones a nombre del cliente según sus
         instrucciones.`}
@@ -79,6 +82,7 @@ const FiduciariaAtlantidaNegocios = () => {
 
       {/* Fideicomiso de Garantía */}
       <BoxImageText
+        idSection={"fideicomisoGarantia"}
         textSec={`Es el tipo de contrato que tiene
         como objetivo que bienes del
         cliente sirvan como garantía para
@@ -92,6 +96,7 @@ const FiduciariaAtlantidaNegocios = () => {
 
       {/* Agente de Manejo en Procesos de Titularización */}
       <BoxImageText
+        idSection={"agenteManejo"}
         textSec={`Es el tipo de contrato que tiene
         como objetivo que bienes del
         cliente sirvan para obtener el
@@ -104,8 +109,9 @@ const FiduciariaAtlantidaNegocios = () => {
         bgSec={"bg-tertiary-color"}
       />
 
-      {/* Fideicomiso de Garantía */}
+      {/* Fideicomiso Encargo */}
       <BoxImageText
+        idSection={"encargoFiduciario"}
         textSec={`Es un mandato irrevocable, es
         decir, un poder para cumplir
         instrucciones de dar o hacer a

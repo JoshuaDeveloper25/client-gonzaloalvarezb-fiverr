@@ -1,6 +1,6 @@
 const FiduciariaAtlantidaNegociosDiferencias = () => {
   return (
-    <section className="container-page my-16">
+    <section id="diferenciasEncargo" className="container-page my-16">
       <h3 className="family-nunito-black text-secondary-color text-xl text-center mb-8">
         Diferencias entre Encargo Fiduciario y Fideicomiso
       </h3>

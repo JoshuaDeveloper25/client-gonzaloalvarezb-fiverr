@@ -181,7 +181,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/casa-valores-servicios",
+        path: "/casa-valores-administracion-portafolios",
         element: <AtlantidaCasaValoresServicios />,
       },
 

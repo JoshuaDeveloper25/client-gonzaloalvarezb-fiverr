@@ -1,6 +1,14 @@
-const BoxImageText = ({ bgSec, titleSec, bgImg, textSec, boxImg, boxText }) => {
+const BoxImageText = ({
+  bgSec,
+  titleSec,
+  bgImg,
+  textSec,
+  boxImg,
+  boxText,
+  idSection,
+}) => {
   return (
-    <section className={bgSec}>
+    <section id={idSection} className={bgSec}>
       <div className="container-page py-10">
         <h3 className="family-nunito-black text-secondary-color text-xl text-center mb-8">
           {titleSec}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AtlantidaCasaValoresServiciosBanner = () => {
   return (
     <section className="bg-primary-color py-16">
@@ -9,7 +11,13 @@ const AtlantidaCasaValoresServiciosBanner = () => {
         </div>
 
         <div>
-          <button className="button-red-primary-outline2 px-20">Acceder</button>
+          <Link
+            className="button-red-primary-outline2 px-20"
+            target="_blank"
+            to={"https://miportafolio.suratlantida.com/ "}
+          >
+            Acceder
+          </Link>
         </div>
       </div>
     </section>

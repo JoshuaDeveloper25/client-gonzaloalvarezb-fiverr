@@ -47,6 +47,11 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
 body {
   font-family: "Nunito Sans Regular";
 }
@@ -263,7 +268,7 @@ body {
   }
 
   .tag-link {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
