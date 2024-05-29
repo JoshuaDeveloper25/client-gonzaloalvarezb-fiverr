@@ -115,7 +115,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/inversiones-financieras-atlantida"}
               >
-                Inversiones Financieras
+                Inversiones Financieras Atlántida
               </NavLink>
 
               <NavLink
@@ -148,7 +148,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/atlantida-casa-valores"}
               >
-                Casa de Valores Atlántida
+                Atlántida Casa de Valores
               </NavLink>
 
               <NavLink
@@ -181,7 +181,7 @@ const Navbar = () => {
                 }
                 to={"/empresas/atlantida-insurance"}
               >
-                Insurance
+                Atlántida Insurance
               </NavLink>
 
               <NavLink
@@ -376,7 +376,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/inversiones-financieras-atlantida"}
                 >
-                  Inversiones Financieras
+                  Inversiones Financieras Atlántida
                 </NavLink>
 
                 <NavLink
@@ -412,7 +412,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/atlantida-casa-valores"}
                 >
-                  Casa de Valores Atlántida
+                  Atlántida Casa de Valores
                 </NavLink>
 
                 <NavLink
@@ -448,7 +448,7 @@ const Navbar = () => {
                   }
                   to={"/empresas/atlantida-insurance"}
                 >
-                  Insurance
+                  Atlántida Insurance
                 </NavLink>
 
                 <NavLink

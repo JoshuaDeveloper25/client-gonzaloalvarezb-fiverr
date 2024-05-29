@@ -1,4 +1,9 @@
+import Formulario from "../../../../../../components/Formulario";
+import { useState } from "react";
+
 const ReditumContactoHeader = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-start md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
@@ -11,13 +16,15 @@ const ReditumContactoHeader = () => {
           </h1>
           <div className="h-1 w-full bg-primary-color my-5"></div>
 
-          <form className="space-y-5">
+          <Formulario setIsLoading={setIsLoading} className="space-y-5">
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <input
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Nombre"
+                  name="user_name"
                   type="text"
+                  required
                 />
               </div>
 
@@ -26,6 +33,8 @@ const ReditumContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Apellido"
                   type="text"
+                  name="sur_name"
+                  required
                 />
               </div>
             </div>
@@ -36,6 +45,8 @@ const ReditumContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Teléfono"
                   type="text"
+                  name="phone"
+                  required
                 />
               </div>
 
@@ -44,18 +55,32 @@ const ReditumContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Email"
                   type="email"
+                  name="email_id"
+                  required
                 />
               </div>
             </div>
 
             <textarea
               placeholder="Mensaje"
+              name="message"
               className="h-36 outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
+              required
             ></textarea>
-          </form>
+
+            <div className="text-center mt-14">
+              <button
+                disabled={isLoading}
+                type="submit"
+                className="button-red-primary-outline"
+              >
+                Conoce más
+              </button>
+            </div>
+          </Formulario>
         </article>
 
-        <article className="flex-1  mt-5">
+        <article className="flex-1 mt-5">
           <h3 className="text-secondary-color text-xl family-nunito-black">
             Nuestras oficinas
           </h3>
@@ -87,12 +112,6 @@ const ReditumContactoHeader = () => {
             </ul>
           </div>
         </article>
-      </div>
-
-      <div className="text-center mb-14">
-        <button type="submit" className="button-red-primary-outline">
-          Conoce más
-        </button>
       </div>
     </section>
   );
