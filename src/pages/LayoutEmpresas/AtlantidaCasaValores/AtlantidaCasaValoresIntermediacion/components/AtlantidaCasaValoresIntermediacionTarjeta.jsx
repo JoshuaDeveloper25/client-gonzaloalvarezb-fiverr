@@ -69,12 +69,72 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
             show={activeElement === "listadoValores"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              deleniti possimus fugit unde nihil nemo dicta! Enim ratione ad
-              excepturi ut reiciendis amet. Accusantium dolores accusamus, odit
-              inventore distinctio minus!
-            </p>
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  Servicio
+                </h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  % Comisión*
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Renta Fija de Corto Plazo</h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">Comisión desde el 0.01%</h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Renta Fija de Largo Plazo</h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">Comisión desde el 0.01%</h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Renta Fija Tipo III</h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">Comisión desde el 0.01%</h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Renta Variable</h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">Comisión desde el 0.01%</h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Reportes Bursátiles</h2>
+              </div>
+
+              <div className="sm:flex-[50%] flex-[20%] sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">
+                  Comisión Anualizada sobre el valor efectivo de la recompra
+                  desde el 0.01%
+                </h2>
+              </div>
+            </div>
           </TECollapse>
 
           {/* Accordion 2 */}
@@ -118,12 +178,29 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
             show={activeElement === "listadoPortafolios"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              deleniti possimus fugit unde nihil nemo dicta! Enim ratione ad
-              excepturi ut reiciendis amet. Accusantium dolores accusamus, odit
-              inventore distinctio minus!
-            </p>
+            <div className="flex justify-between border border-primary-color">
+              <div className="sm:flex-[45%] flex-[20%]  sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  Servicio
+                </h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  % Comisión*
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="sm:flex-[45%] flex-[20%] sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">Administración de Portafolios </h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">Desde USD 25.00</h2>
+              </div>
+            </div>
           </TECollapse>
 
           {/* Accordion 3 */}
@@ -172,13 +249,13 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
           >
             <div className="flex justify-between border border-primary-color">
               <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
-                <h2 className="family-nunito-black sm:text-start text-center text-primary-color">
+                <h2 className="family-nunito-black text-center text-primary-color">
                   Estructuración Financiera
                 </h2>
               </div>
 
               <div className="flex-1 sm:ps-6 ps-1 py-5">
-                <h2 className="family-nunito-black sm:text-start text-center text-primary-color">
+                <h2 className="family-nunito-black text-center text-primary-color">
                   Honorarios
                 </h2>
               </div>
@@ -186,11 +263,15 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
 
             <div className="flex justify-between border border-primary-color">
               <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
-                <h2 className="sm:text-start text-center">Estructuración Financiera</h2>
+                <h2 className="text-center">
+                  Estructuración Financiera
+                </h2>
               </div>
 
               <div className="flex-1 sm:ps-6 ps-1 py-5">
-                <h2 className="sm:text-start text-center">Honorarios desde USD 200.00</h2>
+                <h2 className="text-center">
+                  Honorarios desde USD 200.00
+                </h2>
               </div>
             </div>
           </TECollapse>
@@ -238,12 +319,33 @@ const AtlantidaCasaValoresIntermediacionTarjeta = () => {
             show={activeElement === "listadoLegal"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              deleniti possimus fugit unde nihil nemo dicta! Enim ratione ad
-              excepturi ut reiciendis amet. Accusantium dolores accusamus, odit
-              inventore distinctio minus!
-            </p>
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  Servicio
+                </h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="family-nunito-black text-center text-primary-color">
+                  Honorarios
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex justify-between border border-primary-color">
+              <div className="flex-1 sm:ps-6 ps-1 py-5 border-e-2 border-primary-color">
+                <h2 className="text-center">
+                  Estructuración Legal
+                </h2>
+              </div>
+
+              <div className="flex-1 sm:ps-6 ps-1 py-5">
+                <h2 className="text-center">
+                  Honorarios desde USD 200.00
+                </h2>
+              </div>
+            </div>
           </TECollapse>
         </article>
       </div>

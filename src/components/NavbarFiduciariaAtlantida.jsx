@@ -71,69 +71,73 @@ const NavbarFiduciariaAtlantida = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#fideicomisoAdmin"}
-              >
-                Fideicomiso de Administración
-              </NavLink>
+            <div className="invisible absolute z-58 flex gap-2 w-96 left-0 bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#fideicomisoAdmin"}
+                >
+                  Fideicomiso de Administración
+                </NavLink>
 
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#fideicomisoInmobiliario"}
-              >
-                Fideicomiso Inmobiliario
-              </NavLink>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#fideicomisoInmobiliario"}
+                >
+                  Fideicomiso Inmobiliario
+                </NavLink>
 
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#fideicomisoInversion"}
-              >
-                Fideicomiso de Inversión
-              </NavLink>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#fideicomisoInversion"}
+                >
+                  Fideicomiso de Inversión
+                </NavLink>
 
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#fideicomisoGarantia"}
-              >
-                Fideicomiso de Garantía
-              </NavLink>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#fideicomisoGarantia"}
+                >
+                  Fideicomiso de Garantía
+                </NavLink>
+              </div>
 
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#agenteManejo"}
-              >
-                Agente de Manejo en Procesos de Titularización
-              </NavLink>
+              <div>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#agenteManejo"}
+                >
+                  Agente de Manejo en Procesos de Titularización
+                </NavLink>
 
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#encargoFiduciario"}
-              >
-                Encargo Fiduciario
-              </NavLink>
-              
-              <NavLink
-                className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
-                }
-                to={"#diferenciasEncargo"}
-              >
-                Diferencias entre Encargo Fiduciario y Fideicomiso
-              </NavLink>
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#encargoFiduciario"}
+                >
+                  Encargo Fiduciario
+                </NavLink>
+
+                <NavLink
+                  className={
+                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  }
+                  to={"/fiduciaria-negocios#diferenciasEncargo"}
+                >
+                  Diferencias entre Encargo Fiduciario y Fideicomiso
+                </NavLink>
+              </div>
             </div>
           </div>
 
@@ -376,17 +380,110 @@ const NavbarFiduciariaAtlantida = () => {
               Inicio
             </NavLink>
 
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/fiduciaria-negocios`}
-            >
-              Negocios Fiduciarios
-            </NavLink>
+            <div className="group relative cursor-pointer">
+              <div className="hover:text-primary-color flex items-center justify-between gap-4">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                      : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                  }
+                  to={"/fiduciaria-negocios"}
+                >
+                  Negocios Fiduciarios
+                </NavLink>
+
+                <span className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className={`h-6 w-6 ${
+                      location?.pathname === "/fiduciaria-negocios"
+                        ? "text-primary-color"
+                        : null
+                    }`}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <div className="invisible absolute z-50 flex gap-5 w-full bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                <div>
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#fideicomisoAdmin"}
+                  >
+                    Fideicomiso de Administración
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#fideicomisoInmobiliario"}
+                  >
+                    Fideicomiso Inmobiliario
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#fideicomisoInversion"}
+                  >
+                    Fideicomiso de Inversión
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#fideicomisoGarantia"}
+                  >
+                    Fideicomiso de Garantía
+                  </NavLink>
+                </div>
+
+                <div>
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#agenteManejo"}
+                  >
+                    Agente de Manejo en Procesos de Titularización
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#encargoFiduciario"}
+                  >
+                    Encargo Fiduciario
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    }
+                    to={"/fiduciaria-negocios#diferenciasEncargo"}
+                  >
+                    Diferencias entre Encargo Fiduciario y Fideicomiso
+                  </NavLink>
+                </div>
+              </div>
+            </div>
 
             <div className="group relative cursor-pointer">
               <div className="hover:text-primary-color flex items-center justify-between gap-4">

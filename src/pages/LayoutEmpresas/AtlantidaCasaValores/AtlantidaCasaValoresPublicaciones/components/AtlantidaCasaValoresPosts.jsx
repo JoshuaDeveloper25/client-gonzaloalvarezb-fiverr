@@ -2,6 +2,7 @@ import descargar1Icono from "../../../../../images/descargar-1.png";
 import descargar2Icono from "../../../../../images/descargar-2.png";
 import { useState } from "react";
 
+import PDFAccordion from "../../../../../components/PDFAccordion";
 import { TECollapse } from "tw-elements-react";
 
 const AtlantidaCasaValoresPosts = () => {
@@ -68,77 +69,45 @@ const AtlantidaCasaValoresPosts = () => {
             </button>
           </h2>
 
-          <TECollapse
-            show={activeElement === "publicacion2024"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
-          >
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Resolución No. SCVS INMV DNAR 2024 00009518"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2024/05/resolucion-9518-INSCRIP-OP-VAL-JUAN-DIEGO-PAZ-Y-MINO-firmada.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2024"}
+            className={"py-5"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 1
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Resolución No. SCVS-INMV-DNAR-2024-00006524"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2024/04/resolucion-No-SCVS-INMV-DNAR-2024-00006524-operador-de-valores-sra-diana-carolina-pena-brandoFHRL.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2024"}
+            className={"py-0"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 2
-                </p>
-              </div>
-            </div>
+          <PDFAccordion
+            LinkText={"Resolución No. SCVS-INMV-DNAR-2024-00005769"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2024/03/resolucion-5769-marg-moi-y-mo-atlantida.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2024"}
+            className={"py-0"}
+          />
 
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 3
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 4
-                </p>
-              </div>
-            </div>
-          </TECollapse>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2024-00003974"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2024/02/resolucion-no-SCVS-INMV-DNAR-2024-00003974.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2024"}
+            className={"py-0"}
+          />
         </article>
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
@@ -191,80 +160,28 @@ const AtlantidaCasaValoresPosts = () => {
             </button>
           </h2>
 
-          <TECollapse
-            show={activeElement === "publicacion2023"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
-          >
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Aviso de privacidad de datos personales ACCITLAN"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2023/05/Aviso-de-privacidad-proteccio%CC%81n-de-datos-personales-ACCITLAN.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2023"}
+            className={"py-5"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 1
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 2
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 3
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 4
-                </p>
-              </div>
-            </div>
-          </TECollapse>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2023-00040716"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2023/07/RESOLUCION-40716-MARG.-MANUAL-L.A.-ACCITLAN-signed.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2023"}
+            className={"py-0"}
+          />
         </article>
 
-        <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
+        <article className="bg-[#F3F3F3] md:px-https://www.gofundme.com/create/fundraiser10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
           <img
             loading="lazy"
             decoding="async"
@@ -314,77 +231,45 @@ const AtlantidaCasaValoresPosts = () => {
             </button>
           </h2>
 
-          <TECollapse
-            show={activeElement === "publicacion2022"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
-          >
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2022-00005850"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/08/atlantida-casa-de-valores-resolucion-5058.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2022"}
+            className={"py-5"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 1
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2022-00005778"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/08/atlantida-casa-de-valores-resolucion-cancelacion-operador-de-valores.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2022"}
+            className={"py-0"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 2
-                </p>
-              </div>
-            </div>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2022-00003419"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/04/resolucion-no-SCVS-INMV-DNAR-2022-00003-419-JUAN-DIEGO-PAZ-Y-MINO-JARAMILLO.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2022"}
+            className={"py-0"}
+          />
 
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 3
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 4
-                </p>
-              </div>
-            </div>
-          </TECollapse>
+          <PDFAccordion
+            LinkText={"Resolución SCVS-INMV-DNAR-2022-00004367"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/06/atlantida-casa-de-valores-20220610150744.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2022"}
+            className={"py-0"}
+          />
         </article>
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
@@ -437,80 +322,28 @@ const AtlantidaCasaValoresPosts = () => {
             </button>
           </h2>
 
-          <TECollapse
-            show={activeElement === "publicacion2021"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
-          >
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
+          <PDFAccordion
+            LinkText={"Resolución 4282"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/04/resolucion-4282-marginacion-manual-de-lavado-de-activos-signed.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2021"}
+            className={"py-5"}
+          />
 
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 1
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 2
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 3
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3 space-y-2 items-center">
-              <div>
-                <img
-                  className="w-9"
-                  loading="lazy"
-                  decoding="async"
-                  src={descargar2Icono}
-                />
-              </div>
-
-              <div>
-                <p className="text-md">
-                  Aviso de privacidad de datos personales 4
-                </p>
-              </div>
-            </div>
-          </TECollapse>
+          <PDFAccordion
+            LinkText={"Resolución 5579"}
+            LinkTo={
+              "https://suratlantida.com/casa-de-valores/wp-content/uploads/2022/04/fiduciaria-atlantida-resolucion-5579-marginacion-manuales-atlantida-signed.pdf"
+            }
+            activeElement={activeElement}
+            id={"publicacion2021"}
+            className={"py-0"}
+          />
         </article>
 
-        <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
+        {/* <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
           <img
             loading="lazy"
             decoding="async"
@@ -521,7 +354,6 @@ const AtlantidaCasaValoresPosts = () => {
             Publicaciones 2020
           </h3>
 
-          {/* Accordion */}
           <h2 className="mb-0" id="publicacion2020">
             <button
               className={`${
@@ -631,9 +463,9 @@ const AtlantidaCasaValoresPosts = () => {
               </div>
             </div>
           </TECollapse>
-        </article>
+        </article> */}
 
-        <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
+        {/* <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
           <img
             loading="lazy"
             decoding="async"
@@ -644,7 +476,6 @@ const AtlantidaCasaValoresPosts = () => {
             Publicaciones 2019
           </h3>
 
-          {/* Accordion */}
           <h2 className="mb-0" id="publicacion2019">
             <button
               className={`${
@@ -754,7 +585,7 @@ const AtlantidaCasaValoresPosts = () => {
               </div>
             </div>
           </TECollapse>
-        </article>
+        </article> */}
       </div>
     </section>
   );
