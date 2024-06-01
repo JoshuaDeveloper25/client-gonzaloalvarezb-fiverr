@@ -1,6 +1,9 @@
 import pdfIcono from "../../../../../images/pdf-icono.png";
+import { Link } from "react-router-dom";
 import { TECollapse } from "tw-elements-react";
 import { useState } from "react";
+
+import downloadIcon from "../../../../../images/descargar-2.png";
 
 const FiduciariaAtlantidaMarcoPost = () => {
   const [activeElement, setActiveElement] = useState("");
@@ -74,12 +77,27 @@ const FiduciariaAtlantidaMarcoPost = () => {
             show={activeElement === "documentos1"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio qui
-              itaque fugit sequi molestias cum ratione doloremque iusto ipsam?
-              Similique eius mollitia tempore non, est officia dolorem nihil
-              maxime ad.
-            </p>
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2020/04/b95f06cb454fb4dbaa64af14e051d0a7.pdf"
+                  }
+                >
+                  Código Orgánico Monetario y Financiero
+                </Link>
+              </div>
+            </div>
           </TECollapse>
 
           {/* Accordion 2 */}
@@ -126,12 +144,28 @@ const FiduciariaAtlantidaMarcoPost = () => {
             show={activeElement === "documentos2"}
             className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio qui
-              itaque fugit sequi molestias cum ratione doloremque iusto ipsam?
-              Similique eius mollitia tempore non, est officia dolorem nihil
-              maxime ad.
-            </p>
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2020/04/3f58c70f269fd5abef497cf15038d278.pdf"
+                  }
+                >
+                  Codificación de Resoluciones Monetarias, Financieras, de
+                  Valores y Seguros
+                </Link>
+              </div>
+            </div>
           </TECollapse>
         </article>
       </div>

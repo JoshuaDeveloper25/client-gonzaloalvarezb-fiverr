@@ -49,6 +49,10 @@ const CarouselEmprearial = () => {
   return (
     <section className="bg-primary-color">
       <div className="carouselEmpresarial container-page py-10">
+        <h2 className="text-center text-white text-2xl font-bold mb-7">
+          Nuestros Servicios
+        </h2>
+
         <Slider {...settings}>
           <Link to={"/casa-valores-inicio"}>
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
@@ -131,6 +135,120 @@ const CarouselEmprearial = () => {
                 <h3 className="text-white leading-4">
                   Inteligencia de <span className="block">mercados</span>
                 </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/banco-d-miro"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">Banca</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/fiduciaria-atlantida"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">
+                  Fondos y <span className="block">Fideicomisos</span>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/atlantida-casa-valores"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">
+                  Mercado de <span className="block">Valores</span>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/atlantida-insurance"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">
+                  Broker de <span className="block">seguros</span>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/reditum"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">Fintech</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/crediprime"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">
+                  Originación de{" "}
+                  <span className="block">Cartera Automotriz</span>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/empresas/capitalprime"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  // src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">Cobranzas</h3>
               </div>
             </div>
           </Link>

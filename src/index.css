@@ -58,7 +58,7 @@ body {
 
 @layer components {
   .container-page {
-    @apply mx-auto max-w-[1200px] px-4;
+    @apply mx-auto max-w-[1320px] px-4;
   }
 
   .animation-fade {

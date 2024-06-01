@@ -181,7 +181,7 @@ const AtlantidaCasaValoresPosts = () => {
           />
         </article>
 
-        <article className="bg-[#F3F3F3] md:px-https://www.gofundme.com/create/fundraiser10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
+        <article className="bg-[#F3F3F3] md:px-10 px-2 py-4 rounded-2xl text-secondary-color/95 col-span-1">
           <img
             loading="lazy"
             decoding="async"

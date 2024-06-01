@@ -10293,7 +10293,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/01/Rendicion-de-cuentas-OA.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendicion-de-cuentas-Finlink-diciembre-2019.pdf"
                   }
                 >
                   1ra. Rendición de cuentas (DIC 2019) - Encargo Fiduciario
@@ -10741,7 +10741,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2022/01/Rendicion-de-cuentas-diciembre-2021-MUPI.docx-.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendición-de-cuentas-Mutualista-Pichincha-diciembre-2021.docx-.pdf"
                   }
                 >
                   2da. Rendición de cuentas (DIC 2021) - Encargo Fiduciario
@@ -11415,6 +11415,62 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Rendicion de cuentas - Fideicomiso Garantía La Lorena
                   (DIC2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "documentosGarantia"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendición-de-cuentas-MUPI.pdf"
+                  }
+                >
+                  Rendición de cuentas - Fideicomiso de Garantía Automotriz
+                  Mutualista Pichincha (DIC2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "documentosGarantia"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Resolución-No.-SCVS-INMV-DNNF-2024-00006529-Fid-de-Garantía-Automotriz-Mutualista-Pichincha.pdf"
+                  }
+                >
+                  Resolución No. SCVS-INMV-DNNF 2024-00006529 Fideicomiso de
+                  Garantía Automotriz Mutualista Pichincha (12ABRIL2024)
                 </Link>
               </div>
             </div>

@@ -108,12 +108,12 @@ const NuestrasEmpresas = () => {
             </div>
 
             <div className="text-center items-center h-full">
-              <Link to={`/empresas/capitalprime`}>
+              <Link to={`/empresas/atlantida-insurance`}>
                 <img
                   loading="lazy"
                   decoding="async"
-                  src={nuestraEmpresa5}
-                  className="w-40 h-12 object-contain m-auto flex justify-center items-center"
+                  src={nuestraEmpresa7}
+                  className="w-32 m-auto flex justify-center items-center"
                 />
               </Link>
             </div>
@@ -130,22 +130,22 @@ const NuestrasEmpresas = () => {
             </div>
 
             <div className="text-center items-center h-full">
-              <Link to={`/empresas/atlantida-insurance`}>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={nuestraEmpresa7}
-                  className="w-32 m-auto flex justify-center items-center"
-                />
-              </Link>
-            </div>
-
-            <div className="text-center items-center h-full">
               <Link to={`empresas/crediprime`}>
                 <img
                   loading="lazy"
                   decoding="async"
                   src={nuestraEmpresa8}
+                  className="w-40 h-12 object-contain m-auto flex justify-center items-center"
+                />
+              </Link>
+            </div>
+
+            <div className="text-center items-center h-full">
+              <Link to={`/empresas/capitalprime`}>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={nuestraEmpresa5}
                   className="w-40 h-12 object-contain m-auto flex justify-center items-center"
                 />
               </Link>

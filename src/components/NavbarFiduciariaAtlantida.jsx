@@ -198,7 +198,7 @@ const NavbarFiduciariaAtlantida = () => {
                 }
                 to={"/fiduciaria-fondos/fondoElite"}
               >
-                Fondo Elíte
+                Fondo Élite
               </NavLink>
             </div>
           </div>
@@ -542,7 +542,7 @@ const NavbarFiduciariaAtlantida = () => {
                   }
                   to={"/fiduciaria-fondos/fondoElite"}
                 >
-                  Fondo Elíte
+                  Fondo Élite
                 </NavLink>
               </div>
             </div>

@@ -57,7 +57,7 @@ const Footer = () => {
                 className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/inversiones-financieras-atlantida`}
               >
-                IFA
+                Inversiones Financieras Atlántida
               </Link>
 
               <Link
@@ -255,7 +255,7 @@ const Footer = () => {
                 className="text-sm font-light hover:text-gray-400 animation-fade"
                 to={`/empresas/inversiones-financieras-atlantida`}
               >
-                IFA
+                Inversiones Financieras Atlántida
               </Link>
 
               <Link

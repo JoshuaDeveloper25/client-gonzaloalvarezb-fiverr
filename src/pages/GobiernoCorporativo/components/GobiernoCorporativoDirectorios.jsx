@@ -29,6 +29,9 @@ const GobiernoCorporativoDirectorios = () => {
             <h3 className="family-nunito-black text-center text-xl text-primary-color leading-5">
               Grupo Sur Atlántida
             </h3>
+            <h2 className="text-xl text-primary-color">
+              Junta Directiva
+            </h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -44,8 +47,8 @@ const GobiernoCorporativoDirectorios = () => {
               aria-controls="collapseOne"
             >
               <div>
-                <h2 className="font-bold">Gabriel Delgado Suazo</h2>{" "}
-                <p className="text-sm">Presidente de la Junta Directiva</p>
+                <h2 className="font-bold">Gabriel Delgado</h2>{" "}
+                <p className="text-sm">Presidente</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -104,7 +107,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">David Bueso</h2>{" "}
-                <p className="text-sm">Miembro de la Junta Directiva</p>
+                <p className="text-sm">Vice presidente</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1265,7 +1268,7 @@ const GobiernoCorporativoDirectorios = () => {
               Banco D-Miro
             </h3>
             <h2 className="text-xl text-primary-color">
-              Directores Secundarios
+              Directores Suplentes
             </h2>
           </div>
 
@@ -1286,7 +1289,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Enrique García</h2>{" "}
-                <p className="text-sm leading-4">Director Secundario</p>
+                {/* <p className="text-sm leading-4">Director Secundario</p> */}
               </div>
 
               <div className="pt-3 hidden">
@@ -1348,7 +1351,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Manuel Dávila</h2>{" "}
-                <p className="text-sm">Director Secundario</p>
+                {/* <p className="text-sm">Director Secundario</p> */}
               </div>
 
               <div className="pt-3 hidden">
@@ -1410,7 +1413,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Carlos Arturo</h2>{" "}
-                <p className="text-sm">Director Secundario</p>
+                {/* <p className="text-sm">Director Secundario</p> */}
               </div>
 
               <div className="pt-3 hidden">
@@ -1472,7 +1475,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Carol Kattán</h2>{" "}
-                <p className="text-sm">Director Secundario</p>
+                {/* <p className="text-sm">Director Secundario</p> */}
               </div>
 
               <div className="pt-3 hidden">
@@ -1532,7 +1535,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Carlos Coto</h2>{" "}
-                <p className="text-sm">Director Secundario</p>
+                {/* <p className="text-sm">Director Secundario</p> */}
               </div>
 
               <div className="pt-3 hidden">
