@@ -29,9 +29,7 @@ const GobiernoCorporativoDirectorios = () => {
             <h3 className="family-nunito-black text-center text-xl text-primary-color leading-5">
               Grupo Sur Atlántida
             </h3>
-            <h2 className="text-xl text-primary-color">
-              Junta Directiva
-            </h2>
+            <h2 className="text-xl text-primary-color">Junta Directiva</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -193,7 +191,7 @@ const GobiernoCorporativoDirectorios = () => {
           <TECollapse
             show={activeElement === "directorio3"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
-            style={{height: 'auto'}}
+            style={{ height: "auto" }}
           >
             <div>
               <img
@@ -298,10 +296,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Gabriel Delgado</h2>{" "}
-                <p className="text-sm leading-4">
-                  Presidente del Consejo Directivo
-                  <span className="block">del Grupo Sur Atlántida</span>
-                </p>
+                <p className="text-sm leading-4">Presidente</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -361,10 +356,7 @@ const GobiernoCorporativoDirectorios = () => {
               <div>
                 <h2 className="font-bold">Guillermo Bueso</h2>{" "}
                 <p className="text-sm">
-                  Presidente del Consejo de{" "}
-                  <span className="block">Administración de Inversiones</span>
-                  Atlántida y Presidente Ejecutivo{" "}
-                  <span className="block">del Banco Atlántida en Honduras</span>
+                  Presidente
                 </p>
               </div>
 
@@ -424,7 +416,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Fernando de Mergelina</h2>{" "}
-                <p className="text-sm">Presidente del Pacific Bank Panamá</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -483,11 +474,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Rafael Núñez</h2>{" "}
-                <p className="text-sm">
-                  Vicepresidente Corporativo de{" "}
-                  <div className="block">Finanzas Banco Atlántida</div>
-                  Honduras y CFO de Invatlan
-                </p>
               </div>
 
               <div className="pt-3 hidden">
@@ -514,7 +500,7 @@ const GobiernoCorporativoDirectorios = () => {
           <TECollapse
             show={activeElement === "directorio8"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
-            style={{height: 'auto'}}
+            style={{ height: "auto" }}
           >
             <div>
               <img
@@ -547,7 +533,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Lourdes Arevalo</h2>{" "}
-                <p className="text-sm">Presidente AFP Confía en El Salvador</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -847,7 +832,7 @@ const GobiernoCorporativoDirectorios = () => {
           <TECollapse
             show={activeElement === "directorio13"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
-            style={{height: 'auto'}}
+            style={{ height: "auto" }}
           >
             <div>
               <img
@@ -968,7 +953,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Gabriel Delgado</h2>{" "}
-                <p className="text-sm leading-4">Presidente del Directorio</p>
+                <p className="text-sm leading-4">Presidente</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1030,7 +1015,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Guillermo Bueso</h2>{" "}
-                <p className="text-sm">Vicepresidente del Directorio</p>
+                <p className="text-sm">Vicepresidente </p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1092,7 +1077,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Arturo Medrano</h2>{" "}
-                <p className="text-sm">Director Principal</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1154,7 +1138,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Ilduara Guerra de Bonilla</h2>{" "}
-                <p className="text-sm">Director Principal</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1181,7 +1164,7 @@ const GobiernoCorporativoDirectorios = () => {
           <TECollapse
             show={activeElement === "directorio18"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
-            style={{height: 'auto'}}
+            style={{ height: "auto" }}
           >
             <div>
               <img
@@ -1214,7 +1197,6 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Carlos Turcios</h2>{" "}
-                <p className="text-sm">Director Principal</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -1267,9 +1249,7 @@ const GobiernoCorporativoDirectorios = () => {
             <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
               Banco D-Miro
             </h3>
-            <h2 className="text-xl text-primary-color">
-              Directores Suplentes
-            </h2>
+            <h2 className="text-xl text-primary-color">Directores Suplentes</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -1502,7 +1482,7 @@ const GobiernoCorporativoDirectorios = () => {
           <TECollapse
             show={activeElement === "directorio23"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 border-b-2 border-primary-color"
-            style={{height: 'auto'}}
+            style={{ height: "auto" }}
           >
             <div>
               <img
