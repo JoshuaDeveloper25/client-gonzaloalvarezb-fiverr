@@ -709,6 +709,97 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               </div>
             </div>
           </TECollapse>
+
+          {/* Accordion 4 */}
+          <h2 className="mb-0" id="fondos4">
+            <button
+              className={`${
+                activeElement === "fondos4" &&
+                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
+              } group relative flex w-full justify-between items-start  pb-4 rounded-none border-0 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
+              type="button"
+              onClick={() => handleClick("fondos4")}
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <div>
+                <p className="text-sm">Fondo Confía</p>
+              </div>
+
+              <div>
+                <span
+                  className={`${
+                    activeElement === "fondoAgil"
+                      ? `rotate-[-180deg] -mr-1`
+                      : `rotate-0`
+                  }  ml-auto h-3 w-3 shrink-0 fill-[#D9D9D9] transition-transform duration-200 ease-in-out motion-reduce:transition-none`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </h2>
+
+          <TECollapse
+            show={activeElement === "fondos4"}
+            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/resolucion-9527-inscrip-fondo-de-inv-adm-confia-002.pdf"
+                  }
+                >
+                  Resolución No. SCVS-INMV-DNAR-2024-00009527
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fondos4"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
+                  }
+                >
+                  Certificado de inscripción
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
         </article>
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-8 rounded-2xl text-secondary-color/95">
