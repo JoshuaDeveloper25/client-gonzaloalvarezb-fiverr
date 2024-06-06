@@ -943,7 +943,7 @@ const GobiernoCorporativoAdministradores = () => {
               aria-controls="collapseOne"
             >
               <div>
-                <h2 className="font-bold">Juan Diego Paz y Miño no Pazmiño</h2>{" "}
+                <h2 className="font-bold">Juan Diego Paz y Miño</h2>{" "}
                 <p className="text-sm">Gerente General</p>
               </div>
 

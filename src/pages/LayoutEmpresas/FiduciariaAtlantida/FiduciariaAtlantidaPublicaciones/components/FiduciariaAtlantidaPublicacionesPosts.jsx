@@ -528,10 +528,11 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/calificacion-certificado-fit-dic-23.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2020/12/resolucion-autorizacion-fondo-elite-17-diciembre8421.pdf"
                   }
                 >
-                  Certificado de Calificación Fondo Fit
+                  Resolución Aprobación Fondo de Inversión Administrado Elite
+                  (21DIC2020)
                 </Link>
               </div>
             </div>
@@ -749,7 +750,35 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
 
           <TECollapse
             show={activeElement === "fondos4"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b my-5">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-RESOLUCION-9527-INSCRIP.-FONDO-DE-INV.-ADM.-CONFIA.pdf"
+                  }
+                >
+                  Certificado de inscripción
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fondos4"}
+            className="!mt-0 !rounded-b-none !shadow-none"
           >
             <div className="flex items-center pb-2 border-b">
               <div>
@@ -771,34 +800,6 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   {/* Resolución No. SCVS-INMV-DNAR-2024-00009527 */}
                   Resolución de aprobación
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "fondos4"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-RESOLUCION-9527-INSCRIP.-FONDO-DE-INV.-ADM.-CONFIA.pdf"
-                  }
-                >
-                  Certificado de inscripción
                 </Link>
               </div>
             </div>
@@ -9114,8 +9115,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-Rendicion-de-cuentas-Fid.-Tit-Botaniqo_compressed.pdf"
                   }
                 >
-                  Fideicomiso Titularización Botaniqo: Resoliución No.
-                  SCVS-IRQ-DRMV-2023-00047288 (19OCT2023)
+                  Fideicomiso Titularización Botaniqo: 1era Rendición de cuentas (31ENE2024)
                 </Link>
               </div>
             </div>
