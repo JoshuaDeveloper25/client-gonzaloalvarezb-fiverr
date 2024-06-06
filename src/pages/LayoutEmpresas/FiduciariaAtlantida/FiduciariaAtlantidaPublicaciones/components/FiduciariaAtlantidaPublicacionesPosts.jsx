@@ -394,7 +394,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
 
           <TECollapse
             show={activeElement === "fondos1"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none py-5"
           >
             <div className="flex items-center pb-2 border-b">
               <div>
@@ -410,7 +410,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/1ebS_psMQIaGoUJpBDany5KDU4DGCw5vp/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-Resolución-Aprobación-Fondo-FIT-Fiduamericas.pdf"
                   }
                 >
                   Resolución Aprobación Fondo Fit
@@ -421,7 +421,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
 
           <TECollapse
             show={activeElement === "fondos1"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
+            className="!mt-0 !rounded-b-none !shadow-none py-5 my-7"
           >
             <div className="flex items-center pb-2 border-b">
               <div>
@@ -437,7 +437,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/1eUE7CGQvRrR8WR_YSjR-KQusC2yk0oXW/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/2.-Certificado-De-Inscripción-SC-Fondo-FIT.pdf"
                   }
                 >
                   Certificado de Inscripción Fondo Fit
@@ -765,10 +765,12 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/resolucion-9527-inscrip-fondo-de-inv-adm-confia-002.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/2.-Certificado-de-Inscripción-Fondo-de-Inv-Adm-CONFIA.pdf"
+                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/resolucion-9527-inscrip-fondo-de-inv-adm-confia-002.pdf"
                   }
                 >
-                  Resolución No. SCVS-INMV-DNAR-2024-00009527
+                  {/* Resolución No. SCVS-INMV-DNAR-2024-00009527 */}
+                  Resolución de aprobación
                 </Link>
               </div>
             </div>
@@ -792,7 +794,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
+                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-RESOLUCION-9527-INSCRIP.-FONDO-DE-INV.-ADM.-CONFIA.pdf"
                   }
                 >
                   Certificado de inscripción
@@ -6095,6 +6098,62 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
             </div>
           </TECollapse>
 
+          <TECollapse
+            show={activeElement === "fideicomisos6"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Tit.-GCC-Rendicion-de-cuentas-Octubre-2023-inversionistas-8va.pdf"
+                  }
+                >
+                  Guayaquil Country Club - Titularización Guayaquil Country
+                  Club: 8va. Rendición de Cuentas Inversionistas (31OCT2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos6"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Rendicion-de-cuentas-Abril-2024-TGC-9na.pdf"
+                  }
+                >
+                  Guayaquil Country Club - Titularización Guayaquil Country
+                  Club: 9na. Rendición de Cuentas Inversionistas (30ABR2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
           {/* Accordion 7 */}
           <h2 className="mb-0" id="fideicomisos7">
             <button
@@ -6549,6 +6608,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Segunda Titularización Cartera Microcrédito INSOTEC: 6ta.
                   Rendición de Cuentas Inversionistas (31OCT2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos7"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Rendicion-Insotec-II-Abr.-2024-inversionistas-7ma.pdf"
+                  }
+                >
+                  Segunda Titularización Cartera Microcrédito INSOTEC: 7ma.
+                  Rendición de Cuentas Inversionistas (30ABR2024)
                 </Link>
               </div>
             </div>
@@ -7036,6 +7123,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Primera Titularización Sindicada Rentas NX - RNT: 4ta.
                   Rendición de cuentas inversionistas (30JUN2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos8"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Rendicion-Diciembre-2023-Inversionistas_compressed-5ta.pdf"
+                  }
+                >
+                  Primera Titularización Sindicada Rentas NX - RNT: 5ta.
+                  Rendición de cuentas inversionistas (31DIC2023)
                 </Link>
               </div>
             </div>
@@ -7635,6 +7750,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Novacredit- Fideicomiso de Titularización de Cartera V: 10ma.
                   Rendición de Cuentas Inversionistas (31ENE2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos9"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Rendicion-de-cuentas-Inversionistas-Titularizacion-Novacredit-V-Abril-2024-11va.pdf"
+                  }
+                >
+                  Novacredit- Fideicomiso de Titularización de Cartera V: 11va.
+                  Rendición de Cuentas Inversionistas (30ABR2024)
                 </Link>
               </div>
             </div>
@@ -8420,6 +8563,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
             </div>
           </TECollapse>
 
+          <TECollapse
+            show={activeElement === "fideicomisos11"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Rendicion-Insotec-III-Abril-2024-inversionistas.pdf"
+                  }
+                >
+                  Tercera Titularización de Cartera Microcredito Insotec: 3era.
+                  Rendición de Cuentas Inversionistas (30ABR2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
           {/* Accordion 12 */}
           <h2 className="mb-0" id="fideicomisos12">
             <button
@@ -8913,6 +9084,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/10/Resolucion-No.-SCVS-IRQ-DRMV-2023-00047288.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Botaniqo: Resoliución No.
+                  SCVS-IRQ-DRMV-2023-00047288 (19OCT2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos13"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-Rendicion-de-cuentas-Fid.-Tit-Botaniqo_compressed.pdf"
                   }
                 >
                   Fideicomiso Titularización Botaniqo: Resoliución No.
@@ -9964,6 +10163,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendicion-de-cuentas-Finlink-diciembre-2019.pdf"
+                  }
+                >
+                  Rendición de cuentas Finlink diciembre 2019.pdf
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "documentosEncargo"}
+            className="!mt-0 !rounded-b-none !shadow-none pb-5 my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://drive.google.com/file/d/1xzsKuDG_72OlDAmDvp5wnN4ppbqbUQ5V/view?usp=sharing"
                   }
                 >
@@ -10860,6 +11086,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendicio%CC%81n-de-cuentas-Mutualista-Pichincha-diciembre-2021.docx-.pdf"
+                  }
+                >
+                  Rendición de cuentas Mutualista Pichincha diciembre 2021.docx
+                  .pdf
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "documentosEncargo"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/01/Rendicion-de-cuentas-Encargo-Mupi-2022.pdf"
                   }
                 >
@@ -11146,6 +11400,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               </div>
             </button>
           </h2>
+
+          <TECollapse
+            show={activeElement === "documentosGarantia"}
+            className="!mt-0 !rounded-b-none !shadow-none py-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendicio%CC%81n-de-cuentas-MUPI.pdf"
+                  }
+                >
+                  Rendición de cuentas - Fideicomiso de Garantía Automotriz
+                  Mutualista Pichincha (DIC2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
 
           <TECollapse
             show={activeElement === "documentosGarantia"}
@@ -11473,7 +11755,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/01/Rendicion-de-cuentas-Banco-del-Austro.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Resolucio%CC%81n-No.-SCVS-INMV-DNNF-2024-00006529-Fid-de-Garanti%CC%81a-Automotriz-Mutualista-Pichincha.pdf"
                   }
                 >
                   Resolución No. SCVS-INMV-DNNF-2024-00006529 - Fideicomiso de
