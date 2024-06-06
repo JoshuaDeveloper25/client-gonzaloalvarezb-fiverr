@@ -583,6 +583,7 @@ const Navbar = () => {
 
               <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -593,6 +594,8 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
+
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -603,6 +606,8 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
+
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -613,6 +618,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -623,6 +629,8 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
+
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -633,6 +641,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
@@ -643,6 +652,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink
+                  onClick={() => setNavbarOpen(false)}
                   className={
                     "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
                   }
