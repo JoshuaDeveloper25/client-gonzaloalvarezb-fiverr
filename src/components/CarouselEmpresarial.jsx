@@ -3,6 +3,11 @@ import carouselEmpresarial1 from "../images/carouselempresarial1.png";
 import carouselEmpresarial2 from "../images/carouselempresarial2.png";
 import carouselEmpresarial3 from "../images/carouselempresarial3.png";
 import carouselEmpresarial4 from "../images/carouselempresarial4.png";
+import carouselEmpresarial5 from "../images/carouselempresarial5.png";
+import carouselEmpresarial6 from "../images/carouselempresarial6.png";
+import carouselEmpresarial7 from "../images/carouselempresarial7.png";
+import carouselEmpresarial8 from "../images/carouselempresarial8.png";
+
 
 import Slider from "react-slick";
 
@@ -54,6 +59,56 @@ const CarouselEmprearial = () => {
         </h2>
 
         <Slider {...settings}>
+
+        <Link to={"/empresas/banco-d-miro"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial5}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">Banca</h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link to={"/fiduciaria-fondos"}>
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial4}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">
+                  Fondos de <span className="block">inversión</span>
+                </h3>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            to={"/fiduciaria-negocios"}
+          >
+            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
+              <div className="flex items-center">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={carouselEmpresarial3}
+                  className="w-20 h-12 object-contain"
+                />
+
+                <h3 className="text-white leading-4">{`Fideicomisos`}</h3>
+              </div>
+            </div>
+          </Link>
+          
           <Link to={"/casa-valores-inicio"}>
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
               <div className="flex items-center">
@@ -82,123 +137,6 @@ const CarouselEmprearial = () => {
                 />
 
                 <h3 className="text-white leading-4">
-                  Asesoría <span className="block">Producción de</span> seguros
-                </h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            to={"https://suratlantida.com/fiduciaria/negocios-fiduciarios/ "}
-          >
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={carouselEmpresarial3}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">{`Fideicomisos`}</h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"https://suratlantida.com/fiduciaria/fondos/"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">
-                  Fondos de <span className="block">inversión</span>
-                </h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"/reditum-inicio"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">
-                  Inteligencia de <span className="block">mercados</span>
-                </h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"/empresas/banco-d-miro"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  // src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">Banca</h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"/empresas/fiduciaria-atlantida"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  // src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">
-                  Fondos y <span className="block">Fideicomisos</span>
-                </h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"/empresas/atlantida-casa-valores"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  // src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">
-                  Mercado de <span className="block">Valores</span>
-                </h3>
-              </div>
-            </div>
-          </Link>
-
-          <Link to={"/empresas/atlantida-insurance"}>
-            <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
-              <div className="flex items-center">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  // src={carouselEmpresarial4}
-                  className="w-20 h-12 object-contain"
-                />
-
-                <h3 className="text-white leading-4">
                   Broker de <span className="block">seguros</span>
                 </h3>
               </div>
@@ -211,7 +149,7 @@ const CarouselEmprearial = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  // src={carouselEmpresarial4}
+                  src={carouselEmpresarial6}
                   className="w-20 h-12 object-contain"
                 />
 
@@ -226,7 +164,7 @@ const CarouselEmprearial = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  // src={carouselEmpresarial4}
+                  src={carouselEmpresarial7}
                   className="w-20 h-12 object-contain"
                 />
 
@@ -244,7 +182,7 @@ const CarouselEmprearial = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                  // src={carouselEmpresarial4}
+                  src={carouselEmpresarial8}
                   className="w-20 h-12 object-contain"
                 />
 

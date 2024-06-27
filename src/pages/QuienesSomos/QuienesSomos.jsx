@@ -17,18 +17,6 @@ const QuienesSomos = () => {
       {/* Carousel Empresarial */}
       <CarouselEmprearial />
 
-      {/* Nuestra Historia */}
-      <NuestraHistoria />
-
-      {/* Emisor Oficial */}
-      <EmisorOficial />
-
-      {/* Video de Linea de Tiempo */}
-      <LineaDeTiempoVideo />
-
-      {/* Principales Indicadores Financieros */}
-      <IndicadoresFinancieros />
-
       {/* Subfooter 2 */}
       <SubFooter
         bgColor={"black"}

@@ -25,11 +25,11 @@ const GobiernoCorporativoDirectorios = () => {
         {/* Tarjeta 1 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-8">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-5">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-8">
+            <h3 className="family-nunito-black text-center text-xl leading-5">
               Grupo Sur Atlántida
             </h3>
-            <h2 className="text-xl text-primary-color">Junta Directiva</h2>
+            <h2 className="text-xl">Junta Directiva</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -273,11 +273,11 @@ const GobiernoCorporativoDirectorios = () => {
         {/* Tarjeta 2 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Inversiones Financieras <span className="block">Atlántida</span>
             </h3>
-            <h2 className="text-xl text-primary-color">
+            <h2 className="text-xl">
               Directores Principales
             </h2>
           </div>
@@ -355,9 +355,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Guillermo Bueso</h2>{" "}
-                <p className="text-sm">
-                  Presidente
-                </p>
+                <p className="text-sm">Vicepresidente</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -581,11 +579,11 @@ const GobiernoCorporativoDirectorios = () => {
         {/* Tarjeta 3 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Inversiones Financieras <span className="block">Atlántida</span>
             </h3>
-            <h2 className="text-xl text-primary-color">Directores Suplentes</h2>
+            <h2 className="text-xl">Directores Suplentes</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -605,10 +603,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Javier Mayorga</h2>{" "}
-                <p className="text-sm leading-4">
-                  Gerente Atlántida Capital en El
-                  <span className="block">Salvador</span>
-                </p>
+                <p className="text-sm leading-4"></p>
               </div>
 
               <div className="pt-3 hidden">
@@ -670,10 +665,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Iván Juárez</h2>{" "}
-                <p className="text-sm">
-                  Gerente General Atlántida{" "}
-                  <span className="block">Securities en El Salvador</span>
-                </p>
+                <p className="text-sm"></p>
               </div>
 
               <div className="pt-3 hidden">
@@ -735,11 +727,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">María Elina Carías</h2>{" "}
-                <p className="text-sm">
-                  Vicepresidente Banca
-                  <span className="block">Transaccional del Banco</span>
-                  Atlántida en Honduras
-                </p>
+                <p className="text-sm"></p>
               </div>
 
               <div className="pt-3 hidden">
@@ -801,11 +789,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Sebastián Saá</h2>{" "}
-                <p className="text-sm">
-                  Director Independiente, Socio{" "}
-                  <span className="block">de la firma de abogados</span>{" "}
-                  Spingarn & Marks
-                </p>
+                <p className="text-sm"></p>
               </div>
 
               <div className="pt-3 hidden">
@@ -865,10 +849,7 @@ const GobiernoCorporativoDirectorios = () => {
             >
               <div>
                 <h2 className="font-bold">Manfred Hohenleitner</h2>{" "}
-                <p className="text-sm">
-                  Presidente Banco Atlántida{" "}
-                  <span className="block">Ecuador</span>
-                </p>
+                <p className="text-sm"></p>
               </div>
 
               <div className="pt-3 hidden">
@@ -927,11 +908,11 @@ const GobiernoCorporativoDirectorios = () => {
         {/* Tarjeta 5 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Banco D-Miro
             </h3>
-            <h2 className="text-xl text-primary-color">
+            <h2 className="text-xl">
               Directores Principales
             </h2>
           </div>
@@ -1245,11 +1226,11 @@ const GobiernoCorporativoDirectorios = () => {
         {/* Tarjeta 6 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Banco D-Miro
             </h3>
-            <h2 className="text-xl text-primary-color">Directores Suplentes</h2>
+            <h2 className="text-xl">Directores Suplentes</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}

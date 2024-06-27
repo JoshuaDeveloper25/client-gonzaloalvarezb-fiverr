@@ -62,7 +62,7 @@ const FooterCasaValores = () => {
 
             <Link
               className="flex items-center hover:text-gray-400 hover:shadow-md hover:shadow-white/30 py-1 px-1 animation-fade gap-2 text-sm font-light"
-              to={`#`}
+              to={`https://www.facebook.com/GrupoSurAtlantida`}
             >
               <IoLogoFacebook />
               Facebook
@@ -70,7 +70,7 @@ const FooterCasaValores = () => {
 
             <Link
               className="flex items-center hover:text-gray-400 px-1 py-1 hover:shadow-md hover:shadow-white/30 animation-fade gap-2 text-sm font-light"
-              to={`#`}
+              to={`https://www.linkedin.com/in/grupo-sur-atlántida-87014b271/`}
             >
               <FaLinkedin />
               LinkedIn
@@ -252,7 +252,7 @@ const FooterCasaValores = () => {
 
             <Link
               className="flex items-center hover:text-[#1877F2] hover:shadow-md hover:shadow-white/30 py-1 px-1 animation-fade gap-2 text-sm font-light"
-              to={`#`}
+              to={`https://www.facebook.com/GrupoSurAtlantida`}
             >
               <IoLogoFacebook />
               Facebook
@@ -260,7 +260,7 @@ const FooterCasaValores = () => {
 
             <Link
               className="flex items-center hover:text-[#55addd] px-1 py-1 hover:shadow-md hover:shadow-white/30 animation-fade gap-2 text-sm font-light"
-              to={`#`}
+              to={`https://www.linkedin.com/in/grupo-sur-atlántida-87014b271/`}
             >
               <FaLinkedin />
               LinkedIn

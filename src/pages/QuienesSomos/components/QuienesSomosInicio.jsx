@@ -1,4 +1,5 @@
 import hombreHeader from "../../../images/quienes-somos-header.png";
+import { Link } from "react-router-dom";
 
 const QuienesSomosInicio = () => {
   return (
@@ -6,11 +7,18 @@ const QuienesSomosInicio = () => {
       <div className="container-page flex flex-col lg:flex-row justify-between items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="max-w-sm text-4xl leading-10 md:mb-8 mb-0">
-            Somos un grupo regional, con{" "}
+          Somos parte de un sólido grupo financiero{" "}
             <span className="family-nunito-black">
-              más de 111 años de trayectoria y experiencia
+            que cuenta con el respaldo de más de 111 años de trayectoria.
             </span>
           </h1>
+
+          <Link
+              className="button-red-primary"
+              to={`https://www.invatlan.hn`} target="_blank"
+            >
+              Conoce más sobre nuestro Grupo
+            </Link>
         </article>
 
         <article className="max-w-2xl">

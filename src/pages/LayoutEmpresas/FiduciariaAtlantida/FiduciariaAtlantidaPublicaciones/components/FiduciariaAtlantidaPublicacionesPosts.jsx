@@ -87,7 +87,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/1B48qhpiFqmM0zOYvotBD21MN31t5Lg9U/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Certifcado-de-Inscripción.pdf"
                   }
                 >
                   Certificado de Inscripción
@@ -114,7 +114,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/12QxPc_O_doX-IIxiZsp3w7GCW1l2QMzP/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Resolución-Autorización-Fiduamericas.pdf"
                   }
                 >
                   Resolución Autorización Fiduamericas
@@ -141,7 +141,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/14ZOxmaDmq6RhJ6oHvQbOCc4t_dJgrSR5/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Manual-de-prevención.pdf"
                   }
                 >
                   Manuales de Prevención
@@ -168,7 +168,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/1SO18-yEf-FSWYvoTos2wOrGZje2tskK1/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Resolución-No-SCVS-IRQ-DRMV-2020-00001420.pdf"
                   }
                 >
                   Resolución Nº SCVS-IRQ-DRMV-2020-00001420 (Fecha Publicación
@@ -196,7 +196,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://drive.google.com/file/d/1MIZQb2pbuEBTv9Ytln0XHv9czjizkcUH/view?usp=sharing"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Extracto-Cambio-Denominación.pdf"
                   }
                 >
                   Extracto Cambio Denominación (Fecha Publicación 27FEB2020)
@@ -531,8 +531,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2020/12/resolucion-autorizacion-fondo-elite-17-diciembre8421.pdf"
                   }
                 >
-                  Resolución Aprobación Fondo de Inversión Administrado Elite
-                  (21DIC2020)
+                  Resolución Aprobación Fondo de Inversión Administrado Elite (21DIC2020)
                 </Link>
               </div>
             </div>
@@ -750,35 +749,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
 
           <TECollapse
             show={activeElement === "fondos4"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b my-5">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-RESOLUCION-9527-INSCRIP.-FONDO-DE-INV.-ADM.-CONFIA.pdf"
-                  }
-                >
-                  Certificado de inscripción
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "fondos4"}
-            className="!mt-0 !rounded-b-none !shadow-none"
+            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
           >
             <div className="flex items-center pb-2 border-b">
               <div>
@@ -799,6 +770,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   }
                 >
                   {/* Resolución No. SCVS-INMV-DNAR-2024-00009527 */}
+                  Certificado de inscripción
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fondos4"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    // "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/certificado-de-inscripcion-fondo-de-inv-adm-confia.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-RESOLUCION-9527-INSCRIP.-FONDO-DE-INV.-ADM.-CONFIA.pdf"
+                  }
+                >
                   Resolución de aprobación
                 </Link>
               </div>
@@ -7354,6 +7353,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/CONVOCATORIA-ASAMBLEA-Novacredit-V-17-Jun-2024.pdf"
+                  }
+                >
+                  Fideicomiso de Titularización de Cartera Novacredit V: Cuarta Convocatoria Asamblea (17JUN2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos9"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2022/06/INFORME-CALIFICADORA-TIT.-NOVACREDIT-V-JUNIO-2020.pdf"
                   }
                 >
@@ -11783,34 +11809,6 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/02/Rendicion-de-Cuentas-Fideicomiso-Garantia-La-Lorena-a-dic-2023.pdf"
-                  }
-                >
-                  Rendicion de cuentas - Fideicomiso Garantía La Lorena
-                  (DIC2023)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosGarantia"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/Rendición-de-cuentas-MUPI.pdf"
                   }
                 >
@@ -11902,7 +11900,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
 
           <TECollapse
             show={activeElement === "documentosSAGAP"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
           >
             <div className="flex items-center pb-2 border-b">
               <div>
@@ -11917,9 +11915,9 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 <Link
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
-                  to={"https://suratlantida.com/fiduciaria/rendiciones/2023/"}
+                  to={"https://suratlantida.com/fiduciaria/rendiciones/2021/"}
                 >
-                  Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2023
+                  Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2021
                 </Link>
               </div>
             </div>
@@ -11949,7 +11947,6 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               </div>
             </div>
           </TECollapse>
-
           <TECollapse
             show={activeElement === "documentosSAGAP"}
             className="!mt-0 !rounded-b-none !shadow-none my-5"
@@ -11967,13 +11964,13 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 <Link
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
-                  to={"https://suratlantida.com/fiduciaria/rendiciones/2021/"}
-                >
-                  Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2021
+                  to={"https://suratlantida.com/fiduciaria/rendiciones/2023/"}
+                >Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2023
                 </Link>
               </div>
             </div>
           </TECollapse>
+
         </article>
       </div>
     </section>

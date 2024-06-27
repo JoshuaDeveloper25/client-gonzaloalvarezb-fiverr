@@ -59,17 +59,6 @@ const Navbar = () => {
             Gobierno Corporativo
           </NavLink>
 
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black text-[.9rem]"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black text-[.9rem]"
-            }
-            to={`/presencia-regional`}
-          >
-            Presencia Regional
-          </NavLink>
 
           <div className="group relative cursor-pointer">
             <div className="hover:text-primary-color flex items-center justify-between gap-4">
@@ -105,10 +94,10 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/inversiones-financieras-atlantida"}
               >
@@ -117,7 +106,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/banco-d-miro"}
               >
@@ -126,7 +115,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/fiduciaria-atlantida"}
               >
@@ -135,7 +124,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/atlantida-casa-valores"}
               >
@@ -144,7 +133,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/atlantida-insurance"}
               >
@@ -153,7 +142,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/reditum"}
               >
@@ -162,7 +151,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/crediprime"}
               >
@@ -171,7 +160,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/empresas/capitalprime"}
               >
@@ -213,10 +202,10 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 left-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 left-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/banco-d-miro"}
                 // target="_blank"
@@ -226,7 +215,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/fiduciaria-atlantida"}
                 // target="_blank"
@@ -236,7 +225,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/atlantida-casa-valores"}
                 // target="_blank"
@@ -246,7 +235,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/atlantida-insurance"}
                 // target="_blank"
@@ -256,7 +245,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/reditum"}
                 // target="_blank"
@@ -266,7 +255,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/crediprime"}
                 // target="_blank"
@@ -276,7 +265,7 @@ const Navbar = () => {
 
               <NavLink
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold hover:text-white/50 leading-4"
                 }
                 to={"/empresas/capitalprime"}
                 // target="_blank"
@@ -465,11 +454,11 @@ const Navbar = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/inversiones-financieras-atlantida"}
                 >
@@ -479,7 +468,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/banco-d-miro"}
                 >
@@ -489,7 +478,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/fiduciaria-atlantida"}
                 >
@@ -499,7 +488,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/atlantida-casa-valores"}
                 >
@@ -509,7 +498,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/atlantida-insurance"}
                 >
@@ -519,7 +508,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/reditum"}
                 >
@@ -529,7 +518,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/crediprime"}
                 >
@@ -539,7 +528,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 animation-fade leading-4"
                   }
                   to={"/empresas/capitalprime"}
                 >
@@ -581,11 +570,11 @@ const Navbar = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/banco-d-miro"}
                   // target="_blank"
@@ -597,7 +586,7 @@ const Navbar = () => {
                   onClick={() => setNavbarOpen(false)}
 
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/fiduciaria-atlantida"}
                   // target="_blank"
@@ -609,7 +598,7 @@ const Navbar = () => {
                   onClick={() => setNavbarOpen(false)}
 
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/atlantida-casa-valores"}
                   // target="_blank"
@@ -620,7 +609,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/atlantida-insurance"}
                   // target="_blank"
@@ -632,7 +621,7 @@ const Navbar = () => {
                   onClick={() => setNavbarOpen(false)}
 
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/reditum"}
                   // target="_blank"
@@ -643,7 +632,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/crediprime"}
                   // target="_blank"
@@ -654,7 +643,7 @@ const Navbar = () => {
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/empresas/capitalprime"}
                   // target="_blank"

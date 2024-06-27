@@ -31,11 +31,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 1 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl text-white leading-6">
               Inversiones Financieras Atlántida
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl text-white">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -349,11 +349,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 2 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="bg-primary-color rounded-t-2xl text-white border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Banco D-Miro
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -550,8 +550,8 @@ const GobiernoCorporativoAdministradores = () => {
               aria-controls="collapseOne"
             >
               <div>
-                <h2 className="font-bold">Jorge Sotomayor - Grey</h2>{" "}
-                <p className="text-sm">Gray Gerente Legal</p>
+                <h2 className="font-bold">Jorge Sotomayor - Gray</h2>{" "}
+                <p className="text-sm">Gerente Legal</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -600,11 +600,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 3 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Fiduciaria Atlántida
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -749,7 +749,7 @@ const GobiernoCorporativoAdministradores = () => {
             >
               <div>
                 <h2 className="font-bold">Paola Rocha</h2>{" "}
-                <p className="text-sm">Director de Negocios Fiduciarios</p>
+                <p className="text-sm">Directora de Negocios Fiduciarios</p>
               </div>
 
               <div className="pt-3 hidden">
@@ -857,11 +857,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 5 */}
         <article className="border border-primary-color rounded-2xl  text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Atlántida Casa de Valores
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -1176,11 +1176,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 7 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Atlántida Insurance
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -1246,11 +1246,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 6 */}
         <article className="border border-primary-color rounded-2xl  text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               Reditum
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}
@@ -1316,11 +1316,11 @@ const GobiernoCorporativoAdministradores = () => {
         {/* Tarjeta 4 */}
         <article className="border border-primary-color rounded-2xl text-secondary-color text-center col-span-1">
           {/* Titulo Tarjeta */}
-          <div className="border-b-2 border-primary-color py-5">
-            <h3 className="family-nunito-black text-center text-xl text-primary-color leading-6">
+          <div className="text-white bg-primary-color rounded-t-2xl border-b-2 border-primary-color py-5">
+            <h3 className="family-nunito-black text-center text-xl leading-6">
               CrediPrime/CapitalPrime
             </h3>
-            <h2 className="text-xl text-primary-color">Administradores</h2>
+            <h2 className="text-xl">Administradores</h2>
           </div>
 
           {/* Tarjeta Accordion 1 */}

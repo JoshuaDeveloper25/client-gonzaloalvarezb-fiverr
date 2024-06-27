@@ -71,11 +71,11 @@ const NavbarFiduciariaAtlantida = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex gap-2 w-96 left-0 bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex gap-2 w-96 left-0 bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
               <div>
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#fideicomisoAdmin"}
                 >
@@ -84,7 +84,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#fideicomisoInmobiliario"}
                 >
@@ -93,7 +93,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#fideicomisoInversion"}
                 >
@@ -102,7 +102,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#fideicomisoGarantia"}
                 >
@@ -113,7 +113,7 @@ const NavbarFiduciariaAtlantida = () => {
               <div>
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#agenteManejo"}
                 >
@@ -122,7 +122,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#encargoFiduciario"}
                 >
@@ -131,7 +131,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                 <NavLink
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-negocios#diferenciasEncargo"}
                 >
@@ -178,12 +178,12 @@ const NavbarFiduciariaAtlantida = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-fondos/fondofit"}
               >
@@ -193,8 +193,8 @@ const NavbarFiduciariaAtlantida = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-fondos/fondoElite"}
               >
@@ -240,12 +240,12 @@ const NavbarFiduciariaAtlantida = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-transparencia"}
               >
@@ -259,7 +259,7 @@ const NavbarFiduciariaAtlantida = () => {
                 //     : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
                 // }
                 className={
-                  "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                  "my-2 block  text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 target="_blank"
                 to={
@@ -272,8 +272,8 @@ const NavbarFiduciariaAtlantida = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block  text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block  text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-marco"}
               >
@@ -415,11 +415,11 @@ const NavbarFiduciariaAtlantida = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex gap-5 w-full bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex gap-5 w-full bg-primary-color rounded-md py-1 px-4 text-white shadow-xl group-hover:visible">
                 <div>
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#fideicomisoAdmin"}
                   >
@@ -428,7 +428,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#fideicomisoInmobiliario"}
                   >
@@ -437,7 +437,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#fideicomisoInversion"}
                   >
@@ -446,7 +446,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#fideicomisoGarantia"}
                   >
@@ -457,7 +457,7 @@ const NavbarFiduciariaAtlantida = () => {
                 <div>
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#agenteManejo"}
                   >
@@ -466,7 +466,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#encargoFiduciario"}
                   >
@@ -475,7 +475,7 @@ const NavbarFiduciariaAtlantida = () => {
 
                   <NavLink
                     className={
-                      "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                     }
                     to={"/fiduciaria-negocios#diferenciasEncargo"}
                   >
@@ -522,12 +522,12 @@ const NavbarFiduciariaAtlantida = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 text-white shadow-xl group-hover:visible">
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-fondos/fondofit"}
                 >
@@ -537,8 +537,8 @@ const NavbarFiduciariaAtlantida = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-fondos/fondoElite"}
                 >
@@ -584,12 +584,12 @@ const NavbarFiduciariaAtlantida = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 text-white shadow-xl group-hover:visible">
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-transparencia"}
                 >
@@ -603,7 +603,7 @@ const NavbarFiduciariaAtlantida = () => {
                   //     : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
                   // }
                   className={
-                    "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   target="_blank"
                   to={
@@ -616,8 +616,8 @@ const NavbarFiduciariaAtlantida = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-marco"}
                 >

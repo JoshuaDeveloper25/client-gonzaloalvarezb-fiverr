@@ -73,12 +73,12 @@ const NavbarCasaValores = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-primary-color rounded-md text-white py-1 px-4 shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-administracion-portafolios"}
               >
@@ -88,8 +88,8 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-financiamiento"}
               >
@@ -99,8 +99,8 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-bursatiles"}
               >
@@ -146,12 +146,12 @@ const NavbarCasaValores = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-primary-color rounded-md text-white py-1 px-4 shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-transparencia"}
               >
@@ -161,8 +161,8 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                    : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-publicaciones"}
               >
@@ -305,12 +305,12 @@ const NavbarCasaValores = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-administracion-portafolios"}
                 >
@@ -320,8 +320,8 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-financiamiento"}
                 >
@@ -331,8 +331,8 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-bursatiles"}
                 >
@@ -370,12 +370,12 @@ const NavbarCasaValores = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-transparencia"}
                 >
@@ -385,8 +385,8 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
-                      : "my-2 block border-b border-gray-100 text-sm py-1 family-nunito-black font-semibold text-gray-500 hover:text-primary-color leading-4"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-publicaciones"}
                 >
