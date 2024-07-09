@@ -7380,6 +7380,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/ASAMBLEA-INVERSIONISTAS-TIT-CARTERA-NOVACREDIT-V-17-junio-2024.pdf"
+                  }
+                >
+                  Fideicomiso de Titularización de Cartera Novacredit V: Acta de Asamblea de Inversionistas (17JUN2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos9"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2022/06/INFORME-CALIFICADORA-TIT.-NOVACREDIT-V-JUNIO-2020.pdf"
                   }
                 >
@@ -8420,6 +8447,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               </div>
             </div>
           </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos11"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/TERCERA-TITULARIZACION-DE-CARTERA-INSOTEC.pdf"
+                  }
+                >
+                  Tercera Titularización de Cartera Microcredito Insotec: Extracto Calificadora de Riesgo (MARZ2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
 
           <TECollapse
             show={activeElement === "fideicomisos11"}

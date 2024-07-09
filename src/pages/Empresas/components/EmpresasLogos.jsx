@@ -13,10 +13,7 @@ const EmpresasLogos = () => {
     <section className="container-page md:my-20 my-5">
       <article className="grid sm:grid-cols-4 grid-cols-2 gap-10">
         <div className="text-center">
-          <Link
-            to={`/empresas/inversiones-financieras-atlantida`}
-            
-          >
+          <Link to={`/empresas/inversiones-financieras-atlantida`}>
             <img
               decoding="async"
               loading="lazy"
@@ -28,7 +25,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/banco-d-miro`} >
+          <Link to={`/empresas/banco-d-miro`}>
             <img
               decoding="async"
               loading="lazy"
@@ -40,7 +37,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/fiduciaria-atlantida`} >
+          <Link to={`/empresas/fiduciaria-atlantida`}>
             <img
               decoding="async"
               loading="lazy"
@@ -52,7 +49,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/atlantida-casa-valores`} >
+          <Link to={`/empresas/atlantida-casa-valores`}>
             <img
               decoding="async"
               loading="lazy"
@@ -64,7 +61,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/capitalprime`} >
+          <Link to={`/empresas/capitalprime`}>
             <img
               decoding="async"
               loading="lazy"
@@ -76,7 +73,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/reditum`} >
+          <Link to={`/empresas/reditum`}>
             <img
               decoding="async"
               loading="lazy"
@@ -88,7 +85,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/atlantida-insurance`} >
+          <Link to={`/empresas/atlantida-insurance`}>
             <img
               decoding="async"
               loading="lazy"
@@ -100,7 +97,7 @@ const EmpresasLogos = () => {
         </div>
 
         <div className="text-center">
-          <Link to={`/empresas/crediprime`} >
+          <Link to={`/empresas/crediprime`}>
             <img
               decoding="async"
               loading="lazy"

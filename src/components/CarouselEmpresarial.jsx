@@ -8,7 +8,6 @@ import carouselEmpresarial6 from "../images/carouselempresarial6.png";
 import carouselEmpresarial7 from "../images/carouselempresarial7.png";
 import carouselEmpresarial8 from "../images/carouselempresarial8.png";
 
-
 import Slider from "react-slick";
 
 const CarouselEmprearial = () => {
@@ -59,8 +58,7 @@ const CarouselEmprearial = () => {
         </h2>
 
         <Slider {...settings}>
-
-        <Link to={"/empresas/banco-d-miro"}>
+          <Link to={"/empresas/banco-d-miro"}>
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
               <div className="flex items-center">
                 <img
@@ -92,9 +90,7 @@ const CarouselEmprearial = () => {
             </div>
           </Link>
 
-          <Link
-            to={"/fiduciaria-negocios"}
-          >
+          <Link to={"/fiduciaria-negocios"}>
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
               <div className="flex items-center">
                 <img
@@ -108,7 +104,7 @@ const CarouselEmprearial = () => {
               </div>
             </div>
           </Link>
-          
+
           <Link to={"/casa-valores-inicio"}>
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
               <div className="flex items-center">
@@ -126,7 +122,9 @@ const CarouselEmprearial = () => {
             </div>
           </Link>
 
-          <Link to={`/insurance-inicio`}>
+          <Link // to={`/insurance-inicio`}
+            to="#"
+          >
             <div className="border border-white sm:max-w-none max-w-56 mx-auto rounded-3xl px-3 py-4">
               <div className="flex items-center">
                 <img

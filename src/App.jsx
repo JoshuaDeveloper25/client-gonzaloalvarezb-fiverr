@@ -112,36 +112,36 @@ const AtlantidaCasaValoresPublicacionesLazy = lazy(() =>
     "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresPublicaciones/AtlantidaCasaValoresPublicaciones"
   )
 );
-const AtlantidaInsuranceInicioLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceInicio/AtlantidaInsuranceInicio"
-  )
-);
-const AtlantidaInsuranceProductosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceProductos/AtlantidaInsuranceProductos"
-  )
-);
-const AtlantidaInsuranceAboutLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout"
-  )
-);
-const AtlantidaInsuranceServiciosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios"
-  )
-);
-const AtlantidaInsuranceRecursosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos"
-  )
-);
-const AtlantidaInsuranceContactoLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto"
-  )
-);
+// const AtlantidaInsuranceInicioLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceInicio/AtlantidaInsuranceInicio"
+//   )
+// );
+// const AtlantidaInsuranceProductosLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceProductos/AtlantidaInsuranceProductos"
+//   )
+// );
+// const AtlantidaInsuranceAboutLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout"
+//   )
+// );
+// const AtlantidaInsuranceServiciosLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios"
+//   )
+// );
+// const AtlantidaInsuranceRecursosLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos"
+//   )
+// );
+// const AtlantidaInsuranceContactoLazy = lazy(() =>
+//   import(
+//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto"
+//   )
+// );
 const FiduciariaAtlantidaInicioLazy = lazy(() =>
   import(
     "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaInicio/FiduciariaAtlantidaInicio"
@@ -345,35 +345,35 @@ const router = createBrowserRouter([
       },
 
       // --> Atlantida Insurance
-      {
-        path: "/insurance-inicio",
-        element: <AtlantidaInsuranceInicioLazy />,
-      },
+      // {
+      //   path: "/insurance-inicio",
+      //   element: <AtlantidaInsuranceInicioLazy />,
+      // },
 
-      {
-        path: "/insurance-productos",
-        element: <AtlantidaInsuranceProductosLazy />,
-      },
+      // {
+      //   path: "/insurance-productos",
+      //   element: <AtlantidaInsuranceProductosLazy />,
+      // },
 
-      {
-        path: "/insurance-quienes-somos",
-        element: <AtlantidaInsuranceAboutLazy />,
-      },
+      // {
+      //   path: "/insurance-quienes-somos",
+      //   element: <AtlantidaInsuranceAboutLazy />,
+      // },
 
-      {
-        path: "/insurance-servicios",
-        element: <AtlantidaInsuranceServiciosLazy />,
-      },
+      // {
+      //   path: "/insurance-servicios",
+      //   element: <AtlantidaInsuranceServiciosLazy />,
+      // },
 
-      {
-        path: "/insurance-recursos",
-        element: <AtlantidaInsuranceRecursosLazy />,
-      },
+      // {
+      //   path: "/insurance-recursos",
+      //   element: <AtlantidaInsuranceRecursosLazy />,
+      // },
 
-      {
-        path: "/insurance-contacto",
-        element: <AtlantidaInsuranceContactoLazy />,
-      },
+      // {
+      //   path: "/insurance-contacto",
+      //   element: <AtlantidaInsuranceContactoLazy />,
+      // },
 
       // --> Fiduciaria Atlantida
       {

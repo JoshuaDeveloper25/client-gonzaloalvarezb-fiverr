@@ -199,12 +199,10 @@ const EmpresasLogos = () => {
               />
             </Link>
           </div>
-
-          
         </article>
 
         <article className="flex flex-col md:flex-row justify-evenly">
-        <div className="text-center">
+          <div className="text-center">
             <Link to={"/empresas/crediprime"}>
               <img
                 decoding="async"

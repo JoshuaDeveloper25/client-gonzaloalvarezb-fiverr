@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import casaValoresHeader from "../../../../../images/atlantida-insurance-inicio.png";
-import logoReditum from "../../../../../images/nuestraempresa7.png";
+import logoInsurance from "../../../../../images/nuestraempresa7.png";
 
 const AtlantidaInsuranceInicio = () => {
   return (
@@ -14,12 +14,14 @@ const AtlantidaInsuranceInicio = () => {
 
         <div className="flex flex-col lg:flex-row justify-between items-center md:gap-3">
           <article className="max-w-md text-secondary-color lg:py-0 py-4">
-            <Link to={"/insurance-inicio"}>
+            <Link // to={"/insurance-inicio"}
+              to="#"
+            >
               <img
                 loading="lazy"
                 decoding="async"
                 className="w-92 mb-6"
-                src={logoReditum}
+                src={logoInsurance}
                 alt="Logo Grupo Sur Atlántida"
               />
             </Link>
