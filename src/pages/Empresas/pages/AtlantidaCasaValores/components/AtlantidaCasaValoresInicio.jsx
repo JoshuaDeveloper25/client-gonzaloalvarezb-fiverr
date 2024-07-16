@@ -18,7 +18,7 @@ const AtlantidaCasaValoresInicio = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                className="w-92 mb-6"
+                className="w-72 mb-6"
                 src={logoAtlantidaCasaValores}
                 alt="Logo Grupo Sur Atlántida"
               />

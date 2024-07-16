@@ -18,7 +18,7 @@ const CrediPrimeInicio = () => {
               <img
                 loading="lazy"
                 decoding="async"
-                className="w-92 mb-6"
+                className="w-72 mb-6"
                 src={logoCrediprime}
                 alt="Logo Grupo Sur Atlántida"
               />
