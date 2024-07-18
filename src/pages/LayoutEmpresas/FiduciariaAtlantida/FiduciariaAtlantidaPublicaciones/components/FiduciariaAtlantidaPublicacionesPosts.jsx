@@ -9192,10 +9192,37 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/TITULARIZACION-BOTANIQO-f-signed.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Botaniqo Informe Calificadora de Riesgos (MAY2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos13"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/10/Resolucion-No.-SCVS-IRQ-DRMV-2023-00047288.pdf"
                   }
                 >
-                  Fideicomiso Titularización Botaniqo: Resoliución No.
+                  Fideicomiso Titularización Botaniqo: Resolución No.
                   SCVS-IRQ-DRMV-2023-00047288 (19OCT2023)
                 </Link>
               </div>
