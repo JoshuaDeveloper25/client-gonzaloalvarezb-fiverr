@@ -1,4 +1,4 @@
-import inversionesFinancieras from "../../../../../images/inversiones-financieras-inicio.png";
+import inversionesFinancieras from "../../../../../images/header-inversiones-financieras.png";
 import logoInversionesFinancieras from "../../../../../images/nuestraempresa1.png";
 import { Link } from "react-router-dom";
 
@@ -30,7 +30,7 @@ const InversionesFinancierasInicio = () => {
             </p>
           </article>
 
-          <article className="max-w-md mx-auto mt-5">
+          <article className="max-w-3xl mx-auto">
             <img
               decoding="async"
               loading="lazy"

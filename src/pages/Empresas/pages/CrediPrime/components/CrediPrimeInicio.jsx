@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import inversionesFinancieras from "../../../../../images/crediprime-inicio.png";
+import inversionesFinancieras from "../../../../../images/header-crediprime.png";
 import logoCrediprime from "../../../../../images/nuestraempresa8.png";
 
 const CrediPrimeInicio = () => {
@@ -31,7 +31,7 @@ const CrediPrimeInicio = () => {
             </Link>
           </article>
 
-          <article className="max-w-md mx-auto mt-5">
+          <article className="max-w-3xl mx-auto">
             <img
               decoding="async"
               loading="lazy"

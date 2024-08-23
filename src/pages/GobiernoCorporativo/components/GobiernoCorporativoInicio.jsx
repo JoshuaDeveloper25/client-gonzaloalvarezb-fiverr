@@ -1,4 +1,4 @@
-import headerReconocimientos from "../../../images/gobierno-corporativo-inicio.png";
+import headerReconocimientos from "../../../images/header-gobierno-corporativo.png";
 
 const GobiernoCorporativoInicio = () => {
   return (

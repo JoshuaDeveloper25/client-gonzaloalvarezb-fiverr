@@ -1,4 +1,4 @@
-import headerReconocimientos from "../../../images/reconocimientos-header.png";
+import headerReconocimientos from "../../../images/header-reconocimientos.png";
 
 const ReconocimientosInicio = () => {
   return (
@@ -10,7 +10,7 @@ const ReconocimientosInicio = () => {
           </h1>
         </article>
 
-        <article className="max-w-sm mx-auto">
+        <article className="max-w-3xl mx-auto">
           <img
             decoding="async"
             loading="lazy"

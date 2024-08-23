@@ -1,4 +1,4 @@
-import capitalPrimeHeader from "../../../../../images/capital-prime-inicio.png";
+import capitalPrimeHeader from "../../../../../images/header-capital-prime.png";
 import logoCapitalPrime from "../../../../../images/nuestraempresa5.png";
 import { Link } from "react-router-dom";
 
@@ -34,7 +34,7 @@ const CapitalPrimeInicio = () => {
             </Link>
           </article>
 
-          <article className="max-w-md mx-auto  mt-5">
+          <article className="max-w-3xl mx-auto">
             <img
               decoding="async"
               loading="lazy"

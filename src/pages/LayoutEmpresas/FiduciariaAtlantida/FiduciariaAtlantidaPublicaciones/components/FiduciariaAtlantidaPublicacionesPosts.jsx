@@ -7864,6 +7864,62 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
             </div>
           </TECollapse>
 
+          <TECollapse
+            show={activeElement === "fideicomisos9"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/REND-CTAS-INVERSIONISTAS-FID-TIT-PROY-NUEVO-TRANSPORTE-GUAYAQUIL-JUNIO-2024-y-anexos.pdf"
+                  }
+                >
+                  Novacredit- Fideicomiso de Titularización de Cartera V: 12va.
+                  Rendición de Cuentas Inversionistas (30JUN2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos9"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/Rendicion-de-cuentas-a-Inversionistas-por-Sustitucion-Titularizacion-Novacredit-V-al-22-julio-2024-y-anexos.pdf"
+                  }
+                >
+                  Novacredit- Fideicomiso de Titularización de Cartera V: 13va.
+                  Rendición de Cuentas Inversionistas (22JUL2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
           {/* Accordion 10 */}
           <h2 className="mb-0" id="fideicomisos10">
             <button
@@ -8010,6 +8066,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Fideicomiso Segunda Titularización de Cartera Factorplus:
                   Extracto Calificadora de Riesgo (ENE 2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos10"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/189-2024-INFORMEFINAL-FACTORPLUS-2TIT-JULIO.pdf"
+                  }
+                >
+                  Fideicomiso Segunda Titularización de Cartera Factorplus: Extracto Calificadora de Riesgo (JUL2024)
                 </Link>
               </div>
             </div>
@@ -8869,6 +8952,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/198-2024-INFORME-FINAL-TITULARIZACIÓN-NTG-MAYO-2024.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Proyecto Nuevo Transporte
+                  Guayaquil: Extracto Calificadora de Riesgos (MAYO2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos12"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/03/ResolucionTit.-Proyecto-Nuevo-Transporte-Guayaquil.pdf"
                   }
                 >
@@ -9247,6 +9358,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/Resolucion-00012157-PRORROGA-tit-flujos-Botaniqo_Fidutlan.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Botaniqo: Resolución: No. SCVS-INMV-DNAR-2024-00012157 (01AGO2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos13"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-Rendicion-de-cuentas-Fid.-Tit-Botaniqo_compressed.pdf"
                   }
                 >
@@ -9255,6 +9393,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               </div>
             </div>
           </TECollapse>
+
+
         </article>
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-8 rounded-2xl text-secondary-color/95">

@@ -182,7 +182,7 @@ const NavbarFiduciariaAtlantida = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-fondos/fondofit"}
@@ -193,7 +193,7 @@ const NavbarFiduciariaAtlantida = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-fondos/fondoElite"}
@@ -272,7 +272,7 @@ const NavbarFiduciariaAtlantida = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block  text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block  text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                     : "my-2 block  text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/fiduciaria-marco"}
@@ -526,7 +526,7 @@ const NavbarFiduciariaAtlantida = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-fondos/fondofit"}
@@ -537,7 +537,7 @@ const NavbarFiduciariaAtlantida = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-fondos/fondoElite"}
@@ -616,7 +616,7 @@ const NavbarFiduciariaAtlantida = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/fiduciaria-marco"}

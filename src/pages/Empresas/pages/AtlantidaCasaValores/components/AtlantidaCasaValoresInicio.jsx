@@ -1,4 +1,4 @@
-import casaValoresHeader from "../../../../../images/atlantida-casa-valores-header.png";
+import casaValoresHeader from "../../../../../images/header-atlantida-casa-valores.png";
 import logoAtlantidaCasaValores from "../../../../../images/nuestraempresa4.png";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const AtlantidaCasaValoresInicio = () => {
             </Link>
           </article>
 
-          <article className="max-w-sm mx-auto  mt-5">
+          <article className="max-w-3xl mx-auto">
             <img
               decoding="async"
               loading="lazy"
