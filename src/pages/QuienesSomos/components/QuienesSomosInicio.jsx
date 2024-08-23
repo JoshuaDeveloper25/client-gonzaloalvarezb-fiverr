@@ -13,12 +13,12 @@ const QuienesSomosInicio = () => {
             </span>
           </h1>
 
-          <Link
+          {/* <Link
               className="button-red-primary"
               to={`https://www.invatlan.hn`} target="_blank"
             >
               Conoce más sobre nuestro Grupo
-            </Link>
+            </Link> */}
         </article>
 
         <article className="max-w-2xl">

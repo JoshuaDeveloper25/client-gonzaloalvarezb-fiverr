@@ -315,3 +315,8 @@ body {
 .object-view-box11 {
   object-view-box: inset(0% 40% 15% 5%);
 }
+
+/* Flipcard of Quienes Somos */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}

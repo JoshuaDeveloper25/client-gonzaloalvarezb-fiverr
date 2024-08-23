@@ -13,13 +13,13 @@ const GobiernoCorporativo = () => {
       <GobiernoCorporativoInicio />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Directorios`} />
+      {/* <RedBanner bannerTitle={`Directorios`} /> */}
 
       {/* Directorios */}
       <GobiernoCorporativoDirectorios />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Administradores`} />
+      {/* <RedBanner bannerTitle={`Administradores`} /> */}
 
       {/* Administradores */}
       <GobiernoCorporativoAdministradores />
