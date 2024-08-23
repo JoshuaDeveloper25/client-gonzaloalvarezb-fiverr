@@ -1,6 +1,6 @@
 const Historia = () => {
   return (
-    <section className="py-3">
+    <section className="py-8">
       <div className="container-page text-justify">
         <div className="flex flex-col md:flex-row md:gap-8 gap-0">
           <div className="flex-1">
