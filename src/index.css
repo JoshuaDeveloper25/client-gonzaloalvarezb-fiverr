@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-Black.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-BlackItalic.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-Bold.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-BoldItalic.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-ExtraBoldItalic.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-ExtraLight.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-ExtraLightItalic.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-Italic.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-Light.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-Regular.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-SemiBold.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("./fonts/NunitoSans-Black.ttf") format("truetype");
+  font-weight: 900; /* Peso Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans SemiBold";
+  src: url("./fonts/NunitoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Peso Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans Light";
+  src: url("./fonts/NunitoSans-Light.ttf") format("truetype");
+  font-weight: 300; /* Peso Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("./fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal; /* Peso Regular */
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+body {
+  font-family: "Nunito Sans Regular";
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-[1320px] px-4;
+  }
+
+  .animation-fade {
+    @apply duration-200 transition-all ease-in-out;
+  }
+
+  .button-red-primary {
+    @apply text-white font-light rounded-sm text-center bg-[#E21E31] py-1 px-10 inline-block animation-fade hover:bg-[#E21E31]/60;
+  }
+
+  .button-red-primary-outline {
+    @apply text-[#E21E31] font-light rounded-sm text-center border-[#E21E31] border py-1 px-10 inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
+  }
+
+  .button-red-primary-outline2 {
+    @apply text-white font-light rounded-sm text-center border-white border py-1 px-10 inline-block animation-fade hover:bg-white hover:text-black;
+  }
+}
+
+/* Carousel Nuestras Empresas - Inicio */
+.nuestrasEmpresas > .slick-slider > .slick-prev:before,
+.nuestrasEmpresas > .slick-slider > .slick-next:before {
+  color: #e21e31 !important;
+}
+
+.nuestrasEmpresas > .slick-slider > .slick-prev {
+  left: 1rem;
+  z-index: 999;
+}
+
+.nuestrasEmpresas > .slick-slider > .slick-next {
+  right: 1rem;
+}
+
+/* 500px */
+@media (min-width: 31.25em) {
+  .nuestrasEmpresas > .slick-slider > .slick-prev {
+    left: -0.5rem;
+    z-index: 9999;
+  }
+
+  .nuestrasEmpresas > .slick-slider > .slick-next {
+    right: -0.5rem;
+  }
+}
+
+/* Carousel Empresial Estilos - Componente Global */
+.carouselEmpresarial
+  > .slick-slider
+  > .slick-list
+  > .slick-track
+  > .slick-slide
+  > div {
+  margin: 0 auto !important;
+  max-width: 15rem !important;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-prev {
+  left: 0.3rem;
+  z-index: 9999;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-next {
+  right: 0.3rem;
+}
+
+/* 1200px */
+@media (min-width: 75em) {
+  .carouselEmpresarial > .slick-slider > .slick-prev {
+    left: -0.7rem;
+    z-index: 9999;
+  }
+
+  .carouselEmpresarial > .slick-slider > .slick-next {
+    right: -0.7rem;
+  }
+}
+
+.carouselEmpresarial
+  > .slick-slider
+  > .slick-list
+  > .slick-track
+  > .slick-slide {
+  padding: 0 1rem;
+}
+
+.carouselEmpresarial > .slick-slider > .slick-prev:before,
+.carouselEmpresarial > .slick-slider > .slick-next:before {
+  color: white !important;
+}
+
+/* Carousel de Quienes Somos - Emisor oficial de la moneda de Honduras */
+.carousel-emisor > article > .slick-slider > .slick-prev:before,
+.carousel-emisor > article > .slick-slider > .slick-next:before {
+  color: black !important;
+  font-size: 1.4rem;
+}
+
+.center .slick-center .emisorOficialImg {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: all 400ms ease-in-out;
+  outline: none;
+}
+
+.carousel-emisor > article > .slick-slider > .slick-prev {
+  left: 1rem;
+  z-index: 9999;
+}
+
+.carousel-emisor > article > .slick-slider > .slick-next {
+  right: 1rem;
+  z-index: 9999;
+}
+
+.family-nunito-black {
+  font-family: "Nunito Sans Black";
+}
+
+.family-nunito-semibold {
+  font-family: "Nunito Sans SemiBold";
+}
+
+.family-nunito-regular {
+  font-family: "Nunito Sans Regular";
+}
+
+/* Codigo de la flip card de la pagina Casa Valores Inicio */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Carousel Atlantida Insurance Inicio */
+.clientesAsegurados > .slick-slider > .slick-prev:before,
+.clientesAsegurados > .slick-slider > .slick-next:before {
+  color: #e21e31 !important;
+}
+
+.clientesAsegurados > .slick-slider > .slick-prev {
+  left: 6rem;
+  top: 3rem;
+  z-index: 9999;
+}
+
+.clientesAsegurados > .slick-slider > .slick-next {
+  right: 6rem;
+  top: 3rem;
+  z-index: 9999;
+}
+
+/* 950px */
+@media (max-width: 1080px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    left: 0.5rem;
+    z-index: 9999;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    left: -0.6rem;
+    z-index: 9999;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    right: -0.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .clientesAsegurados > .slick-slider > .slick-prev {
+    top: 6rem;
+  }
+
+  .clientesAsegurados > .slick-slider > .slick-next {
+    top: 6rem;
+  }
+}
+
+/* Estilos a las pestañas de la página de Insurance */
+.tag-link {
+  font-size: 1rem;
+  border-bottom: 1px solid black !important;
+  text-align: start;
+}
+
+@media (max-width: 450px) {
+  .tabs > div {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+  }
+
+  .tabs > div > ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tag-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.object-view-box1 {
+  object-view-box: inset(0% 15% 60% 20%);
+}
+
+.object-view-box2 {
+  object-view-box: inset(0% 30% 40% 20%);
+}
+
+.object-view-box3 {
+  object-view-box: inset(0% 21% 54% 15%);
+}
+
+.object-view-box4 {
+  object-view-box: inset(0% 15% 54% 15%);
+}
+
+.object-view-box5 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box6 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box7 {
+  object-view-box: inset(0% 22% 56% 20%);
+}
+
+.object-view-box8 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
+
+.object-view-box9 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
+
+.object-view-box10 {
+  object-view-box: inset(0% 15% 55% 10%);
+}
+
+.object-view-box11 {
+  object-view-box: inset(0% 40% 15% 5%);
+}
+
+/* Flipcard of Quienes Somos */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
