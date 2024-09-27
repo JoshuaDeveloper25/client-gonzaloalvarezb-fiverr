@@ -178,7 +178,7 @@ const NavbarFiduciariaAtlantida = () => {
               </span>
             </div>
 
-            <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
+            {/* <div className="invisible absolute z-58 flex w-48 right-0 flex-col bg-primary-color rounded-md py-1 px-4 shadow-xl group-hover:visible">
               <NavLink
                 className={({ isActive }) =>
                   isActive
@@ -200,7 +200,7 @@ const NavbarFiduciariaAtlantida = () => {
               >
                 Fondo Élite
               </NavLink>
-            </div>
+            </div> */}
           </div>
 
           <div className="group relative cursor-pointer">
@@ -522,7 +522,7 @@ const NavbarFiduciariaAtlantida = () => {
                 </span>
               </div>
 
-              <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 text-white shadow-xl group-hover:visible">
+              {/* <div className="invisible absolute z-50 flex w-full flex-col bg-primary-color rounded-md py-1 px-4 text-white shadow-xl group-hover:visible">
                 <NavLink
                   className={({ isActive }) =>
                     isActive
@@ -544,7 +544,7 @@ const NavbarFiduciariaAtlantida = () => {
                 >
                   Fondo Élite
                 </NavLink>
-              </div>
+              </div> */}
             </div>
 
             <div className="group relative cursor-pointer">

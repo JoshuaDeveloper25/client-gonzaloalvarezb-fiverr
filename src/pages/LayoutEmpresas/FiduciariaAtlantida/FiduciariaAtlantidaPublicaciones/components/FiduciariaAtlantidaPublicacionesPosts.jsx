@@ -464,7 +464,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/calificacion-certificado-fit-dic-23.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/CERTIFICADO-FONDO-FIT-AGO-2024.pdf"
                   }
                 >
                   Certificado de Calificación Fondo Fit
@@ -582,7 +582,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/05/calificacion-certificado-elite-dic-23.pdf"
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/CALIFICACION-CERTIFICADO-ELITE-AGO-2024.pdf"
                   }
                 >
                   Certificado de Calificación Fondo Élite
@@ -5367,7 +5367,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
             >
               <div>
                 <p className="text-sm">
-                  Titularización Guayaquil Countr y Club
+                  Titularización Guayaquil Country Club
                 </p>
               </div>
 
@@ -6636,6 +6636,33 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Segunda Titularización Cartera Microcrédito INSOTEC: 7ma.
                   Rendición de Cuentas Inversionistas (30ABR2024)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos7"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/214-2024-INFORMEFINAL-2TIT-INSOTEC-AGOSTO.pdf"
+                  }
+                >
+                  Segunda Titularización Cartera Microcrédito INSOTEC: Informe Final (15AGO2024)
                 </Link>
               </div>
             </div>
@@ -9130,7 +9157,36 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Fideicomiso Titularización Proyecto Nuevo Transporte
                   Guayaquil: Cuarta Convocatoria Asamblea Inversionistas
-                  (28nov2023)
+                  (28NOV2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos12"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/Convocatoria-Asamblea-Inversionistas-sept-2024-pdf.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Proyecto Nuevo Transporte
+                  Guayaquil: Quinta Convocatoria Asamblea Inversionistas
+                  (23SEP2024)
                 </Link>
               </div>
             </div>
@@ -9187,6 +9243,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Fideicomiso Titularización Proyecto Nuevo Transporte
                   Guayaquil: 2da Rendición de cuentas (DIC2023)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "fideicomisos12"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/REND-CTAS-INVERSIONISTAS-FID-TIT-PROY-NUEVO-TRANSPORTE-GUAYAQUIL-JUNIO-2024-y-anexos.pdf"
+                  }
+                >
+                  Fideicomiso Titularización Proyecto Nuevo Transporte
+                  Guayaquil: 3ra Rendición de cuentas (JUN2024)
                 </Link>
               </div>
             </div>
@@ -9890,6 +9974,34 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                 >
                   Resolución No. SCVS-IRQ-DRMV-2021-00002984 - Fideicomiso Verde
                   Ilaló (08ABR2021)
+                </Link>
+              </div>
+            </div>
+          </TECollapse>
+
+          <TECollapse
+            show={activeElement === "documentosFideicomisos"}
+            className="!mt-0 !rounded-b-none !shadow-none my-5"
+          >
+            <div className="flex items-center pb-2 border-b">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8"
+                  src={downloadIcon}
+                />
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-primary-color hover:underline hover:opacity-55"
+                  to={
+                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/Resolucion-No.-SCVS-INMV-DNNF-2024-00013314.pdf"
+                  }
+                >
+                  Resolución No. SCVS-INMV-DNNF-2024-00013314 - Fideicomiso Verde 
+                  Ilaló (11SEPT2024)
                 </Link>
               </div>
             </div>

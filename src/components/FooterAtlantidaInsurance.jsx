@@ -58,6 +58,7 @@ const FooterAtlantidaInsurance = () => {
               LinkedIn
             </Link>
 
+<<<<<<< HEAD
             <h3 className="border-t pt-2 mt-3 font-bold text-sm">
               Quiero hablar con un asesor
             </h3>
@@ -65,6 +66,8 @@ const FooterAtlantidaInsurance = () => {
               <FaWhatsapp className="size-5" />
               <h2 className="text-xl">0999547788</h2>
             </div>
+=======
+>>>>>>> efd816a (nuevo cambio de gonzalo)
           </article>
 
           <article>
@@ -171,6 +174,7 @@ const FooterAtlantidaInsurance = () => {
               LinkedIn
             </Link>
 
+<<<<<<< HEAD
             <h3 className="border-t pt-2 mt-3 font-bold text-sm">
               Quiero hablar con un asesor
             </h3>
@@ -178,6 +182,8 @@ const FooterAtlantidaInsurance = () => {
               <FaWhatsapp className="size-5" />
               <h2 className="text-xl">0999547788</h2>
             </div>
+=======
+>>>>>>> efd816a (nuevo cambio de gonzalo)
           </TECollapse>
         </div>
 

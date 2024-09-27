@@ -30,6 +30,9 @@ const QuienesSomos = () => {
       {/* Nuestro Grupo */}
       <NuestroGrupo />
 
+      {/* Video de Linea de Tiempo */}
+      <LineaDeTiempoVideo />
+
       {/* Valores Corporativos */}
       <ValoresCorporativos />
 

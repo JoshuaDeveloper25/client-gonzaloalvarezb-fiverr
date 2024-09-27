@@ -25,7 +25,7 @@ const FiduciariaAtlantidaInicioVentajas = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-8">
           <div className="text-secondary-color bg-tertiary-color rounded-2xl py-10 px-7 col-span-1">
             <h3 className="family-nunito-black border-b-4 border-b-primary-color pb-3 text-2xl">
-              Constituye
+              Constituyente
             </h3>
             <ul className="list-disc space-y-2 pt-5 px-6">
               <li>Es quien transfiere los bienes. </li>

@@ -13,16 +13,28 @@ import { Link } from "react-router-dom";
 
 const NuestroGrupo = () => {
   return (
-    <section className="container-page py-8">
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 grid-cols-1 place-items-center gap-6">
-        {/* Atlántida Advisors */}
+    <section className="bg-tertiary-color py-12">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 grid-cols-1 place-items-center gap-6">
+        {/* Banco d miro */}
         <div className="text-center h-full">
-          <Link to={`/advisors-inicio`}>
+          <Link to={`/empresas/banco-d-miro`}>
             <img
               loading="lazy"
               decoding="async"
-              src={nuestraEmpresa9}
-              className="w-32 h-12 object-contain"
+              src={nuestraEmpresa2}
+              className="w-32"
+            />
+          </Link>
+        </div>        
+        
+        {/* Fiduciaria Atlántida */}
+        <div className="text-center h-full">
+          <Link to={`/empresas/fiduciaria-atlantida`}>
+            <img
+              loading="lazy"
+              decoding="async"
+              src={nuestraEmpresa3}
+              className="w-32"
             />
           </Link>
         </div>
@@ -39,18 +51,6 @@ const NuestroGrupo = () => {
           </Link>
         </div>
 
-        {/* Fiduciaria Atlántida */}
-        <div className="text-center h-full">
-          <Link to={`/empresas/fiduciaria-atlantida`}>
-            <img
-              loading="lazy"
-              decoding="async"
-              src={nuestraEmpresa3}
-              className="w-32"
-            />
-          </Link>
-        </div>
-
         {/* Atlántida Insurance */}
         <div className="text-center  h-full">
           <Link to={`/empresas/atlantida-insurance`}>
@@ -59,18 +59,6 @@ const NuestroGrupo = () => {
               decoding="async"
               src={nuestraEmpresa7}
               className="w-32 "
-            />
-          </Link>
-        </div>
-
-        {/* Inmobiliaria Atlántida */}
-        <div className="text-center  h-full">
-          <Link to={`#`}>
-            <img
-              loading="lazy"
-              decoding="async"
-              src={nuestraEmpresa10}
-              className="object-contain "
             />
           </Link>
         </div>
@@ -99,18 +87,6 @@ const NuestroGrupo = () => {
           </Link>
         </div>
 
-        {/* GoPrime */}
-        <div className="text-center  h-full">
-          <Link to={`#`}>
-            <img
-              loading="lazy"
-              decoding="async"
-              src={nuestraEmpresa11}
-              className="object-contain "
-            />
-          </Link>
-        </div>
-
         {/* CapitalPrime */}
         <div className="text-center  h-full">
           <Link to={`/empresas/capitalprime`}>
@@ -123,17 +99,6 @@ const NuestroGrupo = () => {
           </Link>
         </div>
 
-        {/* Banco d miro */}
-        <div className="text-center h-full">
-          <Link to={`/empresas/banco-d-miro`}>
-            <img
-              loading="lazy"
-              decoding="async"
-              src={nuestraEmpresa2}
-              className="w-32"
-            />
-          </Link>
-        </div>
       </div>
 
       <div className="text-center mt-14">

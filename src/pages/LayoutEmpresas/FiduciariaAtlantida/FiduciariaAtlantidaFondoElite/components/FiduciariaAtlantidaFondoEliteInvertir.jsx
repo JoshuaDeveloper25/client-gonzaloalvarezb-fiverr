@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FiduciariaAtlantidaFondoFitInvertir = () => {
   return (
     <section className="bg-tertiary-color">
@@ -18,9 +20,12 @@ const FiduciariaAtlantidaFondoFitInvertir = () => {
             <h3 className="text-center text-secondary-color text-3xl my-3">
               Simula tu plan <span className="block">de inversión</span>
             </h3>
-            <div className="text-center">
+
+            <div className="text-center mt-3">
+            <Link to={"https://fondosatlantida.com/"}>
               <button className="button-red-primary">Simular ahora</button>
-            </div>
+            </Link>
+          </div>
           </article>
         </div>
       </div>

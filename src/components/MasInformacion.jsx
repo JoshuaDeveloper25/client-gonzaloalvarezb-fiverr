@@ -43,7 +43,11 @@ const MasInformacion = () => {
             </form>
 
             <div className="text-end mt-3">
+<<<<<<< HEAD
+              <button className="button-red-primary-big sm:w-auto w-full">Cotiza</button>
+=======
               <button className="button-red-primary sm:w-auto w-full">Cotiza</button>
+>>>>>>> efd816a (nuevo cambio de gonzalo)
             </div>
           </article>
         </div>

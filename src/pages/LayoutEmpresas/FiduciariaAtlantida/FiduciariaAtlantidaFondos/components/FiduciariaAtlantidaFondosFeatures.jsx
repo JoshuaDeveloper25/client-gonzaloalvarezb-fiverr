@@ -1,52 +1,170 @@
-import fondoFit from "../../../../../images/fondoFit.png";
-import fondoElite from "../../../../../images/fondoElite.png";
-import { Link } from "react-router-dom";
+import fondoFit from "../../../../../images/fondo-fit-alt.png";
+import fondoElite from "../../../../../images/fondo-elite-alt.png";
+import fondoConfia from "../../../../../images/fondo-confia-alt.png";
+import fondoAgil from "../../../../../images/fondo-agil-alt.png";
 
 const FiduciariaAtlantidaFondosFeatures = () => {
   return (
     <section className="container-page py-16">
-      <div className="grid sm:grid-cols-2 gap-3 sm:space-y-0 space-y-10">
-        <article className="col-span-1">
+      <h2 className="text-center text-3xl font-bold mb-16">
+        <span className="text-primary-color">Conoce nuestros</span>{" "}
+        <span className="text-secondary-color">Fondos de Inversión</span>
+      </h2>
+
+      <div className="flex flex-wrap place-content-center  sm:space-y-0 space-y-10">
+        <article className="min-w-[25%]">
           <div>
             <img
               decoding="async"
               loading="lazy"
-              className="sm:flex hidden w-92 mx-auto h-80 object-cover"
-              src={fondoFit}
-            />
-            <img
-              decoding="async"
-              loading="lazy"
-              className="flex sm:hidden w-60 mx-auto"
-              src={fondoFit}
+              className="w-[15rem] h-[15rem] object-contain mx-auto"
+              src={fondoAgil}
             />
           </div>
-          <div className="text-center mt-3">
-            <Link to={"/fiduciaria-fondos/fondofit"}>
-              <button className="button-red-primary">Conocer más</button>
-            </Link>
+
+          <div className="text-center mt-8">
+            <div className="bg-primary-color py-5 text-white font-semibold uppercase border-r border-white">
+              <h3>Fondo Ágil</h3>
+            </div>
+
+            <div className="border border-primary-color py-3">
+              <p className="mb-5">
+                Suscripción desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Incremento desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Permanencia por aporte:{" "}
+                <span className="block font-bold">2 días</span>
+              </p>
+
+              <p>
+                Rescate anticipado:{" "}
+                <span className="block font-bold">No aplica</span>
+              </p>
+            </div>
           </div>
         </article>
 
-        <article className="col-span-1">
+        <article className="min-w-[25%]">
           <div>
             <img
               decoding="async"
               loading="lazy"
-              className="sm:flex hidden w-92 mx-auto h-80 object-cover"
-              src={fondoElite}
+              className="w-[15rem] h-[15rem] object-contain mx-auto"
+              src={fondoFit}
             />
+          </div>
+
+          <div className="text-center mt-8">
+            <div className="bg-primary-color py-5 text-white font-semibold uppercase border-r border-white">
+              <h3>Fondo Fit</h3>
+            </div>
+
+            <div className="border border-primary-color py-3">
+              <p className="mb-5">
+                Suscripción desde:{" "}
+                <span className="block font-bold">USD $50</span>
+              </p>
+
+              <p className="mb-5">
+                Incremento desde:{" "}
+                <span className="block font-bold">USD $10</span>
+              </p>
+
+              <p className="mb-5">
+                Permanencia por aporte:{" "}
+                <span className="block font-bold">90 días</span>
+              </p>
+
+              <p>
+                Rescate anticipado:{" "}
+                <span className="block font-bold">15 días</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="min-w-[25%]">
+          <div>
             <img
               decoding="async"
               loading="lazy"
-              className="flex sm:hidden w-60 mx-auto"
+              className="w-[15rem] h-[15rem] object-contain mx-auto"
               src={fondoElite}
             />
           </div>
-          <div className="text-center mt-3">
-            <Link to={"/fiduciaria-fondos/fondoelite"}>
-              <button className="button-red-primary">Conocer más</button>
-            </Link>
+
+          <div className="text-center mt-8">
+            <div className="bg-primary-color py-5 text-white font-semibold uppercase border-r border-white">
+              <h3>Fondo Élite</h3>
+            </div>
+
+            <div className="border border-primary-color py-3">
+              <p className="mb-5">
+                Suscripción desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Incremento desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Permanencia por aporte:{" "}
+                <span className="block font-bold">360 días</span>
+              </p>
+
+              <p>
+                Rescate anticipado:{" "}
+                <span className="block font-bold">181 días</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="min-w-[25%]">
+          <div>
+            <img
+              decoding="async"
+              loading="lazy"
+              className="w-[15rem] h-[15rem] object-contain mx-auto"
+              src={fondoConfia}
+            />
+          </div>
+
+          <div className="text-center mt-8">
+            <div className="bg-primary-color py-5 text-white font-semibold uppercase">
+              <h3>Fondo Confía</h3>
+            </div>
+
+            <div className="border border-primary-color py-3">
+              <p className="mb-5">
+                Suscripción desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Incremento desde:{" "}
+                <span className="block font-bold">USD $1</span>
+              </p>
+
+              <p className="mb-5">
+                Permanencia por aporte:{" "}
+                <span className="block font-bold">720 días</span>
+              </p>
+
+              <p>
+                Rescate anticipado:{" "}
+                <span className="block font-bold">545 días</span>
+              </p>
+            </div>
           </div>
         </article>
       </div>

@@ -1,4 +1,4 @@
-import lineaDeTiempo from "../../../videos/linea-de-tiempo.mp4";
+import lineaDeTiempo from "../../../videos/linea-de-tiempo-gsa.mp4";
 
 const LineaDeTiempoVideo = () => {
   const handleVideoEnded = (event) => {
