@@ -1,16 +1,22 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Formulario = ({ children, setIsLoading }) => {
+  console.log(import.meta.env.VITE_PUBLIC_KEY);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     try {
-      emailjs.sendForm("service_068rmuc", "template_4re3fam", form.current, {
-        publicKey: "MpSpXXtqhL_pl5ilL",
-      });
+      emailjs.sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      );
       console.log("SUCCESS!");
       setIsLoading(true);
     } catch (error) {
