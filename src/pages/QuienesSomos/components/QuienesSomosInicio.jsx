@@ -14,11 +14,7 @@ const QuienesSomosInicio = () => {
           </h1>
 
           {/* <Link
-<<<<<<< HEAD
-              className="button-red-primary px-[32px]"
-=======
-              className="button-red-primary"
->>>>>>> efd816a (nuevo cambio de gonzalo)
+              className="btn-big-label button-red-primary"
               to={`https://www.invatlan.hn`} target="_blank"
             >
               Conoce más sobre nuestro Grupo

@@ -72,7 +72,7 @@ const ContactanosFormulario = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="button-red-primary-outline"
+                className="btn-normal button-red-primary-outline"
               >
                 Enviar
               </button>

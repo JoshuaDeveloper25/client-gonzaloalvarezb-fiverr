@@ -34,7 +34,7 @@ const ReditumInicio = () => {
             </p>
 
             <Link
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
               // to={"https://suratlantida.com/reditum/"}
               to={"/reditum-inicio"}
             >

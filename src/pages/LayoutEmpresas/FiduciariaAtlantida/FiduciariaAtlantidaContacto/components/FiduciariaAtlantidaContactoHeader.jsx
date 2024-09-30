@@ -66,7 +66,7 @@ const FiduciariaAtlantidaContactoHeader = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="button-red-primary"
+                className="btn-normal button-red-primary"
               >
                 Enviar
               </button>

@@ -103,7 +103,7 @@ const NuestroGrupo = () => {
 
       <div className="text-center mt-14">
         <Link
-          className="button-red-primary rounded-2xl py-2"
+          className="btn-big-label button-red-primary rounded-md py-2"
           to={`https://www.grupofinancieroatlantida.com`}
           target="_blank"
         >

@@ -65,16 +65,29 @@ body {
     @apply duration-200 transition-all ease-in-out;
   }
 
+  /* Button Classes */
+  .btn-big-label {
+    @apply p-[32px];
+  }
+
+  .btn-big {
+    @apply py-[12px] w-[192px];
+  }
+
+  .btn-normal {
+    @apply py-[8px] px-[16px];
+  }
+
   .button-red-primary {
-    @apply text-white font-light rounded-sm text-center bg-[#E21E31] py-1 px-10 inline-block animation-fade hover:bg-[#E21E31]/60;
+    @apply text-white font-light rounded-md text-center bg-[#E21E31] inline-block animation-fade hover:bg-[#E21E31]/60;
   }
 
   .button-red-primary-outline {
-    @apply text-[#E21E31] font-light rounded-sm text-center border-[#E21E31] border py-1 px-10 inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
+    @apply text-[#E21E31] font-light rounded-md text-center border-[#E21E31] border inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
   }
 
   .button-red-primary-outline2 {
-    @apply text-white font-light rounded-sm text-center border-white border py-1 px-10 inline-block animation-fade hover:bg-white hover:text-black;
+    @apply text-white font-light rounded-md text-center border-white border inline-block animation-fade hover:bg-white hover:text-black;
   }
 }
 

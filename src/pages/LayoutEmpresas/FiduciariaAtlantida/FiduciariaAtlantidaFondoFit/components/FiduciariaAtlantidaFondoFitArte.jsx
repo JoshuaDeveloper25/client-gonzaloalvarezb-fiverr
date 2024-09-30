@@ -21,7 +21,7 @@ const FiduciariaAtlantidaFondoFitArte = () => {
               Simula tu plan <span className="block">de inversión</span>
             </h3>
             <div className="text-center">
-              <button className="button-red-primary">Simular ahora</button>
+              <button className="btn-normal button-red-primary">Simular ahora</button>
             </div>
           </article>
         </div>

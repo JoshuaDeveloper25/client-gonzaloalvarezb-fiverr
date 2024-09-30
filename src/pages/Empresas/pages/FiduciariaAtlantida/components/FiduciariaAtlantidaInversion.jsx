@@ -31,7 +31,7 @@ const FiduciariaAtlantidaInversion = () => {
           diversificación con los mejores títulos valores.
         </p>
 
-        <Link to={"/fiduciaria-fondos"} className="button-red-primary">
+        <Link to={"/fiduciaria-fondos"} className="btn-normal button-red-primary">
           Conoce más
         </Link>
       </article>

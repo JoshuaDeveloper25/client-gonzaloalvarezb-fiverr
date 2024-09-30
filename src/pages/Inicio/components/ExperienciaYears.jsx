@@ -24,7 +24,7 @@ const ExperienciaYears = () => {
           </div>
 
           <div className="text-center mt-6">
-            <Link to={"/empresas"} type="button" className="button-red-primary">
+            <Link to={"/empresas"} type="button" className="btn-normal button-red-primary">
               Conoce más
             </Link>
           </div>

@@ -18,7 +18,7 @@ const CapitalPrimeExperiencia = () => {
             <div className="text-center">
               <Link
                 to={"https://capitalprimeec.com/home"}
-                className="mt-5 button-red-primary"
+                className="mt-5 btn-normal button-red-primary"
               >
                 Conoce más
               </Link>

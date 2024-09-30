@@ -25,7 +25,7 @@ const CrediPrimeInicio = () => {
             </Link>
             <Link
               to={"https://www.crediprime.com/home"}
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
             >
               Conoce más
             </Link>

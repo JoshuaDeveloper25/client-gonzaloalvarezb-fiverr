@@ -23,7 +23,7 @@ const FiduciariaAtlantidaFondoFitInvertir = () => {
 
             <div className="text-center mt-3">
             <Link to={"https://fondosatlantida.com/"}>
-              <button className="button-red-primary">Simular ahora</button>
+              <button className="btn-normal button-red-primary">Simular ahora</button>
             </Link>
           </div>
           </article>

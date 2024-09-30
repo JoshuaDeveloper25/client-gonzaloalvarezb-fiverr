@@ -77,7 +77,7 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-administracion-portafolios"}
@@ -88,7 +88,7 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-financiamiento"}
@@ -99,7 +99,7 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-bursatiles"}
@@ -150,7 +150,7 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-transparencia"}
@@ -161,7 +161,7 @@ const NavbarCasaValores = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                    ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                     : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                 }
                 to={"/casa-valores-publicaciones"}
@@ -309,7 +309,7 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-administracion-portafolios"}
@@ -320,7 +320,7 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-financiamiento"}
@@ -331,7 +331,7 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-bursatiles"}
@@ -374,7 +374,7 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-transparencia"}
@@ -385,7 +385,7 @@ const NavbarCasaValores = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-primary-color leading-4 family-nunito-black"
+                      ? "my-2 block text-sm py-1 family-nunito-black font-semibold text-white/50 leading-4 family-nunito-black"
                       : "my-2 block text-sm py-1 family-nunito-black font-semibold text-white hover:text-white/50 leading-4"
                   }
                   to={"/casa-valores-publicaciones"}

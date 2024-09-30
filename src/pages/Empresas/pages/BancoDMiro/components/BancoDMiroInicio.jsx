@@ -23,7 +23,7 @@ const BancoDMiroInicio = () => {
                 alt="Logo Grupo Sur Atlántida"
               />
             </Link>
-            <Link to={`https://www.d-miro.com/`} className="button-red-primary">
+            <Link to={`https://www.d-miro.com/`} className="btn-normal button-red-primary">
               Conoce más
             </Link>
           </article>

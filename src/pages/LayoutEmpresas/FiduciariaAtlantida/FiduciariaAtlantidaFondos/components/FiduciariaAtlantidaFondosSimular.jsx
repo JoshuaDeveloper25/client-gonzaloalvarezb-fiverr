@@ -1,4 +1,5 @@
 import cursorPointer from "../../../../../images/cursor-pointer.png";
+import { Link } from "react-router-dom";
 
 const FiduciariaAtlantidaFondosSimular = () => {
   return (
@@ -13,12 +14,18 @@ const FiduciariaAtlantidaFondosSimular = () => {
         </div>
 
         <div className="relative">
-          <button
-            className="button-red-primary font-semibold rounded-md text-lg"
-            type="button"
+          <Link
+            to={
+              "https://app.fondosatlantida.com:8444/apps/r/fondosatlantida/fondosweb/login?session=2432544443303"
+            }
           >
-            Simular ahora
-          </button>
+            <button
+              className="btn-normal button-red-primary font-semibold rounded-md text-lg"
+              type="button"
+            >
+              Simular ahora
+            </button>
+          </Link>
 
           <img
             className="absolute -right-14 top-2 h-14"

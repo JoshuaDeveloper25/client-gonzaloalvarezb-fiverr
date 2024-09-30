@@ -20,7 +20,7 @@ const FiduciariaAtlantidaNegocios = () => {
           un mandante por medio de un tercero.
         </p>
 
-        <Link className="button-red-primary" to={"/fiduciaria-negocios"}>
+        <Link className="btn-normal button-red-primary" to={"/fiduciaria-negocios"}>
           Conoce más
         </Link>
       </article>

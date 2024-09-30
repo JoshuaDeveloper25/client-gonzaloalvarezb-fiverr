@@ -15,7 +15,7 @@ const CrediPrimeDreams = () => {
             <div className="text-center">
               <Link
                 to={`https://www.crediprime.com/home`}
-                className="button-red-primary mt-8"
+                className="btn-normal button-red-primary mt-8"
               >
                 Conoce más
               </Link>

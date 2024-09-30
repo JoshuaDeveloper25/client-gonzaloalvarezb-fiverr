@@ -12,7 +12,7 @@ const AtlantidaCasaValoresServiciosBanner = () => {
 
         <div>
           <Link
-            className="button-red-primary-outline2 px-20"
+            className="btn-normal button-red-primary-outline2 px-20"
             target="_blank"
             to={"https://miportafolio.suratlantida.com/ "}
           >

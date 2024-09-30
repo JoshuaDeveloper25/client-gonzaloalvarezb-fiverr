@@ -20,7 +20,7 @@ const AsistenciaInsurance = ({ addClassName, title, titleSpan }) => {
           </p>
         </div>
 
-        <button className="button-red-primary" type="button">
+        <button className="btn-normal button-red-primary" type="button">
           Escríbenos
         </button>
       </div>

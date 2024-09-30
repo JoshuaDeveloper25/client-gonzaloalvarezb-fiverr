@@ -57,7 +57,7 @@ const MasInformacion = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="button-red-primary sm:w-auto w-full"
+                  className="btn-normal button-red-primary sm:w-auto w-full"
                 >
                   Cotiza
                 </button>

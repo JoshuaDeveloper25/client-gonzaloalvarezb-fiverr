@@ -24,7 +24,7 @@ const AtlantidaAdvisorsFeatures = () => {
             </span>
           </p>
 
-          <button type="submit" className="button-red-primary-outline">
+          <button type="submit" className="btn-normal button-red-primary-outline">
             Conoce más
           </button>
         </article>
@@ -54,7 +54,7 @@ const AtlantidaAdvisorsFeatures = () => {
             abanico de alternativas financieras
           </p>
 
-          <button type="submit" className="button-red-primary-outline">
+          <button type="submit" className="btn-normal button-red-primary-outline">
             Conoce más
           </button>
         </article>

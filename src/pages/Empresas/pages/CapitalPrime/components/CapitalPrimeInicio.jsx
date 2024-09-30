@@ -28,7 +28,7 @@ const CapitalPrimeInicio = () => {
             </p>
             <Link
               to={"https://capitalprimeec.com/home"}
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
             >
               Conoce más
             </Link>

@@ -29,7 +29,7 @@ const AtlantidaCasaValoresInicio = () => {
               líder en las bolsas del país.
             </p>
             <Link
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
               // to={"https://suratlantida.com/casa-de-valores/ "}
               to={"/casa-valores-inicio"}
             >

@@ -30,7 +30,7 @@ const FiduciariaAtlantidaInicio = () => {
               la Superintendencia de Compañías Valores y Seguros.
             </p>
             <Link
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
               // to={`https://suratlantida.com/fiduciaria/`}
               to={`/fiduciaria-inicio`}
             >

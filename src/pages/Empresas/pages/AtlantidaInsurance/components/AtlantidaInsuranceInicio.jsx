@@ -33,7 +33,7 @@ const AtlantidaInsuranceInicio = () => {
               nuestros asegurados.
             </p>
             {/* <Link
-              className="button-red-primary"
+              className="btn-normal button-red-primary"
               // to={"https://insuratlan.com/ "}
               to={"/insurance-inicio"}
             >
