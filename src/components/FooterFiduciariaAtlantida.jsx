@@ -195,13 +195,13 @@ const FooterFiduciariaAtlantida = () => {
               Twitter
             </Link>
 
-            <h3 className="border-t pt-2 mt-3 font-bold text-sm">
+            {/* <h3 className="border-t pt-2 mt-3 font-bold text-sm">
               Quiero hablar con un asesor
             </h3>
             <div className="flex gap-2 items-center">
               <FaWhatsapp className="size-5" />
               <h2 className="text-xl">0999547788</h2>
-            </div>
+            </div> */}
           </TECollapse>
         </div>
 

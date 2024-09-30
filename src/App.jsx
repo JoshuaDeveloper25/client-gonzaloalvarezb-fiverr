@@ -391,15 +391,15 @@ const router = createBrowserRouter([
         element: <FiduciariaAtlantidaFondosLazy />,
       },
 
-      {
-        path: "/fiduciaria-fondos/fondofit",
-        element: <FiduciariaAtlantidaFondoFitLazy />,
-      },
+      // {
+      //   path: "/fiduciaria-fondos/fondofit",
+      //   element: <FiduciariaAtlantidaFondoFitLazy />,
+      // },
 
-      {
-        path: "/fiduciaria-fondos/fondoelite",
-        element: <FiduciariaAtlantidaFondoEliteLazy />,
-      },
+      // {
+      //   path: "/fiduciaria-fondos/fondoelite",
+      //   element: <FiduciariaAtlantidaFondoEliteLazy />,
+      // },
 
       {
         path: "/fiduciaria-transparencia",

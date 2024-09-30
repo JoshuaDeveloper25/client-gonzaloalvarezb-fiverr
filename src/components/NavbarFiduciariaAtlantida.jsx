@@ -162,10 +162,10 @@ const NavbarFiduciariaAtlantida = () => {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   className={`h-6 w-6 ${
-                    location?.pathname === "/fiduciaria-fondos" ||
-                    location?.pathname === "/fiduciaria-fondos/fondofit" ||
-                    location?.pathname === "/fiduciaria-fondos/fondoElite"
-                      ? "text-primary-color"
+                    location?.pathname === "/fiduciaria-fondos"
+                      ? // location?.pathname === "/fiduciaria-fondos/fondofit" ||
+                        // location?.pathname === "/fiduciaria-fondos/fondoElite"
+                        "text-primary-color"
                       : null
                   }`}
                 >
@@ -506,10 +506,10 @@ const NavbarFiduciariaAtlantida = () => {
                     strokeWidth="1.5"
                     stroke="currentColor"
                     className={`h-6 w-6 ${
-                      location?.pathname === "/fiduciaria-fondos" ||
-                      location?.pathname === "/fiduciaria-fondos/fondofit" ||
-                      location?.pathname === "/fiduciaria-fondos/fondoElite"
-                        ? "text-primary-color"
+                      location?.pathname === "/fiduciaria-fondos"
+                        ? // location?.pathname === "/fiduciaria-fondos/fondofit" ||
+                          // location?.pathname === "/fiduciaria-fondos/fondoElite"
+                          "text-primary-color"
                         : null
                     }`}
                   >
