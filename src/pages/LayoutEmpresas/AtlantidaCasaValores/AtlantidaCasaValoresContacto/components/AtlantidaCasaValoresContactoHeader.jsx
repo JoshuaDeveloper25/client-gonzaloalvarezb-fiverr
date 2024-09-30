@@ -1,4 +1,9 @@
+import Formulario from "../../../../../components/Formulario";
+import { useState } from "react";
+
 const AtlantidaCasaValoresContactoHeader = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-start md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
@@ -8,13 +13,14 @@ const AtlantidaCasaValoresContactoHeader = () => {
             <span className="md:block inline">contactará contigo pronto</span>{" "}
           </h1>
 
-          <form className="space-y-5">
+          <Formulario setIsLoading={setIsLoading}>
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <input
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Nombre"
                   type="text"
+                  name="user_name"
                 />
               </div>
 
@@ -23,6 +29,7 @@ const AtlantidaCasaValoresContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Apellido"
                   type="text"
+                  name="sur_name"
                 />
               </div>
             </div>
@@ -33,6 +40,7 @@ const AtlantidaCasaValoresContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Teléfono"
                   type="text"
+                  name="phone"
                 />
               </div>
 
@@ -41,6 +49,7 @@ const AtlantidaCasaValoresContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Email"
                   type="email"
+                  name="email_id"
                 />
               </div>
             </div>
@@ -48,14 +57,19 @@ const AtlantidaCasaValoresContactoHeader = () => {
             <textarea
               placeholder="Mensaje"
               className="h-36 outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
+              name="message"
             ></textarea>
 
             <div className="text-end mb-14">
-              <button type="submit" className="button-red-primary">
+              <button
+                disabled={isLoading}
+                type="submit"
+                className="button-red-primary"
+              >
                 Enviar
               </button>
             </div>
-          </form>
+          </Formulario>
         </article>
 
         <article className="flex-1  mt-5">

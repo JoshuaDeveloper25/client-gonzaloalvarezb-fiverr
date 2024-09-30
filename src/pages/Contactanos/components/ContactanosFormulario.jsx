@@ -16,7 +16,7 @@ const ContactanosFormulario = () => {
           </h1>
           <div className="h-1 w-full bg-primary-color my-5"></div> */}
 
-          <Formulario setIsLoading={setIsLoading} className="space-y-5">
+          <Formulario setIsLoading={setIsLoading}>
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <input

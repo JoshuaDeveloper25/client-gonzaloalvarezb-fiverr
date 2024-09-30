@@ -8,7 +8,7 @@ const Formulario = ({ children, setIsLoading }) => {
     e.preventDefault();
 
     try {
-      emailjs.sendForm("service_hzc93zi", "template_4re3fam", form.current, {
+      emailjs.sendForm("service_068rmuc", "template_4re3fam", form.current, {
         publicKey: "MpSpXXtqhL_pl5ilL",
       });
       console.log("SUCCESS!");

@@ -1,4 +1,9 @@
+import { useState } from "react";
+import Formulario from "../../../../../components/Formulario";
+
 const FiduciariaAtlantidaContactoHeader = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-start md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
@@ -10,13 +15,14 @@ const FiduciariaAtlantidaContactoHeader = () => {
             </span>{" "}
           </h1>
 
-          <form className="space-y-5">
+          <Formulario setIsLoading={setIsLoading}>
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <input
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Nombre"
                   type="text"
+                  name="user_name"
                 />
               </div>
 
@@ -25,6 +31,7 @@ const FiduciariaAtlantidaContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Apellido"
                   type="text"
+                  name="sur_name"
                 />
               </div>
             </div>
@@ -35,6 +42,7 @@ const FiduciariaAtlantidaContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Teléfono"
                   type="text"
+                  name="phone"
                 />
               </div>
 
@@ -43,6 +51,7 @@ const FiduciariaAtlantidaContactoHeader = () => {
                   className="outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
                   placeholder="Email"
                   type="email"
+                  name="email_id"
                 />
               </div>
             </div>
@@ -50,14 +59,19 @@ const FiduciariaAtlantidaContactoHeader = () => {
             <textarea
               placeholder="Mensaje"
               className="h-36 outline-none py-1 px-3 rounded-md w-full bg-[#EFEFEF]"
+              name="message"
             ></textarea>
-          </form>
 
-          <div className="text-end mt-4">
-            <button type="submit" className="button-red-primary">
-              Enviar
-            </button>
-          </div>
+            <div className="text-end mt-4">
+              <button
+                disabled={isLoading}
+                type="submit"
+                className="button-red-primary"
+              >
+                Enviar
+              </button>
+            </div>
+          </Formulario>
         </article>
 
         <article className="flex-1  mt-5">
