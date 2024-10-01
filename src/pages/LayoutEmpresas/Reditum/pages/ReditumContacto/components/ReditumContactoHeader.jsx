@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const ReditumContactoHeader = () => {
   const [isLoading, setIsLoading] = useState(false);
-  
+
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-start md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
@@ -72,9 +72,13 @@ const ReditumContactoHeader = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="btn-normal button-red-primary-outline"
+                className={
+                  isLoading
+                    ? "btn-normal btn-disabled"
+                    : "btn-normal button-red-primary"
+                }
               >
-                Conoce más
+                {isLoading ? "Cargando..." : "Conoce más"}
               </button>
             </div>
           </Formulario>

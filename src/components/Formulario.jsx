@@ -1,10 +1,13 @@
 import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Formulario = ({ children, setIsLoading }) => {
+  const navigate = useNavigate();
   const form = useRef();
 
-  // Set the URL in a hidden input field
+  // Hacer que la url aparezca en un input oculto
   useEffect(() => {
     if (form.current) {
       form.current.querySelector('input[name="from_url"]').value =
@@ -15,6 +18,12 @@ const Formulario = ({ children, setIsLoading }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setIsLoading(true);
+
+    if (!form.current) {
+      return toast.error("¡Llena los espacios en blanco!");
+    }
+
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -23,9 +32,10 @@ const Formulario = ({ children, setIsLoading }) => {
         import.meta.env.VITE_PUBLIC_KEY
       );
       console.log("SUCCESS!");
-      setIsLoading(true);
+      navigate("/correo-enviado-exitosamente");
     } catch (error) {
       console.log("FAILED...", error?.text);
+      toast.error(error?.text);
     } finally {
       setIsLoading(false);
     }
@@ -33,7 +43,7 @@ const Formulario = ({ children, setIsLoading }) => {
 
   return (
     <form ref={form} onSubmit={handleSubmit} className="space-y-5">
-      {/* Hidden input field to capture the URL */}
+      {/* Input oculto para capturar la url */}
       <input type="hidden" name="from_url" value="" />
       {children}
     </form>

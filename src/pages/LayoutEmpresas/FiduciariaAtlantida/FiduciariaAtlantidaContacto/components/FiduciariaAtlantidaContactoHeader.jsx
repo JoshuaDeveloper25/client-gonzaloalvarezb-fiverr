@@ -66,9 +66,13 @@ const FiduciariaAtlantidaContactoHeader = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="btn-normal button-red-primary"
+                className={
+                  isLoading
+                    ? "btn-normal btn-disabled"
+                    : "btn-normal button-red-primary"
+                }
               >
-                Enviar
+                {isLoading ? "Enviando..." : "Enviar"}
               </button>
             </div>
           </Formulario>

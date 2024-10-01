@@ -1,6 +1,9 @@
 import { Suspense, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Spinner from "./components/Spinner";
+import CorreoEnviadoExitosamente from "./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente";
 
 // --> Empresas Pages
 const RootLazy = lazy(() => import("./pages/Root"));
@@ -191,6 +194,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <InicioLazy />,
+      },
+
+      {
+        element: <CorreoEnviadoExitosamente />,
+        path: `/correo-enviado-exitosamente`,
       },
 
       {
@@ -422,6 +430,15 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <Suspense fallback={<Spinner />}>
+      <ToastContainer
+        pauseOnFocusLoss={false}
+        hideProgressBar={true}
+        position="bottom-center"
+        autoClose={1500}
+        theme="colored"
+        draggable
+        stacked
+      />
       <RouterProvider router={router} />
     </Suspense>
   );

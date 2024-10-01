@@ -64,9 +64,13 @@ const AtlantidaCasaValoresContactoHeader = () => {
               <button
                 disabled={isLoading}
                 type="submit"
-                className="btn-normal button-red-primary"
+                className={`${
+                  isLoading
+                    ? "btn-normal btn-disabled"
+                    : "btn-normal button-red-primary-outline"
+                }`}
               >
-                Enviar
+                {isLoading ? "Enviando..." : "Enviar"}
               </button>
             </div>
           </Formulario>

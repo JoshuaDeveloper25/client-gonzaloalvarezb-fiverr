@@ -103,9 +103,13 @@ const AtlantidaAdvisorsContactoHeader = () => {
           <button
             disabled={isLoading}
             type="submit"
-            className="btn-normal button-red-primary-outline"
+            className={`${
+              isLoading
+                ? "btn-normal btn-disabled"
+                : "btn-normal button-red-primary-outline"
+            }`}
           >
-            Conoce más
+            {isLoading ? "Cargando..." : "Conoce más"}
           </button>
         </div>
       </Formulario>

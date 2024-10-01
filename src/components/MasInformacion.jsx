@@ -55,11 +55,15 @@ const MasInformacion = () => {
 
               <div className="text-end mt-3">
                 <button
-                  type="submit"
                   disabled={isLoading}
-                  className="btn-normal button-red-primary sm:w-auto w-full"
+                  type="submit"
+                  className={`${
+                    isLoading
+                      ? "btn-normal btn-disabled sm:w-auto w-full"
+                      : "btn-normal button-red-primary sm:w-auto w-full"
+                  } `}
                 >
-                  Cotiza
+                  {isLoading ? "Cotizando..." : "Cotiza"}
                 </button>
               </div>
             </article>

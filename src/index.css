@@ -89,6 +89,10 @@ body {
   .button-red-primary-outline2 {
     @apply text-white font-light rounded-md text-center border-white border inline-block animation-fade hover:bg-white hover:text-black;
   }
+
+  .btn-disabled {
+    @apply text-white animate-pulse pointer-events-none font-light rounded-md text-center bg-[#b3b3b3] inline-block animation-fade;
+  }
 }
 
 /* Carousel Nuestras Empresas - Inicio */
