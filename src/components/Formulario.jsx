@@ -34,6 +34,7 @@ const Formulario = ({ children, setIsLoading }) => {
       console.log("SUCCESS!");
       navigate("/correo-enviado-exitosamente");
     } catch (error) {
+      console.log(error)
       console.log("FAILED...", error?.text);
       toast.error(error?.text);
     } finally {
