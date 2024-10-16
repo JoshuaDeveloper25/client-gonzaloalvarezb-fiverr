@@ -95,7 +95,7 @@ body {
   }
 }
 
-/* Carousel Nuestras Empresas - Inicio */
+/* --> Carousel Nuestras Empresas - Inicio */
 .nuestrasEmpresas > .slick-slider > .slick-prev:before,
 .nuestrasEmpresas > .slick-slider > .slick-next:before {
   color: #e21e31 !important;
