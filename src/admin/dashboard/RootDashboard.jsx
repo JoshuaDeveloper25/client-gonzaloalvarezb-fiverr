@@ -5,9 +5,10 @@ import {
   NavLink,
   ScrollRestoration,
 } from "react-router-dom";
-import { Menu, Sidebar } from "react-pro-sidebar";
+import { Menu, MenuItem, Sidebar, SubMenu } from "react-pro-sidebar";
 import AppContext from "../../context/AppProvider";
 import logo from "../../images/logo-atlantida.png";
+import { FaArrowLeft } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
@@ -29,39 +30,39 @@ const RootDashboard = () => {
       <div className="sticky inset-0 flex h-full">
         <Sidebar
           breakPoint="md"
-          backgroundColor="#F1F1F1"
+          backgroundColor="#E5E5E5"
           onBackdropClick={() => setToggled(false)}
           toggled={toggled}
         >
           <Menu className="text-white">
             <div className="flex flex-col min-h-svh">
               <div className="block mx-3 mt-4">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-36 mb-3 mx-auto"
-                  src={logo}
-                  alt={`Logo de Empresa`}
-                />
+                <Link to={"/admin/dashboard"}>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    className="w-36 mb-10 mx-auto"
+                    src={logo}
+                    alt={`Logo de Empresa`}
+                  />
+                </Link>
               </div>
 
               <NavLink
-                to={`/inicio`}
-                className="font-bold animation-fade hover:bg-primary-color border-b border-gray-500 block px-3 py-3"
+                to={`/`}
+                className="flex gap-2.5 items-center text-primary-color hover:text-white font-bold animation-fade bg-gray-200 hover:bg-primary-color border-b mb-6 px-3 py-3"
               >
-                Volver a Inicio
+                <FaArrowLeft /> Volver a Sur Atlántida
               </NavLink>
 
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-primary-color px-3 py-3 font-bold"
-                    : " px-3 py-3 font-bold animation-fade hover:bg-primary-color bg-gray-300"
-                }
-                to={`/admin/dashboard/gestionar-archivos`}
+              <SubMenu
+                label="Fiduciaria Transparencia"
+                className="bg-gray-200 text-primary-color animation-fade"
               >
-                Gestionar Archivos
-              </NavLink>
+                <SubMenu label="Fiduciaria Atlántida">
+                  <MenuItem>Documentos</MenuItem>
+                </SubMenu>
+              </SubMenu>
 
               <Link
                 className="text-center mt-auto px-3 font-bold py-3 bg-red-500 hover:bg-red-400 animation-fade hover:text-white"
@@ -73,7 +74,7 @@ const RootDashboard = () => {
           </Menu>
         </Sidebar>
 
-        <main style={{ display: "flex", padding: 10 }}>
+        <main className="flex p-2.5">
           <div>
             <button
               className="sb-button text-4xl md:hidden"
