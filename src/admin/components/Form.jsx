@@ -1,16 +1,26 @@
-import surAtlantidaLogo from "../../../images/logo-atlantida.png";
+import surAtlantidaLogo from "../../images/logo-atlantida.png";
 import { useMutation } from "@tanstack/react-query";
+import AppContext from "../../context/AppProvider";
 import { toast } from "react-toastify";
+import { useContext } from "react";
 import axios from "axios";
 
 const Form = () => {
+  const { setUserInfo } = useContext(AppContext);
+
   const logginMutation = useMutation({
     mutationFn: async (userInfo) =>
-      await axios.post(`${import.meta.env.VITE_BASE_URL}/`, userInfo),
+      await axios.post(
+        `${import.meta.env.VITE_BASE_URL}/users/login`,
+        userInfo
+      ),
     onSuccess: (res) => {
       console.log(res);
+      setUserInfo(res?.data);
+      localStorage.setItem("userInfo", JSON.stringify(res?.data));
     },
     onError: (err) => {
+      toast.error(err.response.data.message)
       console.log(err);
     },
   });
@@ -19,11 +29,11 @@ const Form = () => {
     e.preventDefault();
 
     const userInfo = {
-      username: e?.target?.username?.value,
+      email: e?.target?.username?.value,
       password: e?.target?.password?.value,
     };
 
-    if (!userInfo.username || !userInfo?.password) {
+    if (!userInfo.email || !userInfo?.password) {
       return toast.error("Llena los espacios disponibles!");
     }
 

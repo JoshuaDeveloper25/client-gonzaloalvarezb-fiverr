@@ -1,22 +1,39 @@
-import { Suspense, lazy } from "react";
+// Import from external packages
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { PrivateRoutes } from "./auth/PrivateRoutes";
+import { AppProvider } from "./context/AppProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Suspense, lazy } from "react";
+
+// Components
 import Spinner from "./components/Spinner";
+import { PublicRoutes } from "./auth/PublicRoutes";
+
+// Admin Panel
+const HomeDashboardLazy = lazy(() =>
+  import("./admin/dashboard/HomeDashboard/HomeDashboard")
+);
+const ManageFilesLazy = lazy(() =>
+  import("./admin/dashboard/ManageFiles/ManageFiles")
+);
+const RootDashboardLazy = lazy(() => import("./admin/dashboard/RootDashboard"));
 
 // --> Empresas Pages
+const CorreoEnviadoExitosamenteLazy = lazy(() =>
+  import("./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente")
+);
 const RootLazy = lazy(() => import("./pages/Root"));
 const InicioLazy = lazy(() => import("./pages/Inicio/Inicio"));
 const QuienesSomosLazy = lazy(() =>
   import("./pages/QuienesSomos/QuienesSomos")
 );
-import CorreoEnviadoExitosamente from "./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente";
 const PresenciaRegionalLazy = lazy(() =>
   import("./pages/PresenciaRegional/PresenciaRegional")
 );
 const EmpresasLazy = lazy(() => import("./pages/Empresas/Empresas"));
-const AdminLazy = lazy(() => import("./pages/Admin/Admin"));
+const AdminLazy = lazy(() => import("../src/admin/Admin"));
 const InversionesFinancierasAtlantidaLazy = lazy(() =>
   import(
     "./pages/Empresas/pages/InversionesFinancierasAtlantida/InversionesFinancierasAtlantida"
@@ -117,36 +134,6 @@ const AtlantidaCasaValoresPublicacionesLazy = lazy(() =>
     "./pages/LayoutEmpresas/AtlantidaCasaValores/AtlantidaCasaValoresPublicaciones/AtlantidaCasaValoresPublicaciones"
   )
 );
-// const AtlantidaInsuranceInicioLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceInicio/AtlantidaInsuranceInicio"
-//   )
-// );
-// const AtlantidaInsuranceProductosLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceProductos/AtlantidaInsuranceProductos"
-//   )
-// );
-// const AtlantidaInsuranceAboutLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout"
-//   )
-// );
-// const AtlantidaInsuranceServiciosLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios"
-//   )
-// );
-// const AtlantidaInsuranceRecursosLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos"
-//   )
-// );
-// const AtlantidaInsuranceContactoLazy = lazy(() =>
-//   import(
-//     "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto"
-//   )
-// );
 const FiduciariaAtlantidaInicioLazy = lazy(() =>
   import(
     "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaInicio/FiduciariaAtlantidaInicio"
@@ -189,7 +176,7 @@ const FiduciariaAtlantidaContactoLazy = lazy(() =>
 );
 
 const router = createBrowserRouter([
-  // --> Normal Pages
+  // --> User Pages
   {
     element: <RootLazy />,
     children: [
@@ -199,7 +186,7 @@ const router = createBrowserRouter([
       },
 
       {
-        element: <CorreoEnviadoExitosamente />,
+        element: <CorreoEnviadoExitosamenteLazy />,
         path: `/correo-enviado-exitosamente`,
       },
 
@@ -354,37 +341,6 @@ const router = createBrowserRouter([
         element: <AtlantidaCasaValoresContactoLazy />,
       },
 
-      // --> Atlantida Insurance
-      // {
-      //   path: "/insurance-inicio",
-      //   element: <AtlantidaInsuranceInicioLazy />,
-      // },
-
-      // {
-      //   path: "/insurance-productos",
-      //   element: <AtlantidaInsuranceProductosLazy />,
-      // },
-
-      // {
-      //   path: "/insurance-quienes-somos",
-      //   element: <AtlantidaInsuranceAboutLazy />,
-      // },
-
-      // {
-      //   path: "/insurance-servicios",
-      //   element: <AtlantidaInsuranceServiciosLazy />,
-      // },
-
-      // {
-      //   path: "/insurance-recursos",
-      //   element: <AtlantidaInsuranceRecursosLazy />,
-      // },
-
-      // {
-      //   path: "/insurance-contacto",
-      //   element: <AtlantidaInsuranceContactoLazy />,
-      // },
-
       // --> Fiduciaria Atlantida
       {
         path: "/fiduciaria-inicio",
@@ -428,9 +384,37 @@ const router = createBrowserRouter([
     ],
   },
 
+  // --> Login to enter admin panel
   {
-    element: <AdminLazy />,
-    path: "/admin",
+    element: <PublicRoutes />,
+    children: [
+      {
+        element: <AdminLazy />,
+        path: "/admin",
+      },
+    ],
+  },
+
+  {
+    // --> Dashboard Panel
+    path: "/admin/dashboard/",
+    element: <RootDashboardLazy />,
+    children: [
+      {
+        element: <PrivateRoutes />,
+        children: [
+          {
+            element: <HomeDashboardLazy />,
+            index: true,
+          },
+
+          {
+            element: <ManageFilesLazy />,
+            path: "gestionar-archivos",
+          },
+        ],
+      },
+    ],
   },
 ]);
 
@@ -439,18 +423,20 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Suspense fallback={<Spinner />}>
-        <ToastContainer
-          pauseOnFocusLoss={false}
-          hideProgressBar={true}
-          position="bottom-center"
-          autoClose={1500}
-          theme="colored"
-          draggable
-          stacked
-        />
-        <RouterProvider router={router} />
-      </Suspense>
+      <AppProvider>
+        <Suspense fallback={<Spinner />}>
+          <ToastContainer
+            pauseOnFocusLoss={false}
+            hideProgressBar={true}
+            position="bottom-center"
+            autoClose={2000}
+            theme="colored"
+            draggable
+            stacked
+          />
+          <RouterProvider router={router} />
+        </Suspense>
+      </AppProvider>
     </QueryClientProvider>
   );
 };
