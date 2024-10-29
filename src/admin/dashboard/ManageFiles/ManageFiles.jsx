@@ -1,16 +1,13 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
+import InputBox from "../../../components/InputBox";
 import { getError } from "../../../utils/getError";
+import Spinner from "../../../components/Spinner";
 import Table from "../../../components/Table";
+import { MdModeEdit } from "react-icons/md";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
-
-import { MdModeEdit } from "react-icons/md";
-import { MdDelete } from "react-icons/md";
-import InputBox from "../../../components/InputBox";
-import CellPreviewImg from "../../../components/CellPreviewImg";
-import Spinner from "../../../components/Spinner";
 
 const ManageFiles = () => {
   const columns = [
@@ -25,40 +22,27 @@ const ManageFiles = () => {
     },
 
     {
-      header: "Imagen del Anuncio",
-      cell: (info) => (
-        <CellPreviewImg dataRow={info?.row?.original} endpoint="instructors" />
-      ),
-    },
-
-    {
       header: "Actions",
       cell: (info) => <CellCustomInstructor dataRow={info?.row?.original} />,
     },
   ];
 
-  const { data, isLoading, isError } = useQuery({
-    queryKey: ["instructors"],
+  const { data, isLoading } = useQuery({
+    queryKey: ["pdfFiles"],
     queryFn: async () =>
-      await axios
-        ?.get(`${import.meta.env.VITE_BASE_URL}/instructors/`)
-        .then((res) => res.data),
+      await axios?.get(`${import.meta.env.VITE_BASE_URL}/instructors/`),
   });
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <Spinner />
+      </div>
+    );
   }
-
-  if (isError) {
-    return <p>Ocurrió algo...</p>;
-  }
-
-  console.log(data);
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
-      <Header />
-
       {/* --> Table */}
       <Table columns={columns} data={data} />
     </div>

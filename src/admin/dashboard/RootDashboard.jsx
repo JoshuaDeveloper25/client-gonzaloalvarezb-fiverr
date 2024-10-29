@@ -57,15 +57,24 @@ const RootDashboard = () => {
               </NavLink>
 
               {/* Dynamic */}
-              {subMenuDashboardPage?.map((subMenuPage) => (
+              {subMenuDashboardPage?.map((subMenuPage, index) => (
                 <SubMenu
                   label={subMenuPage?.labelPage}
+                  key={index}
                   className="bg-gray-200 text-primary-color animation-fade"
                 >
                   <SubMenu label={subMenuPage?.labelSection}>
-                    {subMenuPage?.labelAccordions?.map((labelAccordion) => (
-                      <MenuItem>{labelAccordion?.labelNameAccordion}</MenuItem>
-                    ))}
+                    {subMenuPage?.labelAccordions?.map(
+                      (labelAccordion, index) => (
+                        <MenuItem key={index}>
+                          <Link
+                            to={`/admin/dashboard/gestionar-archivos?page=${subMenuPage?.labelPage}&section=${subMenuPage?.labelSection}&accordion=${labelAccordion?.labelNameAccordion}`}
+                          >
+                            {labelAccordion?.labelNameAccordion}
+                          </Link>
+                        </MenuItem>
+                      )
+                    )}
                   </SubMenu>
                 </SubMenu>
               ))}

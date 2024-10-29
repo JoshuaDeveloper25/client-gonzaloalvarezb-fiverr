@@ -2,7 +2,11 @@ export const subMenuDashboardPage = [
   {
     labelPage: "Fiduciaria Transparencia",
     labelSection: "Fiduciaria Atlántida",
-    labelAccordions: [{ labelNameAccordion: "Documentos" }],
+    labelAccordions: [
+      {
+        labelNameAccordion: "Documentos",
+      },
+    ],
   },
 
   {
