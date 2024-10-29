@@ -1,5 +1,5 @@
-import logoAtlantida from "../images/logo-atlantida.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import logoAtlantida from "../images/logo-atlantida.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const location = useLocation();
+
   return (
     <nav className="container-page py-2">
       <div className="flex justify-between items-center gap-1">

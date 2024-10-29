@@ -1,9 +1,9 @@
 import { Suspense, lazy } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Spinner from "./components/Spinner";
-import CorreoEnviadoExitosamente from "./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente";
 
 // --> Empresas Pages
 const RootLazy = lazy(() => import("./pages/Root"));
@@ -11,10 +11,12 @@ const InicioLazy = lazy(() => import("./pages/Inicio/Inicio"));
 const QuienesSomosLazy = lazy(() =>
   import("./pages/QuienesSomos/QuienesSomos")
 );
+import CorreoEnviadoExitosamente from "./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente";
 const PresenciaRegionalLazy = lazy(() =>
   import("./pages/PresenciaRegional/PresenciaRegional")
 );
 const EmpresasLazy = lazy(() => import("./pages/Empresas/Empresas"));
+const AdminLazy = lazy(() => import("./pages/Admin/Admin"));
 const InversionesFinancierasAtlantidaLazy = lazy(() =>
   import(
     "./pages/Empresas/pages/InversionesFinancierasAtlantida/InversionesFinancierasAtlantida"
@@ -425,22 +427,31 @@ const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    element: <AdminLazy />,
+    path: "/admin",
+  },
 ]);
+
+const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <Suspense fallback={<Spinner />}>
-      <ToastContainer
-        pauseOnFocusLoss={false}
-        hideProgressBar={true}
-        position="bottom-center"
-        autoClose={1500}
-        theme="colored"
-        draggable
-        stacked
-      />
-      <RouterProvider router={router} />
-    </Suspense>
+    <QueryClientProvider client={queryClient}>
+      <Suspense fallback={<Spinner />}>
+        <ToastContainer
+          pauseOnFocusLoss={false}
+          hideProgressBar={true}
+          position="bottom-center"
+          autoClose={1500}
+          theme="colored"
+          draggable
+          stacked
+        />
+        <RouterProvider router={router} />
+      </Suspense>
+    </QueryClientProvider>
   );
 };
 
