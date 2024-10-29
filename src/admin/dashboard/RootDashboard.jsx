@@ -12,6 +12,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
+import { subMenuDashboardPage } from "../../DB/data";
 
 const RootDashboard = () => {
   const { setUserInfo } = useContext(AppContext);
@@ -55,14 +56,19 @@ const RootDashboard = () => {
                 <FaArrowLeft /> Volver a Sur Atlántida
               </NavLink>
 
-              <SubMenu
-                label="Fiduciaria Transparencia"
-                className="bg-gray-200 text-primary-color animation-fade"
-              >
-                <SubMenu label="Fiduciaria Atlántida">
-                  <MenuItem>Documentos</MenuItem>
+              {/* Dynamic */}
+              {subMenuDashboardPage?.map((subMenuPage) => (
+                <SubMenu
+                  label={subMenuPage?.labelPage}
+                  className="bg-gray-200 text-primary-color animation-fade"
+                >
+                  <SubMenu label={subMenuPage?.labelSection}>
+                    {subMenuPage?.labelAccordions?.map((labelAccordion) => (
+                      <MenuItem>{labelAccordion?.labelNameAccordion}</MenuItem>
+                    ))}
+                  </SubMenu>
                 </SubMenu>
-              </SubMenu>
+              ))}
 
               <Link
                 className="text-center mt-auto px-3 font-bold py-3 bg-red-500 hover:bg-red-400 animation-fade hover:text-white"
@@ -74,6 +80,7 @@ const RootDashboard = () => {
           </Menu>
         </Sidebar>
 
+        {/* Hamburguer Icon On Responsive */}
         <main className="flex p-2.5">
           <div>
             <button
@@ -88,7 +95,7 @@ const RootDashboard = () => {
         </main>
       </div>
 
-      {/* --> This is the admin panel */}
+      {/* --> This is the admin panel (Right Content) */}
       <main className="px-5">
         <Outlet />
       </main>
