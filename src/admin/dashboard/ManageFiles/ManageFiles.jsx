@@ -3,6 +3,7 @@ import ModalComponent from "../../../components/ModalComponent";
 import InputBox from "../../../components/InputBox";
 import { getError } from "../../../utils/getError";
 import Spinner from "../../../components/Spinner";
+import { useSearchParams } from "react-router-dom";
 import Table from "../../../components/Table";
 import { MdModeEdit } from "react-icons/md";
 import { toast } from "react-toastify";
@@ -10,27 +11,43 @@ import { useState } from "react";
 import axios from "axios";
 
 const ManageFiles = () => {
+  const [searchParams] = useSearchParams();
+  const pageName = searchParams.get("pageName");
+  const sectionName = searchParams.get("sectionName");
+  const accordionName = searchParams.get("accordionName");
+
+  // Table headers and keys
   const columns = [
     {
-      header: "Name",
-      accessorKey: "instructorName",
+      header: "Página",
+      accessorKey: "pageName",
     },
 
     {
-      header: "Description",
-      accessorKey: "description",
+      header: "Sección",
+      accessorKey: "sectionName",
     },
 
     {
-      header: "Actions",
+      header: "Acordeón",
+      accessorKey: "accordionName",
+    },
+
+    {
+      header: "Acciones",
       cell: (info) => <CellCustomInstructor dataRow={info?.row?.original} />,
     },
   ];
 
+  // Get all pdfFiles
   const { data, isLoading } = useQuery({
     queryKey: ["pdfFiles"],
     queryFn: async () =>
-      await axios?.get(`${import.meta.env.VITE_BASE_URL}/instructors/`),
+      await axios?.get(
+        `${
+          import.meta.env.VITE_BASE_URL
+        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&accordionName=${accordionName}`
+      ),
   });
 
   if (isLoading) {
@@ -43,12 +60,12 @@ const ManageFiles = () => {
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
-      {/* --> Table */}
-      <Table columns={columns} data={data} />
+      <Table columns={columns} data={data?.data} />
     </div>
   );
 };
 
+// Actions component from table
 const CellCustomInstructor = ({ dataRow }) => {
   const [showModal, setShowModal] = useState(false);
 

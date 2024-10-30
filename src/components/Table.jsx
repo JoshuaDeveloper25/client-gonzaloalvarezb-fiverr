@@ -1,5 +1,4 @@
 import { useState } from "react";
-/* eslint-disable react/prop-types */
 import {
   flexRender,
   useReactTable,
@@ -31,30 +30,31 @@ const Table = ({ columns = [], data = [] }) => {
   return (
     <div className="mt-6 overflow-x-auto">
       {/* --> Input search */}
-      {/* {data?.length !== 0 && (
+      {data?.length !== 0 && (
         <>
           <input
             type="search"
-            // value={filtering}
+            value={filtering}
             onChange={(e) => setFiltering(e.target.value)}
             className="outline-none my-4 px-2 py-1 rounded-sm focus:border-secondary border"
-            placeholder="Name"
+            placeholder="Buscar..."
           />
         </>
-      )} */}
+      )}
 
+      {/* Table */}
       <table className="min-w-[30rem] w-full border-collapse border-spacing-0">
         {/* Head */}
-        <thead className="bg-slate-50">
+        <thead className="bg-slate-50 rounded-md">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id} className="">
               {headerGroup.headers.map((header) => (
                 <th
                   key={header.id}
-                  className="group table-cell cursor-pointer"
+                  className="group table-cell cursor-pointer  py-2 px-2"
                   onClick={header.column.getToggleSortingHandler()}
                 >
-                  <div className="flex items-center gap-2 justify-between pr-2">
+                  <div className="flex items-center gap-2 justify-between px-1.5 py-1.5">
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -71,23 +71,25 @@ const Table = ({ columns = [], data = [] }) => {
             </tr>
           ))}
         </thead>
-        {/* Head */}
 
         {/* Body */}
         <tbody className="text-lg">
           {table.getRowModel().rows.map((row) => (
             <tr key={row.id} className={`border-b border-b-gray-300 ${row.id}`}>
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className={`py-3 px-3 text-start`}>
+                <td
+                  key={cell.id}
+                  className={`py-3 px-3 text-base text-start text-gray-400`}
+                >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}
             </tr>
           ))}
         </tbody>
-        {/* Body */}
       </table>
 
+      {/* Pagination */}
       {data?.length !== 0 && (
         <>
           <footer className="flex justify-between mt-5">
@@ -118,7 +120,7 @@ const Table = ({ columns = [], data = [] }) => {
                 table.setPageIndex(e.target.page.value);
               }}
             >
-              <span>Page</span>
+              <span>Página</span>
 
               <input
                 type="number"
@@ -128,7 +130,7 @@ const Table = ({ columns = [], data = [] }) => {
                 className="inline-block rounded border w-12 py-1 text-center border-b-gray-300"
               />
 
-              <span>of {table.getPageCount()}</span>
+              <span>de {table.getPageCount()}</span>
             </form>
           </footer>
         </>
