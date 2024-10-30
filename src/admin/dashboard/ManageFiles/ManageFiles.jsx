@@ -16,6 +16,17 @@ const ManageFiles = () => {
   const sectionName = searchParams.get("sectionName");
   const accordionName = searchParams.get("accordionName");
 
+  // Get all pdfFiles
+  const { data, isLoading } = useQuery({
+    queryKey: ["pdfFiles", pageName, sectionName, accordionName],
+    queryFn: async () =>
+      await axios?.get(
+        `${
+          import.meta.env.VITE_BASE_URL
+        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&accordionName=${accordionName}`
+      ),
+  });
+
   // Table headers and keys
   const columns = [
     {
@@ -39,17 +50,6 @@ const ManageFiles = () => {
     },
   ];
 
-  // Get all pdfFiles
-  const { data, isLoading } = useQuery({
-    queryKey: ["pdfFiles"],
-    queryFn: async () =>
-      await axios?.get(
-        `${
-          import.meta.env.VITE_BASE_URL
-        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&accordionName=${accordionName}`
-      ),
-  });
-
   if (isLoading) {
     return (
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -64,6 +64,8 @@ const ManageFiles = () => {
     </div>
   );
 };
+
+export default ManageFiles;
 
 // Actions component from table
 const CellCustomInstructor = ({ dataRow }) => {
@@ -115,8 +117,6 @@ const CellCustomInstructor = ({ dataRow }) => {
 
     deleteMutation.mutate();
   };
-
-  console.log(dataRow);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -188,5 +188,3 @@ const CellCustomInstructor = ({ dataRow }) => {
     </>
   );
 };
-
-export default ManageFiles;
