@@ -8,7 +8,7 @@ import {
   getFilteredRowModel,
 } from "@tanstack/react-table";
 
-const Table = ({ columns = [], data = [] }) => {
+const Table = ({ queries, columns = [], data = [] }) => {
   const [filtering, setFiltering] = useState("");
   const [sorting, setSorting] = useState([]);
 
@@ -29,6 +29,8 @@ const Table = ({ columns = [], data = [] }) => {
 
   return (
     <div className="mt-2 overflow-x-auto">
+      <p className="capitalize mt-2 text-gray-600">{`${queries?.pageName} > ${queries?.sectionName} > ${queries?.accordionName}`}</p>
+
       {/* --> Input search */}
       {data?.length !== 0 && (
         <>
@@ -99,7 +101,7 @@ const Table = ({ columns = [], data = [] }) => {
                   className="rounded shadow-lg btn inline-flex px-3 gap-3"
                   onClick={() => table.previousPage()}
                 >
-                  Prev Page
+                  Pág Prevía
                 </button>
               )}
 
@@ -108,7 +110,7 @@ const Table = ({ columns = [], data = [] }) => {
                   className="rounded shadow-lg btn inline-flex px-3 gap-3"
                   onClick={() => table.nextPage()}
                 >
-                  Next Page
+                  Siguiente Pág
                 </button>
               )}
             </div>

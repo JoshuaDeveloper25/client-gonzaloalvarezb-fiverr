@@ -1,7 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
 import { MdDelete, MdModeEdit } from "react-icons/md";
-import InputBox from "../../../components/InputBox";
 import { getError } from "../../../utils/getError";
 import { useSearchParams } from "react-router-dom";
 import Spinner from "../../../components/Spinner";
@@ -30,18 +29,8 @@ const ManageFiles = () => {
   // Table headers and keys
   const columns = [
     {
-      header: "Página",
-      accessorKey: "pageName",
-    },
-
-    {
-      header: "Sección",
-      accessorKey: "sectionName",
-    },
-
-    {
-      header: "Acordeón",
-      accessorKey: "accordionName",
+      header: "Nombre de Archivo",
+      accessorKey: "fileName",
     },
 
     {
@@ -60,9 +49,13 @@ const ManageFiles = () => {
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
-      <CreateElement />
+      <CreateElement queries={{ pageName, sectionName, accordionName }} />
 
-      <Table columns={columns} data={data?.data} />
+      <Table
+        queries={{ pageName, sectionName, accordionName }}
+        columns={columns}
+        data={data?.data}
+      />
     </div>
   );
 };
@@ -70,7 +63,7 @@ const ManageFiles = () => {
 export default ManageFiles;
 
 // Create Element
-const CreateElement = () => {
+const CreateElement = ({ queries }) => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
@@ -96,88 +89,38 @@ const CreateElement = () => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    formData.append("uploadDocuments", e?.target?.uploadDocuments?.files[0]);
 
-    const elementInfo = {
-      uploadDocuments: formData.get("uploadDocuments"),
-      pageName: formData.get("pageName"),
-      sectionName: formData.get("sectionName"),
-      accordionName: formData.get("accordionName"),
-    };
-
-    if (
-      [
-        elementInfo?.uploadDocuments,
-        elementInfo?.pageName,
-        elementInfo?.sectionName,
-        elementInfo?.accordionName,
-      ].includes("")
-    ) {
-      return toast.error("Llena los espacios disponibles!");
-    }
+    formData.append("pageName", queries?.pageName);
+    formData.append("sectionName", queries?.sectionName);
+    formData.append("accordionName", queries?.accordionName);
 
     createElementMutation?.mutate(formData);
+
+    e?.target?.reset();
   };
 
   return (
     <>
-      <button
-        className="btn-normal button-red-primary"
-        onClick={() => setShowModal(!showModal)}
-      >
-        Crear Elemento
-      </button>
-
-      {/* Modal Of Create an Element */}
-      <ModalComponent
-        setShowModal={setShowModal}
-        showModal={showModal}
-        titleModal={"Crear Elemento"}
-        showBtn={false}
-      >
-        <form onSubmit={handleSubmit}>
-          <InputBox
-            propInput={{
-              name: "pageName",
-              required: true,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Página"}
-          />
-
-          <InputBox
-            propInput={{
-              name: "sectionName",
-              required: true,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Sección"}
-          />
-
-          <InputBox
-            propInput={{
-              name: "accordionName",
-              required: true,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Acordeón"}
-          />
-
+      <form onSubmit={handleSubmit} className="border-b pb-8">
+        <label>
+          <span className="font-semibold">Please, select a file.</span>
           <input
             type="file"
-            className="rounded bg-tertiary-color mb-3"
+            className="rounded bg-tertiary-color mb-3 block"
             name="uploadDocuments"
             accept="image/*"
+            required
+            multiple
           />
+        </label>
 
-          <button
-            className="btn-normal button-red-primary w-full disabled:bg-red-200"
-            disabled={createElementMutation?.isPending}
-          >
-            {createElementMutation?.isPending ? "Creando..." : "Crear"}
-          </button>
-        </form>
-      </ModalComponent>
+        <button
+          className="btn-normal button-red-primary disabled:bg-red-200"
+          disabled={createElementMutation?.isPending}
+        >
+          {createElementMutation?.isPending ? "Creando..." : "Crear"}
+        </button>
+      </form>
     </>
   );
 };
@@ -187,20 +130,20 @@ const CellCustomElement = ({ dataRow }) => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
-  // Create
+  // Edit
   const { mutate, isPending } = useMutation({
-    mutationFn: (instructorInfo) =>
+    mutationFn: (elementInfo) =>
       axios.put(
-        `${import.meta.env.VITE_BASE_URL}/instructors/${dataRow?._id}`,
-        instructorInfo
+        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
+          dataRow?._id
+        }`,
+        elementInfo
       ),
-
     onSuccess: () => {
-      queryClient.invalidateQueries(["instructors"]);
+      queryClient.invalidateQueries(["pdfFiles"]);
       toast.success(`Exitosamente editado!`);
       setShowModal(!showModal);
     },
-
     onError: (err) => {
       toast.error(getError(err));
       console.log(err);
@@ -210,29 +153,31 @@ const CellCustomElement = ({ dataRow }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const data = new FormData(e.target);
+    const formData = new FormData();
 
-    const dataSend = {
-      instructorName: data.get("instructorName"),
-      description: data.get("instructorDesc"),
-    };
+    formData.append("uploadDocuments", e?.target?.uploadDocuments?.files);
+    formData.append("pageName", queries?.pageName);
+    formData.append("sectionName", queries?.sectionName);
+    formData.append("accordionName", queries?.accordionName);
 
-    mutate(dataSend);
+    mutate(formData);
+
+    e?.target?.reset();
   };
 
   // Delete
   const deleteMutation = useMutation({
-    mutationFn: (instructorInfo) =>
+    mutationFn: (elementInfo) =>
       axios.delete(
-        `${import.meta.env.VITE_BASE_URL}/instructors/${dataRow?._id}`,
-        instructorInfo
+        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
+          dataRow?._id
+        }`,
+        elementInfo
       ),
-
     onSuccess: () => {
-      queryClient.invalidateQueries(["instructors"]);
+      queryClient.invalidateQueries(["pdfFiles"]);
       toast.success(`Exitosamente eliminado!`);
     },
-
     onError: (err) => {
       toast.error(getError(err));
       console.log(err);
@@ -240,14 +185,12 @@ const CellCustomElement = ({ dataRow }) => {
   });
 
   const handleDelete = () => {
-    const confirmDelete = confirm("Desea eliminar este elemento?");
+    const confirmDelete = confirm("Deseas eliminar este archivo?");
 
     if (!confirmDelete) return;
 
     deleteMutation.mutate();
   };
-
-  const isDisabled = isPending;
 
   return (
     <>
@@ -273,45 +216,13 @@ const CellCustomElement = ({ dataRow }) => {
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        titleModal={"Editar Elemento"}
+        titleModal={"Editar"}
         showBtn={false}
       >
         <form onSubmit={handleSubmit}>
-          <InputBox
-            propInput={{
-              name: "pageName",
-              required: true,
-              defaultValue: dataRow?.pageName,
-              disabled: isDisabled,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Página"}
-          />
-
-          <InputBox
-            propInput={{
-              name: "sectionName",
-              required: true,
-              defaultValue: dataRow?.sectionName,
-              disabled: isDisabled,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Sección"}
-          />
-
-          <InputBox
-            propInput={{
-              name: "accordionName",
-              required: true,
-              defaultValue: dataRow?.accordionName,
-              disabled: isDisabled,
-              type: "text",
-            }}
-            labelTitle={"Nombre de Acordeón"}
-          />
-
           <input
             type="file"
+            multiple
             className="rounded bg-tertiary-color mb-3"
             defaultValue={dataRow?.uploadDocuments}
             name="uploadDocuments"
@@ -320,7 +231,7 @@ const CellCustomElement = ({ dataRow }) => {
 
           <button
             className="btn-normal button-red-primary w-full"
-            disabled={isDisabled}
+            disabled={isPending}
           >
             Editar
           </button>

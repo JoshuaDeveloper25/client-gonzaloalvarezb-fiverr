@@ -61,12 +61,13 @@ const RootDashboard = () => {
                 <SubMenu
                   label={subMenuPage?.labelPage}
                   key={index}
-                  className="bg-gray-200 text-primary-color animation-fade"
+                  className="bg-primary-color/5 text-primary-color animation-fade"
                 >
-                  <SubMenu label={subMenuPage?.labelSection}>
+                  <SubMenu className="bg-primary-color/25" label={subMenuPage?.labelSection}>
                     {subMenuPage?.labelAccordions?.map(
                       (labelAccordion, index) => (
                         <MenuItem
+                          className="bg-primary-color/45"
                           key={index}
                           onClick={() =>
                             navigate(
