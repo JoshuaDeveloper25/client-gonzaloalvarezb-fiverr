@@ -2,7 +2,6 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
 import { MdDelete, MdModeEdit } from "react-icons/md";
 import { getError } from "../../../utils/getError";
-import { useSearchParams } from "react-router-dom";
 import Spinner from "../../../components/Spinner";
 import Table from "../../../components/Table";
 import { toast } from "react-toastify";
@@ -10,27 +9,28 @@ import { useState } from "react";
 import axios from "axios";
 
 const ManageUsers = () => {
-  const [searchParams] = useSearchParams();
-  const pageName = searchParams.get("pageName");
-  const sectionName = searchParams.get("sectionName");
-  const accordionName = searchParams.get("accordionName");
-
-  // Get all pdfFiles
+  // Get all users
   const { data, isLoading } = useQuery({
-    queryKey: ["pdfFiles", pageName, sectionName, accordionName],
+    queryKey: ["users"],
     queryFn: async () =>
-      await axios?.get(
-        `${
-          import.meta.env.VITE_BASE_URL
-        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&accordionName=${accordionName}`
-      ),
+      await axios?.get(`${import.meta.env.VITE_BASE_URL}/users/`),
   });
 
   // Table headers and keys
   const columns = [
     {
-      header: "Nombre de Archivo",
-      accessorKey: "fileName",
+      header: "Nombre",
+      accessorKey: "username",
+    },
+
+    {
+      header: "Email",
+      accessorKey: "email",
+    },
+
+    {
+      header: "Contraseña",
+      accessorKey: "password",
     },
 
     {
@@ -49,33 +49,26 @@ const ManageUsers = () => {
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
-      <CreateElement queries={{ pageName, sectionName, accordionName }} />
+      <CreateUser />
 
-      <Table
-        queries={{ pageName, sectionName, accordionName }}
-        columns={columns}
-        data={data?.data}
-      />
+      <Table columns={columns} data={data?.data} />
     </div>
   );
 };
 
 export default ManageUsers;
 
-// Create Element
-const CreateElement = ({ queries }) => {
+// Create User
+const CreateUser = ({ queries }) => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
   // Create
-  const createElementMutation = useMutation({
-    mutationFn: (elementInfo) =>
-      axios.post(
-        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload`,
-        elementInfo
-      ),
+  const createUserMutation = useMutation({
+    mutationFn: (userInfo) =>
+      axios.post(`${import.meta.env.VITE_BASE_URL}/users/`, userInfo),
     onSuccess: () => {
-      queryClient.invalidateQueries(["pdfFiles"]);
+      queryClient.invalidateQueries(["users"]);
       toast.success(`Exitosamente creado!`);
       setShowModal(!showModal);
     },
@@ -88,13 +81,13 @@ const CreateElement = ({ queries }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    // const formData = new FormData(e.target);
 
-    formData.append("pageName", queries?.pageName);
-    formData.append("sectionName", queries?.sectionName);
-    formData.append("accordionName", queries?.accordionName);
+    // formData.append("pageName", queries?.pageName);
+    // formData.append("sectionName", queries?.sectionName);
+    // formData.append("accordionName", queries?.accordionName);
 
-    createElementMutation?.mutate(formData);
+    // createUserMutation?.mutate(formData);
 
     e?.target?.reset();
   };
@@ -116,9 +109,9 @@ const CreateElement = ({ queries }) => {
 
         <button
           className="btn-normal button-red-primary disabled:bg-red-200"
-          disabled={createElementMutation?.isPending}
+          // disabled={createElementMutation?.isPending}
         >
-          {createElementMutation?.isPending ? "Creando..." : "Crear"}
+          {/* {createElementMutation?.isPending ? "Creando..." : "Crear"} */}
         </button>
       </form>
     </>
