@@ -1,9 +1,9 @@
+import downloadIcon from "../../../../../images/descargar-2.png";
 import pdfIcono from "../../../../../images/pdf-icono.png";
+import PDFBox from "../../../../../components/PDFBox";
 import { TECollapse } from "tw-elements-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-import downloadIcon from "../../../../../images/descargar-2.png";
 
 const FiduciariaAtlantidaPublicacionesPosts = () => {
   const [activeElement, setActiveElement] = useState("");
@@ -19,330 +19,11 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
   return (
     <section className="container-page my-8">
       <div className="space-y-6">
-        <article className="bg-[#F3F3F3] md:px-10 px-2 py-8 rounded-2xl text-secondary-color/95">
-          <div className="flex items-end gap-3 border-b-2 py-1 border-primary-color">
-            <img
-              loading="lazy"
-              decoding="async"
-              className="w-12 h-12 object-cover"
-              src={pdfIcono}
-            />
-            <h3 className="family-nunito-black text-xl">
-              Fiduciaria Atlántida
-            </h3>
-          </div>
-
-          {/* Accordion */}
-          <h2 className="mb-0" id="documentosFiduciaria">
-            <button
-              className={`${
-                activeElement === "documentosFiduciaria" &&
-                ` font-bold [box-shadow:inset_0_-1px_0_rgba(229,231,235)]`
-              } group relative flex w-full justify-between items-start pt-5 rounded-none border-0 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
-              type="button"
-              onClick={() => handleClick("documentosFiduciaria")}
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              <div>
-                <p className="text-sm">Documentos</p>
-              </div>
-
-              <div>
-                <span
-                  className={`${
-                    activeElement === "documentosFiduciaria"
-                      ? `rotate-[-180deg] -mr-1`
-                      : `rotate-0`
-                  }  ml-auto h-3 w-3 shrink-0 fill-[#D9D9D9] transition-transform duration-200 ease-in-out motion-reduce:transition-none`}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="17"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
-                  </svg>
-                </span>
-              </div>
-            </button>
-          </h2>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Certifcado-de-Inscripción.pdf"
-                  }
-                >
-                  Certificado de Inscripción
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Resolución-Autorización-Fiduamericas.pdf"
-                  }
-                >
-                  Resolución Autorización Fiduamericas
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Manual-de-prevención.pdf"
-                  }
-                >
-                  Manuales de Prevención
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Resolución-No-SCVS-IRQ-DRMV-2020-00001420.pdf"
-                  }
-                >
-                  Resolución Nº SCVS-IRQ-DRMV-2020-00001420 (Fecha Publicación
-                  27FEB2020)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/Extracto-Cambio-Denominación.pdf"
-                  }
-                >
-                  Extracto Cambio Denominación (Fecha Publicación 27FEB2020)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2022/03/EXTRACTO-AUMENTO-DE-CAPITAL-FIDUTLAN-signed.pdf"
-                  }
-                >
-                  Extracto Aumento de Capital (Fecha Publicación 15MAR2022)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2022/03/RES-AUMENTO-DE-CAPITAL-FIDUTLAN-signed.pdf"
-                  }
-                >
-                  Resolución Aumento de Capital (Fecha Publicación 15MAR2022)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/05/AVISO-DE-PRIVACIDAD-PROTECCION-DE-DATOS-PERSONALES-PARA-PUBLICAR-MAY-2023.pdf"
-                  }
-                >
-                  Aviso de Privacidad de Protección de Datos Personales (Fecha
-                  Publicación 24MAY2023)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/07/Resolucion-00040504-Marginacion-Manuales-Fidutlan.pdf"
-                  }
-                >
-                  Resolución No. SCVS-IRQ-DRMV-2023-00040504 - Marginación
-                  Manuales Fiduciaria Atlántida (Fecha Publicación 12JUL2023)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-
-          <TECollapse
-            show={activeElement === "documentosFiduciaria"}
-            className="!mt-0 !rounded-b-none !shadow-none my-5"
-          >
-            <div className="flex items-center pb-2 border-b">
-              <div>
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8"
-                  src={downloadIcon}
-                />
-              </div>
-              <div>
-                <Link
-                  target="_blank"
-                  className="text-primary-color hover:underline hover:opacity-55"
-                  to={
-                    "https://suratlantida.com/fiduciaria/wp-content/uploads/2023/09/Resolucion-No.-SCVS-IRQ-DRMV-2023-00042710.pdf"
-                  }
-                >
-                  Resolución No. SCVS-IRQ-DRMV-2023-00042710 - Reformas Manuales
-                  Fiduciaria Atlántida (Fecha Publicación 22SEP2023)
-                </Link>
-              </div>
-            </div>
-          </TECollapse>
-        </article>
+        <PDFBox
+          pageName={"Fiduciaria Transparencia"}
+          sectionName={"Fiduciaria Atlántida"}
+          accordionName={"Documentos"}
+        />
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-8 rounded-2xl text-secondary-color/95">
           <div className="flex items-end gap-3 border-b-2 py-1 border-primary-color">
@@ -531,7 +212,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2020/12/resolucion-autorizacion-fondo-elite-17-diciembre8421.pdf"
                   }
                 >
-                  Resolución Aprobación Fondo de Inversión Administrado Elite (21DIC2020)
+                  Resolución Aprobación Fondo de Inversión Administrado Elite
+                  (21DIC2020)
                 </Link>
               </div>
             </div>
@@ -5366,9 +5048,7 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
               aria-controls="collapseOne"
             >
               <div>
-                <p className="text-sm">
-                  Titularización Guayaquil Country Club
-                </p>
+                <p className="text-sm">Titularización Guayaquil Country Club</p>
               </div>
 
               <div>
@@ -6662,7 +6342,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/214-2024-INFORMEFINAL-2TIT-INSOTEC-AGOSTO.pdf"
                   }
                 >
-                  Segunda Titularización Cartera Microcrédito INSOTEC: Informe Final (15AGO2024)
+                  Segunda Titularización Cartera Microcrédito INSOTEC: Informe
+                  Final (15AGO2024)
                 </Link>
               </div>
             </div>
@@ -6896,7 +6577,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/TITULARIZACION-SINDICADA-RENTAS-NX-RNT.pdf"
                   }
                 >
-                  Primera Titularización Sindicada Rentas NX - RNT: Informe Calificadora de Riesgos (ABR2024)
+                  Primera Titularización Sindicada Rentas NX - RNT: Informe
+                  Calificadora de Riesgos (ABR2024)
                 </Link>
               </div>
             </div>
@@ -7410,7 +7092,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/CONVOCATORIA-ASAMBLEA-Novacredit-V-17-Jun-2024.pdf"
                   }
                 >
-                  Fideicomiso de Titularización de Cartera Novacredit V: Cuarta Convocatoria Asamblea (17JUN2024)
+                  Fideicomiso de Titularización de Cartera Novacredit V: Cuarta
+                  Convocatoria Asamblea (17JUN2024)
                 </Link>
               </div>
             </div>
@@ -7437,7 +7120,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/ASAMBLEA-INVERSIONISTAS-TIT-CARTERA-NOVACREDIT-V-17-junio-2024.pdf"
                   }
                 >
-                  Fideicomiso de Titularización de Cartera Novacredit V: Acta de Asamblea de Inversionistas (17JUN2024)
+                  Fideicomiso de Titularización de Cartera Novacredit V: Acta de
+                  Asamblea de Inversionistas (17JUN2024)
                 </Link>
               </div>
             </div>
@@ -8119,7 +7803,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/189-2024-INFORMEFINAL-FACTORPLUS-2TIT-JULIO.pdf"
                   }
                 >
-                  Fideicomiso Segunda Titularización de Cartera Factorplus: Extracto Calificadora de Riesgo (JUL2024)
+                  Fideicomiso Segunda Titularización de Cartera Factorplus:
+                  Extracto Calificadora de Riesgo (JUL2024)
                 </Link>
               </div>
             </div>
@@ -8606,12 +8291,12 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/TERCERA-TITULARIZACION-DE-CARTERA-INSOTEC.pdf"
                   }
                 >
-                  Tercera Titularización de Cartera Microcredito Insotec: Extracto Calificadora de Riesgo (MARZ2024)
+                  Tercera Titularización de Cartera Microcredito Insotec:
+                  Extracto Calificadora de Riesgo (MARZ2024)
                 </Link>
               </div>
             </div>
           </TECollapse>
-
 
           <TECollapse
             show={activeElement === "fideicomisos11"}
@@ -9390,7 +9075,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/07/TITULARIZACION-BOTANIQO-f-signed.pdf"
                   }
                 >
-                  Fideicomiso Titularización Botaniqo Informe Calificadora de Riesgos (MAY2024)
+                  Fideicomiso Titularización Botaniqo Informe Calificadora de
+                  Riesgos (MAY2024)
                 </Link>
               </div>
             </div>
@@ -9445,7 +9131,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/08/Resolucion-00012157-PRORROGA-tit-flujos-Botaniqo_Fidutlan.pdf"
                   }
                 >
-                  Fideicomiso Titularización Botaniqo: Resolución: No. SCVS-INMV-DNAR-2024-00012157 (01AGO2024)
+                  Fideicomiso Titularización Botaniqo: Resolución: No.
+                  SCVS-INMV-DNAR-2024-00012157 (01AGO2024)
                 </Link>
               </div>
             </div>
@@ -9472,13 +9159,12 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/06/1.-Rendicion-de-cuentas-Fid.-Tit-Botaniqo_compressed.pdf"
                   }
                 >
-                  Fideicomiso Titularización Botaniqo: 1era Rendición de cuentas (31ENE2024)
+                  Fideicomiso Titularización Botaniqo: 1era Rendición de cuentas
+                  (31ENE2024)
                 </Link>
               </div>
             </div>
           </TECollapse>
-
-
         </article>
 
         <article className="bg-[#F3F3F3] md:px-10 px-2 py-8 rounded-2xl text-secondary-color/95">
@@ -10000,8 +9686,8 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                     "https://suratlantida.com/fiduciaria/wp-content/uploads/2024/09/Resolucion-No.-SCVS-INMV-DNNF-2024-00013314.pdf"
                   }
                 >
-                  Resolución No. SCVS-INMV-DNNF-2024-00013314 - Fideicomiso Verde 
-                  Ilaló (11SEPT2024)
+                  Resolución No. SCVS-INMV-DNNF-2024-00013314 - Fideicomiso
+                  Verde Ilaló (11SEPT2024)
                 </Link>
               </div>
             </div>
@@ -12326,12 +12012,12 @@ const FiduciariaAtlantidaPublicacionesPosts = () => {
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
                   to={"https://suratlantida.com/fiduciaria/rendiciones/2023/"}
-                >Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2023
+                >
+                  Rendiciones Cuentas de Encargos Fiduciarios SAGAP 2023
                 </Link>
               </div>
             </div>
           </TECollapse>
-
         </article>
       </div>
     </section>

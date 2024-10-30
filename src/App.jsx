@@ -12,16 +12,10 @@ import { Suspense, lazy } from "react";
 import Spinner from "./components/Spinner";
 
 // Admin Panel
-const HomeDashboardLazy = lazy(() =>
-  import("./admin/dashboard/HomeDashboard/HomeDashboard")
-);
-const ManageFilesLazy = lazy(() =>
-  import("./admin/dashboard/ManageFiles/ManageFiles")
-);
-const ManageUsersLazy = lazy(() =>
-  import("./admin/dashboard/ManageUsers/ManageUsers")
-);
-const RootDashboardLazy = lazy(() => import("./admin/dashboard/RootDashboard"));
+import HomeDashboard from "./admin/dashboard/HomeDashboard/HomeDashboard";
+import RootDashboard from "./admin/dashboard/RootDashboard";
+import ManageFiles from "./admin/dashboard/ManageFiles/ManageFiles";
+import ManageUsers from "./admin/dashboard/ManageUsers/ManageUsers";
 
 // --> Empresas Pages
 const CorreoEnviadoExitosamenteLazy = lazy(() =>
@@ -150,16 +144,6 @@ const FiduciariaAtlantidaNegociosLazy = lazy(() =>
 const FiduciariaAtlantidaFondosLazy = lazy(() =>
   import(
     "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondos/FiduciariaAtlantidaFondos"
-  )
-);
-const FiduciariaAtlantidaFondoFitLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondoFit/FiduciariaAtlantidaFondoFit"
-  )
-);
-const FiduciariaAtlantidaFondoEliteLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/FiduciariaAtlantida/FiduciariaAtlantidaFondoElite/FiduciariaAtlantidaFondoElite"
   )
 );
 const FiduciariaAtlantidaPublicacionesLazy = lazy(() =>
@@ -401,23 +385,23 @@ const router = createBrowserRouter([
   {
     // --> Dashboard Panel
     path: "/admin/dashboard/",
-    element: <RootDashboardLazy />,
+    element: <RootDashboard />,
     children: [
       {
         element: <PrivateRoutes />,
         children: [
           {
-            element: <HomeDashboardLazy />,
+            element: <HomeDashboard />,
             index: true,
           },
 
           {
-            element: <ManageFilesLazy />,
+            element: <ManageFiles />,
             path: "gestionar-archivos",
           },
 
           {
-            element: <ManageUsersLazy />,
+            element: <ManageUsers />,
             path: "gestionar-usuarios",
           },
         ],
