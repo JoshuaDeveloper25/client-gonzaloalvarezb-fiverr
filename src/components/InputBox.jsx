@@ -1,15 +1,11 @@
-const InputBox = ({ labelTitle, propInput, type = 'text' }) => {
+const InputBox = ({ labelTitle, propInput }) => {
   return (
-    <label className="mb-10 block">
-      <span className="block text-lg font-semibold">
-        {labelTitle} {propInput.required && '*'}
+    <label className="mb-4 block">
+      <span className="block text-lg text-gray-700 font-normal">
+        {labelTitle} {propInput.required && "*"}
       </span>
 
-      <input
-        className="input"
-        type={type}
-        {...propInput}
-      />
+      <input className="input" {...propInput} />
     </label>
   );
 };

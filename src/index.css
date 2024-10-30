@@ -93,6 +93,10 @@ body {
   .btn-disabled {
     @apply text-white animate-pulse pointer-events-none font-light rounded-md text-center bg-[#b3b3b3] inline-block animation-fade;
   }
+
+  .input {
+    @apply w-full px-2 border rounded py-1 outline-primary-color;
+  }
 }
 
 /* --> Carousel Nuestras Empresas - Inicio */

@@ -28,7 +28,7 @@ const Table = ({ columns = [], data = [] }) => {
   });
 
   return (
-    <div className="mt-6 overflow-x-auto">
+    <div className="mt-2 overflow-x-auto">
       {/* --> Input search */}
       {data?.length !== 0 && (
         <>

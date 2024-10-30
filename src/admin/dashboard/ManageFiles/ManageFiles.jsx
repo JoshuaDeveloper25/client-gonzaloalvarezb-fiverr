@@ -1,11 +1,11 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
+import { MdDelete, MdModeEdit } from "react-icons/md";
 import InputBox from "../../../components/InputBox";
 import { getError } from "../../../utils/getError";
-import Spinner from "../../../components/Spinner";
 import { useSearchParams } from "react-router-dom";
+import Spinner from "../../../components/Spinner";
 import Table from "../../../components/Table";
-import { MdModeEdit } from "react-icons/md";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
@@ -46,7 +46,7 @@ const ManageFiles = () => {
 
     {
       header: "Acciones",
-      cell: (info) => <CellCustomInstructor dataRow={info?.row?.original} />,
+      cell: (info) => <CellCustomElement dataRow={info?.row?.original} />,
     },
   ];
 
@@ -60,6 +60,8 @@ const ManageFiles = () => {
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
+      <CreateElement />
+
       <Table columns={columns} data={data?.data} />
     </div>
   );
@@ -67,12 +69,127 @@ const ManageFiles = () => {
 
 export default ManageFiles;
 
-// Actions component from table
-const CellCustomInstructor = ({ dataRow }) => {
+// Create Element
+const CreateElement = ({}) => {
   const [showModal, setShowModal] = useState(false);
-
   const queryClient = useQueryClient();
 
+  // Create
+  const createElementMutation = useMutation({
+    mutationFn: (elementInfo) =>
+      axios.post(
+        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload`,
+        elementInfo
+      ),
+
+    onSuccess: () => {
+      queryClient.invalidateQueries(["pdfFiles"]);
+      toast.success(`Exitosamente creado!`);
+      setShowModal(!showModal);
+    },
+
+    onError: (err) => {
+      toast.error(getError(err));
+      console.log(err);
+    },
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    formData.append("uploadDocuments", e?.target?.uploadDocuments?.files[0]);
+
+    const elementInfo = {
+      uploadDocuments: formData.get("uploadDocuments"),
+      pageName: e?.target?.pageName?.value,
+      sectionName: e?.target?.sectionName?.value,
+      accordionName: e?.target?.accordionName?.value,
+    };
+
+    if (
+      [
+        elementInfo?.uploadDocuments,
+        elementInfo?.pageName,
+        elementInfo?.sectionName,
+        elementInfo?.accordionName,
+      ].includes("")
+    ) {
+      return toast.error("Llena los espacios disponibles!");
+    }
+
+    createElementMutation?.mutate(elementInfo);
+  };
+
+  return (
+    <>
+      <button
+        className="btn-normal button-red-primary"
+        onClick={() => setShowModal(!showModal)}
+      >
+        Crear Elemento
+      </button>
+
+      {/* Modal Of Create an Element */}
+      <ModalComponent
+        setShowModal={setShowModal}
+        showModal={showModal}
+        titleModal={"Crear Elemento"}
+        showBtn={false}
+      >
+        <form onSubmit={handleSubmit}>
+          <InputBox
+            propInput={{
+              name: "pageName",
+              required: true,
+              type: "text",
+            }}
+            labelTitle={"Nombre de Página"}
+          />
+
+          <InputBox
+            propInput={{
+              name: "sectionName",
+              required: true,
+              type: "text",
+            }}
+            labelTitle={"Nombre de Sección"}
+          />
+
+          <InputBox
+            propInput={{
+              name: "accordionName",
+              required: true,
+              type: "text",
+            }}
+            labelTitle={"Nombre de Acordeón"}
+          />
+
+          <input
+            type="file"
+            className="rounded bg-tertiary-color mb-3"
+            name="uploadDocuments"
+            accept="image/*"
+          />
+
+          <button
+            className="btn-normal button-red-primary w-full disabled:bg-red-200"
+            disabled={createElementMutation?.isPending}
+          >
+            {createElementMutation?.isPending ? "Creando..." : "Crear"}
+          </button>
+        </form>
+      </ModalComponent>
+    </>
+  );
+};
+
+// Actions component from table
+const CellCustomElement = ({ dataRow }) => {
+  const [showModal, setShowModal] = useState(false);
+  const queryClient = useQueryClient();
+
+  // Create
   const { mutate, isPending } = useMutation({
     mutationFn: (instructorInfo) =>
       axios.put(
@@ -92,6 +209,20 @@ const CellCustomInstructor = ({ dataRow }) => {
     },
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+
+    const dataSend = {
+      instructorName: data.get("instructorName"),
+      description: data.get("instructorDesc"),
+    };
+
+    mutate(dataSend);
+  };
+
+  // Delete
   const deleteMutation = useMutation({
     mutationFn: (instructorInfo) =>
       axios.delete(
@@ -111,31 +242,18 @@ const CellCustomInstructor = ({ dataRow }) => {
   });
 
   const handleDelete = () => {
-    const confirmDelete = confirm("Desea eliminar este instructor?");
+    const confirmDelete = confirm("Desea eliminar este elemento?");
 
     if (!confirmDelete) return;
 
     deleteMutation.mutate();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const data = new FormData(e.target);
-
-    const dataSend = {
-      instructorName: data.get("instructorName"),
-      description: data.get("instructorDesc"),
-    };
-
-    mutate(dataSend);
-  };
-
   const isDisabled = isPending;
 
   return (
     <>
-      <div className="flex gap-2 text-3xl">
+      <article className="flex gap-2 text-3xl">
         <button
           disabled={deleteMutation.isPending}
           onClick={() => setShowModal(true)}
@@ -143,44 +261,58 @@ const CellCustomInstructor = ({ dataRow }) => {
         >
           <MdModeEdit />
         </button>
-        {/* <button
+
+        <button
           disabled={deleteMutation.isPending}
-          onClick={handleDelete}
           className="text-primary-color"
+          onClick={handleDelete}
         >
           <MdDelete />
-        </button> */}
-      </div>
+        </button>
+      </article>
 
+      {/* Modal Of Edit an Element */}
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        titleModal={"Editar Instructor"}
+        titleModal={"Editar Elemento"}
         showBtn={false}
       >
         <form onSubmit={handleSubmit}>
-          <div className="px-3">
-            <InputBox
-              propInput={{
-                name: "instructorName",
-                required: true,
-                defaultValue: dataRow?.instructorName,
-                disabled: isDisabled,
-              }}
-              labelTitle={"Nombre"}
-            />
+          <InputBox
+            propInput={{
+              name: "instructorName",
+              required: true,
+              defaultValue: dataRow?.instructorName,
+              disabled: isDisabled,
+              type: "text",
+            }}
+            labelTitle={"Nombre"}
+          />
 
-            <InputBox
-              propInput={{
-                name: "instructorDesc",
-                required: true,
-                defaultValue: dataRow?.description,
-                disabled: isDisabled,
-              }}
-              labelTitle={"Descripción"}
-            />
-          </div>
-          <button className="btn w-full" disabled={isDisabled}>
+          <InputBox
+            propInput={{
+              name: "instructorDesc",
+              required: true,
+              defaultValue: dataRow?.description,
+              disabled: isDisabled,
+              type: "text",
+            }}
+            labelTitle={"Descripción"}
+          />
+
+          <input
+            type="file"
+            className="rounded bg-tertiary-color mb-3"
+            defaultValue={dataRow?.uploadDocuments}
+            name="uploadDocuments"
+            accept="image/*"
+          />
+
+          <button
+            className="btn-normal button-red-primary w-full"
+            disabled={isDisabled}
+          >
             Editar
           </button>
         </form>
