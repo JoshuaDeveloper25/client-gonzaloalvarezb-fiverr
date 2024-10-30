@@ -70,7 +70,7 @@ const ManageFiles = () => {
 export default ManageFiles;
 
 // Create Element
-const CreateElement = ({}) => {
+const CreateElement = () => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
@@ -81,13 +81,11 @@ const CreateElement = ({}) => {
         `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload`,
         elementInfo
       ),
-
     onSuccess: () => {
       queryClient.invalidateQueries(["pdfFiles"]);
       toast.success(`Exitosamente creado!`);
       setShowModal(!showModal);
     },
-
     onError: (err) => {
       toast.error(getError(err));
       console.log(err);
@@ -102,9 +100,9 @@ const CreateElement = ({}) => {
 
     const elementInfo = {
       uploadDocuments: formData.get("uploadDocuments"),
-      pageName: e?.target?.pageName?.value,
-      sectionName: e?.target?.sectionName?.value,
-      accordionName: e?.target?.accordionName?.value,
+      pageName: formData.get("pageName"),
+      sectionName: formData.get("sectionName"),
+      accordionName: formData.get("accordionName"),
     };
 
     if (
@@ -118,7 +116,7 @@ const CreateElement = ({}) => {
       return toast.error("Llena los espacios disponibles!");
     }
 
-    createElementMutation?.mutate(elementInfo);
+    createElementMutation?.mutate(formData);
   };
 
   return (
@@ -281,24 +279,35 @@ const CellCustomElement = ({ dataRow }) => {
         <form onSubmit={handleSubmit}>
           <InputBox
             propInput={{
-              name: "instructorName",
+              name: "pageName",
               required: true,
-              defaultValue: dataRow?.instructorName,
+              defaultValue: dataRow?.pageName,
               disabled: isDisabled,
               type: "text",
             }}
-            labelTitle={"Nombre"}
+            labelTitle={"Nombre de Página"}
           />
 
           <InputBox
             propInput={{
-              name: "instructorDesc",
+              name: "sectionName",
               required: true,
-              defaultValue: dataRow?.description,
+              defaultValue: dataRow?.sectionName,
               disabled: isDisabled,
               type: "text",
             }}
-            labelTitle={"Descripción"}
+            labelTitle={"Nombre de Sección"}
+          />
+
+          <InputBox
+            propInput={{
+              name: "accordionName",
+              required: true,
+              defaultValue: dataRow?.accordionName,
+              disabled: isDisabled,
+              type: "text",
+            }}
+            labelTitle={"Nombre de Acordeón"}
           />
 
           <input

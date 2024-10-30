@@ -66,14 +66,16 @@ const RootDashboard = () => {
                   <SubMenu label={subMenuPage?.labelSection}>
                     {subMenuPage?.labelAccordions?.map(
                       (labelAccordion, index) => (
-                        <Link
-                          to={`/admin/dashboard/gestionar-archivos?pageName=${subMenuPage?.labelPage}&sectionName=${subMenuPage?.labelSection}&accordionName=${labelAccordion?.labelNameAccordion}`}
+                        <MenuItem
                           key={index}
+                          onClick={() =>
+                            navigate(
+                              `/admin/dashboard/gestionar-archivos?pageName=${subMenuPage?.labelPage}&sectionName=${subMenuPage?.labelSection}&accordionName=${labelAccordion?.labelNameAccordion}`
+                            )
+                          }
                         >
-                          <MenuItem>
-                            {labelAccordion?.labelNameAccordion}
-                          </MenuItem>
-                        </Link>
+                          {labelAccordion?.labelNameAccordion}
+                        </MenuItem>
                       )
                     )}
                   </SubMenu>
