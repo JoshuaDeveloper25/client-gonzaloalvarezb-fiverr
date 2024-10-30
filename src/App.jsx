@@ -3,13 +3,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { PrivateRoutes } from "./auth/PrivateRoutes";
 import { AppProvider } from "./context/AppProvider";
+import { PublicRoutes } from "./auth/PublicRoutes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Suspense, lazy } from "react";
 
 // Components
 import Spinner from "./components/Spinner";
-import { PublicRoutes } from "./auth/PublicRoutes";
 
 // Admin Panel
 const HomeDashboardLazy = lazy(() =>
@@ -17,6 +17,9 @@ const HomeDashboardLazy = lazy(() =>
 );
 const ManageFilesLazy = lazy(() =>
   import("./admin/dashboard/ManageFiles/ManageFiles")
+);
+const ManageUsersLazy = lazy(() =>
+  import("./admin/dashboard/ManageUsers/ManageUsers")
 );
 const RootDashboardLazy = lazy(() => import("./admin/dashboard/RootDashboard"));
 
@@ -411,6 +414,11 @@ const router = createBrowserRouter([
           {
             element: <ManageFilesLazy />,
             path: "gestionar-archivos",
+          },
+
+          {
+            element: <ManageUsersLazy />,
+            path: "gestionar-usuarios",
           },
         ],
       },

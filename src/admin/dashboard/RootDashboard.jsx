@@ -4,19 +4,22 @@ import {
   useNavigate,
   NavLink,
   ScrollRestoration,
+  useLocation,
 } from "react-router-dom";
 import { Menu, MenuItem, Sidebar, SubMenu } from "react-pro-sidebar";
+import { subMenuDashboardPage } from "../../DB/data";
 import AppContext from "../../context/AppProvider";
 import logo from "../../images/logo-atlantida.png";
+import { MdManageAccounts } from "react-icons/md";
 import { FaArrowLeft } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
-import { subMenuDashboardPage } from "../../DB/data";
 
 const RootDashboard = () => {
   const { setUserInfo } = useContext(AppContext);
   const [toggled, setToggled] = useState(false);
+  const location = useLocation();
   const navigate = useNavigate();
 
   const signOut = () => {
@@ -49,12 +52,26 @@ const RootDashboard = () => {
                 </Link>
               </div>
 
+              {/* Back to main home */}
               <NavLink
                 to={`/`}
                 className="flex gap-2.5 items-center text-primary-color hover:text-white font-bold animation-fade bg-gray-200 hover:bg-primary-color border-b mb-6 px-3 py-3"
               >
                 <FaArrowLeft /> Volver a Sur Atlántida
               </NavLink>
+
+              {/* Manage users */}
+              <MenuItem
+                className={`${
+                  location?.pathname === "/admin/dashboard/gestionar-usuarios"
+                    ? "bg-white text-primary-color"
+                    : "bg-primary-color/5 text-primary-color"
+                } `}
+                onClick={() => navigate(`/admin/dashboard/gestionar-usuarios`)}
+                icon={<MdManageAccounts size={24} />}
+              >
+                Gestionar Usuarios
+              </MenuItem>
 
               {/* Dynamic */}
               {subMenuDashboardPage?.map((subMenuPage, index) => (
@@ -63,7 +80,10 @@ const RootDashboard = () => {
                   key={index}
                   className="bg-primary-color/5 text-primary-color animation-fade"
                 >
-                  <SubMenu className="bg-primary-color/25" label={subMenuPage?.labelSection}>
+                  <SubMenu
+                    className="bg-primary-color/25"
+                    label={subMenuPage?.labelSection}
+                  >
                     {subMenuPage?.labelAccordions?.map(
                       (labelAccordion, index) => (
                         <MenuItem
