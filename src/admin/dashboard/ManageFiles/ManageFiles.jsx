@@ -101,7 +101,7 @@ const CreateElement = ({ queries }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="border-b pb-8">
+      <form onSubmit={handleSubmit} className="py-2.5 px-2.5 border rounded">
         <label>
           <span className="font-semibold">Please, select a file.</span>
           <input

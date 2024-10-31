@@ -81,37 +81,71 @@ const CreateUser = ({ queries }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // const formData = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-    // formData.append("pageName", queries?.pageName);
-    // formData.append("sectionName", queries?.sectionName);
-    // formData.append("accordionName", queries?.accordionName);
+    formData.append("pageName", queries?.pageName);
+    formData.append("sectionName", queries?.sectionName);
+    formData.append("accordionName", queries?.accordionName);
 
-    // createUserMutation?.mutate(formData);
+    createUserMutation?.mutate(formData);
 
     e?.target?.reset();
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="border-b pb-8">
+      <form onSubmit={handleSubmit} className="py-2.5 px-2.5 border rounded">
+        <h3 className="text-2xl font-semibold mb-3 text-black/80d">Crear Usuario</h3>
+
+        {/* Nombre */}
         <label>
-          <span className="font-semibold">Please, select a file.</span>
+          <span className="font-semibold">Nombre</span>
           <input
-            type="file"
-            className="rounded bg-tertiary-color mb-3 block"
-            name="uploadDocuments"
-            accept="image/*"
+            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+            name="username"
+            type="text"
             required
-            multiple
+          />
+        </label>
+
+        {/* Email */}
+        <label>
+          <span className="font-semibold">Email</span>
+          <input
+            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+            name="username"
+            type="email"
+            required
+          />
+        </label>
+
+        {/* Contraseña */}
+        <label>
+          <span className="font-semibold">Contraseña</span>
+          <input
+            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+            name="password"
+            type="password"
+            required
+          />
+        </label>
+
+        {/* Repetir Contraseña */}
+        <label>
+          <span className="font-semibold">Repetir Contraseña</span>
+          <input
+            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+            name="repeatPassword"
+            type="password"
+            required
           />
         </label>
 
         <button
           className="btn-normal button-red-primary disabled:bg-red-200"
-          // disabled={createElementMutation?.isPending}
+          disabled={createUserMutation?.isPending}
         >
-          {/* {createElementMutation?.isPending ? "Creando..." : "Crear"} */}
+          {createUserMutation?.isPending ? "Creando..." : "Crear"}
         </button>
       </form>
     </>
@@ -216,7 +250,7 @@ const CellCustomElement = ({ dataRow }) => {
           <input
             type="file"
             multiple
-            className="rounded bg-tertiary-color mb-3"
+            className="rounded px-2 bg-tertiary-color mb-3"
             defaultValue={dataRow?.uploadDocuments}
             name="uploadDocuments"
             accept="image/*"
