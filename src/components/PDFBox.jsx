@@ -102,7 +102,7 @@ const PDFBox = ({ pageName, sectionName, accordionName }) => {
                 <Link
                   target="_blank"
                   className="text-primary-color hover:underline hover:opacity-55"
-                  to={`http://192.168.100.22:3500/upload/${file?.fileName}`}
+                  to={`https://suratlantida.com:3500/upload/${file?.fileName}`}
                 >
                   {file?.fileName}
                 </Link>
