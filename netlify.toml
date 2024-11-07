@@ -1,11 +1,3 @@
-# Redirige las solicitudes de la API a tu servidor backend
-[[redirects]]
-  from = "/api/*"
-  to = "http://suratlantida.com:3500/api/:splat"
-  status = 200
-  force = true
-
-# Redirige todas las demás solicitudes a index.html (manejo de rutas de la app)
 [[redirects]]
   from = "/*"
   to = "/index.html"

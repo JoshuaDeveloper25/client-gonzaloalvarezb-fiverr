@@ -4,8 +4,8 @@ import pdfIcono from "../images/pdf-icono.png";
 import { TECollapse } from "tw-elements-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import axios from "axios";
 import Spinner from "./Spinner";
+import axios from "axios";
 
 const PDFBox = ({ pageName, sectionName, accordionName }) => {
   const [activeElement, setActiveElement] = useState("");
