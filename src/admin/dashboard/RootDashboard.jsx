@@ -73,33 +73,33 @@ const RootDashboard = () => {
                 Gestionar Usuarios
               </MenuItem>
 
-              {/* Dynamic */}
               {subMenuDashboardPage?.map((subMenuPage, index) => (
                 <SubMenu
+                  className="bg-primary-color/5 text-primary-color animation-fade"
                   label={subMenuPage?.labelPage}
                   key={index}
-                  className="bg-primary-color/5 text-primary-color animation-fade"
                 >
-                  <SubMenu
-                    className="bg-primary-color/25"
-                    label={subMenuPage?.labelSection}
-                  >
-                    {subMenuPage?.labelAccordions?.map(
-                      (labelAccordion, index) => (
+                  {subMenuPage?.labelSection?.map((item, index) => (
+                    <SubMenu
+                      className="bg-primary-color/25"
+                      label={item?.sectionTitle}
+                      key={index}
+                    >
+                      {item?.labelAccordions?.map((labelAccordion, index) => (
                         <MenuItem
-                          className="bg-primary-color/45"
-                          key={index}
                           onClick={() =>
                             navigate(
-                              `/admin/dashboard/gestionar-archivos?pageName=${subMenuPage?.labelPage}&sectionName=${subMenuPage?.labelSection}&accordionName=${labelAccordion?.labelNameAccordion}`
+                              `/admin/dashboard/gestionar-archivos?pageName=${subMenuPage?.labelPage}&sectionName=${item?.sectionTitle}&accordionName=${labelAccordion?.labelNameAccordion}`
                             )
                           }
+                          className="bg-primary-color/45"
+                          key={index}
                         >
                           {labelAccordion?.labelNameAccordion}
                         </MenuItem>
-                      )
-                    )}
-                  </SubMenu>
+                      ))}
+                    </SubMenu>
+                  ))}
                 </SubMenu>
               ))}
 

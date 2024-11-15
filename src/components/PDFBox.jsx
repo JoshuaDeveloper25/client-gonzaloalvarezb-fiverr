@@ -21,8 +21,6 @@ const PDFBox = ({ pageName, sectionName, accordionName }) => {
       ),
   });
 
-  console.log(data);
-
   const handleClick = (value) => {
     if (value === activeElement) {
       setActiveElement("");
@@ -40,7 +38,7 @@ const PDFBox = ({ pageName, sectionName, accordionName }) => {
           className="w-12 h-12 object-cover"
           src={pdfIcono}
         />
-        <h3 className="family-nunito-black text-xl">Fiduciaria Atlántida</h3>
+        <h3 className="family-nunito-black text-xl">{sectionName}</h3>
       </div>
 
       {/* Accordion */}
@@ -56,7 +54,7 @@ const PDFBox = ({ pageName, sectionName, accordionName }) => {
           aria-controls="collapseOne"
         >
           <div>
-            <p className="text-sm">Documentos</p>
+            <p className="text-sm">{accordionName}</p>
           </div>
 
           <div>
