@@ -1,5 +1,5 @@
 export const subMenuDashboardPage = [
-  // --> Está es otra página de PDFs
+  // --> Está es otra página de PDFs - Fiduciaria Transparencia
   {
     labelPage: "Fiduciaria Transparencia",
     labelSection: [
@@ -35,7 +35,7 @@ export const subMenuDashboardPage = [
     ],
   },
 
-  // --> Está es otra página de PDFs
+  // --> Está es otra página de PDFs - Marco Legal
   {
     labelPage: "Marco Legal",
     labelSection: [
@@ -55,7 +55,7 @@ export const subMenuDashboardPage = [
     ],
   },
 
-  // --> Está es otra página de PDFs
+  // --> Está es otra página de PDFs - Advisors Publicaciones
   {
     labelPage: "Advisors Publicaciones",
     labelSection: [
@@ -87,7 +87,7 @@ export const subMenuDashboardPage = [
     ],
   },
 
-  // --> Está es otra página de PDFs
+  // --> Está es otra página de PDFs - Casa Valores Publicaciones
   {
     labelPage: "Casa Valores Publicaciones",
     labelSection: [
@@ -110,4 +110,27 @@ export const subMenuDashboardPage = [
       },
     ],
   },
+];
+
+export const fiduciariaTransparenciaSections = [
+  "Fiduciaria Atlántida",
+  "Fondos",
+  "Fideicomisos de Titularización",
+  "Fideicomisos Inmobiliarios",
+  "Encargo Fiduciario",
+  "Fideicomiso de Administración",
+  "Fideicomiso de Inversión",
+  "Fideicomiso de Garantía",
+  "Rendiciones Cuentas de Encargos Fiduciarios SAGAP",
+];
+
+export const fiduciariaMarcoSections = ["Documentos"];
+
+export const fiduciariaAdvisorsSections = [
+  "Publicaciones 2024",
+  "Publicaciones 2023",
+  "Publicaciones 2022",
+  "Publicaciones 2021",
+  "Publicaciones 2020",
+  "Publicaciones 2019",
 ];
