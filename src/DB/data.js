@@ -1,3 +1,4 @@
+// Estos son los links del dashboard del admin
 export const subMenuDashboardPage = [
   // --> Está es otra página de PDFs - Fiduciaria Transparencia
   {
@@ -112,6 +113,7 @@ export const subMenuDashboardPage = [
   },
 ];
 
+// Estas son las secciones de PDFs que tienen las páginas con los mismos
 export const fiduciariaTransparenciaSections = [
   "Fiduciaria Atlántida",
   "Fondos",
