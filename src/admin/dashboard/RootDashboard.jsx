@@ -15,6 +15,9 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
+import { BsPinAngleFill } from "react-icons/bs";
+import { TfiLayoutAccordionList } from "react-icons/tfi";
+import { GrDocumentWord } from "react-icons/gr";
 
 const RootDashboard = () => {
   const { setUserInfo } = useContext(AppContext);
@@ -33,10 +36,11 @@ const RootDashboard = () => {
     <div className="md:flex min-h-svh">
       <div className="sticky inset-0 flex h-full">
         <Sidebar
-          breakPoint="md"
-          backgroundColor="#E5E5E5"
           onBackdropClick={() => setToggled(false)}
+          backgroundColor="#E5E5E5"
           toggled={toggled}
+          breakPoint="md"
+          width="280px"
         >
           <Menu className="text-white">
             <div className="flex flex-col min-h-svh">
@@ -61,28 +65,34 @@ const RootDashboard = () => {
               </NavLink>
 
               {/* Manage users */}
-              <MenuItem
-                className={`${
-                  location?.pathname === "/admin/dashboard/gestionar-usuarios"
-                    ? "bg-white text-primary-color"
-                    : "bg-primary-color/5 text-primary-color"
-                } `}
-                onClick={() => navigate(`/admin/dashboard/gestionar-usuarios`)}
-                icon={<MdManageAccounts size={24} />}
-              >
-                Gestionar Usuarios
-              </MenuItem>
+              <div className="border-b border-secondary-color/30 pb-4 mb-4">
+                <MenuItem
+                  className={`${
+                    location?.pathname === "/admin/dashboard/gestionar-usuarios"
+                      ? "bg-white text-primary-color"
+                      : "bg-primary-color/5 text-primary-color"
+                  } `}
+                  onClick={() =>
+                    navigate(`/admin/dashboard/gestionar-usuarios`)
+                  }
+                  icon={<MdManageAccounts size={24} />}
+                >
+                  Gestionar Usuarios
+                </MenuItem>
+              </div>
 
               {subMenuDashboardPage?.map((subMenuPage, index) => (
                 <SubMenu
                   className="bg-primary-color/5 text-primary-color animation-fade"
                   label={subMenuPage?.labelPage}
+                  icon={<GrDocumentWord />}
                   key={index}
                 >
                   {subMenuPage?.labelSection?.map((item, index) => (
                     <SubMenu
                       className="bg-primary-color/25"
                       label={item?.sectionTitle}
+                      icon={<BsPinAngleFill className="margin-end-0" />}
                       key={index}
                     >
                       {item?.labelAccordions?.map((labelAccordion, index) => (
@@ -93,6 +103,7 @@ const RootDashboard = () => {
                             )
                           }
                           className="bg-primary-color/45"
+                          icon={<TfiLayoutAccordionList />}
                           key={index}
                         >
                           {labelAccordion?.labelNameAccordion}

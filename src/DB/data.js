@@ -44,12 +44,11 @@ export const subMenuDashboardPage = [
         sectionTitle: "Documentos",
         labelAccordions: [
           {
-            labelNameAccordion: "Código Orgánico Monetario y Financiero",
+            labelNameAccordion: "Sección 1",
           },
 
           {
-            labelNameAccordion:
-              "Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros",
+            labelNameAccordion: "Sección 2",
           },
         ],
       },
@@ -64,11 +63,11 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2019",
         labelAccordions: [
           {
-            labelNameAccordion: "Aviso de privacidad de datos personales 1",
+            labelNameAccordion: "Sección 1",
           },
 
           {
-            labelNameAccordion: "Aviso de privacidad de datos personales 2",
+            labelNameAccordion: "Sección 2",
           },
         ],
       },
@@ -77,11 +76,63 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2020",
         labelAccordions: [
           {
-            labelNameAccordion: "Aviso de privacidad de datos personales 1",
+            labelNameAccordion: "Sección 1",
           },
 
           {
-            labelNameAccordion: "Aviso de privacidad de datos personales 2",
+            labelNameAccordion: "Sección 2",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2021",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Sección 1",
+          },
+
+          {
+            labelNameAccordion: "Sección 2",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2022",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Sección 1",
+          },
+
+          {
+            labelNameAccordion: "Sección 2",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2023",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Sección 1",
+          },
+
+          {
+            labelNameAccordion: "Sección 2",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2024",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Sección 1",
+          },
+
+          {
+            labelNameAccordion: "Sección 2",
           },
         ],
       },
@@ -95,18 +146,36 @@ export const subMenuDashboardPage = [
       {
         sectionTitle: "Publicaciones 2021",
         labelAccordions: [
-          { labelNameAccordion: "Resolución 4282" },
+          { labelNameAccordion: "Sección 1" },
 
-          { labelNameAccordion: "Resolución 5579" },
+          { labelNameAccordion: "Sección 2" },
         ],
       },
 
       {
         sectionTitle: "Publicaciones 2022",
         labelAccordions: [
-          { labelNameAccordion: "Resolución 8587" },
+          { labelNameAccordion: "Sección 1" },
 
-          { labelNameAccordion: "Resolución 8765" },
+          { labelNameAccordion: "Sección 2" },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2023",
+        labelAccordions: [
+          { labelNameAccordion: "Sección 1" },
+
+          { labelNameAccordion: "Sección 2" },
+        ],
+      },
+
+      {
+        sectionTitle: "Publicaciones 2024",
+        labelAccordions: [
+          { labelNameAccordion: "Sección 1" },
+
+          { labelNameAccordion: "Sección 2" },
         ],
       },
     ],

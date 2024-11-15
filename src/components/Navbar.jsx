@@ -60,7 +60,6 @@ const Navbar = () => {
             Gobierno Corporativo
           </NavLink>
 
-
           <div className="group relative cursor-pointer">
             <div className="hover:text-primary-color flex items-center justify-between gap-4">
               <NavLink
@@ -585,7 +584,6 @@ const Navbar = () => {
 
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
-
                   className={
                     "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
@@ -597,7 +595,6 @@ const Navbar = () => {
 
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
-
                   className={
                     "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
@@ -620,7 +617,6 @@ const Navbar = () => {
 
                 <NavLink
                   onClick={() => setNavbarOpen(false)}
-
                   className={
                     "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
                   }
