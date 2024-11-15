@@ -134,3 +134,10 @@ export const fiduciariaAdvisorsSections = [
   "Publicaciones 2020",
   "Publicaciones 2019",
 ];
+
+export const fiduciariaCasaValoresSections = [
+  "Publicaciones 2024",
+  "Publicaciones 2023",
+  "Publicaciones 2022",
+  "Publicaciones 2021",
+];

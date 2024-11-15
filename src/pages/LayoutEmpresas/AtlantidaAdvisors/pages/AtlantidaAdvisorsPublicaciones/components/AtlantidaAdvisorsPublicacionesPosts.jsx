@@ -9,6 +9,7 @@ const AtlantidaAdvisorsPublicacionesPosts = () => {
           <PDFBox
             pageName={"Fiduciaria Transparencia"}
             sectionName={section}
+            sectionIcon="download"
           />
         ))}
       </div>
