@@ -30,12 +30,17 @@ const ManageFiles = () => {
   const columns = [
     {
       header: "Nombre de Archivo",
-      accessorKey: "fileName",
+      accessorKey: "fileTitle",
     },
 
     {
       header: "Acciones",
-      cell: (info) => <CellCustomElement dataRow={info?.row?.original} />,
+      cell: (info) => (
+        <CellCustomElement
+          queries={{ pageName, sectionName, accordionName }}
+          dataRow={info?.row?.original}
+        />
+      ),
     },
   ];
 
@@ -96,6 +101,10 @@ const CreateElement = ({ queries }) => {
 
     createElementMutation?.mutate(formData);
 
+    // If there's any error we don't clear the inputs
+    if (createElementMutation?.isError) return;
+
+    // Means there's no errors && we can clear the inputs
     e?.target?.reset();
   };
 
@@ -103,14 +112,25 @@ const CreateElement = ({ queries }) => {
     <>
       <form onSubmit={handleSubmit} className="py-2.5 px-2.5 border rounded">
         <label>
-          <span className="font-semibold">Please, select a file.</span>
+          <span className="font-semibold">
+            Por favor, seleccione un archivo.
+          </span>
           <input
             type="file"
             className="rounded bg-tertiary-color mb-3 block"
             name="uploadDocuments"
             accept="image/*"
             required
-            multiple
+          />
+        </label>
+
+        <label>
+          <span className="font-semibold">Nombre del Archivo</span>
+          <input
+            type="text"
+            className="rounded outline-none bg-tertiary-color mb-3 w-full py-1.5 px-1.5 block"
+            name="fileTitle"
+            required
           />
         </label>
 
@@ -126,7 +146,7 @@ const CreateElement = ({ queries }) => {
 };
 
 // Actions component from table
-const CellCustomElement = ({ dataRow }) => {
+const CellCustomElement = ({ queries, dataRow }) => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
@@ -220,14 +240,29 @@ const CellCustomElement = ({ dataRow }) => {
         showBtn={false}
       >
         <form onSubmit={handleSubmit}>
-          <input
-            type="file"
-            multiple
-            className="rounded bg-tertiary-color mb-3"
-            defaultValue={dataRow?.uploadDocuments}
-            name="uploadDocuments"
-            accept="image/*"
-          />
+          <label>
+            <span className="font-semibold">
+              Por favor, seleccione un archivo.
+            </span>
+            <input
+              type="file"
+              className="rounded bg-tertiary-color mb-3"
+              defaultValue={dataRow?.uploadDocuments}
+              name="uploadDocuments"
+              accept="image/*"
+            />
+          </label>
+
+          <label className="block">
+            <span className="font-semibold">Nombre del Archivo</span>
+            <input
+              type="text"
+              className="rounded outline-none bg-tertiary-color mb-3 w-full py-1.5 px-1.5 block"
+              defaultValue={dataRow?.fileTitle}
+              name="fileTitle"
+              required
+            />
+          </label>
 
           <button
             className="btn-normal button-red-primary w-full"

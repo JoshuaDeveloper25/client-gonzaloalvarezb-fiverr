@@ -78,20 +78,31 @@ const Table = ({ queries = {}, columns = [], data = [] }) => {
         </thead>
 
         {/* Body */}
-        <tbody className="text-lg">
-          {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className={`border-b border-b-gray-300 ${row.id}`}>
-              {row.getVisibleCells().map((cell) => (
-                <td
-                  key={cell.id}
-                  className={`py-3 px-3 text-base text-start text-gray-400`}
-                >
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
+        {!data?.length ? (
+          <div>
+            <h2 className="py-3 px-3 text-black font-semibold">
+              Al parecer no ha agregado nada aún...
+            </h2>
+          </div>
+        ) : (
+          <tbody className="text-lg">
+            {table.getRowModel().rows.map((row) => (
+              <tr
+                key={row.id}
+                className={`border-b border-b-gray-300 ${row.id}`}
+              >
+                {row.getVisibleCells().map((cell) => (
+                  <td
+                    key={cell.id}
+                    className={`py-3 px-3 text-base text-start text-gray-400`}
+                  >
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        )}
       </table>
 
       {/* Pagination */}

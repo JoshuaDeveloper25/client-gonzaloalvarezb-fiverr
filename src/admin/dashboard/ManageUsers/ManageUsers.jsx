@@ -249,7 +249,6 @@ const CellCustomElement = ({ dataRow }) => {
         <form onSubmit={handleSubmit}>
           <input
             type="file"
-            multiple
             className="rounded px-2 bg-tertiary-color mb-3"
             defaultValue={dataRow?.uploadDocuments}
             name="uploadDocuments"
