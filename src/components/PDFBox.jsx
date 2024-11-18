@@ -101,7 +101,7 @@ const PDFBox = ({
                 <TECollapse
                   key={file?._id}
                   show={activeElement === accordion}
-                  className="!mt-0 !rounded-b-none !shadow-none py-5 my-5"
+                  className="!mt-0 !rounded-b-none !shadow-none py-2"
                 >
                   <div className="flex items-center pb-2 border-b">
                     <div>
@@ -116,13 +116,13 @@ const PDFBox = ({
                       <Link
                         target="_blank"
                         className="text-primary-color hover:underline hover:opacity-55"
-                        // Builded
+                        // On production/www.suratlantida.com
                         // to={`https://suratlantida.com:3500/upload/${file?.fileName}`}
 
-                        // Locally
+                        // On development/local
                         to={`http://192.168.100.22:3500/upload/${file?.fileName}`}
                       >
-                        {file?.fileName}
+                        {file?.fileTitle}
                       </Link>
                     </div>
                   </div>
