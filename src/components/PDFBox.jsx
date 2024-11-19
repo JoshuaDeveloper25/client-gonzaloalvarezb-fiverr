@@ -27,9 +27,30 @@ const PDFBox = ({
       ),
   });
 
-  const accordionGrouped = Object?.groupBy(
+  // const accordionGrouped = Object?.groupBy(
+  //   data?.data ?? [],
+  //   ({ accordionName }) => accordionName
+  // );
+
+  const groupBy = (array, keyFn) => {
+    return array.reduce((result, item) => {
+
+      const key = keyFn(item);
+
+      if (!result[key]) {
+        result[key] = [];
+      }
+
+      result[key].push(item);
+
+      return result;
+    }, {});
+  };
+
+  // Agrupamos los datos con la función personalizada
+  const accordionGrouped = groupBy(
     data?.data ?? [],
-    ({ accordionName }) => accordionName
+    (item) => item.accordionName
   );
 
   const handleClick = (value) => {
