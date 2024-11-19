@@ -79,11 +79,9 @@ const Table = ({ queries = {}, columns = [], data = [] }) => {
 
         {/* Body */}
         {!data?.length ? (
-          <div>
-            <h2 className="py-3 px-3 text-black font-semibold">
-              Al parecer no ha agregado nada aún...
-            </h2>
-          </div>
+          <tbody className="py-3 px-3 text-black font-semibold">
+            <tr>Al parecer no ha agregado nada aún...</tr>
+          </tbody>
         ) : (
           <tbody className="text-lg">
             {table.getRowModel().rows.map((row) => (

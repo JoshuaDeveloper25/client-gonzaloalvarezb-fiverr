@@ -110,7 +110,7 @@ const CreateElement = ({ queries }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="py-2.5 px-2.5 border rounded">
+      <form onSubmit={handleSubmit} className="w-full py-2.5 px-2.5 border rounded">
         <label>
           <span className="font-semibold">
             Por favor, seleccione un archivo.
@@ -118,8 +118,8 @@ const CreateElement = ({ queries }) => {
           <input
             type="file"
             className="rounded bg-tertiary-color mb-3 block"
+            accept=".doc,.docx,.xls,.xlsx,.pdf,image/*"
             name="uploadDocuments"
-            accept="image/*"
             required
           />
         </label>
@@ -249,7 +249,7 @@ const CellCustomElement = ({ queries, dataRow }) => {
               className="rounded bg-tertiary-color mb-3"
               defaultValue={dataRow?.uploadDocuments}
               name="uploadDocuments"
-              accept="image/*"
+              accept=".doc,.docx,.xls,.xlsx,.pdf,image/*"
             />
           </label>
 

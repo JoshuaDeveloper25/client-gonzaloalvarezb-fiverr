@@ -48,7 +48,7 @@ const ManageUsers = () => {
   }
 
   return (
-    <div className="container-page md:px-3 px-0 my-5">
+    <div className="container-page md:px-3 px-0 my-5 w-full">
       <CreateUser />
 
       <Table columns={columns} data={data?.data} />
@@ -94,7 +94,7 @@ const CreateUser = ({ queries }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="py-2.5 px-2.5 border rounded">
+      <form onSubmit={handleSubmit} className="w-full py-2.5 px-2.5 border rounded">
         <h3 className="text-2xl font-semibold mb-3 text-black/80d">Crear Usuario</h3>
 
         {/* Nombre */}
