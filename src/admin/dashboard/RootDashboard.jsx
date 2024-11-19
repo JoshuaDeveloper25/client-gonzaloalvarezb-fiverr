@@ -140,7 +140,7 @@ const RootDashboard = () => {
       </div>
 
       {/* --> This is the admin panel (Right Content) */}
-      <main className="px-5">
+      <main className="px-5 w-fit">
         <Outlet />
       </main>
 
