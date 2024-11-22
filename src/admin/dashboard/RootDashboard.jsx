@@ -21,7 +21,7 @@ import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 const RootDashboard = () => {
-  const { setUserInfo } = useContext(AppContext);
+  const { userInfo, setUserInfo } = useContext(AppContext);
   const [toggled, setToggled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -66,21 +66,24 @@ const RootDashboard = () => {
               </NavLink>
 
               {/* Manage users */}
-              <div className="border-b border-secondary-color/30 pb-4 mb-4">
-                <MenuItem
-                  className={`${
-                    location?.pathname === "/admin/dashboard/gestionar-usuarios"
-                      ? "bg-white text-primary-color"
-                      : "bg-primary-color/5 text-primary-color"
-                  } `}
-                  onClick={() =>
-                    navigate(`/admin/dashboard/gestionar-usuarios`)
-                  }
-                  icon={<MdManageAccounts size={24} />}
-                >
-                  Gestionar Usuarios
-                </MenuItem>
-              </div>
+              {userInfo?.role === "admin" && (
+                <div className="border-b border-secondary-color/30 pb-4 mb-4">
+                  <MenuItem
+                    className={`${
+                      location?.pathname ===
+                      "/admin/dashboard/gestionar-usuarios"
+                        ? "bg-white text-primary-color"
+                        : "bg-primary-color/5 text-primary-color"
+                    } `}
+                    onClick={() =>
+                      navigate(`/admin/dashboard/gestionar-usuarios`)
+                    }
+                    icon={<MdManageAccounts size={24} />}
+                  >
+                    Gestionar Usuarios
+                  </MenuItem>
+                </div>
+              )}
 
               <h2 className="flex items-center ps-8 gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
                 Páginas: <FaArrowDownLong size={10} />
