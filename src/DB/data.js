@@ -99,9 +99,9 @@ export const subMenuDashboardPage = [
     ],
   },
 
-  // --> Está es otra página de PDFs - Marco Legal
+  // --> Está es otra página de PDFs - Fiducaria Marco
   {
-    labelPage: "Marco Legal",
+    labelPage: "Fiduciaria Marco",
     labelSection: [
       {
         sectionTitle: "Documentos",

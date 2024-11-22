@@ -1,8 +1,9 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
+import { Link, useSearchParams } from "react-router-dom";
 import { MdDelete, MdModeEdit } from "react-icons/md";
+import LinkPageFile from "./components/LinkPageFile";
 import { getError } from "../../../utils/getError";
-import { useSearchParams } from "react-router-dom";
 import Spinner from "../../../components/Spinner";
 import { ToggleSwitch } from "flowbite-react";
 import Table from "../../../components/Table";
@@ -60,6 +61,8 @@ const ManageFiles = () => {
 
   return (
     <div className="container-page md:px-3 px-0 my-5">
+      <LinkPageFile pageName={pageName} />
+
       <CreateElement queries={{ pageName, sectionName, accordionName }} />
 
       <Table

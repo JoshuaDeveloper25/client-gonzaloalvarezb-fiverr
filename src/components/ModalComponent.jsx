@@ -45,7 +45,7 @@ const ModalComponent = ({
           <div
             id="default-modal"
             aria-hidden="true"
-            className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 justify-center z-[9999999] items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 justify-center z-[999] items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
           >
             <div
               className="h-[100vh] fixed top-0 w-full bg-black/40"

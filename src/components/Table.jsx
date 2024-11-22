@@ -92,7 +92,7 @@ const Table = ({ queries = {}, columns = [], data = [] }) => {
                 {row.getVisibleCells().map((cell) => (
                   <td
                     key={cell.id}
-                    className={`py-3 px-3 text-base text-start text-gray-400`}
+                    className={`py-3 px-3 text-base text-start text-gray-500`}
                   >
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>

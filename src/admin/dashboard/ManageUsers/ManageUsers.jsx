@@ -2,6 +2,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
 import { MdDelete, MdModeEdit } from "react-icons/md";
 import { getError } from "../../../utils/getError";
+import formatDate from "../../../utils/formatDate";
 import Spinner from "../../../components/Spinner";
 import Table from "../../../components/Table";
 import { IoMdEyeOff } from "react-icons/io";
@@ -9,7 +10,6 @@ import { IoEye } from "react-icons/io5";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
-import formatDate from "../../../utils/formatDate";
 
 const ManageUsers = () => {
   // Get all users
@@ -200,20 +200,20 @@ const CreateUser = ({ queries }) => {
 
 // Actions component from table
 const CellCustomElement = ({ dataRow }) => {
+  const [seeRepeatPassword, setSeeRepeatPassword] = useState(false);
+  const [seePassword, setSeePassword] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
   // Edit
-  const { mutate, isPending } = useMutation({
+  const { mutate, isPending, error } = useMutation({
     mutationFn: (elementInfo) =>
       axios.put(
-        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
-          dataRow?._id
-        }`,
+        `${import.meta.env.VITE_BASE_URL}/users/edit-user/${dataRow?._id}`,
         elementInfo
       ),
     onSuccess: () => {
-      queryClient.invalidateQueries(["pdfFiles"]);
+      queryClient.invalidateQueries(["users"]);
       toast.success(`Exitosamente editado!`);
       setShowModal(!showModal);
     },
@@ -226,14 +226,21 @@ const CellCustomElement = ({ dataRow }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
+    const userInfo = {
+      name: e?.target?.name?.value?.trim(),
+      email: e?.target?.email?.value?.trim(),
+      password: e?.target?.password?.value?.trim(),
+    };
 
-    formData.append("uploadDocuments", e?.target?.uploadDocuments?.files);
-    formData.append("pageName", queries?.pageName);
-    formData.append("sectionName", queries?.sectionName);
-    formData.append("accordionName", queries?.accordionName);
+    if (!userInfo?.name || !userInfo?.email) {
+      return toast.error("¡El campo de nombre e email son obligatorios!");
+    } else if (userInfo?.password !== e?.target?.repeatPassword?.value) {
+      return toast.error("¡Contraseñas no coinciden!");
+    }
 
-    mutate(formData);
+    mutate(userInfo);
+
+    if (error) return;
 
     e?.target?.reset();
   };
@@ -287,23 +294,82 @@ const CellCustomElement = ({ dataRow }) => {
       <ModalComponent
         setShowModal={setShowModal}
         showModal={showModal}
-        titleModal={"Editar"}
+        titleModal={"Editar Usuario"}
         showBtn={false}
       >
         <form onSubmit={handleSubmit}>
-          <input
-            type="file"
-            className="rounded px-2 bg-tertiary-color mb-3"
-            defaultValue={dataRow?.uploadDocuments}
-            name="uploadDocuments"
-            accept="image/*"
-          />
+          {/* Nombre */}
+          <label>
+            <span className="font-semibold">Nombre</span>
+            <input
+              className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+              defaultValue={dataRow?.name}
+              name="name"
+              type="text"
+            />
+          </label>
+
+          {/* Email */}
+          <label>
+            <span className="font-semibold">Email</span>
+            <input
+              className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+              defaultValue={dataRow?.email}
+              name="email"
+              type="email"
+            />
+          </label>
+
+          {/* Contraseña */}
+          <label>
+            <span className="font-semibold">Contraseña</span>
+            <div className="relative">
+              <input
+                className="rounded px-2 bg-tertiary-color w-full py-1 outline-primary-color block"
+                type={seePassword ? "text" : "password"}
+                placeholder="Ingrese Contraseña Nueva"
+                name="password"
+              />
+
+              <button
+                onClick={() => setSeePassword(!seePassword)}
+                className="absolute top-2 right-2"
+                type="button"
+              >
+                {seePassword ? <IoEye /> : <IoMdEyeOff />}
+              </button>
+            </div>
+            <span className="block mb-3 text-yellow-500 text-sm font-bold mt-1">
+              Si no va a editar su contraseña, déjelo en blanco.
+            </span>
+          </label>
+
+          {/* Repetir Contraseña */}
+          <label className="block">
+            <span className="font-semibold">Repetir Contraseña</span>
+            <div className="relative">
+              <input
+                className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+                type={seeRepeatPassword ? "text" : "password"}
+                placeholder="Repita Contraseña Nueva"
+                name="repeatPassword"
+              />
+
+              <button
+                onClick={() => setSeeRepeatPassword(!seeRepeatPassword)}
+                className="absolute top-2 right-2"
+                type="button"
+              >
+                {seeRepeatPassword ? <IoEye /> : <IoMdEyeOff />}
+              </button>
+            </div>
+          </label>
 
           <button
-            className="btn-normal button-red-primary w-full"
+            className="btn-normal button-red-primary w-full disabled:bg-primary-color/50"
             disabled={isPending}
           >
-            Editar
+            {isPending ? "Guardando cambios..." : "Editar"}
           </button>
         </form>
       </ModalComponent>

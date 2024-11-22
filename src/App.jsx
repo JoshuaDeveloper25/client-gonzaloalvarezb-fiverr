@@ -418,9 +418,10 @@ const App = () => {
       <AppProvider>
         <Suspense fallback={<Spinner />}>
           <ToastContainer
+            className={"z-[999999999]"}
             pauseOnFocusLoss={false}
-            hideProgressBar={true}
             position="bottom-center"
+            hideProgressBar={true}
             autoClose={2000}
             theme="colored"
             draggable
