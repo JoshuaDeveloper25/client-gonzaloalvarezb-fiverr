@@ -4,6 +4,8 @@ import { MdDelete, MdModeEdit } from "react-icons/md";
 import { getError } from "../../../utils/getError";
 import Spinner from "../../../components/Spinner";
 import Table from "../../../components/Table";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoEye } from "react-icons/io5";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
@@ -13,15 +15,16 @@ const ManageUsers = () => {
   const { data, isLoading } = useQuery({
     queryKey: ["users"],
     queryFn: async () =>
-      await axios?.get(`${import.meta.env.VITE_BASE_URL}/users/`),
-    enabled: false,
+      await axios?.get(`${import.meta.env.VITE_BASE_URL}/users/get-users`),
   });
+
+  console.log(data);
 
   // Table headers and keys
   const columns = [
     {
       header: "Nombre",
-      accessorKey: "username",
+      accessorKey: "name",
     },
 
     {
@@ -30,8 +33,13 @@ const ManageUsers = () => {
     },
 
     {
-      header: "Contraseña",
-      accessorKey: "password",
+      header: "Rol",
+      accessorKey: "role",
+    },
+
+    {
+      header: "Creado",
+      accessorKey: "createdAt",
     },
 
     {
@@ -61,17 +69,17 @@ export default ManageUsers;
 
 // Create User
 const CreateUser = ({ queries }) => {
-  const [showModal, setShowModal] = useState(false);
+  const [seeRepeatPassword, setSeeRepeatPassword] = useState(false);
+  const [seePassword, setSeePassword] = useState(false);
   const queryClient = useQueryClient();
 
   // Create
   const createUserMutation = useMutation({
     mutationFn: (userInfo) =>
-      axios.post(`${import.meta.env.VITE_BASE_URL}/users/`, userInfo),
+      axios.post(`${import.meta.env.VITE_BASE_URL}/users/register`, userInfo),
     onSuccess: () => {
       queryClient.invalidateQueries(["users"]);
-      toast.success(`Exitosamente creado!`);
-      setShowModal(!showModal);
+      toast.success(`Usuario exitosamente creado!`);
     },
     onError: (err) => {
       toast.error(getError(err));
@@ -82,13 +90,21 @@ const CreateUser = ({ queries }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const userInfo = {
+      name: e?.target?.name?.value?.trim(),
+      email: e?.target?.email?.value?.trim(),
+      password: e?.target?.password?.value?.trim(),
+    };
 
-    formData.append("pageName", queries?.pageName);
-    formData.append("sectionName", queries?.sectionName);
-    formData.append("accordionName", queries?.accordionName);
+    if (Object.values(userInfo).includes("")) {
+      return toast.error("¡Todos los campos son obligatorios!");
+    } else if (userInfo?.password !== e?.target?.repeatPassword?.value) {
+      return toast.error("¡Contraseñas no coinciden!");
+    }
 
-    createUserMutation?.mutate(formData);
+    createUserMutation?.mutate(userInfo);
+
+    if (createUserMutation?.error) return;
 
     e?.target?.reset();
   };
@@ -108,9 +124,8 @@ const CreateUser = ({ queries }) => {
           <span className="font-semibold">Nombre</span>
           <input
             className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
-            name="username"
+            name="name"
             type="text"
-            required
           />
         </label>
 
@@ -119,32 +134,49 @@ const CreateUser = ({ queries }) => {
           <span className="font-semibold">Email</span>
           <input
             className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
-            name="username"
+            name="email"
             type="email"
-            required
           />
         </label>
 
         {/* Contraseña */}
         <label>
           <span className="font-semibold">Contraseña</span>
-          <input
-            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
-            name="password"
-            type="password"
-            required
-          />
+          <div className="relative">
+            <input
+              className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+              type={seePassword ? "text" : "password"}
+              name="password"
+            />
+
+            <button
+              onClick={() => setSeePassword(!seePassword)}
+              className="absolute top-2 right-2"
+              type="button"
+            >
+              {seePassword ? <IoEye /> : <IoMdEyeOff />}
+            </button>
+          </div>
         </label>
 
         {/* Repetir Contraseña */}
         <label>
           <span className="font-semibold">Repetir Contraseña</span>
-          <input
-            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
-            name="repeatPassword"
-            type="password"
-            required
-          />
+          <div className="relative">
+            <input
+              className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
+              type={seeRepeatPassword ? "text" : "password"}
+              name="repeatPassword"
+            />
+
+            <button
+              onClick={() => setSeeRepeatPassword(!seeRepeatPassword)}
+              className="absolute top-2 right-2"
+              type="button"
+            >
+              {seeRepeatPassword ? <IoEye /> : <IoMdEyeOff />}
+            </button>
+          </div>
         </label>
 
         <button
@@ -202,13 +234,13 @@ const CellCustomElement = ({ dataRow }) => {
   const deleteMutation = useMutation({
     mutationFn: (elementInfo) =>
       axios.delete(
-        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
+        `${import.meta.env.VITE_BASE_URL}/users/delete-user/${
           dataRow?._id
         }`,
         elementInfo
       ),
     onSuccess: () => {
-      queryClient.invalidateQueries(["pdfFiles"]);
+      queryClient.invalidateQueries(["users"]);
       toast.success(`Exitosamente eliminado!`);
     },
     onError: (err) => {
@@ -218,7 +250,7 @@ const CellCustomElement = ({ dataRow }) => {
   });
 
   const handleDelete = () => {
-    const confirmDelete = confirm("Deseas eliminar este archivo?");
+    const confirmDelete = confirm("Deseas eliminar este usuario?");
 
     if (!confirmDelete) return;
 

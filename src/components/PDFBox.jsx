@@ -23,7 +23,7 @@ const PDFBox = ({
       await axios?.get(
         `${
           import.meta.env.VITE_BASE_URL
-        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&fileStatus=${"active"}`
+        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&fileStatus=active`
       ),
   });
 
