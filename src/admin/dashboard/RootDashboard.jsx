@@ -43,7 +43,7 @@ const RootDashboard = () => {
           breakPoint="md"
           width="280px"
         >
-          <Menu className="text-white">
+          <Menu className="text-white max-h-svh overflow-y-auto">
             <div className="flex flex-col min-h-svh">
               <div className="block mx-3 mt-4">
                 <Link to={"/admin/dashboard"}>
