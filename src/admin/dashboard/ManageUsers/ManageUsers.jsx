@@ -58,7 +58,7 @@ const ManageUsers = () => {
 
   if (isLoading) {
     return (
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="-z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Spinner />
       </div>
     );
@@ -150,7 +150,7 @@ const CreateUser = ({ queries }) => {
         {/* Contraseña */}
         <label>
           <span className="font-semibold">Contraseña</span>
-          <div className="relative">
+          <div className="relative z-10">
             <input
               className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
               type={seePassword ? "text" : "password"}
@@ -170,7 +170,7 @@ const CreateUser = ({ queries }) => {
         {/* Repetir Contraseña */}
         <label>
           <span className="font-semibold">Repetir Contraseña</span>
-          <div className="relative">
+          <div className="relative z-10">
             <input
               className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
               type={seeRepeatPassword ? "text" : "password"}
@@ -179,7 +179,7 @@ const CreateUser = ({ queries }) => {
 
             <button
               onClick={() => setSeeRepeatPassword(!seeRepeatPassword)}
-              className="absolute top-2 right-2"
+              className="absolute top-2 right-2 z-50"
               type="button"
             >
               {seeRepeatPassword ? <IoEye /> : <IoMdEyeOff />}
@@ -321,9 +321,9 @@ const CellCustomElement = ({ dataRow }) => {
           </label>
 
           {/* Contraseña */}
-          <label>
+          <label className="block">
             <span className="font-semibold">Contraseña</span>
-            <div className="relative">
+            <div className="relative z-10">
               <input
                 className="rounded px-2 bg-tertiary-color w-full py-1 outline-primary-color block"
                 type={seePassword ? "text" : "password"}
@@ -347,7 +347,7 @@ const CellCustomElement = ({ dataRow }) => {
           {/* Repetir Contraseña */}
           <label className="block">
             <span className="font-semibold">Repetir Contraseña</span>
-            <div className="relative">
+            <div className="relative z-10">
               <input
                 className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
                 type={seeRepeatPassword ? "text" : "password"}

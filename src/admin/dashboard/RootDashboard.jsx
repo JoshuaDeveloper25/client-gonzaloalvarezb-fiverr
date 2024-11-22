@@ -13,6 +13,7 @@ import AppContext from "../../context/AppProvider";
 import logo from "../../images/logo-atlantida.png";
 import { MdManageAccounts } from "react-icons/md";
 import { FaArrowDownLong } from "react-icons/fa6";
+import { useMediaQuery } from "react-responsive";
 import { BsPinAngleFill } from "react-icons/bs";
 import { GrDocumentWord } from "react-icons/gr";
 import { useContext, useState } from "react";
@@ -35,13 +36,15 @@ const RootDashboard = () => {
 
   return (
     <div className="md:flex min-h-svh">
-      <div className="sticky inset-0 flex h-full">
+      <div className="sticky z-[9999] inset-0 flex h-full">
         <Sidebar
           onBackdropClick={() => setToggled(false)}
           backgroundColor="#E5E5E5"
           toggled={toggled}
           breakPoint="md"
-          width="280px"
+          // width="280px"
+          collapsed
+          collapsedWidth="280px"
         >
           <Menu className="text-white max-h-svh overflow-y-auto">
             <div className="flex flex-col min-h-svh">
@@ -96,18 +99,18 @@ const RootDashboard = () => {
                   icon={<GrDocumentWord />}
                   key={index}
                 >
-                  <h2 className="flex items-center ps-12  gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
+                  <h2 className="flex items-center gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
                     Secciones: <FaArrowDownLong size={10} />
                   </h2>
 
                   {subMenuPage?.labelSection?.map((item, index) => (
                     <SubMenu
-                      className="bg-primary-color/25"
-                      label={item?.sectionTitle}
                       icon={<BsPinAngleFill className="margin-end-0" />}
+                      className="bg-primary-color/25 "
+                      label={item?.sectionTitle}
                       key={index}
                     >
-                      <h2 className="flex items-center ps-[4.4rem] gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
+                      <h2 className="flex items-center gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
                         Acordeones: <FaArrowDownLong size={10} />
                       </h2>
 
@@ -156,7 +159,7 @@ const RootDashboard = () => {
       </div>
 
       {/* --> This is the admin panel (Right Content) */}
-      <main className="px-5 w-fit">
+      <main className="px-5 md:w-fit w-full">
         <Outlet />
       </main>
 

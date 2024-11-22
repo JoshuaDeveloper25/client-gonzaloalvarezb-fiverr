@@ -1,9 +1,9 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../../../components/ModalComponent";
-import { Link, useSearchParams } from "react-router-dom";
 import { MdDelete, MdModeEdit } from "react-icons/md";
 import LinkPageFile from "./components/LinkPageFile";
 import { getError } from "../../../utils/getError";
+import { useSearchParams } from "react-router-dom";
 import Spinner from "../../../components/Spinner";
 import { ToggleSwitch } from "flowbite-react";
 import Table from "../../../components/Table";
@@ -53,7 +53,7 @@ const ManageFiles = () => {
 
   if (isLoading) {
     return (
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Spinner />
       </div>
     );
@@ -129,7 +129,7 @@ const CreateElement = ({ queries }) => {
           </span>
           <input
             type="file"
-            className="rounded bg-tertiary-color mb-3 block"
+            className="rounded bg-tertiary-color mb-3 w-full block"
             accept=".doc,.docx,.xls,.xlsx,.pdf,image/*"
             name="uploadDocuments"
             required

@@ -95,7 +95,7 @@ body {
   }
 
   .input {
-    @apply w-full px-2 border rounded py-1 outline-primary-color ;
+    @apply w-full px-2 border rounded py-1 outline-primary-color;
   }
 }
 
@@ -343,10 +343,17 @@ body {
 }
 
 .ps-menu-icon {
-  margin-right: 0!important;
+  margin-right: 0 !important;
 }
 
 .toggleSwitchStatus > span {
   font-weight: bold;
   color: #9b9999;
+}
+
+.css-wlra1l {
+  overflow-y: auto!important;
+  max-height: 40rem;
+  width: 350px!important;
+  z-index: 999!important;
 }
