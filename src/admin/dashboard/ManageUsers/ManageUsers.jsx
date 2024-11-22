@@ -9,6 +9,7 @@ import { IoEye } from "react-icons/io5";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import axios from "axios";
+import formatDate from "../../../utils/formatDate";
 
 const ManageUsers = () => {
   // Get all users
@@ -40,6 +41,13 @@ const ManageUsers = () => {
     {
       header: "Creado",
       accessorKey: "createdAt",
+      cell: (info) => {
+        return (
+          <span className="capitalize">
+            {formatDate(info?.row?.original?.createdAt)}
+          </span>
+        );
+      },
     },
 
     {
@@ -234,9 +242,7 @@ const CellCustomElement = ({ dataRow }) => {
   const deleteMutation = useMutation({
     mutationFn: (elementInfo) =>
       axios.delete(
-        `${import.meta.env.VITE_BASE_URL}/users/delete-user/${
-          dataRow?._id
-        }`,
+        `${import.meta.env.VITE_BASE_URL}/users/delete-user/${dataRow?._id}`,
         elementInfo
       ),
     onSuccess: () => {
