@@ -22,6 +22,7 @@ import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 const RootDashboard = () => {
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 650px)" });
   const { userInfo, setUserInfo } = useContext(AppContext);
   const [toggled, setToggled] = useState(false);
   const location = useLocation();
@@ -42,9 +43,9 @@ const RootDashboard = () => {
           backgroundColor="#E5E5E5"
           toggled={toggled}
           breakPoint="md"
-          // width="280px"
-          collapsed
-          collapsedWidth="280px"
+          width={!isLargeScreen ? "280px" : undefined}
+          collapsed={isLargeScreen}
+          collapsedWidth={isLargeScreen ? "280px" : undefined}
         >
           <Menu className="text-white max-h-svh overflow-y-auto">
             <div className="flex flex-col min-h-svh">
