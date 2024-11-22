@@ -23,7 +23,7 @@ const PDFBox = ({
       await axios?.get(
         `${
           import.meta.env.VITE_BASE_URL
-        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}`
+        }/pdf-managements/upload?pageName=${pageName}&sectionName=${sectionName}&fileStatus=${"active"}`
       ),
   });
 
@@ -138,10 +138,10 @@ const PDFBox = ({
                         target="_blank"
                         className="text-primary-color hover:underline hover:opacity-55"
                         // On production/www.suratlantida.com
-                        to={`https://suratlantida.com:3500/upload/${file?.fileName}`}
+                        // to={`https://suratlantida.com:3500/upload/${file?.fileName}`}
 
                         // On development/local
-                        // to={`http://192.168.100.22:3500/upload/${file?.fileName}`}
+                        to={`http://192.168.100.22:3500/upload/${file?.fileName}`}
                       >
                         {file?.fileTitle}
                       </Link>

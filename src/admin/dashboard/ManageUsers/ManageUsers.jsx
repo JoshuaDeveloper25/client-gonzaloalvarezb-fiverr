@@ -14,6 +14,7 @@ const ManageUsers = () => {
     queryKey: ["users"],
     queryFn: async () =>
       await axios?.get(`${import.meta.env.VITE_BASE_URL}/users/`),
+    enabled: false,
   });
 
   // Table headers and keys
@@ -94,8 +95,13 @@ const CreateUser = ({ queries }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="w-full py-2.5 px-2.5 border rounded">
-        <h3 className="text-2xl font-semibold mb-3 text-black/80d">Crear Usuario</h3>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full py-2.5 px-2.5 border rounded shadow-lg hover:shadow-2xl animation-fade"
+      >
+        <h3 className="text-2xl font-semibold mb-3 text-black/80d">
+          Crear Usuario
+        </h3>
 
         {/* Nombre */}
         <label>

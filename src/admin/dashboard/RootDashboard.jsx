@@ -7,17 +7,18 @@ import {
   useLocation,
 } from "react-router-dom";
 import { Menu, MenuItem, Sidebar, SubMenu } from "react-pro-sidebar";
+import { TfiLayoutAccordionList } from "react-icons/tfi";
 import { subMenuDashboardPage } from "../../DB/data";
 import AppContext from "../../context/AppProvider";
 import logo from "../../images/logo-atlantida.png";
 import { MdManageAccounts } from "react-icons/md";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowDownLong } from "react-icons/fa6";
+import { BsPinAngleFill } from "react-icons/bs";
+import { GrDocumentWord } from "react-icons/gr";
 import { useContext, useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
-import { BsPinAngleFill } from "react-icons/bs";
-import { TfiLayoutAccordionList } from "react-icons/tfi";
-import { GrDocumentWord } from "react-icons/gr";
 
 const RootDashboard = () => {
   const { setUserInfo } = useContext(AppContext);
@@ -81,6 +82,10 @@ const RootDashboard = () => {
                 </MenuItem>
               </div>
 
+              <h2 className="flex items-center ps-8 gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
+                Páginas: <FaArrowDownLong size={10} />
+              </h2>
+
               {subMenuDashboardPage?.map((subMenuPage, index) => (
                 <SubMenu
                   className="bg-primary-color/5 text-primary-color animation-fade"
@@ -88,6 +93,10 @@ const RootDashboard = () => {
                   icon={<GrDocumentWord />}
                   key={index}
                 >
+                  <h2 className="flex items-center ps-12  gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
+                    Secciones: <FaArrowDownLong size={10} />
+                  </h2>
+
                   {subMenuPage?.labelSection?.map((item, index) => (
                     <SubMenu
                       className="bg-primary-color/25"
@@ -95,6 +104,10 @@ const RootDashboard = () => {
                       icon={<BsPinAngleFill className="margin-end-0" />}
                       key={index}
                     >
+                      <h2 className="flex items-center ps-[4.4rem] gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
+                        Acordeones: <FaArrowDownLong size={10} />
+                      </h2>
+
                       {item?.labelAccordions?.map((labelAccordion, index) => (
                         <MenuItem
                           onClick={() =>

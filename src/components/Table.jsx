@@ -31,7 +31,7 @@ const Table = ({ queries = {}, columns = [], data = [] }) => {
     <div className="mt-2 overflow-x-auto">
       {/* User location page */}
       {queries?.pageName && queries?.sectionName && queries?.accordionName ? (
-        <p className="capitalize mt-2 text-gray-600">{`${queries?.pageName} > ${queries?.sectionName} > ${queries?.accordionName}`}</p>
+        <p className="capitalize mt-2 font-bold text-white text-center bg-red-400 py-1.5 rounded-sm">{`${queries?.pageName} > ${queries?.sectionName} > ${queries?.accordionName}`}</p>
       ) : null}
 
       {/* --> Input search */}

@@ -35,10 +35,64 @@ export const subMenuDashboardPage = [
       },
 
       {
-        sectionTitle: "Otra seccion mas",
+        sectionTitle: "Fideicomisos de Titularización",
         labelAccordions: [
           {
-            labelNameAccordion: "accordion 1",
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Fideicomisos Inmobiliarios",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Encargo Fiduciario",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Fideicomiso de Administración",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+      
+      {
+        sectionTitle: "Fideicomiso de Inversión",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Fideicomiso de Garantía",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
+          },
+        ],
+      },
+
+      {
+        sectionTitle: "Rendiciones Cuentas de Encargos Fiduciarios SAGAP",
+        labelAccordions: [
+          {
+            labelNameAccordion: "Nombre Accordion",
           },
         ],
       },
@@ -195,7 +249,6 @@ export const subMenuDashboardPage = [
 export const fiduciariaTransparenciaSections = [
   "Fiduciaria Atlántida",
   "Fondos",
-  // "Otra seccion mas",
   "Fideicomisos de Titularización",
   "Fideicomisos Inmobiliarios",
   "Encargo Fiduciario",

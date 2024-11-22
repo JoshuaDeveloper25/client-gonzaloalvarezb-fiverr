@@ -4,6 +4,7 @@ import { MdDelete, MdModeEdit } from "react-icons/md";
 import { getError } from "../../../utils/getError";
 import { useSearchParams } from "react-router-dom";
 import Spinner from "../../../components/Spinner";
+import { ToggleSwitch } from "flowbite-react";
 import Table from "../../../components/Table";
 import { toast } from "react-toastify";
 import { useState } from "react";
@@ -31,6 +32,11 @@ const ManageFiles = () => {
     {
       header: "Nombre de Archivo",
       accessorKey: "fileTitle",
+    },
+
+    {
+      header: "Estatus",
+      cell: (info) => <CellStatus dataRow={info?.row?.original} />,
     },
 
     {
@@ -110,7 +116,10 @@ const CreateElement = ({ queries }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="w-full py-2.5 px-2.5 border rounded">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full py-2.5 px-2.5 border rounded shadow-lg hover:shadow-2xl animation-fade"
+      >
         <label>
           <span className="font-semibold">
             Por favor, seleccione un archivo.
@@ -128,7 +137,7 @@ const CreateElement = ({ queries }) => {
           <span className="font-semibold">Nombre del Archivo</span>
           <input
             type="text"
-            className="rounded outline-none bg-tertiary-color mb-3 w-full py-1.5 px-1.5 block"
+            className="rounded px-2 bg-tertiary-color mb-3 w-full py-1 outline-primary-color block"
             name="fileTitle"
             required
           />
@@ -146,12 +155,12 @@ const CreateElement = ({ queries }) => {
 };
 
 // Actions component from table
-const CellCustomElement = ({ queries, dataRow }) => {
+const CellCustomElement = ({ dataRow }) => {
   const [showModal, setShowModal] = useState(false);
   const queryClient = useQueryClient();
 
   // Edit
-  const { mutate, isPending } = useMutation({
+  const { mutate, isPending, isError } = useMutation({
     mutationFn: (elementInfo) =>
       axios.put(
         `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
@@ -175,13 +184,23 @@ const CellCustomElement = ({ queries, dataRow }) => {
 
     const formData = new FormData();
 
-    formData.append("uploadDocuments", e?.target?.uploadDocuments?.files);
-    formData.append("pageName", queries?.pageName);
-    formData.append("sectionName", queries?.sectionName);
-    formData.append("accordionName", queries?.accordionName);
+    if (
+      e?.target?.uploadDocuments.files[0] !== dataRow?.uploadDocuments &&
+      formData.get("fileTitle") === dataRow?.fileTitle
+    ) {
+      formData.append("uploadDocuments", e?.target?.uploadDocuments.files[0]);
+    } else {
+      formData.append("fileTitle", e?.target?.fileTitle?.value);
+      formData.append("uploadDocuments", e?.target?.uploadDocuments.files[0]);
+    }
 
+    // Send the new or edited information
     mutate(formData);
 
+    // If there's any error we don't clear the inputs
+    if (isError) return;
+
+    // Means there's no errors && we can clear the inputs
     e?.target?.reset();
   };
 
@@ -214,7 +233,7 @@ const CellCustomElement = ({ queries, dataRow }) => {
 
   return (
     <>
-      <article className="flex gap-2 text-3xl">
+      <article className="flex items-center gap-2 text-3xl">
         <button
           disabled={deleteMutation.isPending}
           onClick={() => setShowModal(true)}
@@ -265,13 +284,66 @@ const CellCustomElement = ({ queries, dataRow }) => {
           </label>
 
           <button
-            className="btn-normal button-red-primary w-full"
+            className="btn-normal button-red-primary w-full disabled:opact`"
             disabled={isPending}
           >
-            Editar
+            {isPending ? "Editando..." : "Editar"}
           </button>
         </form>
       </ModalComponent>
+    </>
+  );
+};
+
+// Status
+const CellStatus = ({ dataRow }) => {
+  const [inactive, setInactive] = useState(dataRow?.fileStatus === "active");
+  const queryClient = useQueryClient();
+
+  // Set state of inactive or active
+  const toggleStatusMutation = useMutation({
+    mutationFn: (elementInfo) =>
+      axios.patch(
+        `${import.meta.env.VITE_BASE_URL}/pdf-managements/upload/${
+          dataRow?._id
+        }`,
+        elementInfo
+      ),
+    onSuccess: () => {
+      queryClient.invalidateQueries(["pdfFiles"]);
+      toast.success(`¡Cambio realizado exitamente!`);
+    },
+    onError: (err) => {
+      toast.error(getError(err));
+      console.log(err);
+    },
+  });
+
+  const toggleStatus = () => {
+    const user_request = confirm("¿Está seguro de realizar esta acción?");
+
+    if (!user_request) return;
+
+    setInactive(!inactive);
+
+    // We set the status that the user have selected
+    toggleStatusMutation?.mutate({
+      fileStatus: !inactive ? "active" : "inactive",
+    });
+  };
+
+  return (
+    <>
+      <article className="flex items-center gap-2 text-3xl">
+        <ToggleSwitch
+          className="toggleSwitchStatus"
+          label={inactive ? "Activado" : "Inactivado"}
+          onClick={toggleStatus}
+          onChange={setInactive}
+          checked={inactive}
+          color="green"
+        />
+      </article>
     </>
   );
 };
