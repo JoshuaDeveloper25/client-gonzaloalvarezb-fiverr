@@ -38,7 +38,55 @@ export const subMenuDashboardPage = [
         sectionTitle: "Fideicomisos de Titularización",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Primera Titularización Cartera Factorplus",
+          },
+          
+          {
+            labelNameAccordion: "Primera Titularización Cartera Automotriz - Originarsa",
+          },
+
+          {
+            labelNameAccordion: "Fideicomiso de Titularización de Cartera Novacredit III",
+          },
+
+          {
+            labelNameAccordion: "Fideicomiso de Titularización de Cartera Novacredit IV",
+          },
+
+          {
+            labelNameAccordion: "Primera Titularización Cartera Microcrédito Insotec",
+          },
+
+          {
+            labelNameAccordion: "Titularización Guayaquil Country Club",
+          },
+
+          {
+            labelNameAccordion: "Segunda Titularización Cartera Microcrédito Insotec",
+          },
+          
+          {
+            labelNameAccordion: "Primera Titularización Sindicada Rentas NX - RNT",
+          },
+
+          {
+            labelNameAccordion: "Fideicomiso de Titularización de Cartera Novacredit V",
+          },
+
+          {
+            labelNameAccordion: "Segunda Titularización de Cartera Factorplus",
+          },
+
+          {
+            labelNameAccordion: "Tercera Titularización de Cartera Microcredito Insotec",
+          },
+
+          {
+            labelNameAccordion: "Fideicomiso Titularizacion Proyecto Nuevo Transporte Guayaquil",
+          },
+
+          {
+            labelNameAccordion: "Fideicomiso Titularizacion Botaniqo",
           },
         ],
       },
@@ -47,7 +95,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Fideicomisos Inmobiliarios",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -56,7 +104,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Encargo Fiduciario",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -65,7 +113,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Fideicomiso de Administración",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -74,7 +122,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Fideicomiso de Inversión",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -83,7 +131,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Fideicomiso de Garantía",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -92,7 +140,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Rendiciones Cuentas de Encargos Fiduciarios SAGAP",
         labelAccordions: [
           {
-            labelNameAccordion: "Nombre Accordion",
+            labelNameAccordion: "Documentos",
           },
         ],
       },
@@ -107,11 +155,11 @@ export const subMenuDashboardPage = [
         sectionTitle: "Documentos",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
+            labelNameAccordion: "Código Orgánico Monetario y Financiero",
           },
 
           {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros",
           },
         ],
       },
@@ -126,11 +174,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2019",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
-          },
-
-          {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
         ],
       },
@@ -139,11 +183,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2020",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
-          },
-
-          {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
         ],
       },
@@ -152,11 +192,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2021",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
-          },
-
-          {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
         ],
       },
@@ -165,12 +201,9 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2022",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
 
-          {
-            labelNameAccordion: "Sección 2",
-          },
         ],
       },
 
@@ -178,11 +211,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2023",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
-          },
-
-          {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
         ],
       },
@@ -191,11 +220,7 @@ export const subMenuDashboardPage = [
         sectionTitle: "Publicaciones 2024",
         labelAccordions: [
           {
-            labelNameAccordion: "Sección 1",
-          },
-
-          {
-            labelNameAccordion: "Sección 2",
+            labelNameAccordion: "Click para desplegar toda la información",
           },
         ],
       },
@@ -209,36 +234,28 @@ export const subMenuDashboardPage = [
       {
         sectionTitle: "Publicaciones 2021",
         labelAccordions: [
-          { labelNameAccordion: "Sección 1" },
-
-          { labelNameAccordion: "Sección 2" },
+          { labelNameAccordion: "Click para desplegar toda la información" },
         ],
       },
 
       {
         sectionTitle: "Publicaciones 2022",
         labelAccordions: [
-          { labelNameAccordion: "Sección 1" },
-
-          { labelNameAccordion: "Sección 2" },
+          { labelNameAccordion: "Click para desplegar toda la información" },
         ],
       },
 
       {
         sectionTitle: "Publicaciones 2023",
         labelAccordions: [
-          { labelNameAccordion: "Sección 1" },
-
-          { labelNameAccordion: "Sección 2" },
+          { labelNameAccordion: "Click para desplegar toda la información" },
         ],
       },
 
       {
         sectionTitle: "Publicaciones 2024",
         labelAccordions: [
-          { labelNameAccordion: "Sección 1" },
-
-          { labelNameAccordion: "Sección 2" },
+          { labelNameAccordion: "Click para desplegar toda la información" },
         ],
       },
     ],
