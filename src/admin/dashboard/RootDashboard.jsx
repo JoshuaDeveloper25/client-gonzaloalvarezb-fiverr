@@ -20,6 +20,8 @@ import { useContext, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { toast } from "react-toastify";
+import { CgProfile } from "react-icons/cg";
+import { TiDocument } from "react-icons/ti";
 
 const RootDashboard = () => {
   const isLargeScreen = useMediaQuery({ query: "(min-width: 650px)" });
@@ -89,8 +91,8 @@ const RootDashboard = () => {
                 </div>
               )}
 
-              <h2 className="flex items-center ps-8 gap-1 uppercase tracking-wide text-black px-2 font-bold mb-2 mt-2">
-                Páginas: <FaArrowDownLong size={10} />
+              <h2 className="flex items-center ps-7 gap-1 uppercase tracking-wide text-black p font-bold mb-2 mt-2">
+                <TiDocument size={20} /> Páginas: <FaArrowDownLong size={10} />
               </h2>
 
               {subMenuDashboardPage?.map((subMenuPage, index) => (
@@ -134,12 +136,40 @@ const RootDashboard = () => {
                 </SubMenu>
               ))}
 
-              <Link
-                className="text-center mt-auto px-3 font-bold py-3 bg-red-500 hover:bg-red-400 animation-fade hover:text-white"
-                onClick={signOut}
-              >
-                Cerrar Sesión
-              </Link>
+              <div className="mt-auto">
+                <div className="ps-8 py-6 bg-white shadow-lg">
+                  <h2 className="flex items-center gap-1 uppercase tracking-wide text-black font-bold mb-2 mt-2">
+                    <CgProfile size={20} /> Perfil:{" "}
+                    <FaArrowDownLong size={10} />
+                  </h2>
+
+                  <div className="text-black">
+                    <p className="leading-4">
+                      <span className="font-bold text-primary-color">
+                        Correo:
+                      </span>{" "}
+                      {userInfo?.email}
+                    </p>
+                    <p className="leading-4 my-2">
+                      <span className="font-bold text-primary-color">
+                        Nombre:
+                      </span>{" "}
+                      <span className="capitalize">{userInfo?.name}</span>
+                    </p>
+                    <p className="leading-4 capitalize">
+                      <span className="font-bold text-primary-color">Rol:</span>{" "}
+                      <span className="capitalize">{userInfo?.role}</span>
+                    </p>
+                  </div>
+                </div>
+
+                <Link
+                  className="text-center block px-3 font-bold py-3 bg-red-500 hover:bg-red-400 animation-fade hover:text-white"
+                  onClick={signOut}
+                >
+                  Cerrar Sesión
+                </Link>
+              </div>
             </div>
           </Menu>
         </Sidebar>
